@@ -1,0 +1,1 @@
+panorama and overlap guide.

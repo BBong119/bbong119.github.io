@@ -1,0 +1,53 @@
+homePage: /
+
+dbrOverview: /DBR-Basic-Info/overview/
+
+userGuide: /DBR-Basic-Info/user-guide/
+userGuide_windows: /DBR-Basic-Info/user-guide/windows/
+userGuide_linux: /DBR-Basic-Info/user-guide/linux/
+userGuide_iOS: /DBR-Basic-Info/user-guide/iOS/
+userGuide_android: /DBR-Basic-Info/user-guide/Android/
+userGuide_wasm: /DBR-Basic-Info/user-guide/wasm/
+
+evaluationTools: /DBR-Basic-Info/evaluation-tools/
+evaluationTools_batchTestSuite: /DBR-Basic-Info/evaluation-tools/batch-test-suite/
+evaluationTools_interactiveTest: /DBR-Basic-Info/evaluation-tools/interactive-test/
+evaluationTools_testSetImages: /DBR-Basic-Info/evaluation-tools/test-set-images/
+
+securityIssues: /DBR-Basic-Info/security-issues/  
+
+manual: /DBR-Detailed-Info/manual/
+manual_interface: /DBR-Detailed-Info/manual/interface/
+manual_parameters: /DBR-Detailed-Info/manual/parameters/
+
+demosSamples: /DBR-Detailed-Info/samples-and-demos/
+demosSamples_appDemo: /DBR-Detailed-Info/samples-and-demos/
+demosSamples_appDemo_ios: /DBR-Detailed-Info/samples-and-demos/ios/
+demosSamples_appDemo_android: /DBR-Detailed-Info/samples-and-demos/android/
+demosSamples_onlineDemo: /DBR-Detailed-Info/samples-and-demos/onlineDemo/
+demosSamples_samples: /DBR-Detailed-Info/samples-and-demos/samples/
+
+intermediateResults: /DBR-Enhancements/intermediate-results/
+
+dpm: /DBR-Enhancements/dpm/
+
+panoramaOverlap: /DBR-Enhancements/panorama-and-overlap/
+
+3dReconstruction: /DBR-Enhancements/3d-reconstruction/
+
+pdfVectors: /DBR-Enhancements/pdf-vectors/  
+
+industrialSolutions: /DBR-Extended-Info/industrial-solutions/
+
+parameterUsage: /DBR-Extended-Info/how-to-use-parameters/
+
+complicateImageHandling: /DBR-Extended-Info/how-to-handle-complicate-images/
+
+licenseUsageTracking: /DBR-Extended-Info/license-and-usage-tracking/
+
+barcodeBasisKnowledge: /DBR-Extended-Info/barcode-basis-knowledge/
+
+imageProcessingKnowledge: /DBR-Extended-Info/image-processing-knowledge/ 
+
+
+editIcon: /Other-Material/icon/editIcon.png
