@@ -1,53 +1,53 @@
 homePage: /
 
-dbrOverview: /DBR-Basic-Info/overview/
+dbrOverview: /dbr-basic-info/overview/
 
-userGuide: /DBR-Basic-Info/user-guide/
-userGuide_windows: /DBR-Basic-Info/user-guide/windows/
-userGuide_linux: /DBR-Basic-Info/user-guide/linux/
-userGuide_iOS: /DBR-Basic-Info/user-guide/iOS/
-userGuide_android: /DBR-Basic-Info/user-guide/Android/
-userGuide_wasm: /DBR-Basic-Info/user-guide/wasm/
+userGuide: /dbr-basic-info/user-guide/
+userGuide_windows: /dbr-basic-info/user-guide/windows/
+userGuide_linux: /dbr-basic-info/user-guide/linux/
+userGuide_iOS: /dbr-basic-info/user-guide/iOS/
+userGuide_android: /dbr-basic-info/user-guide/Android/
+userGuide_wasm: /dbr-basic-info/user-guide/wasm/
 
-evaluationTools: /DBR-Basic-Info/evaluation-tools/
-evaluationTools_batchTestSuite: /DBR-Basic-Info/evaluation-tools/batch-test-suite/
-evaluationTools_interactiveTest: /DBR-Basic-Info/evaluation-tools/interactive-test/
-evaluationTools_testSetImages: /DBR-Basic-Info/evaluation-tools/test-set-images/
+evaluationTools: /dbr-basic-info/evaluation-tools/
+evaluationTools_batchTestSuite: /dbr-basic-info/evaluation-tools/batch-test-suite/
+evaluationTools_interactiveTest: /dbr-basic-info/evaluation-tools/interactive-test/
+evaluationTools_testSetImages: /dbr-basic-info/evaluation-tools/test-set-images/
 
-securityIssues: /DBR-Basic-Info/security-issues/  
+securityIssues: /dbr-basic-info/security-issues/  
 
-manual: /DBR-Detailed-Info/manual/
-manual_interface: /DBR-Detailed-Info/manual/interface/
-manual_parameters: /DBR-Detailed-Info/manual/parameters/
+manual: /dbr-detailed-info/manual/
+manual_interface: /dbr-detailed-info/manual/interface/
+manual_parameters: /dbr-detailed-info/manual/parameters/
 
-demosSamples: /DBR-Detailed-Info/samples-and-demos/
-demosSamples_appDemo: /DBR-Detailed-Info/samples-and-demos/
-demosSamples_appDemo_ios: /DBR-Detailed-Info/samples-and-demos/ios/
-demosSamples_appDemo_android: /DBR-Detailed-Info/samples-and-demos/android/
-demosSamples_onlineDemo: /DBR-Detailed-Info/samples-and-demos/onlineDemo/
-demosSamples_samples: /DBR-Detailed-Info/samples-and-demos/samples/
+demosSamples: /dbr-detailed-info/samples-and-demos/
+demosSamples_appDemo: /dbr-detailed-info/samples-and-demos/
+demosSamples_appDemo_ios: /dbr-detailed-info/samples-and-demos/ios/
+demosSamples_appDemo_android: /dbr-detailed-info/samples-and-demos/android/
+demosSamples_onlineDemo: /dbr-detailed-info/samples-and-demos/onlineDemo/
+demosSamples_samples: /dbr-detailed-info/samples-and-demos/samples/
 
-intermediateResults: /DBR-Enhancements/intermediate-results/
+intermediateResults: /dbr-enhancements/intermediate-results/
 
-dpm: /DBR-Enhancements/dpm/
+dpm: /dbr-enhancements/dpm/
 
-panoramaOverlap: /DBR-Enhancements/panorama-and-overlap/
+panoramaOverlap: /dbr-enhancements/panorama-and-overlap/
 
-3dReconstruction: /DBR-Enhancements/3d-reconstruction/
+3dReconstruction: /dbr-enhancements/3d-reconstruction/
 
-pdfVectors: /DBR-Enhancements/pdf-vectors/  
+pdfVectors: /dbr-enhancements/pdf-vectors/  
 
-industrialSolutions: /DBR-Extended-Info/industrial-solutions/
+industrialSolutions: /dbr-extended-info/industrial-solutions/
 
-parameterUsage: /DBR-Extended-Info/how-to-use-parameters/
+parameterUsage: /dbr-extended-info/how-to-use-parameters/
 
-complicateImageHandling: /DBR-Extended-Info/how-to-handle-complicate-images/
+complicateImageHandling: /dbr-extended-info/how-to-handle-complicate-images/
 
-licenseUsageTracking: /DBR-Extended-Info/license-and-usage-tracking/
+licenseUsageTracking: /dbr-extended-info/license-and-usage-tracking/
 
-barcodeBasisKnowledge: /DBR-Extended-Info/barcode-basis-knowledge/
+barcodeBasisKnowledge: /dbr-extended-info/barcode-basis-knowledge/
 
-imageProcessingKnowledge: /DBR-Extended-Info/image-processing-knowledge/ 
+imageProcessingKnowledge: /dbr-extended-info/image-processing-knowledge/ 
 
 
-editIcon: /Other-Material/icon/editIcon.png
+editIcon: /other-material/icon/editIcon.png
