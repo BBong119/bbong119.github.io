@@ -5,8 +5,8 @@ dbrOverview: /dbr-basic-info/overview/
 userGuide: /dbr-basic-info/user-guide/
 userGuide_windows: /dbr-basic-info/user-guide/windows/
 userGuide_linux: /dbr-basic-info/user-guide/linux/
-userGuide_iOS: /dbr-basic-info/user-guide/iOS/
-userGuide_android: /dbr-basic-info/user-guide/Android/
+userGuide_iOS: /dbr-basic-info/user-guide/ios/
+userGuide_android: /dbr-basic-info/user-guide/android/
 userGuide_wasm: /dbr-basic-info/user-guide/wasm/
 
 evaluationTools: /dbr-basic-info/evaluation-tools/
