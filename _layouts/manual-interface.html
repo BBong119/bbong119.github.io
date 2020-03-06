@@ -34,43 +34,29 @@
       
       <h1 id="documentation-home-page"><a href={{ site.homePage }}>Documentation Home Page</a></h1>
 
-{% if page.id == 'user_guide_main' %}
-      <h2 id="user-guide"><a href={{ site.userGuide }} class="currentPageHeader">User Guide</a></h2>
+{% if page.id == 'interface_main' %}
+      <h2 id="interface"><a href={{ manual_interface }} class="currentPageHeader">Interface</a></h2>
 {% else %}
-      <h2 id="user-guide"><a href={{ site.userGuide }}>User Guide</a></h2>
+      <h2 id="interface"><a href={{ site.userGuide }}>Interface</a></h2>
 {% endif %}
 <ul>
-  
-    {% if page.id == 'user_guide_windows' %}
-        <li><a href={{ site.userGuide_windows }} class="currentPageColour">Windows user guide</a></li>
+    {% if page.id == 'interface_c_and_cpp' %}
+        <li>
+          <a href={{ site.manual_interface_c_and_cpp }} class="currentPageColour"C and C++</a>
+          {% if page.id == 'interface_c' %}
+              <li><a href={{ site.manual_interface_c }} class="currentPageColour"C API</a></li>
+          {% else %}
+              <li><a href={{ site.manual_interface_c }} class="otherLinkColour"C API</a></li>
+          {% endif %}
+           {% if page.id == 'interface_cpp' %}
+              <li><a href={{ site.manual_interface_cpp }} class="currentPageColour"C++ API</a></li>
+          {% else %}
+              <li><a href={{ site.manual_interface_cpp }} class="otherLinkColour"C++ API</a></li>
+          {% endif %}  
+        </li>
     {% else %}
-        <li><a href={{ site.userGuide_windows }} class="otherLinkColour">Windows user guide</a></li>
+        <a href={{ site.manual_interface_c_and_cpp }} class="otherLinkColour"C and C++</a>
     {% endif %}
-  
-    {% if page.id == 'user_guide_linux' %}  
-        <li><a href={{ site.userGuide_linux }} class="currentPageColour">Linux user guide</a></li>
-    {% else %}
-        <li><a href={{ site.userGuide_linux }} class="otherLinkColour">Linux user guide</a></li>
-    {% endif %}
-  
-    {% if page.id == 'user_guide_ios' %}
-        <li><a href={{ site.userGuide_iOS }} class="currentPageColour">iOS user guide</a></li>
-    {% else %}
-        <li><a href={{ site.userGuide_iOS }} class="otherLinkColour">iOS user guide</a></li>
-    {% endif %}
- 
-    {% if page.id == 'user_guide_android' %}
-        <li><a href={{ site.userGuide_android }} class="currentPageColour">Android user guide</a></li>
-    {% else %}
-        <li><a href={{ site.userGuide_android }} class="otherLinkColour">Android user guide</a></li>
-    {% endif %}
-
-    {% if page.id == 'user_guide_wasm' %}
-        <li><a href={{ site.userGuide_wasm }} class="currentPageColour">wasm user guide</a></li>
-    {% else %}
-        <li><a href={{ site.userGuide_wasm }} class="otherLinkColour">wasm user guide</a></li>
-    {% endif %}
-  
 </ul>
 
 <p align="right"><a href="{{ page.sourceCodeUrl }} " align="right" class="#otherLinkColour">Edit<img src="{{ site.editIcon }}" width="20px" height="15px" /></a></p>
