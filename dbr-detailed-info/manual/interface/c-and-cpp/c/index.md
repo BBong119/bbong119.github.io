@@ -6,9 +6,9 @@ sourceCodeUrl: https://github.com/BBong119/bbong119.github.io/blob/master/dbr-de
 
 # Dynamsoft Barcode Reader SDK - C API Reference
 
-## Methods  
+## Methods
 
-### Initialize and Destroy   
+### Initialize and Destroy
   
   | Method               | Description |
   |----------------------|-------------|
@@ -16,7 +16,7 @@ sourceCodeUrl: https://github.com/BBong119/bbong119.github.io/blob/master/dbr-de
   | [`DBR_DestroyInstance`](methods/DBR_DestroyInstance.md) | Destroy the instance of Dynamsoft Barcode Reader. |
 
 
-### Decode   
+### Decode
 
   | Method               | Description |
   |----------------------|-------------|
@@ -28,7 +28,7 @@ sourceCodeUrl: https://github.com/BBong119/bbong119.github.io/blob/master/dbr-de
 
 ### Parameter and Runtime Settings
 
-#### Basic  
+#### Basic
   
   | Method               | Description |
   |----------------------|-------------|
@@ -38,7 +38,7 @@ sourceCodeUrl: https://github.com/BBong119/bbong119.github.io/blob/master/dbr-de
   | [`DBR_UpdateRuntimeSettings`](methods/DBR_UpdateRuntimeSettings.md) | Modify and update the current runtime settings. |
   | [`DBR_ResetRuntimeSettings`](methods/DBR_ResetRuntimeSettings.md) | Reset runtime settings to default. |
 
-#### Advanced   
+#### Advanced
   
   | Method               | Description |
   |----------------------|-------------|
@@ -55,7 +55,7 @@ sourceCodeUrl: https://github.com/BBong119/bbong119.github.io/blob/master/dbr-de
 
 
 
-### License   
+### License
    
   | Method               | Description |
   |----------------------|-------------|
@@ -66,7 +66,7 @@ sourceCodeUrl: https://github.com/BBong119/bbong119.github.io/blob/master/dbr-de
   | [`DBR_OutputLicenseToStringPtr`](methods/DBR_OutputLicenseToStringPtr.md) | Output the license content to a string from the license server. |
   | [`DBR_FreeLicenseString`](methods/DBR_FreeLicenseString.md) | Free memory allocated for the license string. |
 
-### Result   
+### Result
    
   | Method               | Description |
   |----------------------|-------------|
@@ -76,7 +76,7 @@ sourceCodeUrl: https://github.com/BBong119/bbong119.github.io/blob/master/dbr-de
   | [`DBR_FreeIntermediateResults`](methods/DBR_FreeIntermediateResults.md) | Free memory allocated for the intermediate results. |
 
 
-### Status Retrieval   
+### Status Retrieval
   
   | Method               | Description |
   |----------------------|-------------|
@@ -85,7 +85,7 @@ sourceCodeUrl: https://github.com/BBong119/bbong119.github.io/blob/master/dbr-de
 
 
 ### Video
-#### Decode  
+#### Decode
    
   | Method               | Description |
   |----------------------|-------------|
@@ -94,13 +94,13 @@ sourceCodeUrl: https://github.com/BBong119/bbong119.github.io/blob/master/dbr-de
   | [`DBR_AppendFrame`](methods/DBR_AppendFrame.md) | Append a frame image buffer to the inner frame queue. |
   | [`DBR_StopFrameDecoding`](methods/DBR_StopFrameDecoding.md) | Stop thread used for frame decoding. |
 
-#### Parameter   
+#### Parameter
    
   | Method               | Description |
   |----------------------|-------------|
   | [`DBR_InitFrameDecodingParameters`](methods/DBR_InitFrameDecodingParameters.md) | Initialize frame decoding parameter. |
 
-#### Callback   
+#### Callback
    
   | Method               | Description |
   |----------------------|-------------|
@@ -108,7 +108,7 @@ sourceCodeUrl: https://github.com/BBong119/bbong119.github.io/blob/master/dbr-de
   | [`DBR_SetTextResultCallback`](methods/DBR_SetTextResultCallback.md) | Set callback function to process text results generated during frame decoding. |
   | [`DBR_SetIntermediateResultCallback`](methods/DBR_SetIntermediateResultCallback.md) | Set callback function to process intermediate results generated during frame decoding. |
 
-#### Status retrieval   
+#### Status retrieval
    
   | Method               | Description |
   |----------------------|-------------|
