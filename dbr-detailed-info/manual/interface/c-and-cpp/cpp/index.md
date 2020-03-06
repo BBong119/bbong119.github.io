@@ -10,7 +10,7 @@ sourceCodeUrl: https://github.com/BBong119/bbong119.github.io/blob/master/dbr-de
 - [Methods](#CBarcodeReader-Methods)
 - [Attributes](#CBarcodeReader-Protected-Attribute)
   
-## `CBarcodeReader` Methods(#CBarcodeReader-Methods)
+## CBarcodeReader Methods
 
 ### Constructor and Destructor   
    
