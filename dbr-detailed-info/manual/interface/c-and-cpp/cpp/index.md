@@ -7,8 +7,8 @@ sourceCodeUrl: https://github.com/BBong119/bbong119.github.io/blob/master/dbr-de
 # Dynamsoft Barcode Reader SDK - C++ API Reference
 
 `CBarcodeReader` -- Decode barcodes.
-- [Methods](#CBarcodeReader-Methods)
-- [Attributes](#CBarcodeReader-Protected-Attribute)
+- [Methods](#cbarcodereader-methods)
+- [Attributes](#cbarcodereader-protected-attribute)
   
 ## CBarcodeReader Methods
 
