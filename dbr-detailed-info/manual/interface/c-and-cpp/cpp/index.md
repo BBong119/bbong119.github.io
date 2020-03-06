@@ -129,7 +129,7 @@ sourceCodeUrl: https://github.com/BBong119/bbong119.github.io/blob/master/dbr-de
  
 
 
-## `CBarcodeReader` Protected Attribute   
+## `CBarcodeReader` Protected Attribute
   
   | Attribute            | Description |
   |----------------------|-------------|
