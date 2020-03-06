@@ -12,7 +12,8 @@ sourceCodeUrl: https://github.com/BBong119/bbong119.github.io/blob/master/dbr-de
   
 ## `CBarcodeReader` Methods  
 
-### Constructor and Destructor
+### Constructor and Destructor   
+   
   | Method               | Description |
   |----------------------|-------------|
   | [`CBarcodeReader`](CBarcodeReader/methods/CBarcodeReader.md) | Default constructor of `CBarcodeReader` object.|
@@ -20,7 +21,8 @@ sourceCodeUrl: https://github.com/BBong119/bbong119.github.io/blob/master/dbr-de
    
    
    
-### Decode 
+### Decode   
+   
   | Method               | Description |
   |----------------------|-------------|
   | [`DecodeFile`](CBarcodeReader/methods/DecodeFile.md) | Decode barcodes from a specified image file. |
@@ -34,7 +36,8 @@ sourceCodeUrl: https://github.com/BBong119/bbong119.github.io/blob/master/dbr-de
    
 ### Parameter and Runtime Settings
 
-#### Basic
+#### Basic   
+   
   | Method               | Description |
   |----------------------|-------------|
   | [`SetModeArgument`](CBarcodeReader/methods/SetModeArgument.md) | Set argument value for the specified mode parameter. |
@@ -43,7 +46,8 @@ sourceCodeUrl: https://github.com/BBong119/bbong119.github.io/blob/master/dbr-de
   | [`UpdateRuntimeSettings`](CBarcodeReader/methods/UpdateRuntimeSettings.md) | Modify and update the current runtime settings. |
   | [`ResetRuntimeSettings`](CBarcodeReader/methods/ResetRuntimeSettings.md) | Reset runtime settings to default. |
 
-#### Advanced
+#### Advanced   
+  
   | Method               | Description |
   |----------------------|-------------|
   | [`InitRuntimeSettingsWithFile`](CBarcodeReader/methods/InitRuntimeSettingsWithFile.md)  | Initialize runtime settings with the settings in a given JSON file. |
@@ -59,7 +63,8 @@ sourceCodeUrl: https://github.com/BBong119/bbong119.github.io/blob/master/dbr-de
    
    
    
-### License
+### License   
+  
   | Method               | Description |
   |----------------------|-------------|
   | [`InitLicense`](CBarcodeReader/methods/InitLicense.md) | Read product key and activate the SDK. |
@@ -71,7 +76,8 @@ sourceCodeUrl: https://github.com/BBong119/bbong119.github.io/blob/master/dbr-de
    
    
    
-### Result
+### Result   
+   
   | Method               | Description |
   |----------------------|-------------|
   | [`GetAllTextResults`](CBarcodeReader/methods/GetAllTextResults.md) | Get all recognized barcode results. |
@@ -81,7 +87,8 @@ sourceCodeUrl: https://github.com/BBong119/bbong119.github.io/blob/master/dbr-de
    
    
    
-### Status Retrieval
+### Status Retrieval   
+   
   | Method               | Description |
   |----------------------|-------------|
   | [`GetErrorString`](CBarcodeReader/methods/GetErrorString.md) | Get error message by error code.|
@@ -91,7 +98,8 @@ sourceCodeUrl: https://github.com/BBong119/bbong119.github.io/blob/master/dbr-de
    
 ### Video
 
-#### Decode   
+#### Decode    
+    
    | Method               | Description |
    |----------------------|-------------|
    | [`StartFrameDecoding`](CBarcodeReader/methods/StartFrameDecoding.md) | Decode barcodes from inner frame queue. |
@@ -100,25 +108,29 @@ sourceCodeUrl: https://github.com/BBong119/bbong119.github.io/blob/master/dbr-de
    | [`StopFrameDecoding`](CBarcodeReader/methods/StopFrameDecoding.md) | Stop thread used for frame decoding. |
 
 #### Parameter   
+   
    | Method               | Description |
    |----------------------|-------------|
    | [`InitFrameDecodingParameters`](CBarcodeReader/methods/InitFrameDecodingParameters.md) | Initialize frame decoding parameter. |
 
 #### Callback   
+   
    | Method               | Description |
    |----------------------|-------------|
    | [`SetErrorCallback`](CBarcodeReader/methods/SetErrorCallback.md) | Set callback function to process errors generated during frame decoding. |
    | [`SetTextResultCallback`](CBarcodeReader/methods/SetTextResultCallback.md) | Set callback function to process text results generated during frame decoding. |
    | [`SetIntermediateResultCallback`](CBarcodeReader/methods/SetIntermediateResultCallback.md) | Set callback function to process intermediate results generated during frame decoding. |
 
-#### Status retrieval   
+#### Status retrieval    
+   
    | Method               | Description |
    |----------------------|-------------|
    | [`GetLengthOfFrameQueue`](CBarcodeReader/methods/GetLengthOfFrameQueue.md) | Get length of current inner frame queue. |
  
 
 
-## `CBarcodeReader` Protected Attribute
+## `CBarcodeReader` Protected Attribute   
+  
   | Attribute            | Description |
   |----------------------|-------------|
   | [`m_pBarcodeReader`](CBarcodeReader/attribute/m_pBarcodeReader.md)  | |
