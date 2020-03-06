@@ -40,24 +40,20 @@
       <h2 id="interface"><a href={{ site.manual_interface }}>Interface</a></h2>
 {% endif %}
 <ul>
-    <li class="otherLinkColourr">C and C++
-      <ul>
-          <li>
-            {% if page.id == 'interface_c' %}
-                <a href={{ site.manual_interface_c }} class="currentPageColou">C API</a>
-            {% else %}
-                <a href={{ site.manual_interface_c }} class="otherLinkColour">C API</a>
-            {% endif %}
-          </li>
-          <li>
-            {% if page.id == 'interface_cpp' %}
-                <a href={{ site.manual_interface_cpp }} class="currentPageColou">C++ API</a>
-            {% else %}
-                <a href={{ site.manual_interface_cpp }} class="otherLinkColour">C++ API</a>
-            {% endif %}
-          </li>
-        </ul>
-    </li>
+      <li>
+          {% if page.id == 'interface_c' %}
+              <a href={{ site.manual_interface_c }} class="currentPageColou">C API</a>
+          {% else %}
+              <a href={{ site.manual_interface_c }} class="otherLinkColour">C API</a>
+          {% endif %}
+      </li>
+      <li>
+          {% if page.id == 'interface_cpp' %}
+             <a href={{ site.manual_interface_cpp }} class="currentPageColou">C++ API</a>
+         {% else %}
+              <a href={{ site.manual_interface_cpp }} class="otherLinkColour">C++ API</a>
+         {% endif %}
+      </li>
 </ul>
 
 <p align="right"><a href="{{ page.sourceCodeUrl }} " align="right" class="#otherLinkColour">Edit<img src="{{ site.editIcon }}" width="20px" height="15px" /></a></p>
