@@ -12,7 +12,7 @@ sourceCodeUrl: https://github.com/BBong119/bbong119.github.io/blob/master/dbr-de
   
 ## CBarcodeReader Methods
 
-### Constructor and Destructor   
+### Constructor and Destructor
    
   | Method               | Description |
   |----------------------|-------------|
@@ -21,7 +21,7 @@ sourceCodeUrl: https://github.com/BBong119/bbong119.github.io/blob/master/dbr-de
    
    
    
-### Decode   
+### Decode
    
   | Method               | Description |
   |----------------------|-------------|
@@ -36,7 +36,7 @@ sourceCodeUrl: https://github.com/BBong119/bbong119.github.io/blob/master/dbr-de
    
 ### Parameter and Runtime Settings
 
-#### Basic   
+#### Basic
    
   | Method               | Description |
   |----------------------|-------------|
@@ -46,7 +46,7 @@ sourceCodeUrl: https://github.com/BBong119/bbong119.github.io/blob/master/dbr-de
   | [`UpdateRuntimeSettings`](CBarcodeReader/methods/UpdateRuntimeSettings.md) | Modify and update the current runtime settings. |
   | [`ResetRuntimeSettings`](CBarcodeReader/methods/ResetRuntimeSettings.md) | Reset runtime settings to default. |
 
-#### Advanced   
+#### Advanced
   
   | Method               | Description |
   |----------------------|-------------|
@@ -63,7 +63,7 @@ sourceCodeUrl: https://github.com/BBong119/bbong119.github.io/blob/master/dbr-de
    
    
    
-### License   
+### License
   
   | Method               | Description |
   |----------------------|-------------|
@@ -76,7 +76,7 @@ sourceCodeUrl: https://github.com/BBong119/bbong119.github.io/blob/master/dbr-de
    
    
    
-### Result   
+### Result
    
   | Method               | Description |
   |----------------------|-------------|
@@ -87,7 +87,7 @@ sourceCodeUrl: https://github.com/BBong119/bbong119.github.io/blob/master/dbr-de
    
    
    
-### Status Retrieval   
+### Status Retrieval
    
   | Method               | Description |
   |----------------------|-------------|
@@ -98,7 +98,7 @@ sourceCodeUrl: https://github.com/BBong119/bbong119.github.io/blob/master/dbr-de
    
 ### Video
 
-#### Decode    
+#### Decode
     
    | Method               | Description |
    |----------------------|-------------|
@@ -107,13 +107,13 @@ sourceCodeUrl: https://github.com/BBong119/bbong119.github.io/blob/master/dbr-de
    | [`AppendFrame`](CBarcodeReader/methods/AppendFrame.md) | Append a frame image buffer to the inner frame queue. |
    | [`StopFrameDecoding`](CBarcodeReader/methods/StopFrameDecoding.md) | Stop thread used for frame decoding. |
 
-#### Parameter   
+#### Parameter
    
    | Method               | Description |
    |----------------------|-------------|
    | [`InitFrameDecodingParameters`](CBarcodeReader/methods/InitFrameDecodingParameters.md) | Initialize frame decoding parameter. |
 
-#### Callback   
+#### Callback
    
    | Method               | Description |
    |----------------------|-------------|
@@ -121,7 +121,7 @@ sourceCodeUrl: https://github.com/BBong119/bbong119.github.io/blob/master/dbr-de
    | [`SetTextResultCallback`](CBarcodeReader/methods/SetTextResultCallback.md) | Set callback function to process text results generated during frame decoding. |
    | [`SetIntermediateResultCallback`](CBarcodeReader/methods/SetIntermediateResultCallback.md) | Set callback function to process intermediate results generated during frame decoding. |
 
-#### Status retrieval    
+#### Status retrieval
    
    | Method               | Description |
    |----------------------|-------------|
