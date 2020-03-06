@@ -8,7 +8,7 @@ sourceCodeUrl: https://github.com/BBong119/bbong119.github.io/blob/master/dbr-de
 
 ## Methods  
 
-### Initialize and Destroy
+### Initialize and Destroy   
 Method | Description
 :-: | :-:
 [`DBR_CreateInstance`](methods/DBR_CreateInstance.md) | Create an instance of Dynamsoft Barcode Reader.
