@@ -35,22 +35,26 @@
       <h1 id="documentation-home-page"><a href={{ site.homePage }}>Documentation Home Page</a></h1>
 
 {% if page.id == 'interface_main' %}
-      <h2 id="interface"><a href={{ manual_interface }} class="currentPageHeader">Interface</a></h2>
+      <h2 id="interface"><a href={{ site.manual_interface }} class="currentPageHeader">Interface</a></h2>
 {% else %}
-      <h2 id="interface"><a href={{ site.userGuide }}>Interface</a></h2>
+      <h2 id="interface"><a href={{ site.manual_interface }}>Interface</a></h2>
 {% endif %}
 <ul>
       <li class="otherLinkColour">C and C++
-        {% if page.id == 'interface_c' %}
-            <li><a href={{ site.manual_interface_c }} class="currentPageColour"C API</a></li>
-        {% else %}
-            <li><a href={{ site.manual_interface_c }} class="otherLinkColour"C API</a></li>
-        {% endif %}
-         {% if page.id == 'interface_cpp' %}
-            <li><a href={{ site.manual_interface_cpp }} class="currentPageColour"C++ API</a></li>
-        {% else %}
-            <li><a href={{ site.manual_interface_cpp }} class="otherLinkColour"C++ API</a></li>
-        {% endif %}  
+        <li>
+            {% if page.id == 'interface_c' %}
+                <a href={{ site.manual_interface_c }} class="currentPageColour"C API</a>
+            {% else %}
+                <a href={{ site.manual_interface_c }} class="otherLinkColour"C API</a>
+            {% endif %}
+        </li>
+        <li>
+            {% if page.id == 'interface_cpp' %}
+                <a href={{ site.manual_interface_cpp }} class="currentPageColour"C++ API</a>
+            {% else %}
+                <a href={{ site.manual_interface_cpp }} class="otherLinkColour"C++ API</a>
+            {% endif %}  
+         </li>
       </li>
 </ul>
 
