@@ -1,3 +1,9 @@
+---
+layout: manual-interface
+id: interface_c
+sourceCodeUrl: https://github.com/BBong119/bbong119.github.io/blob/master/dbr-detailed-info/manual/interface/c-and-cpp/c/index.md
+---
+
 # Dynamsoft Barcode Reader SDK - C API Reference
 
 ## Methods  
