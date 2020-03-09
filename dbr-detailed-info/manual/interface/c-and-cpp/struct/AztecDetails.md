@@ -10,14 +10,14 @@ typedef struct tagAztecDetails  AztecDetails
 
 ### Attributes
 
-#### moduleSize
+1. moduleSize
 ```cpp
 int tagAztecDetails::moduleSize
 ```  
 The barcode module size (the minimum bar width in pixel).
 
 
-#### rows
+2. rows
 
 
 | Attribute | Type | Description |
