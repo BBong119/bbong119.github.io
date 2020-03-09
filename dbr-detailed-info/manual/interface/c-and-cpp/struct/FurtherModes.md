@@ -81,6 +81,21 @@ GrayscaleTransformationMode tagFurtherModes::grayscaleTransformationModes[8]
    [`GrayscaleTransformationMode`]({{ site.manual_interface_enum}}GrayscaleTransformationMode.html)
 
 ### regionPredetectionModes
+Sets the region pre-detection mode for barcodes search.
+```cpp
+RegionPredetectionMode tagFurtherModes::regionPredetectionModes[8]
+```
+- **Value range**  
+   Each array item can be any one of the [`RegionPredetectionMode`]({{ site.manual_interface_enum}}RegionPredetectionMode.html) Enumeration items.  
+     
+- **Default value**  
+   `[RPM_GENERAL,RPM_SKIP,RPM_SKIP,RPM_SKIP,RPM_SKIP,RPM_SKIP,RPM_SKIP,RPM_SKIP]`  
+     
+- **Remark**  
+   The array index represents the priority of the item. The smaller index is, the higher priority is. If the image is large and the barcode on the image is very small, it is recommended to enable region predetection to speed up the localization process and recognition accuracy.
+   
+- **See also**  
+   [`RegionPredetectionMode`]({{ site.manual_interface_enum}}RegionPredetectionMode.html)
 
 ### imagePreprocessingModes
 
