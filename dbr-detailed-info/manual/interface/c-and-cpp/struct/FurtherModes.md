@@ -17,9 +17,9 @@ typedef struct tagFurtherModes  FurtherModes
 | [`colourClusteringModes`](#colourclusteringmodes) | [`ColourClusteringMode`]({{ site.manual_interface_enum}}ColourClusteringMode.html)\[8\] |
 | [`colourConversionModes`](#colourconversionmodes) | [`ColourConversionMode`]({{ site.manual_interface_enum}}ColourConversionMode.html)\[8\] |
 | [`grayscaleTransformationModes`](#grayscaletransformationmodes) | [`GrayscaleTransformationMode`]({{ site.manual_interface_enum}}GrayscaleTransformationMode.html)\[8\] |
-| [`regionPredetectionModes`](#regionpredetectionmodes) | [`RegionPredetectionMode`\]({{ site.manual_interface_enum}}RegionPredetectionMode.html)\[8\] |
+| [`regionPredetectionModes`](#regionpredetectionmodes) | [`RegionPredetectionMode`]({{ site.manual_interface_enum}}RegionPredetectionMode.html)\[8\] |
 | [`imagePreprocessingModes`](#imagepreprocessingmodes) | [`ImagePreprocessingMode`]({{ site.manual_interface_enum}}ImagePreprocessingMode.html)\[8\] |
-| [`textureDetectionModes`](#texturedetectionmodes) | [`TextureDetectionMode`\]({{ site.manual_interface_enum}}TextureDetectionMode.html)\[8\] |
+| [`textureDetectionModes`](#texturedetectionmodes) | [`TextureDetectionMode`]({{ site.manual_interface_enum}}TextureDetectionMode.html)\[8\] |
 | [`textFilterModes`](#textfiltermodes) | [`TextFilterMode`]({{ site.manual_interface_enum}}TextFilterMode.html)\[8\] |
 | [`textAssistedCorrectionMode`](#textassistedcorrectionmode) | [`TextAssistedCorrectionMode`]({{ site.manual_interface_enum}}TextAssistedCorrectionMode.html) |
 | [`dpmCodeReadingModes`](#dpmcodereadingmodes) | [`DPMCodeReadingMode`]({{ site.manual_interface_enum}}DPMCodeReadingMode.html)\[8\] |
