@@ -98,14 +98,86 @@ RegionPredetectionMode tagFurtherModes::regionPredetectionModes[8]
    [`RegionPredetectionMode`]({{ site.manual_interface_enum}}RegionPredetectionMode.html)
 
 ### imagePreprocessingModes
+Sets the mode and priority for image preprocessing algorithms.
+```cpp
+ImagePreprocessingMode tagFurtherModes::imagePreprocessingModes[8]
+```
+- **Value range**  
+   Each array item can be any one of the [`ImagePreprocessingMode`]({{ site.manual_interface_enum}}ImagePreprocessingMode.html) Enumeration items.  
+     
+- **Default value**  
+   `[IPM_GENERAL,IPM_SKIP,IPM_SKIP,IPM_SKIP,IPM_SKIP,IPM_SKIP,IPM_SKIP,IPM_SKIP]`  
+     
+- **Remark**  
+   The array index represents the priority of the item. The smaller index is, the higher priority is.
+   
+- **See also**  
+   [`ImagePreprocessingMode`]({{ site.manual_interface_enum}}ImagePreprocessingMode.html)
 
 ### textureDetectionModes
-
+Sets the mode and priority for texture detection. 
+```cpp
+TextureDetectionMode tagFurtherModes::textureDetectionModes[8]
+```
+- **Value range**  
+   Each array item can be any one of the [`TextureDetectionMode`]({{ site.manual_interface_enum}}TextureDetectionMode.html) Enumeration items.  
+     
+- **Default value**  
+   `[TDM_GENERAL_WIDTH_CONCENTRATION,TDM_SKIP,TDM_SKIP,TDM_SKIP,TDM_SKIP,TDM_SKIP,TDM_SKIP,TDM_SKIP]`  
+     
+- **Remark**  
+   The array index represents the priority of the item. The smaller index is, the higher priority is.
+   
+- **See also**  
+   [`TextureDetectionMode`]({{ site.manual_interface_enum}}TextureDetectionMode.html)
+   
 ### textFilterModes
-
+Sets the mode and priority for text filter.
+```cpp
+TextFilterMode tagFurtherModes::textFilterModes[8]
+```
+- **Value range**  
+   Each array item can be any one of the [`TextFilterMode`]({{ site.manual_interface_enum}}TextFilterMode.html) Enumeration items.  
+     
+- **Default value**  
+   `[TFM_GENERAL_CONTOUR,TFM_SKIP,TFM_SKIP,TFM_SKIP,TFM_SKIP,TFM_SKIP,TFM_SKIP,TFM_SKIP]`  
+     
+- **Remark**  
+   The array index represents the priority of the item. The smaller index is, the higher priority is. If the image contains a lot of text, you can enable text filter to speed up the localization process.
+   
+- **See also**  
+   [`TextFilterMode`]({{ site.manual_interface_enum}}TextFilterMode.html)
+   
 ### textAssistedCorrectionMode
-
+Sets the mode of text assisted correction for barcode decoding. ***Not supported yet***.
+```cpp
+TextAssistedCorrectionMode tagFurtherModes::textAssistedCorrectionMode
+```
+- **Value range**  
+   Any one of the [`TextAssistedCorrectionMode`]({{ site.manual_interface_enum}}TextAssistedCorrectionMode.html) Enumeration items.  
+     
+- **Default value**  
+   `TACM_VERIFYING`  
+   
+- **See also**  
+   [`TextAssistedCorrectionMode`]({{ site.manual_interface_enum}}TextAssistedCorrectionMode.html)
+   
 ### dpmCodeReadingModes
+Sets the mode and priority for DPM code reading.
+```cpp
+DPMCodeReadingMode tagFurtherModes::dpmCodeReadingModes[8]
+```
+- **Value range**  
+   Each array item can be any one of the [`DPMCodeReadingMode`]({{ site.manual_interface_enum}}DPMCodeReadingMode.html) Enumeration items.  
+     
+- **Default value**  
+   `[DPMCRM_GENERAL,DPMCRM_SKIP,DPMCRM_SKIP,DPMCRM_SKIP,DPMCRM_SKIP,DPMCRM_SKIP,DPMCRM_SKIP,DPMCRM_SKIP]`  
+     
+- **Remark**  
+   The array index represents the priority of the item. The smaller index is, the higher priority is.  
+   
+- **See also**  
+   [`DPMCodeReadingMode`]({{ site.manual_interface_enum}}DPMCodeReadingMode.html) Enumeration items.  
 
 ### deformationResistingModes
 
