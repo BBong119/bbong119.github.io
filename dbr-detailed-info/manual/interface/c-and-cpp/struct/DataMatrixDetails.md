@@ -1,21 +1,65 @@
-## DataMatrixDetails
+# DataMatrixDetails
 Stores the DataMatrix details.
 
-#### Typedefs
+## Typedefs
 
 ```cpp
 typedef struct tagDataMatrixDetails  DataMatrixDetails
 ```  
 
-#### Attributes
-  
-| Attribute | Type | Description |
-|---------- | ---- | ----------- |
-| [`moduleSize`](#modulesize) | *int* |  |
-| [`rows`](#rows) | *int* | The row count of the barcode. | 
-| [`columns`](#columns) | *int* | The column count of the barcode. |
-| [`dataRegionRows`](#dataregionrows) | *int* | The data region row count of the barcode. |
-| [`dataRegionColumns`](#dataregioncolumns) | *int* | The data region column count of the barcode. |
-| [`dataRegionNumber`](#dataregionnumber) | *int* | The data region count. |
-| [`reserved`](#reserved) | *char\[32\]* | Reserved memory for the struct. The length of this array indicates the size of the memory reserved for this struct. |
+---
 
+## Attributes
+  
+| Attribute | Type |
+|---------- | ---- |
+| [`moduleSize`](#modulesize) | *int* |
+| [`rows`](#rows) | *int* | 
+| [`columns`](#columns) | *int* |
+| [`dataRegionRows`](#dataregionrows) | *int* | 
+| [`dataRegionColumns`](#dataregioncolumns) | *int* |
+| [`dataRegionNumber`](#dataregionnumber) | *int* |
+| [`reserved`](#reserved) | *char\[32\]* |
+
+
+### moduleSize
+The barcode module size (the minimum bar width in pixel).
+```cpp
+int tagDataMatrixDetails::moduleSize
+```
+
+### rows
+The row count of the barcode.
+```cpp
+int tagDataMatrixDetails::rows
+```
+
+### columns
+The column count of the barcode.
+```cpp
+int tagDataMatrixDetails::columns
+```
+
+### dataRegionRows 
+The data region row count of the barcode.
+```cpp
+int tagDataMatrixDetails::dataRegionRows
+```
+
+### dataRegionColumns
+The data region column count of the barcode.
+```cpp
+int tagDataMatrixDetails::dataRegionColumns
+```
+
+### dataRegionNumber
+The data region count.
+```cpp
+int tagDataMatrixDetails::dataRegionNumber
+```
+
+### reserved
+Reserved memory for the struct. The length of this array indicates the size of the memory reserved for this struct.
+```cpp
+char tagDataMatrixDetails::reserved[32]
+```
