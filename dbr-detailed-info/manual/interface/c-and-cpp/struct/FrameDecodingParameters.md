@@ -31,10 +31,10 @@ The maximum number of frames waiting for decoding.
 ```cpp
 int tagFrameDecodingParameters::maxQueueLength
 ```
-#### Value range
-[0,0x7fffffff]
-#### Default value
-3
+- **Value range**
+    [0,0x7fffffff]
+- **Default value**
+    3
 
 ### maxResultQueueLength
 
