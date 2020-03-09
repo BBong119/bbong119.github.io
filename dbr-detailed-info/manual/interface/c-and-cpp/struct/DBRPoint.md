@@ -13,8 +13,8 @@ typedef struct tagDBRPoint  DBRPoint
   
 | Attribute | Type | 
 |---------- | ---- | 
-| `x` | *int* |
-| `y` | *int* |
+| [`x`](#x) | *int* |
+| [`y`](#y) | *int* |
 
 
 ### x
