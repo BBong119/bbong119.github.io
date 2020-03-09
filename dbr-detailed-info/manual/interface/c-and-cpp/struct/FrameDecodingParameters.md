@@ -38,6 +38,15 @@ int tagFrameDecodingParameters::maxQueueLength
     3
 
 ### maxResultQueueLength
+The maximum number of frames waiting results (text result/localization result) will be kept for further reference.  
+```cpp
+int tagFrameDecodingParameters::maxResultQueueLength
+```
+- **Value range**   
+    [0,0x7fffffff]   
+      
+- **Default value**   
+    10  
 
 ### width
 
