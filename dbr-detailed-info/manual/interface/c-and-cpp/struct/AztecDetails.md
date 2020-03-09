@@ -7,7 +7,7 @@ Stores the Aztec details.
 ```cpp
 typedef struct tagAztecDetails  AztecDetails
 ```  
-
+---
 ### Attributes
   
 | Attribute | Type | Description |
@@ -18,7 +18,6 @@ typedef struct tagAztecDetails  AztecDetails
 | [`layerNumber`](#layerNumber) | *int* |  A negative number (-1, -2, -3, -4) specifies a compact Aztec code. A positive number (1, 2, .. 32) specifies a normal (full-rang) Aztec code. |
 | [`reserved`](#reserved) | *char\[32\]* |  Reserved memory for the struct. The length of this array indicates the size of the memory reserved for this struct. |
   
----
-
+--
 #### moduleSize
  The barcode module size (the minimum bar width in pixel).
