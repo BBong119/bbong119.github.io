@@ -12,7 +12,7 @@ typedef struct tagExtendedResult  ExtendedResult
   
 | Attribute | Type | Description |
 |---------- | ---- | ----------- |
-| `resultType` | [`ResultType`]({{ site.manual_interface_enum }}ResultType.md) | Extended result type. |
+| `resultType` | [`ResultType`]({{ site.manual_interface_enum }}ResultType.html) | Extended result type. |
 | `barcodeFormat` | [`BarcodeFormat`]({{ site.manual_interface_enum }}BarcodeFormat.html) | Barcode type in BarcodeFormat group 1. |
 | `barcodeFormatString` | *const char \** | Barcode type in BarcodeFormat group 1 as string. |
 | `barcodeFormat_2` | [`BarcodeFormat_2`]({{ site.manual_interface_enum }}BarcodeFormat_2.html) | Barcode type in BarcodeFormat group 2. |
