@@ -121,7 +121,36 @@ float tagFrameDecodingParameters::threshold
     The SDK will calculate an inner indicator for each frame from [`AppendFrame`]({{ site.manual_interface_cpp}}CBarcodeReader/methods/AppendFrame.html) or  [`DBR_AppendFrame`]({{ site.manual_interface_c}}methods/DBR_AppendFrame.html), if the change rate of the indicators between the current frame and the history frames is larger than the given threshold, the current frame will not be added to the inner frame queue waiting for decoding.
 
 ### fps
+The frequency of calling [`AppendFrame`]({{ site.manual_interface_cpp}}CBarcodeReader/methods/AppendFrame.html) or  [`DBR_AppendFrame`]({{ site.manual_interface_c}}methods/DBR_AppendFrame.html) per second.
+```cpp
+int tagFrameDecodingParameters::fps
+```
+- **Value range**   
+    [0,0x7fffffff]
+      
+- **Default value**   
+    0  
+    
+- **Remark**  
+    0 means the frequency will be calculated automatically by the SDK.
 
 ### autoFilter
-
+Sets whether to filter frames automatically.
+```cpp
+int tagFrameDecodingParameters::autoFilter
+```
+- **Value range**   
+    [0,1]
+      
+- **Default value**   
+    1  
+    
+- **Remark**  
+    0: Diable filtering frames automatically. 1: Enable filtering frames automatically. 
+    
+    
 ### reserved
+Reserved memory for the struct. The length of this array indicates the size of the memory reserved for this struct.
+```cpp
+char tagFrameDecodingParameters::reserved[28]
+```
