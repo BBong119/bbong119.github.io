@@ -28,3 +28,46 @@ typedef struct tagFurtherModes  FurtherModes
 | [`barcodeColourModes`](#barcodecolourmodes) | [`BarcodeColourMode`\[8\]]({{ site.manual_interface_enum}}BarcodeColourMode.html) |
 | [`accompanyingTextRecognitionModes`](#accompanyingtextrecognitionmodes) | [`AccompanyingTextRecognitionMode`\[8\]]({{ site.manual_interface_enum}}AccompanyingTextRecognitionMode.html) |
 | [`reserved`](#reserved) | *char\[32\]* |
+
+### colourClusteringModes
+Sets the mode and priority for colour categorization. Not supported yet.  
+```cpp
+ColourClusteringMode tagFurtherModes::colourClusteringModes[8]
+```
+- **Value range**
+   Each array item can be any one of the [`ColourClusteringMode`]({{ site.manual_interface_enum}}ColourClusteringMode.html )Enumeration items.  
+     
+- **Default value**
+   `[CCM_SKIP,CCM_SKIP,CCM_SKIP,CCM_SKIP,CCM_SKIP,CCM_SKIP,CCM_SKIP,CCM_SKIP]`  
+     
+- **Remark**
+   The array index represents the priority of the item. The smaller index is, the higher priority is. 
+   
+- **See also**
+   [`ColourClusteringMode`]({{ site.manual_interface_enum}}ColourClusteringMode.html )
+
+### colourConversionModes
+
+### grayscaleTransformationModes
+
+### regionPredetectionModes
+
+### imagePreprocessingModes
+
+### textureDetectionModes
+
+### textFilterModes
+
+### textAssistedCorrectionMode
+
+### dpmCodeReadingModes
+
+### deformationResistingModes
+
+### barcodeComplementModes
+
+### barcodeColourModes
+
+### accompanyingTextRecognitionModes
+
+### reserved
