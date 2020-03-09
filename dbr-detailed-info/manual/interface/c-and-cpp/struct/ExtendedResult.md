@@ -12,8 +12,8 @@ typedef struct tagExtendedResult  ExtendedResult
 
 ## Attributes
   
-| Attribute | Type | Description |
-|---------- | ---- | ----------- |
+| Attribute | Type |
+|---------- | ---- |
 | [`resultType`](#resulttype) | [`ResultType`]({{ site.manual_interface_enum }}ResultType.html) |
 | [`barcodeFormat`](#barcodeformat) | [`BarcodeFormat`]({{ site.manual_interface_enum }}BarcodeFormat.html) |
 | [`barcodeFormatString`](#barcodeformatstring) | *const char \** |
