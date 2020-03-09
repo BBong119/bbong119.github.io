@@ -177,14 +177,78 @@ DPMCodeReadingMode tagFurtherModes::dpmCodeReadingModes[8]
    The array index represents the priority of the item. The smaller index is, the higher priority is.  
    
 - **See also**  
-   [`DPMCodeReadingMode`]({{ site.manual_interface_enum}}DPMCodeReadingMode.html) Enumeration items.  
+   [`DPMCodeReadingMode`]({{ site.manual_interface_enum}}DPMCodeReadingMode.html)
 
 ### deformationResistingModes
+Sets the mode and priority for deformation resisting.
+```cpp
+DeformationResistingMode tagFurtherModes::deformationResistingModes[8]
+```
+- **Value range**  
+   Each array item can be any one of the [`DeformationResistingMode`]({{ site.manual_interface_enum}}DeformationResistingMode.html) Enumeration items.  
+     
+- **Default value**  
+   `[DRM_SKIP,DRM_SKIP,DRM_SKIP,DRM_SKIP,DRM_SKIP,DRM_SKIP,DRM_SKIP,DRM_SKIP]`  
+     
+- **Remark**  
+   The array index represents the priority of the item. The smaller index is, the higher priority is.  
+   
+- **See also**  
+   [`DeformationResistingMode`]({{ site.manual_interface_enum}}DeformationResistingMode.html) 
 
 ### barcodeComplementModes
+Sets the mode and priority to complement the missing parts in the barcode.
+```cpp
+BarcodeComplementMode tagFurtherModes::barcodeComplementModes[8]
+```
+- **Value range**  
+   Each array item can be any one of the [`BarcodeComplementMode`]({{ site.manual_interface_enum}}BarcodeComplementMode.html) Enumeration items.  
+     
+- **Default value**  
+   `[BCM_SKIP,BCM_SKIP,BCM_SKIP,BCM_SKIP,BCM_SKIP,BCM_SKIP,BCM_SKIP,BCM_SKIP]`  
+     
+- **Remark**  
+   The array index represents the priority of the item. The smaller index is, the higher priority is.  
+   
+- **See also**  
+   [`BarcodeComplementMode`]({{ site.manual_interface_enum}}BarcodeComplementMode.html) 
 
 ### barcodeColourModes
+Sets the mode and priority for the barcode colour mode used to process the barcode zone.
+```cpp
+BarcodeColourMode tagFurtherModes::barcodeColourModes[8]
+```
+- **Value range**  
+   Each array item can be any one of the [`BarcodeColourMode`]({{ site.manual_interface_enum}}BarcodeColourMode.html) Enumeration items.  
+     
+- **Default value**  
+   `[BICM_DARK_ON_LIGHT,BICM_SKIP,BICM_SKIP,BICM_SKIP,BICM_SKIP,BICM_SKIP,BICM_SKIP,BICM_SKIP]`  
+     
+- **Remark**  
+   The array index represents the priority of the item. The smaller index is, the higher priority is.  
+   
+- **See also**  
+   [`BarcodeColourMode`]({{ site.manual_interface_enum}}BarcodeColourMode.html)
 
 ### accompanyingTextRecognitionModes
+Sets the mode and priority to recognize accompanying text.
+```cpp
+AccompanyingTextRecognitionMode tagFurtherModes::accompanyingTextRecognitionModes[8]
+```
+- **Value range**  
+   Each array item can be any one of the [`AccompanyingTextRecognitionMode`]({{ site.manual_interface_enum}}AccompanyingTextRecognitionMode.html) Enumeration items.  
+     
+- **Default value**  
+   `[ATRM_SKIP,ATRM_SKIP,ATRM_SKIP,ATRM_SKIP,ATRM_SKIP,ATRM_SKIP,ATRM_SKIP,ATRM_SKIP]`  
+     
+- **Remark**  
+   The array index represents the priority of the item. The smaller index is, the higher priority is.  
+   
+- **See also**  
+   [`AccompanyingTextRecognitionMode`]({{ site.manual_interface_enum}}AccompanyingTextRecognitionMode.html)
 
 ### reserved
+Reserved memory for struct. The length of this array indicates the size of the memory reserved for this struct.
+```cpp
+char tagFurtherModes::reserved[32]
+```
