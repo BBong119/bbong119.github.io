@@ -118,7 +118,7 @@ float tagFrameDecodingParameters::threshold
     0.1
     
 - **Remark**  
-    The SDK will calculate an inner indicator for each frame from AppendFrame(), if the change rate of the indicators between the current frame and the history frames is larger than the given threshold, the current frame will not be added to the inner frame queue waiting for decoding.
+    The SDK will calculate an inner indicator for each frame from [`AppendFrame`]({{ site.manual_interface_cpp}}CBarcodeReader/methods/AppendFrame.html) or  [`DBR_AppendFrame`]({{ site.manual_interface_c}}methods/DBR_AppendFrame.html), if the change rate of the indicators between the current frame and the history frames is larger than the given threshold, the current frame will not be added to the inner frame queue waiting for decoding.
 
 ### fps
 
