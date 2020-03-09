@@ -64,6 +64,21 @@ ColourConversionMode tagFurtherModes::colourConversionModes[8]
    [`ColourConversionMode`]({{ site.manual_interface_enum}}ColourConversionMode.html)
    
 ### grayscaleTransformationModes
+Sets the mode and priority for the grayscale image conversion.
+```cpp
+GrayscaleTransformationMode tagFurtherModes::grayscaleTransformationModes[8]
+```
+- **Value range**  
+   Each array item can be any one of the [`GrayscaleTransformationMode`]({{ site.manual_interface_enum}}GrayscaleTransformationMode.html) Enumeration items. 
+     
+- **Default value**  
+   `[GTM_ORIGINAL,GTM_SKIP,GTM_SKIP,GTM_SKIP,GTM_SKIP,GTM_SKIP,GTM_SKIP,GTM_SKIP]`  
+     
+- **Remark**  
+   The array index represents the priority of the item. The smaller index is, the higher priority is.  
+   
+- **See also**  
+   [`GrayscaleTransformationMode`]({{ site.manual_interface_enum}}GrayscaleTransformationMode.html)
 
 ### regionPredetectionModes
 
