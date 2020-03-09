@@ -11,7 +11,7 @@ typedef struct tagAztecDetails  AztecDetails
 ## Attributes
   
 | Attribute | Type |
-|---------- | ----------- | ----------- |
+|---------- | ----------- | 
 | [`moduleSize`](#modulesize) | *int* |
 | [`rows`](#rows) | *int* | 
 | [`columns`](#columns) | *int* |
