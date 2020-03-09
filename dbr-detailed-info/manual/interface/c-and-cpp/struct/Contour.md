@@ -12,5 +12,5 @@ typedef struct tagContour  Contour
 | Attribute | Type | Description |
 |---------- | ---- | ----------- |
 | `pointsCount` |  *int* | The total points count of the contour. |
-| `points` | *[DBRPoint](DBRPoint.md)* | The points array. |
+| `points` | *[DBRPoint* ](DBRPoint.md)* | The points array. |
 
