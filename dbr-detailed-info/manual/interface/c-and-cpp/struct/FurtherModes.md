@@ -34,16 +34,16 @@ Sets the mode and priority for colour categorization. Not supported yet.
 ```cpp
 ColourClusteringMode tagFurtherModes::colourClusteringModes[8]
 ```
-- **Value range**
-   Each array item can be any one of the [`ColourClusteringMode`]({{ site.manual_interface_enum}}ColourClusteringMode.html )Enumeration items.  
+- **Value range**  
+   Each array item can be any one of the [`ColourClusteringMode`]({{ site.manual_interface_enum}}ColourClusteringMode.html) Enumeration items.  
      
-- **Default value**
+- **Default value**  
    `[CCM_SKIP,CCM_SKIP,CCM_SKIP,CCM_SKIP,CCM_SKIP,CCM_SKIP,CCM_SKIP,CCM_SKIP]`  
      
-- **Remark**
+- **Remark**  
    The array index represents the priority of the item. The smaller index is, the higher priority is. 
    
-- **See also**
+- **See also**  
    [`ColourClusteringMode`]({{ site.manual_interface_enum}}ColourClusteringMode.html )
 
 ### colourConversionModes
