@@ -1,13 +1,13 @@
 ## Contour
 Stores the contour information.
 
-### Typedefs
+#### Typedefs
 
 ```cpp
 typedef struct tagContour  Contour
 ```  
 
-### Attributes
+#### Attributes
   
 | Attribute | Type | Description |
 |---------- | ---- | ----------- |
