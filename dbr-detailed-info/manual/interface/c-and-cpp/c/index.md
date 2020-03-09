@@ -118,7 +118,27 @@ sourceCodeUrl: https://github.com/BBong119/bbong119.github.io/blob/master/dbr-de
   | [`DBR_GetLengthOfFrameQueue`](methods/DBR_GetLengthOfFrameQueue.md) | Get length of current inner frame queue. |
   
   
-## Structs
-
+## [Structs]({{ site.manual_interface_struct}})
+- [`AztecDetails`]({{ site.manual_interface_struct}}AztecDetails.md)	
+- [`Contour`]({{ site.manual_interface_struct}}Contour.md)	
+- [`DBRPoint`]({{ site.manual_interface_struct}}DBRPoint.md)	
+- [`DataMatrixDetails`]({{ site.manual_interface_struct}}DataMatrixDetails.md)		
+- [`ExtendedResult`]({{ site.manual_interface_struct}}ExtendedResult.md)		
+- [`FrameDecodingParameters`]({{ site.manual_interface_struct}}FrameDecodingParameters.md)	
+- [`FurtherModes`]({{ site.manual_interface_struct}}FurtherModes.md)		
+- [`ImageData`]({{ site.manual_interface_struct}}ImageData.md)		
+- [`IntermediateResult`]({{ site.manual_interface_struct}}IntermediateResult.md)		
+- [`IntermediateResultArray`]({{ site.manual_interface_struct}}IntermediateResultArray.md)		
+- [`LineSegment`]({{ site.manual_interface_struct}}LineSegment.md)		
+- [`LocalizationResult`]({{ site.manual_interface_struct}}LocalizationResult.md)		
+- [`OneDCodeDetails`]({{ site.manual_interface_struct}}OneDCodeDetails.md)		
+- [`PDF417Details`]({{ site.manual_interface_struct}}PDF417Details.md)		
+- [`PublicRuntimeSettings`]({{ site.manual_interface_struct}}PublicRuntimeSettings.md)		
+- [`QRCodeDetails`]({{ site.manual_interface_struct}}QRCodeDetails.md)		
+- [`RegionDefinition`]({{ site.manual_interface_struct}}RegionDefinition.md)		
+- [`RegionOfInterest`]({{ site.manual_interface_struct}}RegionOfInterest.md)		
+- [`SamplingImageData`]({{ site.manual_interface_struct}}SamplingImageData.md)		
+- [`TextResult`]({{ site.manual_interface_struct}}TextResult.md)		
+- [`TextResultArray`]({{ site.manual_interface_struct}}TextResultArray.md)	
 
 ## Enumerations
