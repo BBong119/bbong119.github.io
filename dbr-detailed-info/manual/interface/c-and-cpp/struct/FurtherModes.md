@@ -44,10 +44,25 @@ ColourClusteringMode tagFurtherModes::colourClusteringModes[8]
    The array index represents the priority of the item. The smaller index is, the higher priority is. 
    
 - **See also**  
-   [`ColourClusteringMode`]({{ site.manual_interface_enum}}ColourClusteringMode.html )
+   [`ColourClusteringMode`]({{ site.manual_interface_enum}}ColourClusteringMode.html)
 
 ### colourConversionModes
-
+Sets the mode and priority for converting a colour image to a grayscale image.
+```cpp
+ColourConversionMode tagFurtherModes::colourConversionModes[8]
+```
+- **Value range**  
+   Each array item can be any one of the [`ColourConversionMode`]({{ site.manual_interface_enum}}ColourConversionMode.html) Enumeration items. 
+     
+- **Default value**  
+   `[CICM_GENERAL,CICM_SKIP,CICM_SKIP,CICM_SKIP,CICM_SKIP,CICM_SKIP,CICM_SKIP,CICM_SKIP]`  
+     
+- **Remark**  
+   The array index represents the priority of the item. The smaller index is, the higher priority is.  
+   
+- **See also**  
+   [`ColourConversionMode`]({{ site.manual_interface_enum}}ColourConversionMode.html)
+   
 ### grayscaleTransformationModes
 
 ### regionPredetectionModes
