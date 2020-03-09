@@ -11,11 +11,11 @@ typedef struct tagDataMatrixDetails  DataMatrixDetails
   
 | Attribute | Type | Description |
 |---------- | ---- | ----------- |
-| `moduleSize` | *int* |  |
-| `rows` | *int* | The row count of the barcode. | 
-| `columns` | *int* | The column count of the barcode. |
-| `dataRegionRows` | *int* | The data region row count of the barcode. |
-| `dataRegionColumns` | *int* | The data region column count of the barcode. |
-| `dataRegionNumber` | *int* | The data region count. |
-| `reserved` | *char\[32\]* | Reserved memory for the struct. The length of this array indicates the size of the memory reserved for this struct. |
+| [`moduleSize`](#modulesize) | *int* |  |
+| [`rows`](#rows) | *int* | The row count of the barcode. | 
+| [`columns`](#columns) | *int* | The column count of the barcode. |
+| [`dataRegionRows`](#dataregionrows) | *int* | The data region row count of the barcode. |
+| [`dataRegionColumns`](#dataregioncolumns) | *int* | The data region column count of the barcode. |
+| [`dataRegionNumber`](#dataregionnumber) | *int* | The data region count. |
+| [`reserved`](#reserved) | *char\[32\]* | Reserved memory for the struct. The length of this array indicates the size of the memory reserved for this struct. |
 
