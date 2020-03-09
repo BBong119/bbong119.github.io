@@ -33,6 +33,7 @@ int tagFrameDecodingParameters::maxQueueLength
 ```
 - **Value range**   
     [0,0x7fffffff]   
+      
 - **Default value**   
     3
 
