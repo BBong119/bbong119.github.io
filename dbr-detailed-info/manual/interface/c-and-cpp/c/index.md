@@ -6,6 +6,9 @@ sourceCodeUrl: https://github.com/BBong119/bbong119.github.io/blob/master/dbr-de
 
 # Dynamsoft Barcode Reader SDK - C API Reference
 
+- [Methods](#methods)
+- [Structs](#structs)
+- [Enumerations](#enumerations)
 ## Methods
 
 ### Initialize and Destroy
@@ -113,3 +116,9 @@ sourceCodeUrl: https://github.com/BBong119/bbong119.github.io/blob/master/dbr-de
   | Method               | Description |
   |----------------------|-------------|
   | [`DBR_GetLengthOfFrameQueue`](methods/DBR_GetLengthOfFrameQueue.md) | Get length of current inner frame queue. |
+  
+  
+## Structs
+
+
+## Enumerations
