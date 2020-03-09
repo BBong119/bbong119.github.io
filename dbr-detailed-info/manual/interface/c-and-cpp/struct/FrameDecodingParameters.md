@@ -10,20 +10,20 @@ typedef struct tagFrameDecodingParameters  FrameDecodingParameters
 ---
 
 ## Attributes
-  
+    
 | Attribute | Type |
 |---------- | ---- |
-| `maxQueueLength` | *int* |
-| `maxResultQueueLength` | *int* |
-| `width` | *int* |
-| `height` | *int* |
-| `	stride` | *int* |
-| `imagePixelFormat` | [`ImagePixelFormat`]({{ site.manual_interface_enum }}ImagePixelFormat.html) |
-| `region` | [`RegionDefinition`](RegionDefinition.md) |
-| `threshold` | *float* |
-| `fps` | *int* |
-| `autoFilter` | *int* |
-| `reserved` | *char\[28\]* |
+| [`maxQueueLength`](#maxqueuelength) | *int* |
+| [`maxResultQueueLength`](#maxresultqueuelength) | *int* |
+| [`width`](#width) | *int* |
+| [`height`](#height) | *int* |
+| [`stride`](#stride) | *int* |
+| [`imagePixelFormat`](#imagepixelformat) | [`ImagePixelFormat`]({{ site.manual_interface_enum }}ImagePixelFormat.html) |
+| [`region`](#region) | [`RegionDefinition`](RegionDefinition.md) |
+| [`threshold`](#threshold) | *float* |
+| [`fps`](#fps) | *int* |
+| [`autoFilter`](#autofilter) | *int* |
+| [`reserved`](#reserved) | *char\[28\]* |
 
 
 ### maxQueueLength
