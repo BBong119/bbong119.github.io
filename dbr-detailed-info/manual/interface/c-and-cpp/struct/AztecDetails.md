@@ -1,14 +1,14 @@
-## AztecDetails
+# AztecDetails
 Stores the Aztec details.
   
 
-### Typedefs
+## Typedefs
 
 ```cpp
 typedef struct tagAztecDetails  AztecDetails
 ```  
 ---
-### Attributes
+## Attributes
   
 | Attribute | Type | Description |
 |---------- | ----------- | ----------- |
@@ -19,7 +19,7 @@ typedef struct tagAztecDetails  AztecDetails
 | [`reserved`](#reserved) | *char\[32\]* |  Reserved memory for the struct. The length of this array indicates the size of the memory reserved for this struct. |
   
   
-#### moduleSize
+### moduleSize
 The barcode module size (the minimum bar width in pixel).
 ```cpp
 typedef struct tagAztecDetails  AztecDetails
