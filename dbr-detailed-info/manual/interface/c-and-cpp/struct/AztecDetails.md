@@ -9,7 +9,7 @@ typedef struct tagAztecDetails  AztecDetails
 ```  
 
 ### Attributes
-| Attribute | Description |
+| Attribute | Type | Description |
 |---------- | ----------- |
 | `int moduleSize` | *int* |  The barcode module size (the minimum bar width in pixel). |
 | `int rows` | *int* | The row count of the barcode. |
