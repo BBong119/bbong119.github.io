@@ -2,13 +2,13 @@
 Stores the Aztec details.
   
 
-### Typedefs
+#### Typedefs
 
 ```cpp
 typedef struct tagAztecDetails  AztecDetails
 ```  
 
-### Attributes
+#### Attributes
   
 | Attribute | Type | Description |
 |---------- | ----------- | ----------- |
