@@ -23,5 +23,8 @@ typedef struct tagExtendedResult  ExtendedResult
 |`accompanyingTextBytes` | *unsigned char \** | The accompanying text content in a byte array. |
 |`accompanyingTextBytesLength` | *int* | The length of the accompanying text byte array. |
 |`deformation` | *int* | The deformation value. |
-|`detailedResult` | *void \** | One of the following: [`QRCodeDetails`](QRCodeDetails.md), [`PDF417Details`](PDF417Details.md), [`DataMatrixDetails`](DataMatrixDetails.md), [`AztecDetails`](AztecDetails.md), [`OneDCodeDetails`](OneDCodeDetails.md) |
+|`detailedResult` | *void \** | One of the following: [`QRCodeDetails`](QRCodeDetails.md), [`PDF417Details`](PDF417Details.md), [`DataMatrixDetails`](DataMatrixDetails.md), [`AztecDetails`](AztecDetails.md), [`OneDCodeDetails`](OneDCodeDetails.md). |
+|`samplingImage` | *[`SamplingImageData`](SamplingImageData,md)* | The sampling image info. |
+|`clarity` | *int* | The clarity of the barcode zone in percentage. |
+|`reserved` | *char\[40\]* | Reserved memory for struct. The length of this array indicates the size of the memory reserved for this struct. |
 
