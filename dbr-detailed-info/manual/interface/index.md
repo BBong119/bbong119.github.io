@@ -5,4 +5,4 @@ sourceCodeUrl: https://github.com/BBong119/bbong119.github.io/blob/master/dbr-de
 ---
 
 dbr interface.   
-test link [enum]( {{ site.manual_interface_enum}}BarcodeComplementMode.md )
+test link [enum]( {{ site.manual_interface_enum}} )
