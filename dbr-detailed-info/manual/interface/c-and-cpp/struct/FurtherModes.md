@@ -14,19 +14,19 @@ typedef struct tagFurtherModes  FurtherModes
   
 | Attribute | Type |
 |---------- | ---- |
-| [`colourClusteringModes`](#colourclusteringmodes) | [`ColourClusteringMode`\[8\]]({{ site.manual_interface_enum}}ColourClusteringMode.html) |
-| [`colourConversionModes`](#colourconversionmodes) | [`ColourConversionMode`\[8\]]({{ site.manual_interface_enum}}ColourConversionMode.html) |
-| [`grayscaleTransformationModes`](#grayscaletransformationmodes) | [`GrayscaleTransformationMode`\[8\]]({{ site.manual_interface_enum}}GrayscaleTransformationMode.html) |
-| [`regionPredetectionModes`](#regionpredetectionmodes) | [`RegionPredetectionMode`\[8\]]({{ site.manual_interface_enum}}RegionPredetectionMode.html) |
-| [`imagePreprocessingModes`](#imagepreprocessingmodes) | [`ImagePreprocessingMode`\[8\]]({{ site.manual_interface_enum}}ImagePreprocessingMode.html) |
-| [`textureDetectionModes`](#texturedetectionmodes) | [`TextureDetectionMode`\[8\]]({{ site.manual_interface_enum}}TextureDetectionMode.html) |
-| [`textFilterModes`](#textfiltermodes) | [`TextFilterMode`\[8\]]({{ site.manual_interface_enum}}TextFilterMode.html) |
+| [`colourClusteringModes`](#colourclusteringmodes) | [`ColourClusteringMode`]({{ site.manual_interface_enum}}ColourClusteringMode.html)\[8\] |
+| [`colourConversionModes`](#colourconversionmodes) | [`ColourConversionMode`]({{ site.manual_interface_enum}}ColourConversionMode.html)\[8\] |
+| [`grayscaleTransformationModes`](#grayscaletransformationmodes) | [`GrayscaleTransformationMode`]({{ site.manual_interface_enum}}GrayscaleTransformationMode.html)\[8\] |
+| [`regionPredetectionModes`](#regionpredetectionmodes) | [`RegionPredetectionMode`\]({{ site.manual_interface_enum}}RegionPredetectionMode.html)\[8\] |
+| [`imagePreprocessingModes`](#imagepreprocessingmodes) | [`ImagePreprocessingMode`]({{ site.manual_interface_enum}}ImagePreprocessingMode.html)\[8\] |
+| [`textureDetectionModes`](#texturedetectionmodes) | [`TextureDetectionMode`\]({{ site.manual_interface_enum}}TextureDetectionMode.html)\[8\] |
+| [`textFilterModes`](#textfiltermodes) | [`TextFilterMode`]({{ site.manual_interface_enum}}TextFilterMode.html)\[8\] |
 | [`textAssistedCorrectionMode`](#textassistedcorrectionmode) | [`TextAssistedCorrectionMode`]({{ site.manual_interface_enum}}TextAssistedCorrectionMode.html) |
-| [`dpmCodeReadingModes`](#dpmcodereadingmodes) | [`DPMCodeReadingMode`\[8\]]({{ site.manual_interface_enum}}DPMCodeReadingMode.html) |
-| [`deformationResistingModes`](#deformationresistingmodes) | [`DeformationResistingMode`\[8\]]({{ site.manual_interface_enum}}DeformationResistingMode.html) |
-| [`barcodeComplementModes`](#barcodecomplementmodes) | [`BarcodeComplementMode`\[8\]]({{ site.manual_interface_enum}}BarcodeComplementMode.html) |
-| [`barcodeColourModes`](#barcodecolourmodes) | [`BarcodeColourMode`\[8\]]({{ site.manual_interface_enum}}BarcodeColourMode.html) |
-| [`accompanyingTextRecognitionModes`](#accompanyingtextrecognitionmodes) | [`AccompanyingTextRecognitionMode`\[8\]]({{ site.manual_interface_enum}}AccompanyingTextRecognitionMode.html) |
+| [`dpmCodeReadingModes`](#dpmcodereadingmodes) | [`DPMCodeReadingMode`]({{ site.manual_interface_enum}}DPMCodeReadingMode.html)\[8\] |
+| [`deformationResistingModes`](#deformationresistingmodes) | [`DeformationResistingMode`]({{ site.manual_interface_enum}}DeformationResistingMode.html)\[8\] |
+| [`barcodeComplementModes`](#barcodecomplementmodes) | [`BarcodeComplementMode`]({{ site.manual_interface_enum}}BarcodeComplementMode.html)\[8\] |
+| [`barcodeColourModes`](#barcodecolourmodes) | [`BarcodeColourMode`]({{ site.manual_interface_enum}}BarcodeColourMode.html)\[8\] |
+| [`accompanyingTextRecognitionModes`](#accompanyingtextrecognitionmodes) | [`AccompanyingTextRecognitionMode`]({{ site.manual_interface_enum}}AccompanyingTextRecognitionMode.html)\[8\] |
 | [`reserved`](#reserved) | *char\[32\]* |
 
 ### colourClusteringModes
