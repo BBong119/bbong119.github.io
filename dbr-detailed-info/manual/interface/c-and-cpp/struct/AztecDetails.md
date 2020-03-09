@@ -1,14 +1,10 @@
----
-lang: cpp
----
-
 ## AztecDetails
 Stores the Aztec details.
   
 
 ### Typedefs
 
-```
+```cpp
 typedef struct tagAztecDetails  AztecDetails
 ```  
 
