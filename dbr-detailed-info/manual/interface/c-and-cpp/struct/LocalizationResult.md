@@ -18,7 +18,7 @@ typedef struct tagLocalizationResult*  PLocalizationResult
 | [`terminatePhase`](#terminatephase) | [`TerminatePhase`]({{ site.manual_interface_enum }}TerminatePhase.html) |
 | [`barcodeFormat`](#barcodeformat) | [`BarcodeFormat`]({{ site.manual_interface_enum }}BarcodeFormat.html) |
 | [`barcodeFormatString`](#barcodeformatstring) | *const char \** |
-| [`barcodeFormat_2 `](#barcodeformat_2 ) | [`BarcodeFormat_2 `]({{ site.manual_interface_enum }}BarcodeFormat_2 .html) |
+| [`barcodeFormat_2 `](#barcodeformat_2 ) | [`BarcodeFormat_2 `]({{ site.manual_interface_enum }}BarcodeFormat_2.html) |
 | [`barcodeFormatString_2`](#barcodeformatstring_2) | *const char \** |
 | [`x1`](#x1) | *int* |
 | [`y1`](#y1) | *int* |
