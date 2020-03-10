@@ -115,7 +115,7 @@ double tagIntermediateResult::rotationMatrix[9]
 ```
 
 ### textFilterMode
-The [`TextFilterMode`]({{ site.manual_interface_enum }}TextFilterModes.html) used when generating the current intermediate result.
+The [`TextFilterMode`]({{ site.manual_interface_enum }}TextFilterMode.html) used when generating the current intermediate result.
 ```cpp
 TextFilterMode tagIntermediateResult::textFilterMode
 ```
