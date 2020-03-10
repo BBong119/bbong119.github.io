@@ -34,7 +34,7 @@ typedef struct tagPublicRuntimeSettings  PublicRuntimeSettings
 | [`region`](#region) | [`RegionDefinition`](RegionDefinition.md) |
 | [`minBarcodeTextLength`](#minbarcodetextlength) | *int* |
 | [`minResultConfidence`](#minresultconfidence) | *int* |
-| [`scaleUpModes`](#scaleUpmodes) | [`ScaleUpMode`]({{ site.manual_interface_enum }}ScaleUpMode.html)\[8\] |
+| [`scaleUpModes`](#scaleupmodes) | [`ScaleUpMode`]({{ site.manual_interface_enum }}ScaleUpMode.html)\[8\] |
 | [`reserved`](#reserved) | *char\[84\]* |
 
 
