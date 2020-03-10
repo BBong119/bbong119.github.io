@@ -14,5 +14,5 @@ typedef struct tagLineSegment  LineSegment
   
 | Attribute | Type |
 |---------- | ---- |
-|  |  |
+| [`startPoint`](#startpoint) | [`DBRPoint`](DBRPoint.md) |
 
