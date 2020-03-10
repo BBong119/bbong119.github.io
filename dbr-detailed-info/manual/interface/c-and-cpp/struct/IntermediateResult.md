@@ -132,7 +132,7 @@ LocalizationMode tagIntermediateResult::localizationMode
 ```
 
 ### lmIndex
-The array index of current used [`LocalizationMode`]({{ site.manual_interface_enum }}LocalizationMode.html) in the [`localizationModes`](FurtherModes.md#localizationmodes) setting.
+The array index of current used [`LocalizationMode`]({{ site.manual_interface_enum }}LocalizationMode.html) in the [`localizationModes`](PublicRuntimeSettings.md#localizationmodes) setting.
 ```cpp
 int tagIntermediateResult::lmIndex
 ```
@@ -144,7 +144,7 @@ BinarizationMode tagIntermediateResult::binarizationMode
 ```
 
 ### bmIndex
-The array index of current used [`BinarizationMode`]({{ site.manual_interface_enum }}BinarizationMode.html) in the [`binarizationModes`](FurtherModes.md#binarizationmodes) setting.
+The array index of current used [`BinarizationMode`]({{ site.manual_interface_enum }}BinarizationMode.html) in the [`binarizationModes`](PublicRuntimeSettings.md#binarizationmodes) setting.
 ```cpp
 int tagIntermediateResult::bmIndex
 ```
