@@ -26,7 +26,12 @@ The length of the image data byte array.
 ```cpp
 int tagImageData::bytesLength
 ```
-  
+### bytes
+The image data content in a byte array. 
+```cpp
+unsigned char* tagImageData::bytes
+```
+
 ### width
 The width of the image in pixels.  
 ```cpp
