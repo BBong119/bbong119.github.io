@@ -19,7 +19,7 @@ typedef struct tagTextResultArray*  PTextResultArray
 | [`results`](#results) | [`PTextResult`](TextResult.md)\* |
 
 
-### resultCount
+### resultsCount
 The total count of text result.
 ```cpp
 int tagTextResultArray::resultsCount
