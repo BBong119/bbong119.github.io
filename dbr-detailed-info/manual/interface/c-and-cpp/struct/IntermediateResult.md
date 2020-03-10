@@ -5,7 +5,7 @@ Stores the intermediate result.
 
 ```cpp
 typedef struct tagIntermediateResult  IntermediateResult 
-typedef struct tagIntermediateResult *  PIntermediateResult
+typedef struct tagIntermediateResult*  PIntermediateResult
 ```  
   
 ---
