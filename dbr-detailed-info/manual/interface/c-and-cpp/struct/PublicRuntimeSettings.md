@@ -49,7 +49,7 @@ TerminatePhase tagPublicRuntimeSettings::terminatePhase
 - **Default value**   
     `TP_BARCODE_RECOGNIZED`
     
-- **Default value**   
+- **Remark**   
     When the recognition result is not desired, you can set this parameter can be set to skip certain processing stages.
     
 - **See also**  
@@ -62,17 +62,28 @@ Sets the maximum amount of time (in milliseconds) that should be spent searching
 int tagPublicRuntimeSettings::timeout
 ```
 - **Value range**   
-    \[0, 0x7fffffff\]
+    [0, 0x7fffffff]
       
 - **Default value**   
     10000
     
-- **Default value**   
+- **Remark**   
     If you want to stop reading barcodes after a certain period of time, you can use this parameter to set a timeout.
     
 
 ### maxAlgorithmThreadCount
-
+Sets the number of threads the image processing algorithm will use to decode barcodes.
+```cpp
+int tagPublicRuntimeSettings::timeout
+```
+- **Value range**   
+    [1, 4]
+      
+- **Default value**   
+    4
+    
+- **Remark**   
+    To keep a balance between speed and quality, the library concurrently runs four different threads for barcode decoding by default.
 
 ### expectedBarcodesCount
 
