@@ -14,6 +14,20 @@ typedef struct tagIntermediateResultArray  IntermediateResultArray
   
 | Attribute | Type |
 |---------- | ---- |
-| resultsCount | *int* |
-| results | [`PIntermediateResult`](IntermediateResult.md)*  |
+| [`resultsCount`](#resultscount) | *int* |
+| [`results`](#results) | [`PIntermediateResult`](IntermediateResult.md)*  |
+
+
+### resultsCount
+The total count of intermediate result.
+```cpp
+int tagIntermediateResultArray::resultsCount
+```
+
+### results
+The intermediate result array.
+```cpp
+PIntermediateResult* tagIntermediateResultArray::results
+```
+
 
