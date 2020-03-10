@@ -15,7 +15,7 @@ typedef struct tagAztecDetails  AztecDetails
 | [`moduleSize`](#modulesize) | *int* |
 | [`rows`](#rows) | *int* | 
 | [`columns`](#columns) | *int* |
-| [`layerNumber`](#layerNumber) | *int* |
+| [`layerNumber`](#layernumber) | *int* |
 | [`reserved`](#reserved) | *char\[32\]* |
   
   
