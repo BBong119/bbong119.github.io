@@ -175,7 +175,7 @@ BinarizationMode tagPublicRuntimeSettings::binarizationModes[8]
 - **Remark**   
     The array index represents the priority of the item. The smaller index is, the higher priority is.
     
-- **Remark** 
+- **See also**   
     [`BinarizationMode`]({{ site.manual_interface_enum }}BinarizationMode.html)
 
 
