@@ -14,9 +14,9 @@ typedef struct tagIntermediateResult  IntermediateResult
   
 | Attribute | Type |
 |---------- | ---- |
-| [`resultsCount`](#resultcount) | *int* |
+| [`resultsCount`](#resultscount) | *int* |
 | [`results`](#results) | *const void \*\** |
-| [`dataType`](#datayype) | [`IMResultDataType`]({{ site.manual_interface_enum }}IMResultDataType.html) |
+| [`dataType`](#datatype) | [`IMResultDataType`]({{ site.manual_interface_enum }}IMResultDataType.html) |
 | [`resultType`](#resulttype) | [`IntermediateResultType`]({{ site.manual_interface_enum }}IntermediateResultType.html) |
 | [`barcodeComplementMode`](#barcodecomplementmode) | [`BarcodeComplementMode`]({{ site.manual_interface_enum }}BarcodeComplementMode.html) |
 | [`bcmIndex`](#bcmindex) | *int* |
@@ -84,13 +84,13 @@ int tagIntermediateResult::bcmIndex
 ```
 
 ### deformationResistingMode
-The [`DeformationResistingModes`]({{ site.manual_interface_enum }}DeformationResistingModes.html) used when generating the current intermediate result.
+The [`DeformationResistingMode`]({{ site.manual_interface_enum }}DeformationResistingMode.html) used when generating the current intermediate result.
 ```cpp
 DeformationResistingMode tagIntermediateResult::deformationResistingMode
 ```
 
 ### drmIndex
-The array index of current used [`DeformationResistingModes`]({{ site.manual_interface_enum }}DeformationResistingModes.html) in the [`DeformationResistingModes`]({{ site.manual_interface_enum }}DeformationResistingModes.html) setting.
+The array index of current used [`DeformationResistingMode`]({{ site.manual_interface_enum }}DeformationResistingMode.html) in the [`deformationResistingModes`]FurtherModes.md#deformationresistingmodes) setting.
 ```cpp
 int tagIntermediateResult::drmIndex
 ```
@@ -102,7 +102,7 @@ DPMCodeReadingMode tagIntermediateResult::dpmCodeReadingMode
 ```
 
 ### dpmcrmIndex
-The array index of current used [`DPMCodeReadingMode`]({{ site.manual_interface_enum }}DPMCodeReadingMode.html) in the [`DPMCodeReadingMode`]({{ site.manual_interface_enum }}DPMCodeReadingMode.html) setting.
+The array index of current used [`DPMCodeReadingMode`]({{ site.manual_interface_enum }}DPMCodeReadingMode.html) in the [`dpmCodeReadingModes`]FurtherModes.md#dpmcodereadingmodes) setting.
 ```cpp
 int tagIntermediateResult::dpmcrmIndex
 ```
@@ -114,77 +114,122 @@ double tagIntermediateResult::rotationMatrix[9]
 ```
 
 ### textFilterMode
-The [`TextFilterModes`]({{ site.manual_interface_enum }}TextFilterModes.html) used when generating the current intermediate result.
+The [`TextFilterMode`]({{ site.manual_interface_enum }}TextFilterModes.html) used when generating the current intermediate result.
 ```cpp
 TextFilterMode tagIntermediateResult::textFilterMode
 ```
 
 ### tfmIndex
-The array index of current used [`TextFilterModes`]({{ site.manual_interface_enum }}TextFilterModes.html) in the [`TextFilterModes`]({{ site.manual_interface_enum }}TextFilterModes.html) setting.
+The array index of current used [`TextFilterMode`]({{ site.manual_interface_enum }}TextFilterMode.html) in the [`textFilterModes`]FurtherModes.md#textfiltermodes) setting.
 ```cpp
 int tagIntermediateResult::tfmIndex
 ```
 
 ### localizationMode
-The [`LocalizationModes`]({{ site.manual_interface_enum }}LocalizationModes.html) used when generating the current intermediate result.
+The [`LocalizationMode`]({{ site.manual_interface_enum }}LocalizationMode.html) used when generating the current intermediate result.
 ```cpp
 LocalizationMode tagIntermediateResult::localizationMode
 ```
 
 ### lmIndex
-The array index of current used [`LocalizationModes`]({{ site.manual_interface_enum }}LocalizationModes.html) in the [`LocalizationModes`]({{ site.manual_interface_enum }}LocalizationModes.html) setting.
+The array index of current used [`LocalizationMode`]({{ site.manual_interface_enum }}LocalizationMode.html) in the [`localizationModes`]FurtherModes.md#localizationmodes) setting.
 ```cpp
 int tagIntermediateResult::lmIndex
 ```
 
 ### binarizationMode
-The [`BinarizationMode`]({{ site.manual_interface_enum }}BinarizationMode.html) used when generating the current intermediate resul.
+The [`BinarizationMode`]({{ site.manual_interface_enum }}BinarizationMode.html) used when generating the current intermediate result.
 ```cpp
 BinarizationMode tagIntermediateResult::binarizationMode
 ```
 
 ### bmIndex
-
+The array index of current used [`BinarizationMode`]({{ site.manual_interface_enum }}BinarizationMode.html) in the [`binarizationModes`]FurtherModes.md#binarizationmodes) setting.
+```cpp
+int tagIntermediateResult::bmIndex
+```
 
 ### imagePreprocessingMode
-
+The [`ImagePreprocessingMode`]({{ site.manual_interface_enum }}ImagePreprocessingMode.html) used when generating the current intermediate result.
+```cpp
+ImagePreprocessingMode tagIntermediateResult::imagePreprocessingMode
+```
 
 ### ipmIndex
-
+The array index of current used [`ImagePreprocessingMode`]({{ site.manual_interface_enum }}ImagePreprocessingMode.html) in [`imagePreprocessingModes`]FurtherModes.md#imagepreprocessingmodes) setting.
+```cpp
+int tagIntermediateResult::ipmIndex
+```
 
 ### roiId
-
+The ID of the ROI (Region Of Interest) generated by the SDK. -1 means the original image.
+```cpp
+int tagIntermediateResult::roiId
+```
 
 ### regionPredetectionMode
-
+The [`RegionPredetectionMode`]({{ site.manual_interface_enum }}RegionPredetectionMode.html) used when generating the current intermediate result.
+```cpp
+RegionPredetectionMode tagIntermediateResult::regionPredetectionMode
+```
 
 ### rpmIndex
-
+The array index of current used [`RegionPredetectionMode`]({{ site.manual_interface_enum }}RegionPredetectionMode.html) in the [`regionPredetectionModes`]FurtherModes.md#regionpredetectionmodes) setting.
+```cpp
+int tagIntermediateResult::rpmIndex
+```
 
 ### grayscaleTransformationMode
-
+The [`GrayscaleTransformationMode`]({{ site.manual_interface_enum }}GrayscaleTransformationMode.html) used when generating the current intermediate result.
+```cpp
+GrayscaleTransformationMode tagIntermediateResult::grayscaleTransformationMode
+```
 
 ### gtmIndex
-
+The array index of current used [`GrayscaleTransformationMode`]({{ site.manual_interface_enum }}GrayscaleTransformationMode.html) in the [`grayscaleTransformationModes`]FurtherModes.md#grayscaletransformationmodes) setting.
+```cpp
+int tagIntermediateResult::gtmIndex
+```
 
 ### colourConversionMode
-
+The [`ColourConversionMode`]({{ site.manual_interface_enum }}ColourConversionMode.html) used when generating the current intermediate result.
+```cpp
+ColourConversionMode tagIntermediateResult::colourConversionMode
+```
 
 ### cicmIndex
-
+The array index of current used [`ColourConversionMode`]({{ site.manual_interface_enum }}ColourConversionMode.html) in the [`colourConversionModes`]FurtherModes.md#colourconversionmodes) setting.
+```cpp
+int tagIntermediateResult::cicmIndex
+```
 
 ### colourClusteringMode
-
+The [`ColourClusteringMode`]({{ site.manual_interface_enum }}ColourClusteringMode.html) used when generating the current intermediate result.
+```cpp
+ColourClusteringMode tagIntermediateResult::colourClusteringMode
+```
 
 ### ccmIndex
-
+The array index of current used [`ColourClusteringMode`]({{ site.manual_interface_enum }}ColourClusteringMode.html) in the [`colourClusteringModes`]FurtherModes.md#colourclusteringmodes) setting.
+```cpp
+int tagIntermediateResult::ccmIndex
+```
 
 ### scaleDownRatio
-
+The scale down ratio.
+```cpp
+int tagIntermediateResult::scaleDownRatio
+```
 
 ### frameId
-
+The ID of the operated frame.
+```cpp
+int tagIntermediateResult::frameId
+```
 
 ### reserved
-
+Reserved memory for the struct. The length of this array indicates the size of the memory reserved for this struct.
+```cpp
+char tagIntermediateResult::reserved[64]
+```
 
