@@ -86,21 +86,97 @@ int tagPublicRuntimeSettings::timeout
     To keep a balance between speed and quality, the library concurrently runs four different threads for barcode decoding by default.
 
 ### expectedBarcodesCount
-
+Sets the number of barcodes expected to be detected for each image.
+```cpp
+int tagPublicRuntimeSettings::expectedBarcodesCount
+```
+- **Value range**   
+    [0, 0x7fffffff]
+      
+- **Default value**   
+    0
+    
+- **Remark**   
+    0: means Unknown and it will find at least one barcode. 1: try to find one barcode. If one barcode is found, the library will stop the localization process and perform barcode decoding. n: try to find n barcodes. If the library only finds m (m<n) barcode, it will try different algorithms till n barcodes are found or all algorithms are tried.
 
 ### barcodeFormatIds
-
-
+Sets the formats of the barcode in BarcodeFormat group 1 to be read. Barcode formats in BarcodeFormat group 1 can be combined.
+```cpp
+int tagPublicRuntimeSettings::barcodeFormatIds
+```
+- **Value range**   
+    A combined value of [`BarcodeFormat`]({{ site.manual_interface_enum }}BarcodeFormat.html) Enumeration items
+      
+- **Default value**   
+    `BF_ALL`
+    
+- **Remark**   
+    If the barcode type(s) are certain, specifying the barcode type(s) to be read will speed up the recognition process. The barcode format our library will search for is composed of [BarcodeFormat group 1]({{ site.manual_interface_enum }}BarcodeFormat.html) and [BarcodeFormat group 2]({{ site.manual_interface_enum }}BarcodeFormat_2.html), so you need to specify the barcode format in group 1 and group 2 individually.
+    
+- **See also**  
+    [`BarcodeFormat`]({{ site.manual_interface_enum }}BarcodeFormat.html), [`BarcodeFormat_2`]({{ site.manual_interface_enum }}BarcodeFormat_2.html)
+      
 ### barcodeFormatIds_2
-
+Sets the formats of the barcode in BarcodeFormat group 2 to be read. Barcode formats in BarcodeFormat group 2 can be combined.
+```cpp
+int tagPublicRuntimeSettings::barcodeFormatIds_2
+```
+- **Value range**   
+    A combined value of [`BarcodeFormat_2 `]({{ site.manual_interface_enum }}BarcodeFormat_2 .html) Enumeration items
+      
+- **Default value**   
+    `BF2_NULL`
+    
+- **Remark**   
+    If the barcode type(s) are certain, specifying the barcode type(s) to be read will speed up the recognition process. The barcode format our library will search for is composed of [BarcodeFormat group 1]({{ site.manual_interface_enum }}BarcodeFormat.html) and [BarcodeFormat group 2]({{ site.manual_interface_enum }}BarcodeFormat_2.html), so you need to specify the barcode format in group 1 and group 2 individually.
+    
+- **See also**  
+    [`BarcodeFormat`]({{ site.manual_interface_enum }}BarcodeFormat.html), [`BarcodeFormat_2`]({{ site.manual_interface_enum }}BarcodeFormat_2.html)
 
 ### pdfRasterDPI
-
+Sets the output image resolution.
+```cpp
+int tagPublicRuntimeSettings::pdfRasterDPI
+```
+- **Value range**   
+    [100, 600]
+      
+- **Default value**   
+    300
+    
+- **Remark**   
+    When decoding barcodes from a PDF file using the DecodeFile method, the library will convert the PDF file to image(s) first, then perform barcode recognition.
 
 ### scaleDownThreshold
-
+Sets the threshold for the image shrinking.
+```cpp
+int tagPublicRuntimeSettings::scaleDownThreshold
+```
+- **Value range**   
+    [512, 0x7fffffff]
+      
+- **Default value**   
+    2300
+    
+- **Remark**   
+    If the shorter edge size is larger than the given threshold value, the library will calculate the required height and width of the barcode image and shrink the image to that size before localization. Otherwise, the library will perform barcode localization on the original image.
 
 ### binarizationModes
+Sets the mode and priority for binarization.
+```cpp
+BinarizationMode tagPublicRuntimeSettings::binarizationModes[8]
+```
+- **Value range**   
+    Each array item can be any one of the [`BinarizationMode`]({{ site.manual_interface_enum }}BinarizationMode.html) Enumeration items.
+      
+- **Default value**   
+    `[BM_LOCAL_BLOCK,BM_SKIP,BM_SKIP,BM_SKIP,BM_SKIP,BM_SKIP,BM_SKIP,BM_SKIP]`
+    
+- **Remark**   
+    The array index represents the priority of the item. The smaller index is, the higher priority is.
+    
+- **Remark** 
+    [`BinarizationMode`]({{ site.manual_interface_enum }}BinarizationMode.html)
 
 
 ### localizationModes
