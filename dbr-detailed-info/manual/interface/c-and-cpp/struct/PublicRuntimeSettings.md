@@ -37,3 +37,26 @@ typedef struct tagPublicRuntimeSettings  PublicRuntimeSettings
 | [`scaleUpModes`](#scaleUpmodes) | [`ScaleUpMode`]({{ site.manual_interface_enum }}ScaleUpMode.html)\[8\] |
 | [`reserved`](#reserved) | *char\[84\]* |
 
+
+### terminatePhase
+### timeout
+### maxAlgorithmThreadCount
+### expectedBarcodesCount
+### barcodeFormatIds
+### barcodeFormatIds_2
+### pdfRasterDPI
+### scaleDownThreshold
+### binarizationModes
+### localizationModes
+### furtherModes
+### deblurLevel
+### intermediateResultTypes
+### intermediateResultSavingMode
+### resultCoordinateType
+### textResultOrderModes
+### returnBarcodeZoneClarity
+### region
+### minBarcodeTextLength
+### minResultConfidence
+### scaleUpModes
+### reserved
