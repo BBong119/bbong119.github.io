@@ -39,10 +39,37 @@ typedef struct tagPublicRuntimeSettings  PublicRuntimeSettings
 
 
 ### terminatePhase
-
+Sets the phase to stop the barcode reading algorithm.
+```cpp
+TerminatePhase tagPublicRuntimeSettings::terminatePhase
+```
+- **Value range**   
+    Any one of the [`TerminatePhase`]({{ site.manual_interface_enum }}TerminatePhase.html) Enumeration items
+      
+- **Default value**   
+    `TP_BARCODE_RECOGNIZED`
+    
+- **Default value**   
+    When the recognition result is not desired, you can set this parameter can be set to skip certain processing stages.
+    
+- **See also**  
+    [`TerminatePhase`]({{ site.manual_interface_enum }}TerminatePhase.html)
+      
 
 ### timeout
-
+Sets the maximum amount of time (in milliseconds) that should be spent searching for a barcode per page. It does not include the time taken to load/decode an image (TIFF, PNG, etc.) from disk into memory.
+```cpp
+int tagPublicRuntimeSettings::timeout
+```
+- **Value range**   
+    \[0, 0x7fffffff\]
+      
+- **Default value**   
+    10000
+    
+- **Default value**   
+    If you want to stop reading barcodes after a certain period of time, you can use this parameter to set a timeout.
+    
 
 ### maxAlgorithmThreadCount
 
