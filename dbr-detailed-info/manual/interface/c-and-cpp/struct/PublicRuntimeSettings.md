@@ -39,24 +39,68 @@ typedef struct tagPublicRuntimeSettings  PublicRuntimeSettings
 
 
 ### terminatePhase
+
+
 ### timeout
+
+
 ### maxAlgorithmThreadCount
+
+
 ### expectedBarcodesCount
+
+
 ### barcodeFormatIds
+
+
 ### barcodeFormatIds_2
+
+
 ### pdfRasterDPI
+
+
 ### scaleDownThreshold
+
+
 ### binarizationModes
+
+
 ### localizationModes
+
+
 ### furtherModes
+
+
 ### deblurLevel
+
+
 ### intermediateResultTypes
+
+
 ### intermediateResultSavingMode
+
+
 ### resultCoordinateType
+
+
 ### textResultOrderModes
+
+
 ### returnBarcodeZoneClarity
+
+
 ### region
+
+
 ### minBarcodeTextLength
+
+
 ### minResultConfidence
+
+
 ### scaleUpModes
+
+
 ### reserved
+
+
