@@ -6,6 +6,7 @@ Stores the extended result.
 
 ```cpp
 typedef struct tagExtendedResult  ExtendedResult
+typedef struct tagExtendedResult*  PExtendedResult
 ```  
 
 ---
