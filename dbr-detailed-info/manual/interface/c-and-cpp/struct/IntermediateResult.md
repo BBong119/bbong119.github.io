@@ -90,7 +90,7 @@ DeformationResistingMode tagIntermediateResult::deformationResistingMode
 ```
 
 ### drmIndex
-The array index of current used [`DeformationResistingMode`]({{ site.manual_interface_enum }}DeformationResistingMode.html) in the [`deformationResistingModes`]FurtherModes.md#deformationresistingmodes) setting.
+The array index of current used [`DeformationResistingMode`]({{ site.manual_interface_enum }}DeformationResistingMode.html) in the [`deformationResistingModes`](FurtherModes.md#deformationresistingmodes) setting.
 ```cpp
 int tagIntermediateResult::drmIndex
 ```
@@ -102,7 +102,7 @@ DPMCodeReadingMode tagIntermediateResult::dpmCodeReadingMode
 ```
 
 ### dpmcrmIndex
-The array index of current used [`DPMCodeReadingMode`]({{ site.manual_interface_enum }}DPMCodeReadingMode.html) in the [`dpmCodeReadingModes`]FurtherModes.md#dpmcodereadingmodes) setting.
+The array index of current used [`DPMCodeReadingMode`]({{ site.manual_interface_enum }}DPMCodeReadingMode.html) in the [`dpmCodeReadingModes`](FurtherModes.md#dpmcodereadingmodes) setting.
 ```cpp
 int tagIntermediateResult::dpmcrmIndex
 ```
@@ -120,7 +120,7 @@ TextFilterMode tagIntermediateResult::textFilterMode
 ```
 
 ### tfmIndex
-The array index of current used [`TextFilterMode`]({{ site.manual_interface_enum }}TextFilterMode.html) in the [`textFilterModes`]FurtherModes.md#textfiltermodes) setting.
+The array index of current used [`TextFilterMode`]({{ site.manual_interface_enum }}TextFilterMode.html) in the [`textFilterModes`](FurtherModes.md#textfiltermodes) setting.
 ```cpp
 int tagIntermediateResult::tfmIndex
 ```
@@ -132,7 +132,7 @@ LocalizationMode tagIntermediateResult::localizationMode
 ```
 
 ### lmIndex
-The array index of current used [`LocalizationMode`]({{ site.manual_interface_enum }}LocalizationMode.html) in the [`localizationModes`]FurtherModes.md#localizationmodes) setting.
+The array index of current used [`LocalizationMode`]({{ site.manual_interface_enum }}LocalizationMode.html) in the [`localizationModes`](FurtherModes.md#localizationmodes) setting.
 ```cpp
 int tagIntermediateResult::lmIndex
 ```
@@ -144,7 +144,7 @@ BinarizationMode tagIntermediateResult::binarizationMode
 ```
 
 ### bmIndex
-The array index of current used [`BinarizationMode`]({{ site.manual_interface_enum }}BinarizationMode.html) in the [`binarizationModes`]FurtherModes.md#binarizationmodes) setting.
+The array index of current used [`BinarizationMode`]({{ site.manual_interface_enum }}BinarizationMode.html) in the [`binarizationModes`](FurtherModes.md#binarizationmodes) setting.
 ```cpp
 int tagIntermediateResult::bmIndex
 ```
@@ -156,7 +156,7 @@ ImagePreprocessingMode tagIntermediateResult::imagePreprocessingMode
 ```
 
 ### ipmIndex
-The array index of current used [`ImagePreprocessingMode`]({{ site.manual_interface_enum }}ImagePreprocessingMode.html) in [`imagePreprocessingModes`]FurtherModes.md#imagepreprocessingmodes) setting.
+The array index of current used [`ImagePreprocessingMode`]({{ site.manual_interface_enum }}ImagePreprocessingMode.html) in [`imagePreprocessingModes`](FurtherModes.md#imagepreprocessingmodes) setting.
 ```cpp
 int tagIntermediateResult::ipmIndex
 ```
@@ -174,7 +174,7 @@ RegionPredetectionMode tagIntermediateResult::regionPredetectionMode
 ```
 
 ### rpmIndex
-The array index of current used [`RegionPredetectionMode`]({{ site.manual_interface_enum }}RegionPredetectionMode.html) in the [`regionPredetectionModes`]FurtherModes.md#regionpredetectionmodes) setting.
+The array index of current used [`RegionPredetectionMode`]({{ site.manual_interface_enum }}RegionPredetectionMode.html) in the [`regionPredetectionModes`](FurtherModes.md#regionpredetectionmodes) setting.
 ```cpp
 int tagIntermediateResult::rpmIndex
 ```
@@ -186,7 +186,7 @@ GrayscaleTransformationMode tagIntermediateResult::grayscaleTransformationMode
 ```
 
 ### gtmIndex
-The array index of current used [`GrayscaleTransformationMode`]({{ site.manual_interface_enum }}GrayscaleTransformationMode.html) in the [`grayscaleTransformationModes`]FurtherModes.md#grayscaletransformationmodes) setting.
+The array index of current used [`GrayscaleTransformationMode`]({{ site.manual_interface_enum }}GrayscaleTransformationMode.html) in the [`grayscaleTransformationModes`](FurtherModes.md#grayscaletransformationmodes) setting.
 ```cpp
 int tagIntermediateResult::gtmIndex
 ```
@@ -198,7 +198,7 @@ ColourConversionMode tagIntermediateResult::colourConversionMode
 ```
 
 ### cicmIndex
-The array index of current used [`ColourConversionMode`]({{ site.manual_interface_enum }}ColourConversionMode.html) in the [`colourConversionModes`]FurtherModes.md#colourconversionmodes) setting.
+The array index of current used [`ColourConversionMode`]({{ site.manual_interface_enum }}ColourConversionMode.html) in the [`colourConversionModes`](FurtherModes.md#colourconversionmodes) setting.
 ```cpp
 int tagIntermediateResult::cicmIndex
 ```
@@ -210,7 +210,7 @@ ColourClusteringMode tagIntermediateResult::colourClusteringMode
 ```
 
 ### ccmIndex
-The array index of current used [`ColourClusteringMode`]({{ site.manual_interface_enum }}ColourClusteringMode.html) in the [`colourClusteringModes`]FurtherModes.md#colourclusteringmodes) setting.
+The array index of current used [`ColourClusteringMode`]({{ site.manual_interface_enum }}ColourClusteringMode.html) in the [`colourClusteringModes`](FurtherModes.md#colourclusteringmodes) setting.
 ```cpp
 int tagIntermediateResult::ccmIndex
 ```
