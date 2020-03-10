@@ -5,6 +5,7 @@ Stores an x- and y-coordinate pair in two-dimensional space.
 
 ```cpp
 typedef struct tagDBRPoint  DBRPoint
+typedef struct tagDBRPoint*  PDBRPoint
 ``` 
 
 ---
