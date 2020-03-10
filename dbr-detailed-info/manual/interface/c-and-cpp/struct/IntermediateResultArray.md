@@ -1,5 +1,5 @@
 # IntermediateResultArray
-  
+Stores the intermediate result array.
 
 ## Typedefs
 
