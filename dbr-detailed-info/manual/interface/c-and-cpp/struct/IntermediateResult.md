@@ -43,7 +43,7 @@ typedef struct tagIntermediateResult*  PIntermediateResult
 | [`cicmIndex`](#cicmindex) | *int* |
 | [`colourClusteringMode`](#colourclusteringmode) | [`ColourClusteringMode`]({{ site.manual_interface_enum }}ColourClusteringMode.html) |
 | [`ccmIndex`](#ccmindex) | *int* |
-| [`scaleDownRatio`](#scaleDownratio) | *int* |
+| [`scaleDownRatio`](#scaledownratio) | *int* |
 | [`frameId`](#frameid) | *int* |
 | [`reserved`](#reserved) | *char\[64\]* |
 
