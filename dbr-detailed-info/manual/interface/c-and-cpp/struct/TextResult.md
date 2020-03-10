@@ -5,6 +5,7 @@ Stores the text result.
 
 ```cpp
 typedef struct tagTextResult  TextResult
+typedef struct tagTextResult*  PTextResult
 ```  
   
 ---
