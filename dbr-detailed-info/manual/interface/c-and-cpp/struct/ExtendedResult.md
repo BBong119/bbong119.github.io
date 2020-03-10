@@ -22,7 +22,7 @@ typedef struct tagExtendedResult  ExtendedResult
 | [`confidence`](#confiidence) | *int* | 
 | [`bytes`](#bytes) | *unsigned char \** | 
 | [`bytesLength`](#byteslength) | *int* | 
-| `accompanyingTextBytes`(#accompanyingtextbytes) | *unsigned char \** | 
+| [`accompanyingTextBytes`](#accompanyingtextbytes) | *unsigned char \** | 
 | [`accompanyingTextBytesLength`](#accompanyingtextbyteslength) | *int* | 
 | [`deformation`](#deformation) | *int* | 
 | [`detailedResult`](#detailedresult) | *void \** |
