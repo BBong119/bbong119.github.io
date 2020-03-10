@@ -20,7 +20,7 @@ typedef struct tagExtendedResult*  PExtendedResult
 | [`barcodeFormatString`](#barcodeformatstring) | *const char \** |
 | [`barcodeFormat_2`](#barcodeformat_2) | [`BarcodeFormat_2`]({{ site.manual_interface_enum }}BarcodeFormat_2.html) |
 | [`barcodeFormatString_2`](#barcodeformatstring_2) | *const char \** | 
-| [`confidence`](#confiidence) | *int* | 
+| [`confidence`](#confidence) | *int* | 
 | [`bytes`](#bytes) | *unsigned char \** | 
 | [`bytesLength`](#byteslength) | *int* | 
 | [`accompanyingTextBytes`](#accompanyingtextbytes) | *unsigned char \** | 
