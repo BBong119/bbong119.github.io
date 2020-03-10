@@ -122,7 +122,7 @@ Sets the formats of the barcode in BarcodeFormat group 2 to be read. Barcode for
 int tagPublicRuntimeSettings::barcodeFormatIds_2
 ```
 - **Value range**   
-    A combined value of [`BarcodeFormat_2 `]({{ site.manual_interface_enum }}BarcodeFormat_2 .html) Enumeration items
+    A combined value of [`BarcodeFormat_2`]({{ site.manual_interface_enum }}BarcodeFormat_2.html) Enumeration items
       
 - **Default value**   
     `BF2_NULL`
