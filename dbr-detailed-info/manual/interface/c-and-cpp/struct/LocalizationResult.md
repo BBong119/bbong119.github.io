@@ -4,7 +4,8 @@ Stores the localization result.
 ## Typedefs
 
 ```cpp
-typedef struct tagLocalizationResult 	LocalizationResult
+typedef struct tagLocalizationResult  LocalizationResult
+typedef struct tagLocalizationResult*  PLocalizationResult
 ```  
   
 ---
