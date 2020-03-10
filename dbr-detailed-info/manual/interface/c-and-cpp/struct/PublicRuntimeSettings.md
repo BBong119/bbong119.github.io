@@ -180,41 +180,170 @@ BinarizationMode tagPublicRuntimeSettings::binarizationModes[8]
 
 
 ### localizationModes
+Sets the mode and priority for localization algorithms.
+```cpp
+LocalizationMode tagPublicRuntimeSettings::localizationModes[8]
+```
+- **Value range**   
+    Each array item can be any one of the [`LocalizationMode`]({{ site.manual_interface_enum }}LocalizationMode.html) Enumeration items.
+      
+- **Default value**   
+    `[LM_CONNECTED_BLOCKS, LM_SCAN_DIRECTLY, LM_STATISTICS, LM_LINES, LM_SKIP, LM_SKIP, LM_SKIP, LM_SKIP]`
+    
+- **Remark**   
+    The array index represents the priority of the item. The smaller index is, the higher priority is.
+    
+- **See also**   
+    [`LocalizationMode`]({{ site.manual_interface_enum }}LocalizationMode.html)   
 
 
 ### furtherModes
-
+Sets further modes.
+```cpp
+FurtherModes tagPublicRuntimeSettings::furtherModes
+```
 
 ### deblurLevel
-
+Sets the degree of blurriness of the barcode.
+```cpp
+int tagPublicRuntimeSettings::deblurLevel
+```
+- **Value range**   
+    [0, 9]
+      
+- **Default value**   
+    9
+    
+- **Remark**   
+    If you have a blurry image, you can set this property to a larger value. The higher the value set, the more effort the library will spend to decode images, but it may also slow down the recognition process.
 
 ### intermediateResultTypes
-
+Sets which types of intermediate result to be kept for further reference. Intermediate result types can be combined.
+```cpp
+int tagPublicRuntimeSettings::intermediateResultTypes
+```
+- **Value range**   
+    A combined value of [`IntermediateResultType`]({{ site.manual_interface_enum }}IntermediateResultType.html) Enumeration items
+      
+- **Default value**   
+    0
+    
+- **See also**   
+    [`IntermediateResultType`]({{ site.manual_interface_enum }}IntermediateResultType.html) 
 
 ### intermediateResultSavingMode
-
+Sets the mode for saving intermediate result.
+```cpp
+IntermediateResultSavingMode tagPublicRuntimeSettings::intermediateResultSavingMode
+```
+- **Value range**   
+    A value of [`IntermediateResultSavingMode`]({{ site.manual_interface_enum }}IntermediateResultSavingMode.html) Enumeration items
+      
+- **Default value**   
+    IRSM_MEMORY
+    
+- **See also**   
+    [`IntermediateResultSavingMode`]({{ site.manual_interface_enum }}IntermediateResultSavingMode.html)
 
 ### resultCoordinateType
+Specifies the format for the coordinates returned.
+```cpp
+ResultCoordinateType tagPublicRuntimeSettings::resultCoordinateType
+```
+- **Value range**   
+    Any one of the [`ResultCoordinateType`]({{ site.manual_interface_enum }}ResultCoordinateType.html) Enumeration items
+      
+- **Default value**   
+    IRSM_MEMORY
+    
+- **See also**   
+    [`ResultCoordinateType`]({{ site.manual_interface_enum }}ResultCoordinateType.html)
 
 
 ### textResultOrderModes
-
+Sets the mode and priority for the order of the text results returned.
+```cpp
+TextResultOrderMode tagPublicRuntimeSettings::textResultOrderModes[8]
+```
+- **Value range**   
+    Each array item can be any one of the [`TextResultOrderMode`]({{ site.manual_interface_enum }}TextResultOrderMode.html) Enumeration items.
+      
+- **Default value**   
+    `[TROM_CONFIDENCE, TROM_POSITION, TROM_FORMAT, TROM_SKIP, TROM_SKIP, TROM_SKIP, TROM_SKIP, TROM_SKIP]`
+    
+- **Remark**   
+    The array index represents the priority of the item. The smaller the index, the higher the priority.   
+ 
+- **See also**    
+    [`TextResultOrderMode`]({{ site.manual_interface_enum }}TextResultOrderMode.html)
 
 ### returnBarcodeZoneClarity
-
+Sets whether or not to return the clarity of the barcode zone.
+```cpp
+int tagPublicRuntimeSettings::returnBarcodeZoneClarity
+```
+- **Value range**   
+    [0,1]
+      
+- **Default value**   
+    0
+    
+- **Remark**   
+    0: Do not return the clarity of the barcode zone; 1: Return the clarity of the batcode zone.  
 
 ### region
-
+Sets the region definition including regionTop, regionLeft, regionRight, regionBottom, and regionMeasuredByPercentage.
+```cpp
+RegionDefinition tagPublicRuntimeSettings::region
+```
 
 ### minBarcodeTextLength
-
+Sets the range of barcode text length for barcodes search.
+```cpp
+int tagPublicRuntimeSettings::minBarcodeTextLength
+```
+- **Value range**   
+    [0, 0x7fffffff]
+      
+- **Default value**   
+    0
+    
+- **Remark**   
+    0: means no limitation on the barcode text length. 
 
 ### minResultConfidence
-
+The minimum confidence of the result.
+```cpp
+int tagPublicRuntimeSettings::minResultConfidence
+```
+- **Value range**   
+    [0, 100]
+      
+- **Default value**   
+    0
+    
+- **Remark**   
+    0: means no limitation on the result confidence.
 
 ### scaleUpModes
-
+Sets the mode and priority to control the sampling methods of scale-up for linear barcode with small module sizes.
+```cpp
+ScaleUpMode tagPublicRuntimeSettings::scaleUpModes[8]
+```
+- **Value range**   
+    Each array item can be any one of the [`ScaleUpMode`]({{ site.manual_interface_enum }}ScaleUpMode.html) Enumeration items.
+      
+- **Default value**   
+    `[SUM_AUTO, SUM_SKIP, SUM_SKIP, SUM_SKIP, SUM_SKIP, SUM_SKIP, SUM_SKIP, SUM_SKIP]`
+    
+- **Remark**   
+    The array index represents the priority of the item. The smaller the index, the higher the priority.   
+ 
+- **See also**    
+    [`ScaleUpMode`]({{ site.manual_interface_enum }}ScaleUpMode.html)
 
 ### reserved
-
-
+Reserved memory for struct. The length of this array indicates the size of the memory reserved for this struct.
+```cpp
+char tagPublicRuntimeSettings::reserved[84]
+```
