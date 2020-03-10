@@ -16,7 +16,7 @@ typedef struct tagTextResultArray*  PTextResultArray
 | Attribute | Type |
 |---------- | ---- |
 | [`resultsCount`](#resultscount) | *int* |
-| [`results`](#results) | [`PTextResult`](TextRsult.md)\* |
+| [`results`](#results) | [`PTextResult`](TextResult.md)\* |
 
 
 ### resultCount
