@@ -63,5 +63,5 @@ int tagQRCodeDetails::model
 Reserved memory for the struct. The length of this array indicates the size of the memory reserved for this struct.
 ```cpp
 char tagQRCodeDetails::reserved[32]
-``
+```
 
