@@ -22,10 +22,10 @@ typedef struct tagTextResult*  PTextResult
 | [`barcodeText`](#barcodetext) | *const char \** |
 | [`barcodeBytes`](#barcodebytes) | *unsigned char \** |
 | [`barcodeBytesLength`](#barcodebyteslength) | *int* |
-| [`localizationResult`](#localizationresult) | [`LocalizationResult`](LocalizationResult.md) |
+| [`localizationResult`](#localizationresult) | [`LocalizationResult`](LocalizationResult.md)\* |
 | [`detailedResult`](#detailedresult) | *void \** |
 | [`resultsCount`](#resultscount) | *int* |
-| [`results`](#results) | [`PExtendedResult`](ExtendedResult.md) |
+| [`results`](#results) | [`PExtendedResult`](ExtendedResult.md)\* |
 | [`reserved`](#reserved) | *char\[56\]* |
 
 
