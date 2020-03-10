@@ -37,7 +37,7 @@ typedef struct tagIntermediateResult*  PIntermediateResult
 | [`roiId`](#roiid) | *int* |
 | [`regionPredetectionMode`](#regionpredetectionmode) | [`RegionPredetectionMode`]({{ site.manual_interface_enum }}RegionPredetectionMode.html) |
 | [`rpmIndex`](#rpmindex) | *int* |
-| [`grayscaleTransformationMode`](#grayscaletransformationmode) | [`GrayscaleTransformationMode`]({{ site.manual_interface_enum }}}GrayscaleTransformationMode .html) |
+| [`grayscaleTransformationMode`](#grayscaletransformationmode) | [`GrayscaleTransformationMode`]({{ site.manual_interface_enum }}}GrayscaleTransformationMode.html) |
 | [`gtmIndex`](#gtmindex) | *int* |
 | [`colourConversionMode`](#colourconversionmode) | [`ColourConversionMode`]({{ site.manual_interface_enum }}ColourConversionMode.html) |
 | [`cicmIndex`](#cicmindex) | *int* |
