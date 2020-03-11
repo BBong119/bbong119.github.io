@@ -1,1 +1,16 @@
+# Mode Argument List
 
+- [`AccompanyingTextRecognitionModes`]
+- [`BarcodeColourModes`]
+- [`BinarizationModes`]
+- [`ColourClusteringModes`]
+- [`ColourConversionModes`]
+- [`DeformationResistingModes`]
+- [`ImagePreprocessingModes`]
+- [`IntermediateResultSavingMode`]
+- [`LocalizationModes`]
+- [`RegionPredetectionModes`]
+- [`ScaleUpModes`]
+- [`TextAssistedCorrectionMode`]
+- [`TextFilterModes`]
+- [`TextureDetectionModes`]
