@@ -19,6 +19,7 @@ securityIssues: /dbr-basic-info/security-issues/
 manual: /dbr-detailed-info/manual/
 manual_interface: /dbr-detailed-info/manual/interface/
 manual_interface_enum: /dbr-detailed-info/manual/interface/enumeration/
+manual_interface_argument: /dbr-detailed-info/manual/interface/arguments/
 manual_interface_c_and_cpp: /dbr-detailed-info/manual/interface/c-and-cpp/
 manual_interface_struct: /dbr-detailed-info/manual/interface/c-and-cpp/struct/
 manual_interface_c: /dbr-detailed-info/manual/interface/c-and-cpp/c/
