@@ -4,7 +4,7 @@
 - [`BarcodeColourModes`](BarcodeColourModes.md)
 - [`BinarizationModes`](BinarizationModes.md)
 - [`ColourClusteringModes`](ColourClusteringModes.md)
-- [`ColourConversionModes`]ColourConversionModes.md)
+- [`ColourConversionModes`](ColourConversionModes.md)
 - [`DeformationResistingModes`](DeformationResistingModes.md)
 - [`ImagePreprocessingModes`](ImagePreprocessingModes.md)
 - [`IntermediateResultSavingMode`](IntermediateResultSavingMode.md)
