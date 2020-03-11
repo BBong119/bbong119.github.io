@@ -16,7 +16,6 @@ Describes the scale up mode.
 | ------ | ----- | ----------- |
 | SUM_SKIP | 0x00 | Skip the scale-up process. |
 | SUM_AUTO | 0x01 | The library chooses an interpolation method automatically to scale up. |
-| SUM_LINEAR_INTERPOLATION | 0x02 | 	
-Scales up using the linear interpolation method. Check [Arguments of `ScaleUpModes`]({{ site.manual_interface_argument}}ScaleUpModes.html) for available argument settings. |
+| SUM_LINEAR_INTERPOLATION | 0x02 | Scales up using the linear interpolation method. Check [Arguments of `ScaleUpModes`]({{ site.manual_interface_argument}}ScaleUpModes.html) for available argument settings. |
 | SUM_NEAREST_NEIGHBOUR_INTERPOLATION | 0x04 | Scales up using the nearest-neighbour interpolation method. Check [Arguments of `ScaleUpModes`]({{ site.manual_interface_argument}}ScaleUpModes.html) for available argument settings. |
 
