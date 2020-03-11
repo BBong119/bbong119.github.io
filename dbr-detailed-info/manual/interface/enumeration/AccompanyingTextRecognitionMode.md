@@ -1,4 +1,4 @@
-# AccompanyingTextRecognitionMode
+# AccompanyingTextRecognitionMode Enumeration
 Describes the accompanying text recognition mode.   
 
 
