@@ -6,8 +6,8 @@ Describes the colour clustering mode.
    
 | Language | Declaration |
 | -------- | ----------- |
-| C / C++ | `` |
-| .Net | `` |
+| C / C++ | `enum ColourClusteringMode` |
+| .Net | `enum Dynamsoft.Barcode.EnumColourClusteringMode` |
 
 
 ## Members
