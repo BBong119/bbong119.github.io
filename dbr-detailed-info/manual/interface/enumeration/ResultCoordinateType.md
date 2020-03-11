@@ -1,5 +1,5 @@
 # ResultCoordinateType Enumeration
-
+Describes the result coordinate type.
 
 
 ## Declarations
