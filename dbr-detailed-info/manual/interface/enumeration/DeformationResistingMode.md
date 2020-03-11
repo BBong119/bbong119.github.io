@@ -6,7 +6,7 @@ Describes the deformation resisting mode.
    
 | Language | Declaration |
 | -------- | ----------- |
-| C / C++ | `` |
+| C / C++ | `enum DeformationResistingMode` |
 | .Net | `enum Dynamsoft.Barcode.EnumDeformationResistingMode` |
 
 
