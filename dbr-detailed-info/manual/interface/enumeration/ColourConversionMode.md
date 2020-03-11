@@ -15,4 +15,4 @@
 | Member | Value | Description |
 | ------ | ----- | ----------- |
 | CICM_SKIP  | 0x00 |  |
-| CICM_GENERAL  | 0x01 | Converts a colour image to a grayscale image using the general algorithm. Check [Arguments of `ColourConversionModes`]({{ site.manual_interface_argument}}ColourConversionModes.html) for available argument settings. |
+| CICM_GENERAL  | 0x01 | Converts a colour image to a grayscale image using the general algorithm. Check arguments of [`ColourConversionModes`]({{ site.manual_interface_argument}}ColourConversionModes.html) for available argument settings. |
