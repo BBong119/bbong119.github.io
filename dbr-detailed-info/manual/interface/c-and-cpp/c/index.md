@@ -162,7 +162,7 @@ sourceCodeUrl: https://github.com/BBong119/bbong119.github.io/blob/master/dbr-de
 - [`LocalizationMode`]({{ site.manual_interface_enum}}LocalizationMode.html)	
 - [`QRCodeErrorCorrectionLevel`]({{ site.manual_interface_enum}}QRCodeErrorCorrectionLevel.html)	
 - [`RegionPredetectionMode`]({{ site.manual_interface_enum}}RegionPredetectionMode.html)	
-- [`ResultCoordinateType`]({{ site.manual_interface_enum}}ResultCoordinateTypehtml)	
+- [`ResultCoordinateType`]({{ site.manual_interface_enum}}ResultCoordinateType.html)	
 - [`ResultType`]({{ site.manual_interface_enum}}ResultType.html)	
 - [`ScaleUpMode`]({{ site.manual_interface_enum}}ScaleUpMode.html)	
 - [`TerminatePhase`]({{ site.manual_interface_enum}}TerminatePhase.html)	
