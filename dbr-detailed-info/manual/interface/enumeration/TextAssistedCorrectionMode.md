@@ -15,8 +15,8 @@ Describes the text assisted correction mode.
 | ------ | ----- | ----------- |
 | TACM_SKIP | 0x00 | Skips the text assisted correction. |
 | TACM_AUTO | 0x01 | **Not supported yet.** |
-| TACM_VERIFYING | 0x02 | Uses the accompanying text to verify the decoded barcode result. Check [Arguments of `TextAssistedCorrectionMode`]({{ site.manual_interface_argument}}TextAssistedCorrectionMode.html) for available argument settings. |
-| TACM_VERIFYING_PATCHING | 0x04 | Uses the accompanying text to verify and patch the decoded barcode result. Check [Arguments of `TextAssistedCorrectionMode`]({{ site.manual_interface_argument}}TextAssistedCorrectionMode.html) for available argument settings. |
+| TACM_VERIFYING | 0x02 | Uses the accompanying text to verify the decoded barcode result. Check arguments of [`TextAssistedCorrectionMode`]({{ site.manual_interface_argument}}TextAssistedCorrectionMode.html) for available argument settings. |
+| TACM_VERIFYING_PATCHING | 0x04 | Uses the accompanying text to verify and patch the decoded barcode result. Check arguments of [`TextAssistedCorrectionMode`]({{ site.manual_interface_argument}}TextAssistedCorrectionMode.html) for available argument settings. |
 
 
 
