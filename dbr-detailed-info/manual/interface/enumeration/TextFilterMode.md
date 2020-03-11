@@ -15,6 +15,6 @@ Describes the text filter mode.
 | ------ | ----- | ----------- |
 | TFM_SKIP | 0x00 | Skip the text filtering. |
 | TFM_AUTO | 0x01 | **Not supported yet.** |
-| TFM_GENERAL_CONTOUR | 0x02 | Filters text using the general algorithm based on contour. Check [Arguments of `TextFilterModes`]({{ site.manual_interface_argument}}TextFilterModes.html) for available argument settings. |
+| TFM_GENERAL_CONTOUR | 0x02 | Filters text using the general algorithm based on contour. Check arguments of [`TextFilterModes`]({{ site.manual_interface_argument}}TextFilterModes.html) for available argument settings. |
 
 
