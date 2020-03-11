@@ -141,7 +141,7 @@ sourceCodeUrl: https://github.com/BBong119/bbong119.github.io/blob/master/dbr-de
 - [`TextResult`]({{ site.manual_interface_struct}}TextResult.html)		
 - [`TextResultArray`]({{ site.manual_interface_struct}}TextResultArray.html)	
 
-## Enumerations
+## [Enumerations]({{ site.manual_interface_enum}})
 - [`AccompanyingTextRecognitionMode`]({{ site.manual_interface_enum}}AccompanyingTextRecognitionMode.html)	
 - [`BarcodeColourMode`]({{ site.manual_interface_enum}}BarcodeColourMode.html)	
 - [`BarcodeComplementMode`]({{ site.manual_interface_enum}}BarcodeComplementMode.html)	
