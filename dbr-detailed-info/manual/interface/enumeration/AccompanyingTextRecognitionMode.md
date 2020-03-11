@@ -15,4 +15,4 @@ Describes the accompanying text recognition mode.
 | Member | Value | Description |
 | ------ | ----- | ----------- |
 | ATRM_SKIP | 0x00 | Skips the accompanying text recognition. |
-| ATRM_GENERAL  | 0x01 | Recognizes accompanying texts using the general algorithm. Check [Arguments of `AccompanyingTextRecognitionModes`]({{ site.manual_interface_argument}}AccompanyingTextRecognitionModes.html) for available argument settings. |
+| ATRM_GENERAL  | 0x01 | Recognizes accompanying texts using the general algorithm. Check Arguments of -[`AccompanyingTextRecognitionModes`]({{ site.manual_interface_argument}}AccompanyingTextRecognitionModes.html) for available argument settings. |
