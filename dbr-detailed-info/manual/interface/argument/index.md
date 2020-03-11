@@ -1,16 +1,16 @@
 # Mode Argument List
 
-- [`AccompanyingTextRecognitionModes`]
-- [`BarcodeColourModes`]
-- [`BinarizationModes`]
-- [`ColourClusteringModes`]
-- [`ColourConversionModes`]
-- [`DeformationResistingModes`]
-- [`ImagePreprocessingModes`]
-- [`IntermediateResultSavingMode`]
-- [`LocalizationModes`]
-- [`RegionPredetectionModes`]
-- [`ScaleUpModes`]
-- [`TextAssistedCorrectionMode`]
-- [`TextFilterModes`]
-- [`TextureDetectionModes`]
+- [`AccompanyingTextRecognitionModes`](AccompanyingTextRecognitionModes.md)
+- [`BarcodeColourModes`](BarcodeColourModes.md)
+- [`BinarizationModes`](BinarizationModes.md)
+- [`ColourClusteringModes`](ColourClusteringModes.md)
+- [`ColourConversionModes`]ColourConversionModes.md)
+- [`DeformationResistingModes`](DeformationResistingModes.md)
+- [`ImagePreprocessingModes`](ImagePreprocessingModes.md)
+- [`IntermediateResultSavingMode`](IntermediateResultSavingMode.md)
+- [`LocalizationModes`](LocalizationModes.md)
+- [`RegionPredetectionModes`](RegionPredetectionModes.md)
+- [`ScaleUpModes`](ScaleUpModes.md)
+- [`TextAssistedCorrectionMode`](TextAssistedCorrectionMode.md)
+- [`TextFilterModes`](TextFilterModes.md)
+- [`TextureDetectionModes`](TextureDetectionModes.md)
