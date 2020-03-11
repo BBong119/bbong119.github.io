@@ -16,4 +16,4 @@ Describes the deformation resisting mode.
 | ------ | ----- | ----------- |
 | DRM_SKIP | 0x00 | Skip the deformation resisting. |
 | DRM_AUTO  | 0x01 | **Not supported yet.** |
-| DRM_GENERAL | 0x02 | Resists deformation using the general algorithm. Check [Arguments of `DeformationResistingModes`]({{ site.manual_interface_argument}}DeformationResistingModes.html) for available argument settings.|
+| DRM_GENERAL | 0x02 | Resists deformation using the general algorithm. Check arguments of [`DeformationResistingModes`]({{ site.manual_interface_argument}}DeformationResistingModes.html) for available argument settings.|
