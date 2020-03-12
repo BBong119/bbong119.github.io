@@ -4,7 +4,8 @@
 - [`RegionLeft`](#regionleft)
 - [`RegionRight`](#regionright)
 - [`RegionTop`](#regiontop)
-
+  
+    
 If RegionLeft, RegionTop, RegionRight and RegionBottom are all equal to 0, the accompanying text zone will be detected automatically by the SDK.   
    
      
