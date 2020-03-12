@@ -20,7 +20,8 @@ Sets the horizontal block size for the binarization process.
    0  
  
 - **Remark**   
-   Valid when [`BinarizationMode`]({{ site.manual_interface_enum }}BinarizationMode.html) set to `BM_LOCAL_BLOCK`.  
+   Valid when [`BinarizationMode`]({{ site.manual_interface_enum }}BinarizationMode.html) set to `BM_LOCAL_BLOCK`.   
+   
    0: the block size used for binarization will be set to a value which is calculated automatically.  
    N:  
      - 1 <= N <= 3: the block size used for binarization will be set to 3.   
