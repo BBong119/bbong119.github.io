@@ -1,7 +1,5 @@
 ## BarcodeColourModes
 
- 
-**Arguments Name**
 | Argument Name | Valid Modes |
 | ------------- | ----------- |
 | [`LightReflection`](#lightreflection) | `BICM_DARK_LIGHT_MIXED`<br>`BICM_DARK_ON_DARK`<br>`BICM_DARK_ON_LIGHT`<br>`BICM_LIGHT_ON_DARK`<br>`BICM_LIGHT_ON_LIGHT`<br>`BICM_DARK_ON_LIGHT_DARK_SURROUNDING` |
