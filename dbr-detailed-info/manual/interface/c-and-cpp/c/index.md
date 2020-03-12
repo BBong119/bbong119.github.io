@@ -11,6 +11,9 @@ sourceCodeUrl: https://github.com/BBong119/bbong119.github.io/blob/master/dbr-de
 - [Enumerations](#enumerations)  
 
 
+&nbsp; 
+
+
 ## Methods
 
 ### Initialize and Destroy
@@ -19,6 +22,9 @@ sourceCodeUrl: https://github.com/BBong119/bbong119.github.io/blob/master/dbr-de
   |----------------------|-------------|
   | [`DBR_CreateInstance`](methods/DBR_CreateInstance.md) | Create an instance of Dynamsoft Barcode Reader. |
   | [`DBR_DestroyInstance`](methods/DBR_DestroyInstance.md) | Destroy the instance of Dynamsoft Barcode Reader. |
+
+
+&nbsp; 
 
 
 ### Decode
@@ -30,6 +36,10 @@ sourceCodeUrl: https://github.com/BBong119/bbong119.github.io/blob/master/dbr-de
   | [`DBR_DecodeBuffer`](methods/DBR_DecodeBuffer.md) | Decode barcodes from raw buffer. |
   | [`DBR_DecodeBase64String`](methods/DBR_DecodeBase64String.md) | Decode barcodes from a base64 encoded string. |
   | [`DBR_DecodeDIB`](methods/DBR_DecodeDIB.md) | Decode barcode from a handle of device-independent bitmap (DIB). | 
+
+
+&nbsp; 
+
 
 ### Parameter and Runtime Settings
 
@@ -59,6 +69,8 @@ sourceCodeUrl: https://github.com/BBong119/bbong119.github.io/blob/master/dbr-de
   | [`DBR_FreeSettingsString`](methods/DBR_FreeSettingsString.md) | Free memory allocated for runtime settings string. |
 
 
+&nbsp; 
+
 
 ### License
    
@@ -71,6 +83,10 @@ sourceCodeUrl: https://github.com/BBong119/bbong119.github.io/blob/master/dbr-de
   | [`DBR_OutputLicenseToStringPtr`](methods/DBR_OutputLicenseToStringPtr.md) | Output the license content to a string from the license server. |
   | [`DBR_FreeLicenseString`](methods/DBR_FreeLicenseString.md) | Free memory allocated for the license string. |
 
+
+&nbsp; 
+
+
 ### Result
    
   | Method               | Description |
@@ -81,12 +97,18 @@ sourceCodeUrl: https://github.com/BBong119/bbong119.github.io/blob/master/dbr-de
   | [`DBR_FreeIntermediateResults`](methods/DBR_FreeIntermediateResults.md) | Free memory allocated for the intermediate results. |
 
 
+&nbsp; 
+
+
 ### Status Retrieval
   
   | Method               | Description |
   |----------------------|-------------|
   | [`DBR_GetErrorString`](methods/DBR_GetErrorString.md) | Get error message by error code. |
   | [`DBR_GetVersion`](methods/DBR_GetVersion.md) | Get version information of SDK. |
+
+
+&nbsp; 
 
 
 ### Video
@@ -119,6 +141,9 @@ sourceCodeUrl: https://github.com/BBong119/bbong119.github.io/blob/master/dbr-de
   |----------------------|-------------|
   | [`DBR_GetLengthOfFrameQueue`](methods/DBR_GetLengthOfFrameQueue.md) | Get length of current inner frame queue. |
   
+
+&nbsp; 
+
   
 ## [Structs]({{ site.manual_interface_struct}})
 - [`AztecDetails`]({{ site.manual_interface_struct}}AztecDetails.html)	
@@ -142,6 +167,10 @@ sourceCodeUrl: https://github.com/BBong119/bbong119.github.io/blob/master/dbr-de
 - [`SamplingImageData`]({{ site.manual_interface_struct}}SamplingImageData.html)		
 - [`TextResult`]({{ site.manual_interface_struct}}TextResult.html)		
 - [`TextResultArray`]({{ site.manual_interface_struct}}TextResultArray.html)	
+
+
+&nbsp; 
+
 
 ## [Enumerations]({{ site.manual_interface_enum}})
 - [`AccompanyingTextRecognitionMode`]({{ site.manual_interface_enum}}AccompanyingTextRecognitionMode.html)	
