@@ -1,17 +1,20 @@
 ## BinarizationModes
  
-**Arguments Name**
-- [`BlockSizeX`](#blocksizex)
-- [`BlockSizeY`](#blocksizey)
-- [`EnableFillBinaryVacancy`](#enablefillbinaryvacancy)
-- [`ImagePreprocessingModesIndex`](#imagepreprocessingmodesindex)
-- [`ThreshValueCoefficient`](#threshvaluecoefficient)
+| Argument Name | Valid Modes |
+| ------------- | ----------- | 
+| [`BlockSizeX`](#blocksizex) | `BM_LOCAL_BLOCK` |
+| [`BlockSizeY`](#blocksizey) | `BM_LOCAL_BLOCK` |
+| [`EnableFillBinaryVacancy`](#enablefillbinaryvacancy) | `BM_LOCAL_BLOCK` |
+| [`ImagePreprocessingModesIndex`](#imagepreprocessingmodesindex) | `BM_LOCAL_BLOCK` |
+| [`ThreshValueCoefficient`](#threshvaluecoefficient) | `BM_LOCAL_BLOCK` |
 
+**See also**
+[`BinarizationMode`]({{ site.manual_interface_enum }}BinarizationMode.html)
 
 ---
 
 ### BlockSizeX
-Sets the horizontal block size for the binarization process. Valid when [`BinarizationMode`]({{ site.manual_interface_enum }}BinarizationMode.html) set to `BM_LOCAL_BLOCK`.  
+Sets the horizontal block size for the binarization process. 
 
 - **Value range**   
    [0, 1000]   
@@ -30,7 +33,7 @@ Sets the horizontal block size for the binarization process. Valid when [`Binari
 &nbsp; 
 
 ### BlockSizeY
-Sets the vertical block size for the binarization process. Valid when [`BinarizationMode`]({{ site.manual_interface_enum }}BinarizationMode.html) set to `BM_LOCAL_BLOCK`.  
+Sets the vertical block size for the binarization process. 
 
 - **Value range**   
    [0, 1000]   
@@ -49,7 +52,7 @@ Sets the vertical block size for the binarization process. Valid when [`Binariza
 &nbsp; 
 
 ### EnableFillBinaryVacancy
-Sets whether to enable binary vacancy filling. Valid when [`BinarizationMode`]({{ site.manual_interface_enum }}BinarizationMode.html) set to `BM_LOCAL_BLOCK`.     
+Sets whether to enable binary vacancy filling.      
 
 - **Value range**   
    [0, 1]   
