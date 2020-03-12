@@ -6,9 +6,13 @@ sourceCodeUrl: https://github.com/BBong119/bbong119.github.io/blob/master/dbr-de
 
 # Dynamsoft Barcode Reader SDK - C++ API Reference
 
-`CBarcodeReader` -- Decode barcodes.
-- [Methods](#cbarcodereader-methods)
-- [Attributes](#cbarcodereader-protected-attribute)
+- `CBarcodeReader` -- Decode barcodes.  
+   - [Methods](#cbarcodereader-methods)  
+   - [Attributes](#cbarcodereader-protected-attribute)  
+   
+- [Struct](#struct)  
+- [Enumeration](#enumeration)
+
   
 ## CBarcodeReader Methods
 
@@ -134,4 +138,58 @@ sourceCodeUrl: https://github.com/BBong119/bbong119.github.io/blob/master/dbr-de
   | Attribute            | Description |
   |----------------------|-------------|
   | [`m_pBarcodeReader`](CBarcodeReader/attribute/m_pBarcodeReader.md)  | |
+  
+
+## [Structs]({{ site.manual_interface_struct}})
+- [`AztecDetails`]({{ site.manual_interface_struct}}AztecDetails.html)	
+- [`Contour`]({{ site.manual_interface_struct}}Contour.html)	
+- [`DBRPoint`]({{ site.manual_interface_struct}}DBRPoint.html)	
+- [`DataMatrixDetails`]({{ site.manual_interface_struct}}DataMatrixDetails.html)		
+- [`ExtendedResult`]({{ site.manual_interface_struct}}ExtendedResult.html)		
+- [`FrameDecodingParameters`]({{ site.manual_interface_struct}}FrameDecodingParameters.html)	
+- [`FurtherModes`]({{ site.manual_interface_struct}}FurtherModes.html)		
+- [`ImageData`]({{ site.manual_interface_struct}}ImageData.html)		
+- [`IntermediateResult`]({{ site.manual_interface_struct}}IntermediateResult.html)		
+- [`IntermediateResultArray`]({{ site.manual_interface_struct}}IntermediateResultArray.html)		
+- [`LineSegment`]({{ site.manual_interface_struct}}LineSegment.html)		
+- [`LocalizationResult`]({{ site.manual_interface_struct}}LocalizationResult.html)		
+- [`OneDCodeDetails`]({{ site.manual_interface_struct}}OneDCodeDetails.html)		
+- [`PDF417Details`]({{ site.manual_interface_struct}}PDF417Details.html)		
+- [`PublicRuntimeSettings`]({{ site.manual_interface_struct}}PublicRuntimeSettings.html)		
+- [`QRCodeDetails`]({{ site.manual_interface_struct}}QRCodeDetails.html)		
+- [`RegionDefinition`]({{ site.manual_interface_struct}}RegionDefinition.html)		
+- [`RegionOfInterest`]({{ site.manual_interface_struct}}RegionOfInterest.html)		
+- [`SamplingImageData`]({{ site.manual_interface_struct}}SamplingImageData.html)		
+- [`TextResult`]({{ site.manual_interface_struct}}TextResult.html)		
+- [`TextResultArray`]({{ site.manual_interface_struct}}TextResultArray.html)	
+
+## [Enumerations]({{ site.manual_interface_enum}})
+- [`AccompanyingTextRecognitionMode`]({{ site.manual_interface_enum}}AccompanyingTextRecognitionMode.html)	
+- [`BarcodeColourMode`]({{ site.manual_interface_enum}}BarcodeColourMode.html)	
+- [`BarcodeComplementMode`]({{ site.manual_interface_enum}}BarcodeComplementMode.html)	
+- [`BarcodeFormat`]({{ site.manual_interface_enum}}BarcodeFormat.html)	
+- [`BarcodeFormat_2`]({{ site.manual_interface_enum}}BarcodeFormat_2.html)	
+- [`BinarizationMode`]({{ site.manual_interface_enum}}BinarizationMode.html)	
+- [`ColourClusteringMode`]({{ site.manual_interface_enum}}ColourClusteringMode.html)	
+- [`ColourConversionMode`]({{ site.manual_interface_enum}}ColourConversionMode.html)	
+- [`ConflictMode`]({{ site.manual_interface_enum}}ConflictMode.html)	
+- [`DeformationResistingMode`]({{ site.manual_interface_enum}}DeformationResistingMode.html)	
+- [`DPMCodeReadingMode`]({{ site.manual_interface_enum}}DPMCodeReadingMode.html)	
+- [`GrayscaleTransformationMode`]({{ site.manual_interface_enum}}GrayscaleTransformationMode.html)	
+- [`ImagePixelFormat`]({{ site.manual_interface_enum}}ImagePixelFormat.html)	
+- [`ImagePreprocessingMode`]({{ site.manual_interface_enum}}ImagePreprocessingMode.html)	
+- [`IMResultDataType`]({{ site.manual_interface_enum}}IMResultDataType.html)	
+- [`IntermediateResultSavingMode`]({{ site.manual_interface_enum}}IntermediateResultSavingMode.html)	
+- [`IntermediateResultType`]({{ site.manual_interface_enum}}IntermediateResultType.html)	
+- [`LocalizationMode`]({{ site.manual_interface_enum}}LocalizationMode.html)	
+- [`QRCodeErrorCorrectionLevel`]({{ site.manual_interface_enum}}QRCodeErrorCorrectionLevel.html)	
+- [`RegionPredetectionMode`]({{ site.manual_interface_enum}}RegionPredetectionMode.html)	
+- [`ResultCoordinateType`]({{ site.manual_interface_enum}}ResultCoordinateType.html)	
+- [`ResultType`]({{ site.manual_interface_enum}}ResultType.html)	
+- [`ScaleUpMode`]({{ site.manual_interface_enum}}ScaleUpMode.html)	
+- [`TerminatePhase`]({{ site.manual_interface_enum}}TerminatePhase.html)	
+- [`TextAssistedCorrectionMode`]({{ site.manual_interface_enum}}TextAssistedCorrectionMode.html)	
+- [`TextFilterMode`]({{ site.manual_interface_enum}}TextFilterMode.html)	
+- [`TextResultOrderMode`]({{ site.manual_interface_enum}}TextResultOrderMode.html)	
+- [`TextureDetectionMode`]({{ site.manual_interface_enum}}TextureDetectionMode.html)	
 
