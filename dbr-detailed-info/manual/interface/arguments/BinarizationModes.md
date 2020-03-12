@@ -60,7 +60,8 @@ Sets whether to enable binary vacancy filling.
    1  
  
 - **Remark**   
-   Valid when [`BinarizationMode`]({{ site.manual_interface_enum }}BinarizationMode.html) set to `BM_LOCAL_BLOCK`.  
+   Valid when [`BinarizationMode`]({{ site.manual_interface_enum }}BinarizationMode.html) set to `BM_LOCAL_BLOCK`.   
+   
    0: disable.  
    1: enable.  
    
