@@ -1,7 +1,7 @@
 
 # GetRuntimeSettings
 
-Get current settings and save them into a [`PublicRuntimeSettings`]() struct.
+Get current settings and save them into a [`PublicRuntimeSettings`]({{ site.manual_interface_struct }}PublicRuntimeSettings.html) struct.
 
 
 ```cpp
