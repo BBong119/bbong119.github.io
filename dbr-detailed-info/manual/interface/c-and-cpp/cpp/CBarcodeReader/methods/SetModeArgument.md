@@ -23,7 +23,7 @@ Returns error code. Possible return(s): DBR_OK; DBRERR_SET_MODE_ARGUMENT_ERROR.
 *You can call [`GetErrorString`](GetErrorString.md) to get detailed error message.*
 
 #### Remark
-Check [Mode Argument List]() for available argument settings.
+Check [Mode Argument List]({{ site.manual_interface_argument }}) for available argument settings.
 
 ---
 
