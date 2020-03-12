@@ -11,8 +11,7 @@ If RegionLeft, RegionTop, RegionRight and RegionBottom are all equal to 0, the a
 ---
 
 ### RegionBottom
-Specifies the y-coordinate of the bottom-right corner of the region in percentage. This value is relative to the top-left corner of the barcode.   
-Valid when [`AccompanyingTextRecognitionMode`]({{ site.manual_interface_enum }}AccompanyingTextRecognitionMode.html) mode set to `ATRM_GENERAL`.   
+Specifies the y-coordinate of the bottom-right corner of the region in percentage. This value is relative to the top-left corner of the barcode. Valid when [`AccompanyingTextRecognitionMode`]({{ site.manual_interface_enum }}AccompanyingTextRecognitionMode.html) mode set to `ATRM_GENERAL`.   
 
 - **Value range**   
    [-255, 255]   
