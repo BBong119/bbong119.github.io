@@ -8,10 +8,10 @@
 ### RegionBottom
 Specifies the y-coordinate of the bottom-right corner of the region in percentage. This value is relative to the top-left corner of the barcode.  
 
-- **Value range**
+- **Value range**   
    [-255, 255]   
    
-- **Default value**
+- **Default value**   
    0   
  
 - **Remark**   
@@ -20,10 +20,10 @@ Specifies the y-coordinate of the bottom-right corner of the region in percentag
 ### RegionLeft
 Specifies the x-coordinate of the top-left corner of the region in percentage. This value is relative to the top-left corner of the barcode.   
 
-- **Value range**
+- **Value range**   
    [-255, 255]   
    
-- **Default value**
+- **Default value**   
    0   
  
 - **Remark**   
@@ -32,10 +32,10 @@ Specifies the x-coordinate of the top-left corner of the region in percentage. T
 ### RegionRight
 Specifies the x-coordinate of the bottom-right corner of the region in percentage. This value is relative to the top-left corner of the barcode.   
 
-- **Value range**
+- **Value range**   
    [-255, 255]   
    
-- **Default value**
+- **Default value**   
    0   
  
 - **Remark**   
@@ -45,10 +45,10 @@ Specifies the x-coordinate of the bottom-right corner of the region in percentag
 ### RegionTop
 Specifies the y-coordinate of the top-left corner of the region in percentage. This value is relative to the top-left corner of the barcode.    
 
-- **Value range**
+- **Value range**   
    [-255, 255]   
    
-- **Default value**
+- **Default value**   
    0   
  
 - **Remark**   
