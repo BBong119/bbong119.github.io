@@ -7,10 +7,10 @@
 | [`RegionRight`](#regionright) | `ATRM_GENERAL` |
 | [`RegionTop`](#regiontop) | `ATRM_GENERAL` |
 
-**See [`AccompanyingTextRecognitionMode`]({{ site.manual_interface_enum}}AccompanyingTextRecognitionMode.html) for all mode options.**  
-
 If RegionLeft, RegionTop, RegionRight and RegionBottom are all equal to 0, the accompanying text zone will be detected automatically by the SDK. For more info on how to set a custom area for accompanying texts, please refer to [this article](https://www.dynamsoft.com/help/Barcode-Reader/devguide/HowTo/SetCustomAreaForAccompanyingTexts.html).  
 
+**See also**  
+[`AccompanyingTextRecognitionMode`]({{ site.manual_interface_enum }}AccompanyingTextRecognitionMode.html)
 ---
 
 ### RegionBottom
