@@ -8,7 +8,9 @@ sourceCodeUrl: https://github.com/BBong119/bbong119.github.io/blob/master/dbr-de
 
 - [Methods](#methods)
 - [Structs](#structs)
-- [Enumerations](#enumerations)
+- [Enumerations](#enumerations)  
+
+
 ## Methods
 
 ### Initialize and Destroy
