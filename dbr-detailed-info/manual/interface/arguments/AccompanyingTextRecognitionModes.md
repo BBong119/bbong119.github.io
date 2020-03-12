@@ -1,9 +1,10 @@
 ## Arguments of AccompanyingTextRecognitionModes
-
-- [`RegionBottom`](#regionbottom)
-- [`RegionLeft`](#regionleft)
-- [`RegionRight`](#regionright)
-- [`RegionTop`](#regiontop)
+| Mode Parameter Name | Argument Name |
+| ------------------- | ------------- |
+| AccompanyingTextRecognitionModes | [`RegionBottom`](#regionbottom)
+| AccompanyingTextRecognitionModes | [`RegionLeft`](#regionleft)
+| AccompanyingTextRecognitionModes | [`RegionRight`](#regionright)
+| AccompanyingTextRecognitionModes | [`RegionTop`](#regiontop)
 
 If RegionLeft, RegionTop, RegionRight and RegionBottom are all equal to 0, the accompanying text zone will be detected automatically by the SDK. For more info on how to set a custom area for accompanying texts, please refer to [this article](https://www.dynamsoft.com/help/Barcode-Reader/devguide/HowTo/SetCustomAreaForAccompanyingTexts.html).
 
