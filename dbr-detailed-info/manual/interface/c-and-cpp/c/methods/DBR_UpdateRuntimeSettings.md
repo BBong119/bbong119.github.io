@@ -1,6 +1,6 @@
 
 # DBR_UpdateRuntimeSettings
-Update runtime settings with a given [`PublicRuntimeSettings`]() struct.
+Update runtime settings with a given [`PublicRuntimeSettings`]({{ site.manual_interface_struct }}PublicRuntimeSettings.html) struct.
 
 ```c
 DBR_API int DBR_UpdateRuntimeSettings (void* barcodeReader, PublicRuntimeSettings* pSettings, char errorMsgBuffer[], const int errorMsgBufferLen)
