@@ -20,7 +20,7 @@ Sets the path of the output folder which stores intermediate results.
    ""  
  
 - **Remark**     
-   "": The library path.   
+   "": The library path.    
    Please make sure the path exists and your application has the appropriate permissions for saving the results.
    
 &nbsp; 
@@ -35,7 +35,7 @@ Sets the maximum count of recordset to store the latest images' intermediate res
    0  
  
 - **Remark**     
-   0: no limitation on the count of recordset.
+   0: no limitation on the count of recordset.   
    When the count exceeds, the old recordset will be replaced by the new one.
    
 &nbsp; 
