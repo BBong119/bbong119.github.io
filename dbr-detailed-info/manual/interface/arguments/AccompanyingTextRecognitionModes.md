@@ -1,6 +1,6 @@
-## Arguments of AccompanyingTextRecognitionModes
+## AccompanyingTextRecognitionModes
  
- **Argument Name**
+ **Arguments Name**
 - [`RegionBottom`](#regionbottom)
 - [`RegionLeft`](#regionleft)
 - [`RegionRight`](#regionright)
