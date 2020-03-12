@@ -18,10 +18,9 @@ Sets if there is light reflection on the barocde zone.
 - **Default value**   
    1   
  
-- **Remark**   
-   Valid when [`BarcodeColourMode`]({{ site.manual_interface_enum }}BarcodeColourMode.html) set to .  
-   0: no light reflection
-   1: has light reflection
+- **Remark**    
+   0: no light reflection.  
+   1: has light reflection.  
    
 &nbsp; 
 
