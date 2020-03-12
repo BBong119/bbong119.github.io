@@ -65,12 +65,12 @@ Sets the horizontal block size for the sharpening process.
    3  
  
 - **Remark**     
-      Block size refers to the size of a pixel neighborhood used to calculate the threshold for the pixel. An appropriate value can help increase the accuracy of barcode localization.  
+   Block size refers to the size of a pixel neighborhood used to calculate the threshold for the pixel. An appropriate value can help increase the accuracy of barcode localization.  
    
 &nbsp; 
 
 ### SharpenBlockSizeY
-	Sets the vertical block size for the sharpening process.    
+Sets the vertical block size for the sharpening process.    
 
 - **Value range**   
    [3, 1000]   
@@ -79,4 +79,4 @@ Sets the horizontal block size for the sharpening process.
    3  
  
 - **Remark**     
-      Block size refers to the size of a pixel neighborhood used to calculate the threshold for the pixel. An appropriate value can help increase the accuracy of barcode localization.  
+   Block size refers to the size of a pixel neighborhood used to calculate the threshold for the pixel. An appropriate value can help increase the accuracy of barcode localization.  
