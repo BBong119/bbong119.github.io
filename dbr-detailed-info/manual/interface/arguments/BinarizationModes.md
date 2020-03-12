@@ -67,20 +67,28 @@ Sets whether to enable binary vacancy filling.
    For barcodes with a large module size, there might be a vacant area in the position detection pattern after binarization. The vacant area may result in decoding failure. Setting this to True will fill in the vacant area with black and may help improve the decoding success rate. Better accuracy for images with a large module size.
    
 &nbsp;  
-
-### EnableFillBinaryVacancy
-Sets whether to enable binary vacancy filling.      
+   
+### ImagePreprocessingModesIndex
+The index of a specific image preprocessing mode in the [`ImagePreprocessingModes`]() parameter which the current binarization mode is applied to.      
 
 - **Value range**   
-   [0, 1]   
+   [-1, 0x7fffffff]   
    
 - **Default value**   
-   1  
+   -1  
  
 - **Remark**   
-   0: disable.  
-   1: enable.  
-   
-   For barcodes with a large module size, there might be a vacant area in the position detection pattern after binarization. The vacant area may result in decoding failure. Setting this to True will fill in the vacant area with black and may help improve the decoding success rate. Better accuracy for images with a large module size.
+   -1: The current binarization mode is applied to all modes in parameter [`ImagePreprocessingModes`]().  
    
 &nbsp; 
+   
+### ThreshValueCoefficient
+Constant subtracted from the mean or weighted mean. Normally, it is positive but may be zero or negative as well.    
+
+- **Value range**   
+   [-255, 255]  
+   
+- **Default value**   
+   10
+ 
+   
