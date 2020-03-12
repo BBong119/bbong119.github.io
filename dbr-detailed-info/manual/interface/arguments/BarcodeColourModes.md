@@ -6,7 +6,7 @@
 | ------------- | ----------- |
 | [`LightReflection`](#lightreflection) | `BICM_DARK_LIGHT_MIXED`<br>`BICM_DARK_ON_DARK`<br>`BICM_DARK_ON_LIGHT`<br>`BICM_LIGHT_ON_DARK`<br>`BICM_LIGHT_ON_LIGHT`<br>`BICM_DARK_ON_LIGHT_DARK_SURROUNDING` |
 
-**See also**
+**See also**   
 [`BarcodeColourMode`]({{ site.manual_interface_enum }}BarcodeColourMode.html)
 
 ---
