@@ -34,7 +34,7 @@ Specifies the x-coordinate of the top-left corner of the region in percentage. T
  
 - **Remark**   
    Valid when [`AccompanyingTextRecognitionMode`]({{ site.manual_interface_enum }}AccompanyingTextRecognitionMode.html) mode set to `ATRM_GENERAL`.   
-
+&nbsp; 
 ### RegionRight
 Specifies the x-coordinate of the bottom-right corner of the region in percentage. This value is relative to the top-left corner of the barcode.   
 
