@@ -25,6 +25,7 @@ Sets the horizontal block size for the binarization process.
    N:  
      - 1 <= N <= 3: the block size used for binarization will be set to 3.   
      - N > 3: the block size used for binarization will be set to N.   
+   
    Block size refers to the size of a pixel neighborhood used to calculate a threshold value for the pixel. An appropriate value for binarizationBlockSize can help generate a high quality binary image and increase the accuracy of barcode localization.
    
 &nbsp; 
