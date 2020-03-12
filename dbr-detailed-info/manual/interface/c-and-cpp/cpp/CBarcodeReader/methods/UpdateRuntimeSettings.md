@@ -2,7 +2,7 @@
 
 # UpdateRuntimeSettings
 
-Update runtime settings with a given [`PublicRuntimeSettings`]() struct.
+Update runtime settings with a given [`PublicRuntimeSettings`]({{ site.manual_interface_struct }}PublicRuntimeSettings.html) struct.
 
 
 ```cpp
