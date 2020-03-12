@@ -37,7 +37,4 @@ Sets the maximum count of recordset to store the latest images' intermediate res
 - **Remark**     
    0: no limitation on the count of recordset.   
    When the count exceeds, the old recordset will be replaced by the new one.
-   
-&nbsp; 
-
 
