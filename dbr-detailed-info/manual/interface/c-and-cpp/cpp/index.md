@@ -6,14 +6,15 @@ sourceCodeUrl: https://github.com/BBong119/bbong119.github.io/blob/master/dbr-de
 
 # Dynamsoft Barcode Reader SDK - C++ API Reference
 
-- `CBarcodeReader` -- Decode barcodes.  
-   - [Methods](#cbarcodereader-methods)  
-   - [Attributes](#cbarcodereader-protected-attribute)  
-   
+- [`CBarcodeReader` Methods](#cbarcodereader-methods) 
+- [`CBarcodeReader` Attributes](#cbarcodereader-protected-attribute) 
 - [Struct](#struct)  
 - [Enumeration](#enumeration)
 
-  
+     
+&nbsp; 
+
+
 ## CBarcodeReader Methods
 
 ### Constructor and Destructor
@@ -23,6 +24,8 @@ sourceCodeUrl: https://github.com/BBong119/bbong119.github.io/blob/master/dbr-de
   | [`CBarcodeReader`](CBarcodeReader/methods/CBarcodeReader.md) | Default constructor of `CBarcodeReader` object.|
   | [`~CBarcodeReader`](CBarcodeReader/methods/~CBarcodeReader.md) | Destructor of `CBarcodeReader` object.|
    
+   
+&nbsp; 
    
    
 ### Decode
@@ -35,6 +38,8 @@ sourceCodeUrl: https://github.com/BBong119/bbong119.github.io/blob/master/dbr-de
   | [`DecodeBase64String`](CBarcodeReader/methods/DecodeBase64String.md) | Decode barcodes from a base64 encoded string. |
   | [`DecodeDIB`](CBarcodeReader/methods/DecodeDIB.md) | Decode barcode from a handle of device-independent bitmap (DIB). |
    
+   
+&nbsp; 
    
    
    
@@ -65,7 +70,9 @@ sourceCodeUrl: https://github.com/BBong119/bbong119.github.io/blob/master/dbr-de
   | [`OutputSettingsToStringPtr`](CBarcodeReader/methods/OutputSettingsToStringPtr.md) | Output runtime settings to a string. |
   | [`FreeSettingsString`](CBarcodeReader/methods/FreeSettingsString.md) | Free memory allocated for runtime settings string. |
    
-   
+      
+&nbsp; 
+
    
 ### License
   
@@ -79,6 +86,8 @@ sourceCodeUrl: https://github.com/BBong119/bbong119.github.io/blob/master/dbr-de
   | [`FreeLicenseString`](CBarcodeReader/methods/FreeLicenseString.md) | Free memory allocated for the license string. |
    
    
+&nbsp; 
+   
    
 ### Result
    
@@ -89,7 +98,9 @@ sourceCodeUrl: https://github.com/BBong119/bbong119.github.io/blob/master/dbr-de
   | [`GetIntermediateResults`](CBarcodeReader/methods/GetIntermediateResults.md) | Get intermediate results. |
   | [`FreeIntermediateResults`](CBarcodeReader/methods/FreeIntermediateResults.md) | Free memory allocated for the intermediate results. |
    
-   
+      
+&nbsp; 
+
    
 ### Status Retrieval
    
@@ -98,7 +109,9 @@ sourceCodeUrl: https://github.com/BBong119/bbong119.github.io/blob/master/dbr-de
   | [`GetErrorString`](CBarcodeReader/methods/GetErrorString.md) | Get error message by error code.|
   | [`GetVersion`](CBarcodeReader/methods/GetVersion.md) | Get version information of SDK.|
    
-   
+      
+&nbsp; 
+
    
 ### Video
 
@@ -131,6 +144,8 @@ sourceCodeUrl: https://github.com/BBong119/bbong119.github.io/blob/master/dbr-de
    |----------------------|-------------|
    | [`GetLengthOfFrameQueue`](CBarcodeReader/methods/GetLengthOfFrameQueue.md) | Get length of current inner frame queue. |
  
+   
+&nbsp; 
 
 
 ## `CBarcodeReader` Protected Attribute
@@ -139,6 +154,9 @@ sourceCodeUrl: https://github.com/BBong119/bbong119.github.io/blob/master/dbr-de
   |----------------------|-------------|
   | [`m_pBarcodeReader`](CBarcodeReader/attribute/m_pBarcodeReader.md)  | |
   
+   
+&nbsp; 
+
 
 ## [Structs]({{ site.manual_interface_struct}})
 - [`AztecDetails`]({{ site.manual_interface_struct}}AztecDetails.html)	
@@ -162,6 +180,10 @@ sourceCodeUrl: https://github.com/BBong119/bbong119.github.io/blob/master/dbr-de
 - [`SamplingImageData`]({{ site.manual_interface_struct}}SamplingImageData.html)		
 - [`TextResult`]({{ site.manual_interface_struct}}TextResult.html)		
 - [`TextResultArray`]({{ site.manual_interface_struct}}TextResultArray.html)	
+   
+   
+&nbsp; 
+
 
 ## [Enumerations]({{ site.manual_interface_enum}})
 - [`AccompanyingTextRecognitionMode`]({{ site.manual_interface_enum}}AccompanyingTextRecognitionMode.html)	
