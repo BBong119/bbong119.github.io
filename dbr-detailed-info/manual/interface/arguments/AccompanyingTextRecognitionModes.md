@@ -14,7 +14,7 @@ Specifies the y-coordinate of the bottom-right corner of the region in percentag
 - **Default value**
    0   
  
-- **Remark*
+- **Remark**   
    Valid when [`AccompanyingTextRecognitionMode`]({{ site.manual_interface_enum }}AccompanyingTextRecognitionMode.html) mode set to [`ATRM_GENERAL`].   
 
 ### RegionLeft
@@ -26,7 +26,7 @@ Specifies the x-coordinate of the top-left corner of the region in percentage. T
 - **Default value**
    0   
  
-- **Remark*
+- **Remark**   
    Valid when [`AccompanyingTextRecognitionMode`]({{ site.manual_interface_enum }}AccompanyingTextRecognitionMode.html) mode set to [`ATRM_GENERAL`].   
 
 ### RegionRight
@@ -38,7 +38,7 @@ Specifies the x-coordinate of the bottom-right corner of the region in percentag
 - **Default value**
    0   
  
-- **Remark*
+- **Remark**   
    Valid when [`AccompanyingTextRecognitionMode`]({{ site.manual_interface_enum }}AccompanyingTextRecognitionMode.html) mode set to [`ATRM_GENERAL`].   
    
    
@@ -51,5 +51,5 @@ Specifies the y-coordinate of the top-left corner of the region in percentage. T
 - **Default value**
    0   
  
-- **Remark*
+- **Remark**   
    Valid when [`AccompanyingTextRecognitionMode`]({{ site.manual_interface_enum }}AccompanyingTextRecognitionMode.html) mode set to [`ATRM_GENERAL`].   
