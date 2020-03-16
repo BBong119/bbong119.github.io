@@ -15,7 +15,7 @@ After installation, you can find samples for supported platforms in the **Sample
 
 ## Getting Started: HelloWorld
 1. Start Visual Studio and create a new Win32 Console Application in C. Let's name it `BarcodeReadDemo_C`.   
-2. Add Dynamsoft Barcode Reader headers and libs in `BarcodeReadDemo_C.c`.
+2. Add Dynamsoft Barcode Reader headers and libs in `BarcodeReadDemo_C.c`.   
    ```c
     #include <stdio.h>
     #include "<relative path>/DynamsoftBarcodeReader.h"
@@ -29,7 +29,7 @@ After installation, you can find samples for supported platforms in the **Sample
    
    Please replace `<relative path>` in the code with the relative path to the `BarcodeReadDemo_C.c` file. Typically, The `DynamsoftBarcodeReader.h` file can be found in `[INSTALLATION FOLDER]\Components\C_C++\Include\`, and the LIB files can be found in `[INSTALLATION FOLDER]\Components\C_C++\Lib\`.   
  
-3. Update the main function in `BarcodeReadDemo_C.c`.
+3. Update the main function in `BarcodeReadDemo_C.c`.   
    ```c
    int main()
    {
@@ -80,3 +80,11 @@ After installation, you can find samples for supported platforms in the **Sample
        return 0;
    }
    ```
+   Please update `<your image file full path>` and `<your license key here>` in the code accordingly.   
+   
+4. Run the project.   
+   Build the application and copy the related DLL files to the same folder as the EXE file. The DLLs can be found in `[INSTALLATION FOLDER]\Components\C_C++\Redist\`.
+   - For x86 mode, required DLLs are: x86\DynamsoftBarcodeReaderx86.dll,x86\vcomp110.dll,x86\DynamicPdf.dll (for decoding barcodes from PDF files), x86\DynamsoftLicClientx86.dll.   
+   - For x64 mode, required DLLs are: x64\DynamsoftBarcodeReaderx64.dll, x64\vcomp110.dll, x64\DynamicPdfx64.dll (for decoding barcodes from PDF files), x64\DynamsoftLicClientx64.dll.
+   
+   To test, you can open the Command Prompt and execute the EXE file with a barcode image.
