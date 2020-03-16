@@ -1,4 +1,4 @@
-# Developer guide for Windows Edition - C
+# Developer guide for Windows Edition - C++
 
 ## System requirements
 
