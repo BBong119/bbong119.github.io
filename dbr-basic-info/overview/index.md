@@ -1,31 +1,25 @@
-Overview of DBR 
-================
+# Overview of Dynamsoft Barcode Reader  
 
-Dynamsoft Barcode Reader (DBR) is a software development kit (SDK) with highly
-competitive performance and service. DBR enables you to efficiently embed
-barcode reading functionality in your web, mobile, desktop and server
-application using just a few lines of code. With our SDK, you can create
-reliable barcode scanner software with enterprise-grade performance to meet your
-business needs. The following gives you a brief overview of available DBR
-features.
+Dynamsoft Barcode Reader (DBR) is a software development kit (SDK) with highly competitive performance and service. DBR enables you to efficiently embed barcode reading functionality in your web, mobile, desktop and server application using just a few lines of code. With our SDK, you can create reliable barcode scanner software with enterprise-grade performance to meet your business needs. The following gives you a brief overview of available DBR features.
 
-Barcode Formats
----------------
+
+## Barcode Formats
 
 As of v7.3, DBR currently supports the following barcode formats:
 
-| 1D/Linear Barcodes       | 2D Barcodes         | GS1 Composite Code      |
+| 1D/Linear Barcodes       | 2D Barcodes         | Other Type              |
 |--------------------------|---------------------|-------------------------|
-| Code 39/Code 39 Extended | QR Code             | GS1 DataBar             |
-| Code 93                  | Micro QR Code       | Omnidirectional         |
-| Code 128                 | Data Matrix         | Truncated               |
-| Codabar                  | PDF417              | Stacked                 |
-| Interleaved 2 of 5       | Micro PDF417        | Stacked Omnidirectional |
-| EAN-8                    | Aztec Code          | Limited                 |
-| EAN-13                   | MaxiCode (mode 2-5) | Expanded                |
-| UPC-A                    |                     | Expanded Stacked        |
-| UPC-E                    | Patch Code          |                         |
-| Industrial 2 of 5        | Postal Codes        |                         |
+| Code 39/Code 39 Extended | QR Code             | GS1 Composite Code      |
+| Code 93                  | Micro QR Code       | GS1 DataBar             |
+| Code 128                 | Data Matrix         | Omnidirectional         |
+| Codabar                  | PDF417              | Truncated               |
+| Interleaved 2 of 5       | Micro PDF417        | Stacked                 |
+| EAN-8                    | Aztec Code          | Stacked Omnidirectional |
+| EAN-13                   | MaxiCode (mode 2-5) | Limited                 |
+| UPC-A                    |                     | Expanded                |
+| UPC-E                    |                     | Expanded Stacked        |
+| Industrial 2 of 5        |                     | Patch Code              |
+| Industrial 2 of 5        |                     | Postal Codes            |
 
 Programming Languages and Frameworks
 ------------------------------------
