@@ -8,12 +8,12 @@ Dynamsoft Barcode Reader (DBR) is a software development kit (SDK) with highly c
 As of v7.3, DBR currently supports the following barcode formats:  
 
 | 1D/Linear Barcodes       | 2D Barcodes         | GS1 DataBar             | Postal Codes          | Other Type         |     
-|--------------------------|---------------------|-------------------------| USPS Intelligent Mail | ------------------ |
-| Code 39/Code 39 Extended | QR Code             | Omnidirectional         | Postnet               | GS1 Composite Code |     
-| Code 93                  | Micro QR Code       | Truncated               | Planet                | Patch Code         |    
-| Code 128                 | Data Matrix         | Stacked                 | Australian Post       | |
-| Codabar                  | PDF417              | Stacked Omnidirectional | UK Royal Mail         | | 
-| Interleaved 2 of 5       | Micro PDF417        | Limited                 |                       | |
+|--------------------------|---------------------|-------------------------| --------------------- | ------------------ |
+| Code 39/Code 39 Extended | QR Code             | Omnidirectional         | USPS Intelligent Mail | GS1 Composite Code |     
+| Code 93                  | Micro QR Code       | Truncated               | Postnet               | Patch Code         |    
+| Code 128                 | Data Matrix         | Stacked                 | Planet                | |
+| Codabar                  | PDF417              | Stacked Omnidirectional | Australian Post       | | 
+| Interleaved 2 of 5       | Micro PDF417        | Limited                 | UK Royal Mail         | |
 | EAN-8                    | Aztec Code          | Expanded                |                       | |
 | EAN-13                   | MaxiCode (mode 2-5) | Expanded Stacked        |                       | | 
 | UPC-A                    |                     |                         |                       | | 
