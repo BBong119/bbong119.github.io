@@ -78,18 +78,18 @@ DBR can read barcodes in vector PDF files much more efficiently than raster PDF 
 Dynamsoft works with customers ranging from startups to fortune 500 companies that span all industry verticals. Below is a list of common uses, their challenges, and what DBR can do to overcome these obstacles.
 
 - General paper documents   
-   Documents are usually filled with text, as they should be, which makes barcode reading tricky. DBR is able to filter out the text when localizing a barcode resulting in quicker and more accurate reads.   
+      Documents are usually filled with text, as they should be, which makes barcode reading tricky. DBR is able to filter out the text when localizing a barcode resulting in quicker and more accurate reads.   
    
 - IDs and certifications (e.g. driver licenses, passports)   
 
 - General labels (soft/hard base)   
-   Labels on soft and hard surfaces like boxes are prone to damage. DBR tries to resist deformation and restore the proper barcode.   
+      Labels on soft and hard surfaces like boxes are prone to damage. DBR tries to resist deformation and restore the proper barcode.   
 
 - Paper tickets, invoices, receipts (dot matrix printing, lack of ink) (Complement)   
-   Dot matrix, inkjet, and thermal printers may face issues with ink such as streaking, fading, and smudging. DBR can fill and merge the missing parts of a barcode to produce the correct result.
+      Dot matrix, inkjet, and thermal printers may face issues with ink such as streaking, fading, and smudging. DBR can fill and merge the missing parts of a barcode to produce the correct result.
 
 - Electronic tickets (screen)   
-   Surface and lighting imperfections like glare and reflection on screens poses a great challenge to barcode scanning. Luckily, DBR is able to detect and filter out the texture before localization.   
+      Surface and lighting imperfections like glare and reflection on screens poses a great challenge to barcode scanning. Luckily, DBR is able to detect and filter out the texture before localization.   
       
     
 The following environments and scenarios can make use of Dynamsoft Panorama:
