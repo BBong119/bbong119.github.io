@@ -89,4 +89,6 @@ After installation, you can find samples for supported platforms in the **Sample
    
    To test, you can open the Command Prompt and execute the EXE file with a barcode image.
    
-To deploy your application, make sure the DLLs are in the same folder as the EXE file. See the [Distribution](#distribution) section for more details.
+To deploy your application, make sure the DLLs are in the same folder as the EXE file. See the [Distribution](#distribution) section for more details.   
+
+
