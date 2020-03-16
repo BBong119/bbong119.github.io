@@ -88,3 +88,5 @@ After installation, you can find samples for supported platforms in the **Sample
    - For x64 mode, required DLLs are: x64\DynamsoftBarcodeReaderx64.dll, x64\vcomp110.dll, x64\DynamicPdfx64.dll (for decoding barcodes from PDF files), x64\DynamsoftLicClientx64.dll.
    
    To test, you can open the Command Prompt and execute the EXE file with a barcode image.
+   
+To deploy your application, make sure the DLLs are in the same folder as the EXE file. See the [Distribution](#distribution) section for more details.
