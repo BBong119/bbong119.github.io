@@ -33,46 +33,46 @@ After installation, you can find samples for supported platforms in the **Sample
    ```cpp
    int main()
    {
-     // Define variables
-     int iRet = -1;
-     int iLicMsg = -1;
-     TextResultArray *paryResult = NULL;
+       // Define variables
+       int iRet = -1;
+       int iLicMsg = -1;
+       TextResultArray *paryResult = NULL;
 
-     // Initialize license prior to any decoding
-     CBarcodeReader reader;
-     iLicMsg = reader.InitLicense("<your license key here>");
+       // Initialize license prior to any decoding
+       CBarcodeReader reader;
+       iLicMsg = reader.InitLicense("<your license key here>");
 
-     //If error occurs to the license initialization
-     if (iLicMsg != DBR_OK) 
-     {
-         printf("Failed to initialize the license successfully: %d\r\n%s\r\n", iLicMsg, DBR_GetErrorString(iLicMsg));
-         return iLicMsg;
-     }
+       //If error occurs to the license initialization
+       if (iLicMsg != DBR_OK) 
+       {
+           printf("Failed to initialize the license successfully: %d\r\n%s\r\n", iLicMsg, DBR_GetErrorString(iLicMsg));
+           return iLicMsg;
+       }
 
-     // Start decoding. Leave the template name empty ("") will use the settings from PublicRuntimeSettings.
-     iRet = reader.DecodeFile("<your image file full path>", "");
+       // Start decoding. Leave the template name empty ("") will use the settings from PublicRuntimeSettings.
+       iRet = reader.DecodeFile("<your image file full path>", "");
 
-     // If error occurs
-     if (iRet != DBR_OK)
-     {
-         printf("Failed to read barcode: %d\r\n%s\r\n", iRet, DBR_GetErrorString(iRet));
-         return iRet;
-     }
+       // If error occurs
+       if (iRet != DBR_OK)
+       {
+           printf("Failed to read barcode: %d\r\n%s\r\n", iRet, DBR_GetErrorString(iRet));
+           return iRet;
+       }
 
-     // If succeeds
-     reader.GetAllTextResults(&paryResult);
-     printf("%d total barcodes found. \r\n", paryResult->resultsCount);
-     for (int iIndex = 0; iIndex < paryResult->resultsCount; iIndex++)
-     {
-         printf("Result %d\r\n", iIndex + 1);
-         printf("BarcodeFormat: %s\r\n", paryResult->results[iIndex]->barcodeFormatString);
-         printf("Text read: %s\r\n", paryResult->results[iIndex]->barcodeText);
-     }
+       // If succeeds
+       reader.GetAllTextResults(&paryResult);
+       printf("%d total barcodes found. \r\n", paryResult->resultsCount);
+       for (int iIndex = 0; iIndex < paryResult->resultsCount; iIndex++)
+       {
+           printf("Result %d\r\n", iIndex + 1);
+           printf("BarcodeFormat: %s\r\n", paryResult->results[iIndex]->barcodeFormatString);
+           printf("Text read: %s\r\n", paryResult->results[iIndex]->barcodeText);
+       }
 
-     // Finally release BarcodeResultArray
-     CBarcodeReader::FreeTextResults(&paryResult);
-     system("pause");
-     return 0;
+       // Finally release BarcodeResultArray
+       CBarcodeReader::FreeTextResults(&paryResult);
+       system("pause");
+       return 0;
    }
    ```
    Please update `<your image file full path>` and `<your license key here>` in the code accordingly.   
