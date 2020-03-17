@@ -25,7 +25,7 @@ As of v7.4, DBR currently supports the following barcode formats:
 
 ## Programming Languages and Frameworks
 
-Cross-platform application development is now the new normal and DBR is ready to help you reach all of your users on iOS, Android, Windows, macOS, and Linux. Below is a partial list of supported programming languages and frameworks.  
+Cross-platform application development is now the new normal and DBR is ready to help you reach all of your users on iOS, Android, Windows, macOS, and Linux. Below is a list of programming languages and frameworks for which DBR is encapsulated. 
 
 | Programming Language | Framework             |
 |----------------------|-----------------------|
