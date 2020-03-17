@@ -3,9 +3,11 @@ sourceCodeUrl: https://github.com/BBong119/bbong119.github.io/blob/master/index.
 ---
 
 # Dynamsoft Barcode Reader Documentation  
-<p align="right"><a href="{{ page.sourceCodeUrl }} " align="right" class="#otherLinkColour">Edit<img src="{{ site.editIcon }}" width="20px" height="15px" /></a></p>
+<p align="right"><a href="{{ page.sourceCodeUrl }} " align="right" class="#otherLinkColour">Edit<img src="{{ site.editIcon }}" width="20px" height="15px" /></a></p>   
+
 ## Basic Information of Dynamsoft Barcode Reader  
 - [Overview]({{ site.dbrOverview }})  
+- [Principles]({{ site.principles }})
 - [User Guides]({{ site.userGuide }})  
 - [Evaluation Tools]({{ site.evaluationTools }})  
 - [Security Issues]({{ site.securityIssues }})  
