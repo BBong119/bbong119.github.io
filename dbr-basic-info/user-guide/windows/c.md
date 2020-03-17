@@ -91,4 +91,21 @@ After installation, you can find samples for supported platforms in the **Sample
    
 To deploy your application, make sure the DLLs are in the same folder as the EXE file. See the [Distribution](#distribution) section for more details.   
 
+## Decoding Methods
+The SDK provides multiple decoding methods that support reading barcodes from different sources, including static images,
+video stream, files in memory, base64 string, bitmap, etc. Here is a list of all decoding methods:
+- [DecodeFile]({{ site.manual_interface_c }}methods/DecodeFile.html): Reads barcodes from a specified file (BMP, JPEG, PNG, GIF, TIFF or PDF).   
+- [DecodeBase64String]({{ site.manual_interface_c }}methods/DecodeBase64String.html): Reads barcodes from a base64 encoded string of a file.   
+- [DecodeBitmap]({{ site.manual_interface_c }}methods/DecodeBitmap.html) and [DecodeDIB]({{ site.manual_interface_c} }methods/DecodeDIB.html): Reads barcodes from a bitmap. When handling multi-page images, it will only decode the
+current page.   
+- [DecodeBuffer]({{ site.manual_interface_c }}methods/DecodeBuffer.html): Reads barcodes from raw buffer.
+- [DecodeFileInMemory]({{ site.manual_interface_c }}methods/DecodeFileInMemory.html): Decodes barcodes from an image file in memory.   
+   
+You can find more samples in more programming languages at [Code Gallery](https://www.dynamsoft.com/Downloads/Dynamic-Barcode-Reader-Sample-Download.aspx).
 
+
+## Barcode reading settings
+Calling the decoding methods directly will use the default scanning modes and it will satisfy most of the needs. The SDK also allows you to adjust the scanning settings to optimize the scanning performance for different usage scenarios.  
+There are two ways to change the barcode reading settings - using the PublicRuntimeSettings Struct or template. For new
+developers, We recommend you to start with the PublicRuntimeSettings struct; For those who are experienced with the SDK,
+you may use a template which is more flexible and easier to update.
