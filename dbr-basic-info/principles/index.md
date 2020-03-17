@@ -45,15 +45,15 @@ LocalizationModes is an important parameter that includes the modes in Table 3.
 
 Table 3 – Barcode Localization Modes of DBR
 
-| **Mode Name**             | **Pros**                                                       | **Cons**                                                                                                                        |
-|---------------------------|----------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------|
-| LM_SCAN_DIRECTLY          | Fast                                                           | Easy to miss barcodes. Performance isn’t consistent with different barcodes types.                                              |
-| LM_CONNECTED_BLOCKS       | Efficient for clear images.                                    | Sensitive to damage of module connection.                                                                                       |
-| LM_LINES                  | Robust to broken barcodes.                                     | More computation required to extract vectors of lines compared to LM_CONNECTED_BLOCKS.                                          |
-| LM_STATISTICS             | Robust to blurry.                                              | Hard to differentiate barcodes from other printing areas where there are similar black-white contrasts.                         |
-| LM_STATISTICS_MARKS       | Suitable for barcodes with separate modules in unusual shapes. | May misinterpret concentrated areas of any shape patterns. Only useful for few 2D barcode formats. Lack of boundary indication. |
-| LM_STATISTICS_POSTAL_CODE | Optimized for postal codes.                                    | Not applicable to other barcode formats.                                                                                        |
-| LM_...                    | Customizable, Addible                                          | More time and cost                                                                                                              |
+| **Mode Name** | **Pros** | **Cons** |
+|---------------|----------|----------|
+| LM_SCAN_DIRECTLY | Fast | Easy to miss barcodes. Performance isn’t consistent with different barcodes types. |
+| LM_CONNECTED_BLOCKS | Efficient for clear images. | Sensitive to damage of module connection. |
+| LM_LINES | Robust to broken barcodes. | More computation required to extract vectors of lines compared to LM_CONNECTED_BLOCKS. |
+| LM_STATISTICS | Robust to blurry. | Hard to differentiate barcodes from other printing areas where there are similar black-white contrasts. |
+| LM_STATISTICS_MARKS | Suitable for barcodes with separate modules in unusual shapes. | May misinterpret concentrated areas of any shape patterns. Only useful for few 2D barcode formats. Lack of boundary indication. |
+| LM_STATISTICS_POSTAL_CODE | Optimized for postal codes. | Not applicable to other barcode formats. |
+| LM_... | Customizable, Addible | More time and cost. |
 
 1.  LM_SCAN_DIRECTLY is recommended when the barcode is large relative to the
     image size. 1D, GS1 Databar, and GS1 Composite bar are better able to take
