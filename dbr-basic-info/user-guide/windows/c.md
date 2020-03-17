@@ -116,7 +116,9 @@ you may use a template which is more flexible and easier to update.
 
 ### Use `PublicRuntimeSettings` Struct to Change Settings
 Here are some common scanning settings you might find helpful:   
-- [Specify Barcode Type to Read]()
+- [Specify Barcode Type to Read](#specify-barcode-type-to-read)   
+- [Specify Maximum Barcode Count](#specify-maximum-barcode-count)   
+- [Specify a Scan Region](#specify-a-scan-region)
 
 
 
