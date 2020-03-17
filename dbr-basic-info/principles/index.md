@@ -1,52 +1,29 @@
 # Principles of Dynamsoft Barcode Reader Algorithm
 
-Dynamsoft Barcode Reader (DBR) is a flexible SDK used to implement barcode reading functionality in cross-platform applications. Supported barcode formats include QR, Linear(1D), PD417, DataMatrix, and more. Its flexibilities not only
-fit in most scenarios, which greatly vary in terms of barcode features but also
-most requirements regarding programming practices. The software architecture and
-design of DBR can accommodate a variety of application requirements. The barrier
-of entry to barcode reading is low, allowing customers to start building their
-application effortlessly, all the while providing various customization options
-to handle further complicated barcodes. DBR powers your software development
-from the following aspects: (1) performance of reading barcodes, (2) agility of
-dealing with unpredictable-featured barcodes, (3) integration of multipurpose
-image processing, (4) extensibility of deployment. In this article, we will
-present the architectures and their corresponding contributions to the above
-advantages.
+Dynamsoft Barcode Reader (DBR) is a flexible SDK used to implement barcode reading functionality in cross-platform applications. Supported barcode formats include QR, Linear(1D), PD417, DataMatrix, and more. Its flexibilities not only fit in most scenarios, which greatly vary in terms of barcode features but also most requirements regarding programming practices. The software architecture and design of DBR can accommodate a variety of application requirements. The barrier of entry to barcode reading is low, allowing customers to start building their application effortlessly, all the while providing various customization options to handle further complicated barcodes. DBR powers your software development from the following aspects: (1) performance of reading barcodes, (2) agility of dealing with unpredictable-featured barcodes, (3) integration of multipurpose image processing, (4) extensibility of deployment. In this article, we will present the architectures and their corresponding contributions to the above advantages.
 
-Flexible Algorithm Flow & Versatile Parameters
-----------------------------------------------
+## Flexible Algorithm Flow & Versatile Parameters
 
-The algorithm of DBR includes a flow of 5 stages at the top level, as
-illustrated in Figure 1, where localization, partition, and decoding are the
-three core stages. DBR is designed to deal with a variety of barcode scenarios
-and qualities. DBR offers many customizable parameters to increase its
-versatility. Furthermore, the architecture of the algorithm and its parameters
-solidifies the agility to meet new requirements.
+The algorithm of DBR includes a flow of 5 stages at the top level, as illustrated in Figure 1, where localization, partition, and decoding are the three core stages. DBR is designed to deal with a variety of barcode scenarios and qualities. DBR offers many customizable parameters to increase its versatility. Furthermore, the architecture of the algorithm and its parameters solidifies the agility to meet new requirements.
 
 Figure 1 – Top Level Flow of DBR Algorithm
 
 ### Stage 1 is to get regions of interest (ROI) image(s). 
 
-This stage begins with how to get an image from a variety of sources, including
-files, videos, or buffers of other applications. Then there are some optional
-steps to convert the original image to a grayscale image. What these steps do
-depends on relevant parameters’ values. Table 1 lists these parameters and their
-respective design intents.
+This stage begins with how to get an image from a variety of sources, including files, videos, or buffers of other applications. Then there are some optional steps to convert the original image to a grayscale image. What these steps do depends on relevant parameters’ values. Table 1 lists these parameters and their respective design intents.
 
 Table 1 – Parameters of DBR Algorithm Stage 1
 
-| **Parameter Name**           | **Intent and Functionality**                                                                                                                                                              | **Status**            |
-|------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------|
-| ScaleDownThreshold           | To speed up when the image size is large.                                                                                                                                                 | Available             |
-| ColourClusteringModes        | To categorize colours into a few colours representing background or foreground.                                                                                                           | Available, Extensible |
-| ColourImageConvertModes      | To set the conversion from colour to grayscale, which keep or enhance the features of the region of interest.                                                                             | Work in progress      |
-| GrayscaleTransformationModes | To emphasize the features of regions of interest with processing of the grayscale image.                                                                                                  | Available, Extensible |
-| RegionPredetectionModes      | To limit the subsequent stages in special areas to speed up by detecting the regions of interest automatically. Pre-detection is based on the colour/grayscale distribution of each area. | Available, Extensible |
-| RegionDefinition             | Available, Extensible                                                                                                                                                                     | Available             |
+| **Parameter Name** | **Intent and Functionality** | **Status** |
+| ------------------ | ---------------------------- | ---------- |
+| ScaleDownThreshold | To speed up when the image size is large. | Available |
+| ColourClusteringModes | To categorize colours into a few colours representing background or foreground. | Available, Extensible |
+| ColourImageConvertModes | To set the conversion from colour to grayscale, which keep or enhance the features of the region of interest. | Work in progress |
+| GrayscaleTransformationModes | To emphasize the features of regions of interest with processing of the grayscale image. | Available, Extensible |
+| RegionPredetectionModes | To limit the subsequent stages in special areas to speed up by detecting the regions of interest automatically. Pre-detection is based on the colour/grayscale distribution of each area. | Available, Extensible |
+| RegionDefinition | Available, Extensible | Available |
 
-As mentioned above, the focus of this stage is to reduce the time cost by
-scaling down or finding out ROIs. It is not essential for most scenarios but
-helpful for some extreme cases.
+As mentioned above, the focus of this stage is to reduce the time cost by scaling down or finding out ROIs. It is not essential for most scenarios but helpful for some extreme cases.
 
 ### Stage 2 is to localize barcode zones. 
 
