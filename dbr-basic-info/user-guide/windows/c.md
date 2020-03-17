@@ -105,7 +105,7 @@ You can find more samples in more programming languages at [Code Gallery](https:
 
 
 ## Barcode reading settings
-Calling the decoding methods directly will use the default scanning modes and it will satisfy most of the needs. The SDK also allows you to adjust the scanning settings to optimize the scanning performance for different usage scenarios.  
+Calling the [decoding methods](#decoding-methods) directly will use the default scanning modes and it will satisfy most of the needs. The SDK also allows you to adjust the scanning settings to optimize the scanning performance for different usage scenarios.  
 There are two ways to change the barcode reading settings - using the PublicRuntimeSettings Struct or template. For new
 developers, We recommend you to start with the PublicRuntimeSettings struct; For those who are experienced with the SDK,
 you may use a template which is more flexible and easier to update.
