@@ -27,10 +27,7 @@ As mentioned above, the focus of this stage is to reduce the time cost by scalin
 
 ### Stage 2 is to localize barcode zones. 
 
-Various features of different barcode formats help detect barcode zones. Before
-detecting and localizing barcode zones, some optional steps can be taken to
-speed up, filter distraction, or enhance/keep barcode zone features. These steps
-are related to the respective parameters listed in Table 2.
+Various features of different barcode formats help detect barcode zones. Before detecting and localizing barcode zones, some optional steps can be taken to speed up, filter distraction, or enhance/keep barcode zone features. These steps are related to the respective parameters listed in Table 2.
 
 Table 2 – Parameters of DBR Algorithm Stage 2
 
@@ -55,70 +52,42 @@ Table 3 – Barcode Localization Modes of DBR
 | LM_STATISTICS_POSTAL_CODE | Optimized for postal codes. | Not applicable to other barcode formats. |
 | LM_... | Customizable, Addible | More time and cost. |
 
-1.  LM_SCAN_DIRECTLY is recommended when the barcode is large relative to the
-    image size. 1D, GS1 Databar, and GS1 Composite bar are better able to take
-    advantage of LM_SCAN_DIRECTLY.
+1. LM_SCAN_DIRECTLY is recommended when the barcode is large relative to the image size. 1D, GS1 Databar, and GS1 Composite bar are better able to take advantage of LM_SCAN_DIRECTLY.   
 
-2.  LM_CONNECTED_BLOCKS offers have the right balance between efficiency and
-    accuracy for most scenarios. It can share intermediate data, contours, with
-    a few other localization modes: LM_LINES, LM_STATISTICS_MARKS,
-    LM_STATISTICS_POSTAL_CODE. So, LM_CONNECTED_BLOCKS is usually placed before
-    these modes.
+2. LM_CONNECTED_BLOCKS offers have the right balance between efficiency and accuracy for most scenarios. It can share intermediate data, contours, with a few other localization modes: LM_LINES, LM_STATISTICS_MARKS, LM_STATISTICS_POSTAL_CODE. So, LM_CONNECTED_BLOCKS is usually placed before these modes.   
 
-3.  LM_LINES is a good option to follow LM_CONNECTED_BLOCKS if you want to
-    achieve higher accuracy with a low time cost.
+3. LM_LINES is a good option to follow LM_CONNECTED_BLOCKS if you want to achieve higher accuracy with a low time cost.   
 
-4.  LM_STATISTICS will try to find out the areas where the distribution of
-    grayscale values looks like a barcode zone. It’s an auxiliary method when
-    the above modes don’t work.
+4. LM_STATISTICS will try to find out the areas where the distribution of grayscale values looks like a barcode zone. It’s an auxiliary method when the above modes don’t work.   
 
-The above four modes can support most regular barcode formats. The barcodes of
-these formats can be localized in one pass of an image. Limit the barcode
-formats for localization using the parameter BarcodeFormatIds and
-BarcodeFormatIds_2.
+The above four modes can support most regular barcode formats. The barcodes of these formats can be localized in one pass of
+an image. Limit the barcode formats for localization using the parameter BarcodeFormatIds and BarcodeFormatIds_2.
 
-1.  LM_STATISTICS_MARKS is designed mainly to find out barcodes whose modules
-    are separate, e.g., Direct Part Marking (DPM), and DotCode.
+1. LM_STATISTICS_MARKS is designed mainly to find out barcodes whose modules are separate, e.g., Direct Part Marking (DPM), and DotCode.
 
-2.  LM_STATISTICS_POSTAL_CODE finds bars of postal codes in terms of bars’
-    distribution. LM_SCAN_DIRECTLY, LM_CONNECTED_BLOCKS, and LM_LINES can also
-    contribute to the location of postal codes.
+2. LM_STATISTICS_POSTAL_CODE finds bars of postal codes in terms of bars’ distribution. LM_SCAN_DIRECTLY, LM_CONNECTED_BLOCKS, and LM_LINES can also contribute to the location of postal codes.
 
-Localization modes could be added according to particular features of the
-barcodes to meet the requirements of more barcode formats in the future.
+Localization modes could be added according to particular features of the barcodes to meet the requirements of more barcode formats in the future.
 
 ### Stage 3 is to partition barcode zones precisely.
 
-For localized barcode zones, further work is essential before DBR takes it as a
-barcode to the decoding stage. Barcode format and exact boundary are two key
-factors. Some rough barcode zones, the result of certain localization modes,
-have the format information. However, it isn’t always the case. The exact
-boundary of a barcode is more meaningful than the rough zone for the following
-decoding stage. Though some barcode formats are robust to the boundary
-roughness, an exact boundary can improve the accuracy of poor-quality barcodes.
+For localized barcode zones, further work is essential before DBR takes it as a barcode to the decoding stage. Barcode format and exact boundary are two key factors. Some rough barcode zones, the result of certain localization modes, have the format information. However, it isn’t always the case. The exact boundary of a barcode is more meaningful than the rough zone for the following decoding stage. Though some barcode formats are robust to the boundary roughness, an exact boundary can improve the accuracy of poor-quality barcodes.   
 
-BarcodeColourModes is a parameter to control how to seek the boundary. Before,
-during, or after seeking boundary, the format can be determined. With an exact
-boundary, DBR may scale up the barcode if the module size is too small. The
-parameter, ScaleUpModes, is used to assign one or more scale up methods. At
-last, the anti-perspective transformation will be applied if the boundary isn’t
-relatively rectangular.
+BarcodeColourModes is a parameter to control how to seek the boundary. Before, during, or after seeking boundary, the format can be determined. With an exact boundary, DBR may scale up the barcode if the module size is too small. The parameter, ScaleUpModes, is used to assign one or more scale up methods. At last, the anti-perspective transformation will be applied if the boundary isn’t relatively rectangular.   
 
 ### Stage 4 is to decode one-calibrated-barcoded images.
 
-This is the most complicated stage that accommodates a few methods to deal with
-varying barcode quality situations. Table 4 lists the parameters to customize
-the decoding procedure.
+This is the most complicated stage that accommodates a few methods to deal with varying barcode quality situations. Table 4 lists the parameters to customize the decoding procedure.
 
 Table 4 – Parameters to Deal with Varying Quality Situation
 
-| **Parameter Name**        | **Intent and Functionalities**                                                                             | **Status**              |
-|---------------------------|------------------------------------------------------------------------------------------------------------|-------------------------|
-| BarcodeComplementModes    | To detect and complete a barcode with missing border modules.                                              | Available for QR and DM |
-| DeformationResistingModes | To detect and restore a two-dimensional barcode from deformation.                                          | Available for QR and DM |
-| DPMCodeReadingModes       | To separate and identify modules of a DPM barcode.                                                         | Available for DM        |
-| DeblurLevel               | To apply a variety of image processing methods to sample modules. The higher the level, the more attempts. | Available               |
-| MirrorMode                | To try to decode barcode with mirroring                                                                    | Available               |
+| **Parameter Name** | **Intent and Functionalities** | **Status** |
+|--------------------|--------------------------------|------------|
+| BarcodeComplementModes | To detect and complete a barcode with missing border modules. | Available for QRCode and DataMatrix |
+| DeformationResistingModes | To detect and restore a two-dimensional barcode from deformation. | Available for QRCode and DataMatrix |
+| DPMCodeReadingModes | To separate and identify modules of a DPM barcode. | Available for DataMatrix |
+| DeblurLevel | To apply a variety of image processing methods to sample modules. The higher the level, the more attempts. | Available |
+| MirrorMode | To try to decode barcode with mirroring | Available |
 
 ### Stage 5 is to output results. 
 
