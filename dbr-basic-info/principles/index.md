@@ -34,12 +34,12 @@ are related to the respective parameters listed in Table 2.
 
 Table 2 – Parameters of DBR Algorithm Stage 2
 
-| **Parameter Name**      | **Intent and Functionalities**                                                                      | **Status**            |
-|-------------------------|-----------------------------------------------------------------------------------------------------|-----------------------|
-| ImagePreprocessingModes | To enhance/keep features of barcode zones by processing colour or grayscale images.                 | Available, Extensible |
-| BinarizationModes       | To enhance/keep features of barcode zones by applying different binarization methods and arguments. | Available, Extensible |
-| TextureDetectionModes   | To reduce the time cost and error probability caused by textures that resemble 1D barcodes.         | Available, Extensible |
-| TextFilterModes         | To exclude the text from barcodes and reduce time cost.                                             | Available, Extensible |
+| **Parameter Name** | **Intent and Functionalities** | **Status** |
+|--------------------|--------------------------------|------------|
+| ImagePreprocessingModes | To enhance/keep features of barcode zones by processing colour or grayscale images. | Available, Extensible |
+| BinarizationModes | To enhance/keep features of barcode zones by applying different binarization methods and arguments. | Available, Extensible |
+| TextureDetectionModes | To reduce the time cost and error probability caused by textures that resemble 1D barcodes. | Available, Extensible |
+| TextFilterModes | To exclude the text from barcodes and reduce time cost. | Available, Extensible |
 
 LocalizationModes is an important parameter that includes the modes in Table 3.
 
