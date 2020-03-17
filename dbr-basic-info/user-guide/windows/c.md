@@ -109,4 +109,15 @@ Calling the [decoding methods](#decoding-methods) directly will use the default 
    
 There are two ways to change the barcode reading settings - using the PublicRuntimeSettings Struct or template. For new
 developers, We recommend you to start with the PublicRuntimeSettings struct; For those who are experienced with the SDK,
-you may use a template which is more flexible and easier to update.
+you may use a template which is more flexible and easier to update.   
+
+- [Use `PublicRuntimeSettings` Struct to Change Settings](#use-publicruntimesettings-struct-to-change-settings)   
+- [Use A Template to Change Settings](#use-a-template-to-change-settings)   
+
+### Use `PublicRuntimeSettings` Struct to Change Settings
+Here are some common scanning settings you might find helpful:   
+- [Specify Barcode Type to Read]()
+
+
+
+   
