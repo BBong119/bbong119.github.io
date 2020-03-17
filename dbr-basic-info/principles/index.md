@@ -4,10 +4,10 @@ Dynamsoft Barcode Reader (DBR) is a flexible SDK used to implement barcode readi
 
 ## Flexible Algorithm Flow & Versatile Parameters
 
-The algorithm of DBR includes a flow of 5 stages at the top level, as illustrated in Figure 1, where localization, partition, and decoding are the three core stages. DBR is designed to deal with a variety of barcode scenarios and qualities. DBR offers many customizable parameters to increase its versatility. Furthermore, the architecture of the algorithm and its parameters solidifies the agility to meet new requirements.
+The algorithm of DBR includes a flow of 5 stages at the top level, as illustrated in Figure 1, where localization, partition, and decoding are the three core stages. DBR is designed to deal with a variety of barcode scenarios and qualities. DBR offers many customizable parameters to increase its versatility. Furthermore, the architecture of the algorithm and its parameters solidifies the agility to meet new requirements.   
 
-![Figure 1 – Top Level Flow of DBR Algorithm](TopLevelFlowOfDBRAlgorithm.png)
-
+![Figure 1 – Top Level Flow of DBR Algorithm](TopLevelFlowOfDBRAlgorithm.png)   
+   
 ### Stage 1 is to get regions of interest (ROI) image(s). 
 
 This stage begins with how to get an image from a variety of sources, including files, videos, or buffers of other applications. Then there are some optional steps to convert the original image to a grayscale image. What these steps do depends on relevant parameters’ values. Table 1 lists these parameters and their respective design intents.
