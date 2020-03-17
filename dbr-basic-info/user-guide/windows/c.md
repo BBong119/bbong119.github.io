@@ -114,12 +114,18 @@ you may use a template which is more flexible and easier to update.
 - [Use `PublicRuntimeSettings` Struct to Change Settings](#use-publicruntimesettings-struct-to-change-settings)   
 - [Use A Template to Change Settings](#use-a-template-to-change-settings)   
 
-### Use `PublicRuntimeSettings` Struct to Change Settings
+### Use [`PublicRuntimeSettings`]({{ site.manual_interface_struct}}PublicRuntimeSettings.html) Struct to Change Settings
 Here are some common scanning settings you might find helpful:   
 - [Specify Barcode Type to Read](#specify-barcode-type-to-read)   
 - [Specify Maximum Barcode Count](#specify-maximum-barcode-count)   
-- [Specify a Scan Region](#specify-a-scan-region)
+- [Specify a Scan Region](#specify-a-scan-region)  
 
+For more scanning settings guide, check out the [How To](#how-to-guide) section.
+
+#### Specify Barcode Type to Read
+By default, the SDK will read all the supported barcode formats from the image. (See [Product Overview]({{ site.dbrOverview }}) for the full supported barcode list.)   
+
+If your full license only covers some barcode formats, you can use `BarcodeFormatIds` to specify the barcode format(s). Check out barcodeFormatIds 
 
 
    
