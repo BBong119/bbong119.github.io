@@ -303,31 +303,7 @@ Below is a template for your reference. To learn more about the APIs, you can ch
 ```
 
 ## Licensing and Distributing
-
-This section covers the following topics:
-- [Use a trial key](#use-a-trial-key)
-- [Use a development license](#use-a-development-license)
-- [Use a runtime license](#use-a-runtime-license)
-- [Distribution](#distribution)
-- [License errors](#license-errors)
-
-### Use a trial key
-To use a trial license, you can follow the steps below:
-1. Get a trial license key.   
-   If you installed [Dynamsoft Barcode Reader 30-day free trial](https://www.dynamsoft.com/CustomerPortal/LoginOrRegister.aspx?status=signup&amp;op=4DD608F3803493E4&amp;product=8BC841D35BACD076), it comes with a 30-day trial license by default.   
-   For Windows Edition, you can find the license key in the License Manager program at /{INSTALLATION FOLDER}/LicenseManager.exe.   
-   **NOTE**: If the trial license expires or it is missing, you can still get barcode reading results but partial of the result will be masked with "".* You may log in the customer portal and [request for a trial extension online](http://www.dynamsoft.com/CustomerPortal/Account/GetTrialLicense.aspx?Product=DBR).   
-   
-2. Update the license key in source code.
-   You can use `DBR_InitLicense` to set the license.
-   ```c
-   void *hBarcode = NULL;
-   hBarcode = DBR_CreateInstance();
-   DBR_InitLicense(hBarcode, "t0068NQAAAI8+mMcYRNwmijAzExhq******");
-   DBR_DestroyInstance(hBarcode);
-   ```
-   
-3. Save and rebuild your application.
+[Licensing and Distributing]()
 
 
 ## How-to Guides
@@ -348,4 +324,18 @@ This section covers the following topics:
 - [Enable scale up for barcode recognition]()
 - [Check if the barcode image is clear enough for recognition]()
 - [Generate a custom barcode reading template]()
+
+## FAQ
+- [Licensing]()
+   - [How to find my license key for the full version?]()
+   - [Does Dynamsoft Barcode Scanner SDK require an Internet connection?]()
+   - [When does a device counts as an activated device?]()
+   - [For an environment with no internet connection allowed, can I use your barcode reader SDK?]()
+- [Using Barcode Reader]()
+   - [When I scan barcodes, why are the barcode results marked with asterisks (\*)?]() 
+   - [I saw you have Windows Edition, Linux Edition, JavaScript Edition, etc. Which is the right one for my application?]()
+   - [Why does it return strange or non-printable characters as a result?]()
+   - [How to get the “result image” with overlays once barcodes are found in the image?]()
+   - [The barcode reader SDK sometimes return false results with four or less characters. How to avoid it?]()
+Can I scan barcodes on US Driver’s Licenses?
 
