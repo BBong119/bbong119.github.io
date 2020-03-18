@@ -340,4 +340,4 @@ This section covers the following topics:
    - [Can I scan barcodes on US Driver’s Licenses?]()
 
 ## Contact Us
-If there are any questions, please feel free to contact [support@dynamsoft.com]().
+If there are any questions, please feel free to contact [support@dynamsoft.com](mailto:support@dynamsoft.com).
