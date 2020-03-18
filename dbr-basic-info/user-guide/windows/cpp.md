@@ -109,7 +109,7 @@ current page.
    
 You can find more samples in more programming languages at [Code Gallery](https://www.dynamsoft.com/Downloads/Dynamic-Barcode-Reader-Sample-Download.aspx).
 
-## Barcode reading settings
+## Barcode Reading Settings
 Calling the [decoding methods](#decoding-methods) directly will use the default scanning modes and it will satisfy most of the needs. The SDK also allows you to adjust the scanning settings to optimize the scanning performance for different usage scenarios.   
    
 There are two ways to change the barcode reading settings - using the PublicRuntimeSettings Struct or template. For new
