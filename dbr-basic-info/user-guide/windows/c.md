@@ -301,3 +301,51 @@ Below is a template for your reference. To learn more about the APIs, you can ch
    "Version" : "3.0"
 }
 ```
+
+## Licensing and Distributing
+
+This section covers the following topics:
+- [Use a trial key](#use-a-trial-key)
+- [Use a development license](#use-a-development-license)
+- [Use a runtime license](#use-a-runtime-license)
+- [Distribution](#distribution)
+- [License errors](#license-errors)
+
+### Use a trial key
+To use a trial license, you can follow the steps below:
+1. Get a trial license key.   
+   If you installed [Dynamsoft Barcode Reader 30-day free trial](https://www.dynamsoft.com/CustomerPortal/LoginOrRegister.aspx?status=signup&amp;op=4DD608F3803493E4&amp;product=8BC841D35BACD076), it comes with a 30-day trial license by default.   
+   For Windows Edition, you can find the license key in the License Manager program at /{INSTALLATION FOLDER}/LicenseManager.exe.   
+   **NOTE**: If the trial license expires or it is missing, you can still get barcode reading results but partial of the result will be masked with "".* You may log in the customer portal and [request for a trial extension online](http://www.dynamsoft.com/CustomerPortal/Account/GetTrialLicense.aspx?Product=DBR).   
+   
+2. Update the license key in source code.
+   You can use `DBR_InitLicense` to set the license.
+   ```c
+   void *hBarcode = NULL;
+   hBarcode = DBR_CreateInstance();
+   DBR_InitLicense(hBarcode, "t0068NQAAAI8+mMcYRNwmijAzExhq******");
+   DBR_DestroyInstance(hBarcode);
+   ```
+   
+3. Save and rebuild your application.
+
+
+## How-to Guides
+
+This section covers the following topics:
+- [Read barcodes from camera stream]()
+- [Read barcodes with different colors]()
+- [Filter out unwanted barcode results]()
+- [Decode DPM Data Matrix]()
+- [Get barcode rotation angle]()
+- [Get barcode confidence]()
+- [Get intermediate results]()
+- [Get detailed barcode information]()
+- [Turn on or off text filter]()
+- [Scan in multiple threads]()
+- [Test batch scan performance]()
+- [Set custom area for accompanying texts]()
+- [Enable scale up for barcode recognition]()
+- [Check if the barcode image is clear enough for recognition]()
+- [Generate a custom barcode reading template]()
+
