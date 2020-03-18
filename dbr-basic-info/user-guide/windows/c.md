@@ -154,7 +154,6 @@ By default, the SDK will read as many barcodes as it can. To increase the recogn
 
 ```c
 void *hBarcode = NULL;
-23
 char sError[512];
 TextResultArray* pResult = NULL;
 PublicRuntimeSettings runtimeSettings;
