@@ -337,5 +337,7 @@ This section covers the following topics:
    - [Why does it return strange or non-printable characters as a result?]()
    - [How to get the “result image” with overlays once barcodes are found in the image?]()
    - [The barcode reader SDK sometimes return false results with four or less characters. How to avoid it?]()
-Can I scan barcodes on US Driver’s Licenses?
+   - [Can I scan barcodes on US Driver’s Licenses?]()
 
+## Contact Us
+If there are any questions, please feel free to contact [support@dynamsoft.com](support@dynamsoft.com).
