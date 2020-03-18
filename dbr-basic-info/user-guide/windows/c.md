@@ -94,12 +94,12 @@ To deploy your application, make sure the DLLs are in the same folder as the EXE
 ## Decoding Methods
 The SDK provides multiple decoding methods that support reading barcodes from different sources, including static images,
 video stream, files in memory, base64 string, bitmap, etc. Here is a list of all decoding methods:
-- [DecodeFile]({{ site.manual_interface_c }}methods/DBR_DecodeFile.html): Reads barcodes from a specified file (BMP, JPEG, PNG, GIF, TIFF or PDF).   
-- [DecodeBase64String]({{ site.manual_interface_c }}methods/DBR_DecodeBase64String.html): Reads barcodes from a base64 encoded string of a file.   
-- [DecodeBitmap]({{ site.manual_interface_c }}methods/DBR_DecodeBitmap.html) and [DecodeDIB]({{ site.manual_interface_c }}methods/DBR_DecodeDIB.html): Reads barcodes from a bitmap. When handling multi-page images, it will only decode the
+- [DBR_DecodeFile]({{ site.manual_interface_c }}methods/DBR_DecodeFile.html): Reads barcodes from a specified file (BMP, JPEG, PNG, GIF, TIFF or PDF).   
+- [DBR_DecodeBase64String]({{ site.manual_interface_c }}methods/DBR_DecodeBase64String.html): Reads barcodes from a base64 encoded string of a file.   
+- [DBR_DecodeBitmap]({{ site.manual_interface_c }}methods/DBR_DecodeBitmap.html) and [DBR_DecodeDIB]({{ site.manual_interface_c }}methods/DBR_DecodeDIB.html): Reads barcodes from a bitmap. When handling multi-page images, it will only decode the
 current page.   
-- [DecodeBuffer]({{ site.manual_interface_c }}methods/DBR_DecodeBuffer.html): Reads barcodes from raw buffer.
-- [DecodeFileInMemory]({{ site.manual_interface_c }}methods/DBR_DecodeFileInMemory.html): Decodes barcodes from an image file in memory.   
+- [DBR_DecodeBuffer]({{ site.manual_interface_c }}methods/DBR_DecodeBuffer.html): Reads barcodes from raw buffer.
+- [DBR_DecodeFileInMemory]({{ site.manual_interface_c }}methods/DBR_DecodeFileInMemory.html): Decodes barcodes from an image file in memory.   
    
 You can find more samples in more programming languages at [Code Gallery](https://www.dynamsoft.com/Downloads/Dynamic-Barcode-Reader-Sample-Download.aspx).
 
@@ -125,7 +125,7 @@ For more scanning settings guide, check out the [How To](#how-to-guide) section.
 #### Specify Barcode Type to Read
 By default, the SDK will read all the supported barcode formats except Postal Codes and Dotcode from the image. (See [Product Overview]({{ site.dbrOverview }}) for the full supported barcode list.)   
 
-If your full license only covers some barcode formats, you can use `BarcodeFormatIds` and `BarcodeFormatIds_2` to specify the barcode format(s). Check out [BarcodeFormat]({{ site.manual_interface_enum }}BarcodeFormat.html) and BarcodeFormat_2({{ site.manual_interface_enum }}BarcodeFormat_2.html).   
+If your full license only covers some barcode formats, you can use `BarcodeFormatIds` and `BarcodeFormatIds_2` to specify the barcode format(s). Check out [`BarcodeFormat`]({{ site.manual_interface_enum }}BarcodeFormat.html) and [`BarcodeFormat_2`]({{ site.manual_interface_enum }}BarcodeFormat_2.html).   
 
 For example, to enable only 1D barcode reading, you can use the following code:   
 
@@ -150,8 +150,7 @@ DBR_DestroyInstance(hBarcode);
 ```
 
 #### Specify maximum barcode count
-By default, the SDK will read as many barcodes as it can. To increase the recognition efficiency, you can use
-expectedBarcodesCount to specify the maximum number of barcodes to recognize according to your scenario.   
+By default, the SDK will read as many barcodes as it can. To increase the recognition efficiency, you can use `expectedBarcodesCount` to specify the maximum number of barcodes to recognize according to your scenario.   
 
 ```c
 void *hBarcode = NULL;
@@ -202,4 +201,103 @@ DBR_DecodeFile(hBarcode,"put your file path here","");
 DBR_GetAllTextResults(hBarcode, &pResult);
 DBR_FreeTextResults(&pResult);
 DBR_DestroyInstance(hBarcode);
+```
+
+### Use A Template to Change Settings
+Besides the option of using the PublicRuntimeSettings struct, the SDK also provides [`DBR_InitRuntimeSettingsWithString`]({{ site.manual_interface_c }}methods/DBR_InitRuntimeSettingsWithString.html) and [`DBR_InitRuntimeSettingsWithFile`]({{ site.manual_interface_c }}methods/DBR_InitRuntimeSettingsWithFile.html) APIs that enable you to use a template to control all the runtime settings. With a template, instead of writing many codes to modify the settings, you can manage all the runtime settings in a JSON file/string.    
+
+```c
+void *hBarcode = NULL;
+char sError[512];
+TextResultArray* pResult = NULL;
+hBarcode = DBR_CreateInstance();
+// Initialize license prior to any decoding
+//Replace "<Put your license key here>" with your own license
+DBR_InitLicense(hBarcode, "<Put your license key here>");
+//Use a template to modify the runtime settings
+//DBR_InitRuntimeSettingsWithString() can also be used to modify the runtime settings with a json string
+DBR_InitRuntimeSettingsWithFile(hBarcode, "<Put your file path here>", CM_OVERWRITE, sError, 512);
+//Output runtime settings to a json file.
+//DBR_OutputLicenseToString() can also be used to output the settings to a string
+DBR_OutputSettingsToFile(hBarcode, "<Put your file path here>", "runtimeSettings");
+//Replace "<Put your file path here>" with your own file path
+DBR_DecodeFile(hBarcode,"put your file path here","");
+DBR_GetAllTextResults(hBarcode, &pResult);
+DBR_FreeTextResults(&pResult);
+DBR_DestroyInstance(hBarcode);
+```  
+
+Below is a template for your reference. To learn more about the APIs, you can check out [`PublicRuntimeSettings`]({{ site.manual_interface_struct }}PublicRuntimeSettings.html) Struct.  
+```c
+{
+   "ImageParameter" : {
+      "BarcodeFormatIds" : [ "BF_ALL" ],
+      "BinarizationModes" : [
+         {
+            "BlockSizeX" : 0,
+            "BlockSizeY" : 0,
+            "EnableFillBinaryVacancy" : 1,
+            "ImagePreprocessingModesIndex" : -1,
+            "Mode" : "BM_LOCAL_BLOCK",
+            "ThreshValueCoefficient" : 10
+         }
+      ],
+      "DeblurLevel" : 9,
+      "Description" : "",
+      "ExpectedBarcodesCount" : 0,
+      "GrayscaleTransformationModes" : [
+         {
+            "Mode" : "GTM_ORIGINAL"
+         }
+      ],
+      "ImagePreprocessingModes" : [
+         {
+            "Mode" : "IPM_GENERAL"
+         }
+      ],
+      "IntermediateResultSavingMode" : {
+         "Mode" : "IRSM_MEMORY"
+      },
+      "IntermediateResultTypes" : [ "IRT_NO_RESULT" ],
+      "MaxAlgorithmThreadCount" : 4,
+      "Name" : "runtimesettings",
+      "PDFRasterDPI" : 300,
+      "Pages" : "",
+      "RegionDefinitionNameArray" : null,
+      "RegionPredetectionModes" : [
+         {
+            "Mode" : "RPM_GENERAL"
+         }
+      ],
+      "ResultCoordinateType" : "RCT_PIXEL",
+      "ScaleDownThreshold" : 2300,
+      "TerminatePhase" : "TP_BARCODE_RECOGNIZED",
+      "TextFilterModes" : [
+         {
+            "MinImageDimension" : 65536,
+            "Mode" : "TFM_GENERAL_CONTOUR",
+            "Sensitivity" : 0
+         }
+      ],
+      "TextResultOrderModes" : [
+         {
+            "Mode" : "TROM_CONFIDENCE"
+         },
+         {
+            "Mode" : "TROM_POSITION"
+         },
+         {
+            "Mode" : "TROM_FORMAT"
+         }
+      ],
+      "TextureDetectionModes" : [
+         {
+            "Mode" : "TDM_GENERAL_WIDTH_CONCENTRATION",
+            "Sensitivity" : 5
+         }
+      ],
+      "Timeout" : 10000
+   },
+   "Version" : "3.0"
+}
 ```
