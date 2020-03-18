@@ -8,6 +8,7 @@
   | [`DBR_DecodeBase64String`](methods/DBR_DecodeBase64String.md) | Decode barcodes from a base64 encoded string. |
   | [`DBR_DecodeDIB`](methods/DBR_DecodeDIB.md) | Decode barcode from a handle of device-independent bitmap (DIB). | 
   
+---
  
 ## DBR_DecodeFile
 Decode barcodes from a specified image file.
