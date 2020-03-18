@@ -10,7 +10,11 @@
   
 ---
  
-## DBR_DecodeFile
+
+
+
+
+### DBR_DecodeFile
 Decode barcodes from a specified image file.
 
 ```c
@@ -26,8 +30,6 @@ DBR_API int DBR_DecodeFile (void* barcodeReader, const char* pFileName, const ch
 Returns error code (returns 0 if the function operates successfully).    
 *You can call [`DBR_GetErrorString`](DBR_GetErrorString.md) to get detailed error message.*
 
----
-
 #### Code Snippet
 ```c
 void* barcodeReader = DBR_CreateInstance();
@@ -36,10 +38,142 @@ int errorCode = DBR_DecodeFile(barcodeReader, "C:\\Program Files (x86)\\Dynamsof
 DBR_DestroyInstance(barcodeReader);
 ```
 
-## DBR_DecodeFileInMemory
+&nbsp;
 
-## DBR_DecodeBuffer
 
-## DBR_DecodeBase64String
 
-## DBR_DecodeDIB
+
+
+### DBR_DecodeFileInMemory
+Decode barcodes from an image file in memory.
+
+```c
+DBR_API int DBR_DecodeFileInMemory (void* barcodeReader, const unsigned char* pFileBytes, const int fileSize, const char* pTemplateName)	
+```  
+   
+#### Parameters
+`[in] barcodeReader` Handle of the barcode reader instance.  
+`[in]	pFileBytes` The image file bytes in memory.  
+`[in]	fileSize`	The length of the file bytes in memory.  
+`[in]	pTemplateName` The template name.  
+
+#### Return value
+Returns error code (returns 0 if the function operates successfully).    
+*You can call [`DBR_GetErrorString`](DBR_GetErrorString.md) to get detailed error message.*
+
+#### Code Snippet
+```c
+void* barcodeReader = DBR_CreateInstance();
+DBR_InitLicense(barcodeReader, "t0260NwAAAHV***************");
+unsigned char* pFileBytes;
+int nFileSize = 0;
+GetFileStream("C:\\Program Files (x86)\\Dynamsoft\\{Version number}\\Images\\AllSupportedBarcodeTypes.tif", &pFileBytes, &nFileSize);
+int errorCode = DBR_DecodeFileInMemory(barcodeReader, pFileBytes, nFileSize, "");
+DBR_DestroyInstance(barcodeReader);
+```
+
+&nbsp;
+
+
+
+
+
+### DBR_DecodeBuffer
+Decode barcodes from the memory buffer containing image pixels in defined format.
+
+```c
+DBR_API int DBR_DecodeBuffer (void* barcodeReader, const unsigned char* pBufferBytes, const int width, const int height, const int stride, const ImagePixelFormat format, const char* pTemplateName)
+```   
+   
+#### Parameters
+`[in] barcodeReader` Handle of the barcode reader instance.  
+`[in]	pBufferBytes` The array of bytes which contain the image data.  
+`[in]	width` The width of the image in pixels.  
+`[in]	height` The height of the image in pixels.  
+`[in]	stride` The stride (or scan width) of the image.  
+`[in]	format` The image pixel format used in the image byte array.  
+`[in]	pTemplateName` The template name.
+
+#### Return value
+Returns error code (returns 0 if the function operates successfully).    
+*You can call [`DBR_GetErrorString`](DBR_GetErrorString.md) to get detailed error message.*
+
+#### Code Snippet
+```c
+void* barcodeReader = DBR_CreateInstance();
+DBR_InitLicense(barcodeReader, "t0260NwAAAHV***************");
+unsigned char* pBufferBytes;
+int iWidth = 0;
+int iHeight = 0;
+int iStride = 0;
+ImagePixelFormat format;
+GetBufferFromFile("C:\\Program Files (x86)\\Dynamsoft\\{Version number}\\Images\\AllSupportedBarcodeTypes.tif", &pBufferBytes, &iWidth, &iHeight, &iStride, &format);
+int errorCode = DBR_DecodeBuffer(barcodeReader, pBufferBytes, iWidth, iHeight, iStride, format, "");
+DBR_DestroyInstance(barcodeReader);
+```
+
+&nbsp;
+
+
+
+
+### DBR_DecodeBase64String
+Decode barcodes from an image file encoded as a base64 string.
+
+```c
+DBR_API int DBR_DecodeBase64String (void* barcodeReader, const char* pBase64String, const char* pTemplateName)	
+```   
+
+#### Parameters
+`[in] barcodeReader` Handle of the barcode reader instance.   
+`[in]	pBase64String` A base64 encoded string that represents an image.  
+`[in]	pTemplateName` The template name.  
+
+#### Return value
+Returns error code (returns 0 if the function operates successfully).    
+*You can call [`DBR_GetErrorString`](DBR_GetErrorString.md) to get detailed error message.*
+
+#### Code Snippet
+```c
+void* barcodeReader = DBR_CreateInstance();
+DBR_InitLicense(barcodeReader, "t0260NwAAAHV***************");
+unsigned char* pBufferBytes;
+int nFileSize = 0;
+GetFileStream("C:\\Program Files (x86)\\Dynamsoft\\{Version number}\\Images\\AllSupportedBarcodeTypes.tif", &pFileBytes, &nFileSize);
+char* strBase64String;
+GetFileBase64String(pBufferBytes, &strBase64String);
+int errorCode = DBR_DecodeBase64String(barcodeReader, strBase64String, "");
+DBR_DestroyInstance(barcodeReader);
+```
+
+&nbsp;
+
+
+
+
+
+### DBR_DecodeDIB
+Decode barcodes from a handle of device-independent bitmap (DIB).
+
+```c
+DBR_API int DBR_DecodeDIB (void* barcodeReader, const HANDLE hDIB, const char* pTemplateName)	
+```   
+   
+#### Parameters
+`[in] barcodeReader` Handle of the barcode reader instance.  
+`[in]	hDIB` Handle of the device-independent bitmap.  
+`[in]	pTemplateName` The template name.  
+
+#### Return value
+Returns error code (returns 0 if the function operates successfully).    
+*You can call [`DBR_GetErrorString`](DBR_GetErrorString.md) to get detailed error message.*
+
+#### Code Snippet
+```c
+void* barcodeReader = DBR_CreateInstance();
+DBR_InitLicense(barcodeReader, "t0260NwAAAHV***************");
+HANDLE pDIB;
+GetDIBFromImage("C:\\Program Files (x86)\\Dynamsoft\\{Version number}\\Images\\AllSupportedBarcodeTypes.tif", &pDIB);
+int errorCode = DBR_DecodeDIB(barcodeReader, pDIB, "");
+DBR_DestroyInstance(barcodeReader);
+```
