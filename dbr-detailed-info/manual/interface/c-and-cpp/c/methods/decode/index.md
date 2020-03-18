@@ -14,7 +14,7 @@
 
 
 
-### DBR_DecodeFile
+## DBR_DecodeFile
 Decode barcodes from a specified image file.
 
 ```c
@@ -44,7 +44,7 @@ DBR_DestroyInstance(barcodeReader);
 
 
 
-### DBR_DecodeFileInMemory
+## DBR_DecodeFileInMemory
 Decode barcodes from an image file in memory.
 
 ```c
@@ -78,7 +78,7 @@ DBR_DestroyInstance(barcodeReader);
 
 
 
-### DBR_DecodeBuffer
+## DBR_DecodeBuffer
 Decode barcodes from the memory buffer containing image pixels in defined format.
 
 ```c
@@ -117,7 +117,7 @@ DBR_DestroyInstance(barcodeReader);
 
 
 
-### DBR_DecodeBase64String
+## DBR_DecodeBase64String
 Decode barcodes from an image file encoded as a base64 string.
 
 ```c
@@ -152,7 +152,7 @@ DBR_DestroyInstance(barcodeReader);
 
 
 
-### DBR_DecodeDIB
+## DBR_DecodeDIB
 Decode barcodes from a handle of device-independent bitmap (DIB).
 
 ```c
