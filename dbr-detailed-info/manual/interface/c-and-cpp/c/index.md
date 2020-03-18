@@ -20,8 +20,8 @@ sourceCodeUrl: https://github.com/BBong119/bbong119.github.io/blob/master/dbr-de
   
   | Method               | Description |
   |----------------------|-------------|
-  | [`DBR_CreateInstance`](methods/DBR_CreateInstance.md) | Create an instance of Dynamsoft Barcode Reader. |
-  | [`DBR_DestroyInstance`](methods/DBR_DestroyInstance.md) | Destroy the instance of Dynamsoft Barcode Reader. |
+  | [`DBR_CreateInstance`](methods/initialize-and-destroy/index.md#dbr_createinstance) | Create an instance of Dynamsoft Barcode Reader. |
+  | [`DBR_DestroyInstance`](methods/initialize-and-destroy/index.md#dbr_destroyinstance) | Destroy the instance of Dynamsoft Barcode Reader. |
 
 
 &nbsp; 
@@ -31,11 +31,11 @@ sourceCodeUrl: https://github.com/BBong119/bbong119.github.io/blob/master/dbr-de
 
   | Method               | Description |
   |----------------------|-------------|
-  | [`DBR_DecodeFile`](methods/DBR_DecodeFile.md) | Decode barcodes from a specified image file. |
-  | [`DBR_DecodeFileInMemory`](methods/DBR_DecodeFileInMemory.md) | Decode barcodes from an image file in memory. |
-  | [`DBR_DecodeBuffer`](methods/DBR_DecodeBuffer.md) | Decode barcodes from raw buffer. |
-  | [`DBR_DecodeBase64String`](methods/DBR_DecodeBase64String.md) | Decode barcodes from a base64 encoded string. |
-  | [`DBR_DecodeDIB`](methods/DBR_DecodeDIB.md) | Decode barcode from a handle of device-independent bitmap (DIB). | 
+  | [`DBR_DecodeFile`](methods/decode/index.md#dbr_decodefile) | Decode barcodes from a specified image file. |
+  | [`DBR_DecodeFileInMemory`](methods/decode/index.md#dbr_decodefileinmemory) | Decode barcodes from an image file in memory. |
+  | [`DBR_DecodeBuffer`](methods/decode/index.md#dbr_decodebuffer) | Decode barcodes from raw buffer. |
+  | [`DBR_DecodeBase64String`](methods/decode/index.md#dbr_decodebase64string) | Decode barcodes from a base64 encoded string. |
+  | [`DBR_DecodeDIB`](methods/decode/index.md#dbr_decodedib) | Decode barcode from a handle of device-independent bitmap (DIB). | 
 
 
 &nbsp; 
