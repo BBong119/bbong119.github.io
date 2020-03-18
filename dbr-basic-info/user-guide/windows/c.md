@@ -3,7 +3,7 @@
 ## Table of Contents
 - [System requirements](#system-requirements)
 - [Installation](#installation)
-- [Getting Started: HelloWorld](#getting-started:-helloworld)
+- [Getting Started: HelloWorld](#getting-started\:-helloworld)
 - [Decoding Methods](#decoding-methods)
 - [Barcode reading settings](#barcode-reading-settings)
 - [Licensing and Distributing](#licensing-and-distributing)
