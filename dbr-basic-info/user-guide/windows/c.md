@@ -11,6 +11,10 @@
 - [FAQ](#faq)
 - [Contact Us](#contact-us)
 
+
+&nbsp; 
+
+
 ## System Requirements
 
 - Operating systems:
@@ -18,11 +22,19 @@
    - Windows Server 2003, 2008, 2008 R2, 2012.
   
 - Environment: Visual Studio 2008 and above.  
+
+
+&nbsp; 
+
    
 ## Installation
 To install Dynamsoft Barcode Reader Windows Edition on your development machine, you can download the SDK from the [Dynamsoft website](https://www.dynamsoft.com/Downloads/Dynamic-Barcode-Reader-Download.aspx) and run the setup program. The trial installer includes a free trial license valid for 30 days.   
    
 After installation, you can find samples for supported platforms in the **Samples** folder under the installation folder.  
+
+
+&nbsp; 
+
 
 ## Getting Started: HelloWorld
 1. Start Visual Studio and create a new Win32 Console Application in C. Let's name it `BarcodeReadDemo_C`.   
@@ -102,6 +114,10 @@ After installation, you can find samples for supported platforms in the **Sample
    
 To deploy your application, make sure the DLLs are in the same folder as the EXE file. See the [Distribution](#distribution) section for more details.   
 
+
+&nbsp; 
+
+
 ## Decoding Methods
 The SDK provides multiple decoding methods that support reading barcodes from different sources, including static images,
 video stream, files in memory, base64 string, bitmap, etc. Here is a list of all decoding methods:
@@ -113,6 +129,9 @@ current page.
 - [DBR_DecodeFileInMemory]({{ site.manual_interface_c }}methods/DBR_DecodeFileInMemory.html): Decodes barcodes from an image file in memory.   
    
 You can find more samples in more programming languages at [Code Gallery](https://www.dynamsoft.com/Downloads/Dynamic-Barcode-Reader-Sample-Download.aspx).
+
+
+&nbsp; 
 
 
 ## Barcode Reading Settings
@@ -312,8 +331,14 @@ Below is a template for your reference. To learn more about the APIs, you can ch
 }
 ```
 
+&nbsp; 
+
+
 ## Licensing and Distributing
 [Licensing and Distributing]()
+
+
+&nbsp; 
 
 
 ## How-to Guides
@@ -335,6 +360,10 @@ This section covers the following topics:
 - [Check if the barcode image is clear enough for recognition]()
 - [Generate a custom barcode reading template]()
 
+
+&nbsp; 
+
+
 ## FAQ
 - [Licensing]()
    - [How to find my license key for the full version?]()
@@ -348,6 +377,10 @@ This section covers the following topics:
    - [How to get the “result image” with overlays once barcodes are found in the image?]()
    - [The barcode reader SDK sometimes return false results with four or less characters. How to avoid it?]()
    - [Can I scan barcodes on US Driver’s Licenses?]()
+
+
+&nbsp; 
+
 
 ## Contact Us
 If there are any questions, please feel free to contact [support@dynamsoft.com](mailto:support@dynamsoft.com).
