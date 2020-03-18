@@ -86,6 +86,18 @@ After installation, you can find samples for supported platforms in the **Sample
    
 To deploy your application, make sure the DLLs are in the same folder as the EXE file. See the [Distribution](#distribution) section for more details.   
 
+## Decoding Methods
+The SDK provides multiple decoding methods that support reading barcodes from different sources, including static images,
+video stream, files in memory, base64 string, bitmap, etc. Here is a list of all decoding methods:
+- [DecodeFile]({{ site.manual_interface_cpp }}methods/DecodeFile.html): Reads barcodes from a specified file (BMP, JPEG, PNG, GIF, TIFF or PDF).   
+- [DecodeBase64String]({{ site.manual_interface_cpp }}methods/DecodeBase64String.html): Reads barcodes from a base64 encoded string of a file.   
+- [DecodeBitmap]({{ site.manual_interface_cpp }}methods/DecodeBitmap.html) and [DecodeDIB]({{ site.manual_interface_cpp }}methods/DecodeDIB.html): Reads barcodes from a bitmap. When handling multi-page images, it will only decode the
+current page.   
+- [DecodeBuffer]({{ site.manual_interface_cpp }}methods/DecodeBuffer.html): Reads barcodes from raw buffer.
+- [DecodeFileInMemory]({{ site.manual_interface_cpp }}methods/DecodeFileInMemory.html): Decodes barcodes from an image file in memory.   
+   
+You can find more samples in more programming languages at [Code Gallery](https://www.dynamsoft.com/Downloads/Dynamic-Barcode-Reader-Sample-Download.aspx).
+
 ## Barcode reading settings
 Calling the [decoding methods](#decoding-methods) directly will use the default scanning modes and it will satisfy most of the needs. The SDK also allows you to adjust the scanning settings to optimize the scanning performance for different usage scenarios.   
    
@@ -111,48 +123,49 @@ If your full license only covers some barcode formats, you can use `BarcodeForma
 
 For example, to enable only 1D barcode reading, you can use the following code:   
 
-```c
-void *hBarcode = NULL;
+```cpp
 char sError[512];
-TextResultArray* pResult = NULL;
-PublicRuntimeSettings runtimeSettings;
-hBarcode = DBR_CreateInstance();
-// Initialize license prior to any decoding
+TextResultArray* paryResult = NULL;
+PublicRuntimeSettings* runtimeSettings = new PublicRuntimeSettings();
+CBarcodeReader* reader = new CBarcodeReader();
+//Initialize license prior to any decoding
 //Replace "<Put your license key here>" with your own license
-DBR_InitLicense(hBarcode, "<Put your license key here>");
+reader->InitLicense("<Put your license key here>");
 //Set the barcode format
-DBR_GetRuntimeSettings(hBarcode, &runtimeSettings);
-runtimeSettings.barcodeFormatIds = 2047; // OneD barcode
-DBR_UpdateRuntimeSettings(hBarcode, &runtimeSettings,sError,512);
-//Replace "Put the path of your file here" with your own file path
-DBR_DecodeFile(hBarcode,"<Put your file path here>","");
-DBR_GetAllTextResults(hBarcode, &pResult);
-DBR_FreeTextResults(&pResult);
-DBR_DestroyInstance(hBarcode);
+reader->GetRuntimeSettings(runtimeSettings);
+runtimeSettings->barcodeFormatIds = 2047; //OneD barcode
+reader->UpdateRuntimeSettings(runtimeSettings, sError, 512);
+//Replace "<Put the path of your file here>" with your own file path
+reader->DecodeFile("<Put your file path here>", "");
+// If succeeds
+reader->GetAllTextResults(&paryResult);
+CBarcodeReader::FreeTextResults(&paryResult);
+delete runtimeSettings;
+delete reader;
 ```
 
 #### Specify maximum barcode count
 By default, the SDK will read as many barcodes as it can. To increase the recognition efficiency, you can use `expectedBarcodesCount` to specify the maximum number of barcodes to recognize according to your scenario.   
 
-```c
-void *hBarcode = NULL;
-23
+```cpp
 char sError[512];
-TextResultArray* pResult = NULL;
-PublicRuntimeSettings runtimeSettings;
-hBarcode = DBR_CreateInstance();
-// Initialize license prior to any decoding
+TextResultArray* paryResult = NULL;
+PublicRuntimeSettings* runtimeSettings = new PublicRuntimeSettings();
+CBarcodeReader* reader = new CBarcodeReader();
+//Initialize license prior to any decoding
 //Replace "<Put your license key here>" with your own license
-DBR_InitLicense(hBarcode, "<Put your license key here>");
+reader->InitLicense("<Put your license key here>");
 //Set the number of barcodes to be expected
-DBR_GetRuntimeSettings(hBarcode, &runtimeSettings);
-runtimeSettings.expectedBarcodesCount = 1;
-DBR_UpdateRuntimeSettings(hBarcode, &runtimeSettings, sError, 512);
-//Replace "<Put the path of your file here>" with your own file path
-DBR_DecodeFile(hBarcode,"<Put your file path here>","");
-DBR_GetAllTextResults(hBarcode, &pResult);
-DBR_FreeTextResults(&pResult);
-DBR_DestroyInstance(hBarcode);
+reader->GetRuntimeSettings(runtimeSettings);
+runtimeSettings->expectedBarcodesCount = 1;
+reader->UpdateRuntimeSettings(runtimeSettings, sError, 512);
+//Replace "Put the path of your file here" with your own file path
+reader->DecodeFile("<Put your file path here>", "");
+// If succeeds
+reader->GetAllTextResults(&paryResult);
+CBarcodeReader::FreeTextResults(&paryResult);
+delete runtimeSettings;
+delete reader;
 ```
 
 #### Specify a scan region
@@ -161,52 +174,54 @@ dealing with high-resolution images. You can speed up the recognition process by
 
 To specify a region, you will need to define an area. The following code shows how to create a template string and define the region.   
 
-```c
-void *hBarcode = NULL;
+```cpp
 char sError[512];
-TextResultArray* pResult = NULL;
-PublicRuntimeSettings runtimeSettings;
-hBarcode = DBR_CreateInstance();
-// Initialize license prior to any decoding
+TextResultArray* paryResult = NULL;
+PublicRuntimeSettings* runtimeSettings = new PublicRuntimeSettings();
+CBarcodeReader* reader = new CBarcodeReader();
+//Initialize license prior to any decoding
 //Replace "<Put your license key here>" with your own license
-DBR_InitLicense(hBarcode, "<Put your license key here>");
-//Decode the barcodes on the left half of the image
-DBR_GetRuntimeSettings(hBarcode, &runtimeSettings);
-runtimeSettings.region.regionBottom = 100;
-runtimeSettings.region.regionLeft = 0;
-runtimeSettings.region.regionRight = 50;
-runtimeSettings.region.regionTop = 0;
-runtimeSettings.region.regionMeasuredByPercentage = 1; //The region is determined by percentage
-DBR_UpdateRuntimeSettings(hBarcode, &runtimeSettings,sError,512);
+reader->InitLicense("Put your license key here");
+//Decode the barcodes on the left of the image
+reader->GetRuntimeSettings(runtimeSettings);
+runtimeSettings->region.regionBottom = 100;
+runtimeSettings->region.regionLeft = 0;
+runtimeSettings->region.regionRight = 50;
+runtimeSettings->region.regionTop = 0;
+runtimeSettings->region.regionMeasuredByPercentage = 1; //The region is determined by percentage
+reader->UpdateRuntimeSettings(runtimeSettings, sError, 512);
 //Replace "<Put the path of your file here>" with your own file path
-DBR_DecodeFile(hBarcode,"put your file path here","");
-DBR_GetAllTextResults(hBarcode, &pResult);
-DBR_FreeTextResults(&pResult);
-DBR_DestroyInstance(hBarcode);
+reader->DecodeFile("<Put your file path here>", "");
+// If succeeds
+reader->GetAllTextResults(&paryResult);
+CBarcodeReader::FreeTextResults(&paryResult);
+delete runtimeSettings;
+delete reader;
+
 ```
 
 ### Use A Template to Change Settings
 Besides the option of using the PublicRuntimeSettings struct, the SDK also provides [`DBR_InitRuntimeSettingsWithString`]({{ site.manual_interface_c }}methods/DBR_InitRuntimeSettingsWithString.html) and [`DBR_InitRuntimeSettingsWithFile`]({{ site.manual_interface_c }}methods/DBR_InitRuntimeSettingsWithFile.html) APIs that enable you to use a template to control all the runtime settings. With a template, instead of writing many codes to modify the settings, you can manage all the runtime settings in a JSON file/string.    
 
-```c
-void *hBarcode = NULL;
+```cpp
 char sError[512];
-TextResultArray* pResult = NULL;
-hBarcode = DBR_CreateInstance();
-// Initialize license prior to any decoding
-//Replace "<Put your license key here>" with your own license
-DBR_InitLicense(hBarcode, "<Put your license key here>");
+TextResultArray* paryResult = NULL;
+CBarcodeReader* reader = new CBarcodeReader();
+//Initialize license prior to any decoding
+//Replace "Put your license key here" with your own license
+reader->InitLicense("Put your license key here");
 //Use a template to modify the runtime settings
-//DBR_InitRuntimeSettingsWithString() can also be used to modify the runtime settings with a json string
-DBR_InitRuntimeSettingsWithFile(hBarcode, "<Put your file path here>", CM_OVERWRITE, sError, 512);
+//InitRuntimeSettingsWithString() can also be used to modify the runtime settings with a json string
+reader->InitRuntimeSettingsWithFile("<Put your file path here>", CM_OVERWRITE, sError, 512);
 //Output runtime settings to a json file.
-//DBR_OutputLicenseToString() can also be used to output the settings to a string
-DBR_OutputSettingsToFile(hBarcode, "<Put your file path here>", "runtimeSettings");
-//Replace "<Put your file path here>" with your own file path
-DBR_DecodeFile(hBarcode,"put your file path here","");
-DBR_GetAllTextResults(hBarcode, &pResult);
-DBR_FreeTextResults(&pResult);
-DBR_DestroyInstance(hBarcode);
+//OutputSettingsToString() can also be used to output the settings to a string
+reader->OutputSettingsToFile("<Put your file path here>","currentruntime");
+//Replace "Put the path of your file here" with your own file path
+reader->DecodeFile("Put your file path here", "");
+// If succeeds
+reader->GetAllTextResults(&paryResult);
+CBarcodeReader::FreeTextResults(&paryResult);
+delete reader;
 ```  
 
 Below is a template for your reference. To learn more about the APIs, you can check out [`PublicRuntimeSettings`]({{ site.manual_interface_struct }}PublicRuntimeSettings.html) Struct.  
