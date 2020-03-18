@@ -26,12 +26,12 @@ sourceCodeUrl: https://github.com/BBong119/bbong119.github.io/blob/master/dbr-de
 
 &nbsp; 
 
-
+111
 ### Decode
 
   | Method               | Description |
   |----------------------|-------------|
-  | [`DBR_DecodeFile`](methods/decode/index.md#dbr_decodefile) | Decode barcodes from a specified image file. |
+  | [`DBR_DecodeFile`]({{ site.data.cfunction.DBR_DecodeFile }}) | Decode barcodes from a specified image file. |
   | [`DBR_DecodeFileInMemory`](methods/decode/index.md#dbr_decodefileinmemory) | Decode barcodes from an image file in memory. |
   | [`DBR_DecodeBuffer`](methods/decode/index.md#dbr_decodebuffer) | Decode barcodes from raw buffer. |
   | [`DBR_DecodeBase64String`](methods/decode/index.md#dbr_decodebase64string) | Decode barcodes from a base64 encoded string. |
