@@ -5,7 +5,7 @@
 - [Installation](#installation)
 - [Getting Started: HelloWorld](#getting-started-helloworld)
 - [Decoding Methods](#decoding-methods)
-- [Barcode reading settings](#barcode-reading-settings)
+- [Barcode Reading Settings](#barcode-reading-settings)
 - [Licensing and Distributing](#licensing-and-distributing)
 - [How-to Guides](#how-to-guides)
 - [FAQ](#faq)
