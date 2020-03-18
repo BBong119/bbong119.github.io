@@ -76,13 +76,12 @@ sourceCodeUrl: https://github.com/BBong119/bbong119.github.io/blob/master/dbr-de
    
   | Method               | Description |
   |----------------------|-------------|
-  | [`DBR_InitLicense`](methods/DBR_InitLicense.md) | Read product key and activate the SDK. |
-  | [`DBR_InitLicenseFromServer`](methods/DBR_InitLicenseFromServer.md) | Initialize license and connect to the specified server for online verification. |
-  | [`DBR_InitLicenseFromLicenseContent`](methods/DBR_InitLicenseFromLicenseContent.md) | Initialize license from the license content on client machine for offline verification. |
-  | [`DBR_OutputLicenseToString`](methods/DBR_OutputLicenseToString.md) | Output the license content to a string from the license server. |
-  | [`DBR_OutputLicenseToStringPtr`](methods/DBR_OutputLicenseToStringPtr.md) | Output the license content to a string from the license server. |
-  | [`DBR_FreeLicenseString`](methods/DBR_FreeLicenseString.md) | Free memory allocated for the license string. |
-
+  | [`DBR_InitLicense`](methods/license/index.md#dbr_initlicense) | Read product key and activate the SDK. |
+  | [`DBR_InitLicenseFromServer`](methods/license/index.md#dbr_initlicensefromserver) | Initialize license and connect to the specified server for online verification. |
+  | [`DBR_InitLicenseFromLicenseContent`](methods/license/index.md#dbr_initlicensefromlicensecontent) | Initialize license from the license content on client machine for offline verification. |
+  | [`DBR_OutputLicenseToString`](methods/license/index.md#dbr_outputlicensetostring) | Output the license content to a string from the license server. |
+  | [`DBR_OutputLicenseToStringPtr`](methods/license/index.md#dbr_outputlicensetostringptr) | Output the license content to a string from the license server. |
+  | [`DBR_FreeLicenseString`](methods/license/index.md#dbr_freelicensestring) | Free memory allocated for the license string. |
 
 &nbsp; 
 
