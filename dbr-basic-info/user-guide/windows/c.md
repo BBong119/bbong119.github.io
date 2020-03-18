@@ -96,7 +96,7 @@ The SDK provides multiple decoding methods that support reading barcodes from di
 video stream, files in memory, base64 string, bitmap, etc. Here is a list of all decoding methods:
 - [DecodeFile]({{ site.manual_interface_c }}methods/DecodeFile.html): Reads barcodes from a specified file (BMP, JPEG, PNG, GIF, TIFF or PDF).   
 - [DecodeBase64String]({{ site.manual_interface_c }}methods/DecodeBase64String.html): Reads barcodes from a base64 encoded string of a file.   
-- [DecodeBitmap]({{ site.manual_interface_c }}methods/DecodeBitmap.html) and [DecodeDIB]({{ site.manual_interface_c} }methods/DecodeDIB.html): Reads barcodes from a bitmap. When handling multi-page images, it will only decode the
+- [DecodeBitmap]({{ site.manual_interface_c }}methods/DecodeBitmap.html) and [DecodeDIB]({{ site.manual_interface_c }}methods/DecodeDIB.html): Reads barcodes from a bitmap. When handling multi-page images, it will only decode the
 current page.   
 - [DecodeBuffer]({{ site.manual_interface_c }}methods/DecodeBuffer.html): Reads barcodes from raw buffer.
 - [DecodeFileInMemory]({{ site.manual_interface_c }}methods/DecodeFileInMemory.html): Decodes barcodes from an image file in memory.   
