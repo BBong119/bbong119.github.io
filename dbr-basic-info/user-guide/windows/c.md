@@ -94,12 +94,12 @@ To deploy your application, make sure the DLLs are in the same folder as the EXE
 ## Decoding Methods
 The SDK provides multiple decoding methods that support reading barcodes from different sources, including static images,
 video stream, files in memory, base64 string, bitmap, etc. Here is a list of all decoding methods:
-- [DecodeFile]({{ site.manual_interface_c }}methods/DecodeFile.html): Reads barcodes from a specified file (BMP, JPEG, PNG, GIF, TIFF or PDF).   
-- [DecodeBase64String]({{ site.manual_interface_c }}methods/DecodeBase64String.html): Reads barcodes from a base64 encoded string of a file.   
-- [DecodeBitmap]({{ site.manual_interface_c }}methods/DecodeBitmap.html) and [DecodeDIB]({{ site.manual_interface_c }}methods/DecodeDIB.html): Reads barcodes from a bitmap. When handling multi-page images, it will only decode the
+- [DecodeFile]({{ site.manual_interface_c }}methods/DBR_DecodeFile.html): Reads barcodes from a specified file (BMP, JPEG, PNG, GIF, TIFF or PDF).   
+- [DecodeBase64String]({{ site.manual_interface_c }}methods/DBR_DecodeBase64String.html): Reads barcodes from a base64 encoded string of a file.   
+- [DecodeBitmap]({{ site.manual_interface_c }}methods/DBR_DecodeBitmap.html) and [DecodeDIB]({{ site.manual_interface_c }}methods/DBR_DecodeDIB.html): Reads barcodes from a bitmap. When handling multi-page images, it will only decode the
 current page.   
-- [DecodeBuffer]({{ site.manual_interface_c }}methods/DecodeBuffer.html): Reads barcodes from raw buffer.
-- [DecodeFileInMemory]({{ site.manual_interface_c }}methods/DecodeFileInMemory.html): Decodes barcodes from an image file in memory.   
+- [DecodeBuffer]({{ site.manual_interface_c }}methods/DBR_DecodeBuffer.html): Reads barcodes from raw buffer.
+- [DecodeFileInMemory]({{ site.manual_interface_c }}methods/DBR_DecodeFileInMemory.html): Decodes barcodes from an image file in memory.   
    
 You can find more samples in more programming languages at [Code Gallery](https://www.dynamsoft.com/Downloads/Dynamic-Barcode-Reader-Sample-Download.aspx).
 
@@ -123,9 +123,83 @@ Here are some common scanning settings you might find helpful:
 For more scanning settings guide, check out the [How To](#how-to-guide) section.
 
 #### Specify Barcode Type to Read
-By default, the SDK will read all the supported barcode formats from the image. (See [Product Overview]({{ site.dbrOverview }}) for the full supported barcode list.)   
+By default, the SDK will read all the supported barcode formats except Postal Codes and Dotcode from the image. (See [Product Overview]({{ site.dbrOverview }}) for the full supported barcode list.)   
 
-If your full license only covers some barcode formats, you can use `BarcodeFormatIds` to specify the barcode format(s). Check out barcodeFormatIds 
+If your full license only covers some barcode formats, you can use `BarcodeFormatIds` and `BarcodeFormatIds_2` to specify the barcode format(s). Check out [BarcodeFormat]({{ site.manual_interface_enum }}BarcodeFormat.html) and BarcodeFormat_2({{ site.manual_interface_enum }}BarcodeFormat_2.html).   
 
+For example, to enable only 1D barcode reading, you can use the following code:   
 
-   
+```c
+void *hBarcode = NULL;
+char sError[512];
+TextResultArray* pResult = NULL;
+PublicRuntimeSettings runtimeSettings;
+hBarcode = DBR_CreateInstance();
+// Initialize license prior to any decoding
+//Replace "<Put your license key here>" with your own license
+DBR_InitLicense(hBarcode, "<Put your license key here>");
+//Set the barcode format
+DBR_GetRuntimeSettings(hBarcode, &runtimeSettings);
+runtimeSettings.barcodeFormatIds = 2047; // OneD barcode
+DBR_UpdateRuntimeSettings(hBarcode, &runtimeSettings,sError,512);
+//Replace "Put the path of your file here" with your own file path
+DBR_DecodeFile(hBarcode,"<Put your file path here>","");
+DBR_GetAllTextResults(hBarcode, &pResult);
+DBR_FreeTextResults(&pResult);
+DBR_DestroyInstance(hBarcode);
+```
+
+#### Specify maximum barcode count
+By default, the SDK will read as many barcodes as it can. To increase the recognition efficiency, you can use
+expectedBarcodesCount to specify the maximum number of barcodes to recognize according to your scenario.   
+
+```c
+void *hBarcode = NULL;
+23
+char sError[512];
+TextResultArray* pResult = NULL;
+PublicRuntimeSettings runtimeSettings;
+hBarcode = DBR_CreateInstance();
+// Initialize license prior to any decoding
+//Replace "<Put your license key here>" with your own license
+DBR_InitLicense(hBarcode, "<Put your license key here>");
+//Set the number of barcodes to be expected
+DBR_GetRuntimeSettings(hBarcode, &runtimeSettings);
+runtimeSettings.expectedBarcodesCount = 1;
+DBR_UpdateRuntimeSettings(hBarcode, &runtimeSettings, sError, 512);
+//Replace "<Put the path of your file here>" with your own file path
+DBR_DecodeFile(hBarcode,"<Put your file path here>","");
+DBR_GetAllTextResults(hBarcode, &pResult);
+DBR_FreeTextResults(&pResult);
+DBR_DestroyInstance(hBarcode);
+```
+
+#### Specify a scan region
+By default, the barcode reader will search the whole image for barcodes. This can lead to poor performance especially when
+dealing with high-resolution images. You can speed up the recognition process by restricting the scanning region.   
+
+To specify a region, you will need to define an area. The following code shows how to create a template string and define the region.   
+
+```c
+void *hBarcode = NULL;
+char sError[512];
+TextResultArray* pResult = NULL;
+PublicRuntimeSettings runtimeSettings;
+hBarcode = DBR_CreateInstance();
+// Initialize license prior to any decoding
+//Replace "<Put your license key here>" with your own license
+DBR_InitLicense(hBarcode, "<Put your license key here>");
+//Decode the barcodes on the left half of the image
+DBR_GetRuntimeSettings(hBarcode, &runtimeSettings);
+runtimeSettings.region.regionBottom = 100;
+runtimeSettings.region.regionLeft = 0;
+runtimeSettings.region.regionRight = 50;
+runtimeSettings.region.regionTop = 0;
+runtimeSettings.region.regionMeasuredByPercentage = 1; //The region is determined by percentage
+DBR_UpdateRuntimeSettings(hBarcode, &runtimeSettings,sError,512);
+//Replace "<Put the path of your file here>" with your own file path
+DBR_DecodeFile(hBarcode,"put your file path here","");
+DBR_GetAllTextResults(hBarcode, &pResult);
+DBR_FreeTextResults(&pResult);
+DBR_DestroyInstance(hBarcode);
+```
