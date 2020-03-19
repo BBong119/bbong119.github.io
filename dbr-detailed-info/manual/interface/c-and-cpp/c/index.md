@@ -47,26 +47,26 @@ sourceCodeUrl: https://github.com/BBong119/bbong119.github.io/blob/master/dbr-de
   
   | Method               | Description |
   |----------------------|-------------|
-  | [`DBR_SetModeArgument`](methods/parameter-and-runtime-setting-basic.md#DBR_SetModeArgument) | Set argument value for the specified mode parameter. |
-  | [`DBR_GetModeArgument`](methods/parameter-and-runtime-setting-basic.md#DBR_GetModeArgument) | Get argument value for the specified mode parameter. |
-  | [`DBR_GetRuntimeSettings`](methods/parameter-and-runtime-setting-basic.md#DBR_GetRuntimeSettings) | Get current runtime settings. |
-  | [`DBR_UpdateRuntimeSettings`](methods/parameter-and-runtime-setting-basic.md#DBR_UpdateRuntimeSettings) | Modify and update the current runtime settings. |
-  | [`DBR_ResetRuntimeSettings`](methods/parameter-and-runtime-setting-basic.md#DBR_ResetRuntimeSettings) | Reset runtime settings to default. |
+  | [`DBR_SetModeArgument`](methods/parameter-and-runtime-settings-basic.md#dbr_setmodeargument) | Set argument value for the specified mode parameter. |
+  | [`DBR_GetModeArgument`](methods/parameter-and-runtime-settings-basic.md#dbr_getmodeargument) | Get argument value for the specified mode parameter. |
+  | [`DBR_GetRuntimeSettings`](methods/parameter-and-runtime-settings-basic.md#dbr_getruntimesettings) | Get current runtime settings. |
+  | [`DBR_UpdateRuntimeSettings`](methods/parameter-and-runtime-settings-basic.md#dbr_updateruntimesettings) | Modify and update the current runtime settings. |
+  | [`DBR_ResetRuntimeSettings`](methods/parameter-and-runtime-settings-basic.md#dbr_resetruntimesettings) | Reset runtime settings to default. |
 
 #### Advanced
   
   | Method               | Description |
   |----------------------|-------------|
-  | [`DBR_InitRuntimeSettingsWithFile`](methods/parameter-and-runtime-setting-advanced.md#DBR_InitRuntimeSettingsWithFile) | Initialize runtime settings with the settings in a given JSON file. |
-  | [`DBR_InitRuntimeSettingsWithString`](methods/parameter-and-runtime-setting-advanced.md#DBR_InitRuntimeSettingsWithString) | Initialize runtime settings with the settings in a given JSON string. |
-  | [`DBR_AppendTplFileToRuntimeSettings`](methods/parameter-and-runtime-setting-advanced.md#DBR_AppendTplFileToRuntimeSettings) | Append a new template file to the current runtime settings. |
-  | [`DBR_AppendTplStringToRuntimeSettings`](methods/parameter-and-runtime-setting-advanced.md#DBR_AppendTplStringToRuntimeSettings) | Append a new template string to the current runtime settings. |
-  | [`DBR_GetParameterTemplateCount`](methods/parameter-and-runtime-setting-advanced.md#DBR_GetParameterTemplateCount) | Get the count of the parameter templates. |
-  | [`DBR_GetParameterTemplateName`](methods/parameter-and-runtime-setting-advanced.md#DBR_GetParameterTemplateName) | Get the parameter template name by index. |
-  | [`DBR_OutputSettingsToFile`](methods/parameter-and-runtime-setting-advanced.md#DBR_OutputSettingsToFile) | Output runtime settings to a settings file (JSON file). |
-  | [`DBR_OutputSettingsToString`](methods/parameter-and-runtime-setting-advanced.md#DBR_OutputSettingsToString) | Output runtime settings to a string. |
-  | [`DBR_OutputSettingsToStringPtr`](methods/parameter-and-runtime-setting-advanced.md#DBR_OutputSettingsToStringPtr) | Output runtime settings to a string. |
-  | [`DBR_FreeSettingsString`](methods/parameter-and-runtime-setting-advanced.md#DBR_FreeSettingsString) | Free memory allocated for runtime settings string. |
+  | [`DBR_InitRuntimeSettingsWithFile`](methods/parameter-and-runtime-settings-advanced.md#dbr_initruntimesettingswithfile) | Initialize runtime settings with the settings in a given JSON file. |
+  | [`DBR_InitRuntimeSettingsWithString`](methods/parameter-and-runtime-settings-advanced.md#dbr_initruntimesettingswithstring) | Initialize runtime settings with the settings in a given JSON string. |
+  | [`DBR_AppendTplFileToRuntimeSettings`](methods/parameter-and-runtime-settings-advanced.md#dbr_appendtplfiletoruntimesettings) | Append a new template file to the current runtime settings. |
+  | [`DBR_AppendTplStringToRuntimeSettings`](methods/parameter-and-runtime-settings-advanced.md#dbr_appendtplstringtoruntimesettings) | Append a new template string to the current runtime settings. |
+  | [`DBR_GetParameterTemplateCount`](methods/parameter-and-runtime-settings-advanced.md#dbr_getparametertemplatecount) | Get the count of the parameter templates. |
+  | [`DBR_GetParameterTemplateName`](methods/parameter-and-runtime-settings-advanced.md#dbr_getparametertemplatename) | Get the parameter template name by index. |
+  | [`DBR_OutputSettingsToFile`](methods/parameter-and-runtime-settings-advanced.md#dbr_outputsettingstofile) | Output runtime settings to a settings file (JSON file). |
+  | [`DBR_OutputSettingsToString`](methods/parameter-and-runtime-settings-advanced.md#dbr_outputsettingstostring) | Output runtime settings to a string. |
+  | [`DBR_OutputSettingsToStringPtr`](methods/parameter-and-runtime-settings-advanced.md#dbr_outputsettingstostringptr) | Output runtime settings to a string. |
+  | [`DBR_FreeSettingsString`](methods/parameter-and-runtime-settings-advanced.md#dbr_freesettingsstring) | Free memory allocated for runtime settings string. |
 
 
 &nbsp; 
@@ -90,10 +90,10 @@ sourceCodeUrl: https://github.com/BBong119/bbong119.github.io/blob/master/dbr-de
    
   | Method               | Description |
   |----------------------|-------------|
-  | [`DBR_GetAllTextResults`](methods/result.md#DBR_GetAllTextResults) | Get all recognized barcode results.  |
-  | [`DBR_FreeTextResults`](methods/result.md#DBR_FreeTextResults) | Free memory allocated for text results. |
-  | [`DBR_GetIntermediateResults`](methods/result.md#DBR_GetIntermediateResults) | Get intermediate results. |
-  | [`DBR_FreeIntermediateResults`](methods/result.md#DBR_FreeIntermediateResults) | Free memory allocated for the intermediate results. |
+  | [`DBR_GetAllTextResults`](methods/result.md#dbr_getalltextresults) | Get all recognized barcode results.  |
+  | [`DBR_FreeTextResults`](methods/result.md#dbr_freetextresults) | Free memory allocated for text results. |
+  | [`DBR_GetIntermediateResults`](methods/result.md#dbr_getintermediateresults) | Get intermediate results. |
+  | [`DBR_FreeIntermediateResults`](methods/result.md#dbr_freeintermediateresults) | Free memory allocated for the intermediate results. |
 
 
 &nbsp; 
@@ -103,8 +103,8 @@ sourceCodeUrl: https://github.com/BBong119/bbong119.github.io/blob/master/dbr-de
   
   | Method               | Description |
   |----------------------|-------------|
-  | [`DBR_GetErrorString`](methods/status-retrieval.md#DBR_GetErrorString) | Get error message by error code. |
-  | [`DBR_GetVersion`](methods/status-retrieval.md#DBR_GetVersion) | Get version information of SDK. |
+  | [`DBR_GetErrorString`](methods/status-retrieval.md#dbr_geterrorstring) | Get error message by error code. |
+  | [`DBR_GetVersion`](methods/status-retrieval.md#dbr_getversion) | Get version information of SDK. |
 
 
 &nbsp; 
@@ -115,30 +115,30 @@ sourceCodeUrl: https://github.com/BBong119/bbong119.github.io/blob/master/dbr-de
    
   | Method               | Description |
   |----------------------|-------------|
-  | [`DBR_StartFrameDecoding`](methods/video.md#DBR_StartFrameDecoding) | Decode barcodes from inner frame queue. |
-  | [`DBR_StartFrameDecodingEx`](methods/video.md#DBR_StartFrameDecodingEx) | Decode barcodes from inner frame queue. |
-  | [`DBR_AppendFrame`](methods/video.md#DBR_AppendFrame) | Append a frame image buffer to the inner frame queue. |
-  | [`DBR_StopFrameDecoding`](methods/video.md#DBR_StopFrameDecoding) | Stop thread used for frame decoding. |
+  | [`DBR_StartFrameDecoding`](methods/video.md#dbr_startframedecoding) | Decode barcodes from inner frame queue. |
+  | [`DBR_StartFrameDecodingEx`](methods/video.md#dbr_startframedecodingex) | Decode barcodes from inner frame queue. |
+  | [`DBR_AppendFrame`](methods/video.md#dbr_appendframe) | Append a frame image buffer to the inner frame queue. |
+  | [`DBR_StopFrameDecoding`](methods/video.md#dbr_stopframedecoding) | Stop thread used for frame decoding. |
 
 #### Parameter
    
   | Method               | Description |
   |----------------------|-------------|
-  | [`DBR_InitFrameDecodingParameters`](methods/video.md#DBR_InitFrameDecodingParameters) | Initialize frame decoding parameter. |
+  | [`DBR_InitFrameDecodingParameters`](methods/video.md#dbr_initframedecodingparameters) | Initialize frame decoding parameter. |
 
 #### Callback
    
   | Method               | Description |
   |----------------------|-------------|
-  | [`DBR_SetErrorCallback`](methods/video.md#DBR_SetErrorCallback) | Set callback function to process errors generated during frame decoding. |
-  | [`DBR_SetTextResultCallback`](methods/video.md#DBR_SetTextResultCallback) | Set callback function to process text results generated during frame decoding. |
-  | [`DBR_SetIntermediateResultCallback`](methods/video.md#DBR_SetIntermediateResultCallback) | Set callback function to process intermediate results generated during frame decoding. |
+  | [`DBR_SetErrorCallback`](methods/video.md#dbr_seterrorcallback) | Set callback function to process errors generated during frame decoding. |
+  | [`DBR_SetTextResultCallback`](methods/video.md#dbr_settextresultcallback) | Set callback function to process text results generated during frame decoding. |
+  | [`DBR_SetIntermediateResultCallback`](methods/video.md#dbr_setintermediateresultcallback) | Set callback function to process intermediate results generated during frame decoding. |
 
 #### Status retrieval
    
   | Method               | Description |
   |----------------------|-------------|
-  | [`DBR_GetLengthOfFrameQueue`](methods/video.md#DBR_GetLengthOfFrameQueue) | Get length of current inner frame queue. |
+  | [`DBR_GetLengthOfFrameQueue`](methods/video.md#dbr_getlengthofframequeue) | Get length of current inner frame queue. |
   
 
 &nbsp; 
