@@ -28,11 +28,9 @@
     .otherLinkColour { color: #696969; }
       </style>
     
-  </head>
-  <body>
-    <div class="container-lg px-3 my-5 markdown-body">
-      
-      <h1 id="documentation-home-page"><a href={{ site.homePage }}>Documentation Home Page</a></h1>
+<aside>
+<nav>
+        <h1 id="documentation-home-page"><a href={{ site.homePage }}>Documentation Home Page</a></h1>
 
 {% if page.id == 'interface_main' %}
       <h2 id="interface"><a href={{ site.manual_interface }} class="currentPageHeader">Interface</a></h2>
@@ -55,6 +53,13 @@
          {% endif %}
       </li>
 </ul>
+</nav> 
+</aside>
+  
+  </head>
+  <body>
+    <div class="container-lg px-3 my-5 markdown-body">
+      
 
 <p align="right"><a href="{{ page.sourceCodeUrl }} " align="right" class="#otherLinkColour">Edit<img src="{{ site.editIcon }}" width="20px" height="15px" /></a></p>
 {{ content }}
