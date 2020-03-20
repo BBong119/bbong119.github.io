@@ -31,7 +31,7 @@ CBarcodeReader::CBarcodeReader()
 
 
 
-## ~CBarcodeReader
+## \~CBarcodeReader
 
 Destructor of a `CBarcodeReader` object.
 
