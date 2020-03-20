@@ -1,3 +1,10 @@
+---
+layout: manual-interface-cpp
+id: interface_cpp_license_methods
+sourceCodeUrl: https://github.com/BBong119/bbong119.github.io/blob/master/dbr-detailed-info/manual/interface/c-and-cpp/cpp/CBarcodeReader/methods/license.md
+---
+
+
 # C++ API Reference - CBarcodeReader License Methods
 
   | Method               | Description |
