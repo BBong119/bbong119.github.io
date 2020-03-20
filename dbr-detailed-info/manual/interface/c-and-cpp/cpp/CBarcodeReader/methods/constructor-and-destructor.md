@@ -1,3 +1,10 @@
+---
+layout: manual-interface-cpp
+id: interface_cpp_constructor_and_destructor
+sourceCodeUrl: https://github.com/BBong119/bbong119.github.io/blob/master/dbr-detailed-info/manual/interface/c-and-cpp/cpp/CBarcodeReader/methods/constructor-and-destructor.md
+---
+
+
 # C++ API Reference - CBarcodeReader Constructor and Destructor
 
   | Method               | Description |
