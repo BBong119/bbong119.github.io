@@ -1,3 +1,9 @@
+---
+layout: manual-interface-c
+id: interface_c_result_methods
+sourceCodeUrl: https://github.com/BBong119/bbong119.github.io/blob/master/dbr-detailed-info/manual/interface/c-and-cpp/c/methods/license.md
+---
+
 # C API Reference - Result Methods
 
   | Method               | Description |
