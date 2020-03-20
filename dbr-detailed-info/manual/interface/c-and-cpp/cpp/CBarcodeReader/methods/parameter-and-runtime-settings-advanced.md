@@ -1,3 +1,9 @@
+---
+layout: manual-interface-cpp
+id: interface_cpp_parameter_advanced_methods
+sourceCodeUrl: https://github.com/BBong119/bbong119.github.io/blob/master/dbr-detailed-info/manual/interface/c-and-cpp/cpp/CBarcodeReader/methods/parameter-and-runtime-settings-advanced.md
+---
+
 # C++ API Reference - CBarcodeReader Parameter and Runtime Settings Advanced Methods
 
   | Method               | Description |
