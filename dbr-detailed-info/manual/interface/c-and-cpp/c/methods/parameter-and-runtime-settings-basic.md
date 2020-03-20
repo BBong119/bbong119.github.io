@@ -1,3 +1,9 @@
+---
+layout: manual-interface-c
+id: interface_c_parameters_basic_methods
+sourceCodeUrl: https://github.com/BBong119/bbong119.github.io/blob/master/dbr-detailed-info/manual/interface/c-and-cpp/c/methods/parameter-and-runtime-settings-basic.md
+---
+
 # C API Reference - Parameter and Runtime Settings Basic Methods
    
   | Method               | Description |
