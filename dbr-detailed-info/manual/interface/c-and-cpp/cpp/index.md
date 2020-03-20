@@ -21,8 +21,8 @@ sourceCodeUrl: https://github.com/BBong119/bbong119.github.io/blob/master/dbr-de
    
   | Method               | Description |
   |----------------------|-------------|
-  | [`CBarcodeReader`](CBarcodeReader/methods/CBarcodeReader.md) | Default constructor of `CBarcodeReader` object.|
-  | [`~CBarcodeReader`](CBarcodeReader/methods/~CBarcodeReader.md) | Destructor of `CBarcodeReader` object.|
+  | [`CBarcodeReader`](CBarcodeReader/methods/constructor-and-destructor.md#cbarcodereader) | Default constructor of `CBarcodeReader` object.|
+  | [`~CBarcodeReader`](CBarcodeReader/methods/constructor-and-destructor.md#~cbarcodereader) | Destructor of `CBarcodeReader` object.|
    
    
 &nbsp; 
@@ -32,11 +32,11 @@ sourceCodeUrl: https://github.com/BBong119/bbong119.github.io/blob/master/dbr-de
    
   | Method               | Description |
   |----------------------|-------------|
-  | [`DecodeFile`](CBarcodeReader/methods/DecodeFile.md) | Decode barcodes from a specified image file. |
-  | [`DecodeFileInMemory`](CBarcodeReader/methods/DecodeFileInMemory.md) | Decode barcodes from an image file in memory. |
-  | [`DecodeBuffer`](CBarcodeReader/methods/DecodeBuffer.md) | Decode barcodes from raw buffer. |
-  | [`DecodeBase64String`](CBarcodeReader/methods/DecodeBase64String.md) | Decode barcodes from a base64 encoded string. |
-  | [`DecodeDIB`](CBarcodeReader/methods/DecodeDIB.md) | Decode barcode from a handle of device-independent bitmap (DIB). |
+  | [`DecodeFile`](CBarcodeReader/methods/decode.md#decodefile) | Decode barcodes from a specified image file. |
+  | [`DecodeFileInMemory`](CBarcodeReader/methods/decode.md#decodefileinmemory) | Decode barcodes from an image file in memory. |
+  | [`DecodeBuffer`](CBarcodeReader/methods/decode.md#decodebuffer) | Decode barcodes from raw buffer. |
+  | [`DecodeBase64String`](CBarcodeReader/methods/decode.md#decodebase64string) | Decode barcodes from a base64 encoded string. |
+  | [`DecodeDIB`](CBarcodeReader/methods/decode.md#decodedib) | Decode barcode from a handle of device-independent bitmap (DIB). |
    
    
 &nbsp; 
@@ -49,26 +49,26 @@ sourceCodeUrl: https://github.com/BBong119/bbong119.github.io/blob/master/dbr-de
    
   | Method               | Description |
   |----------------------|-------------|
-  | [`SetModeArgument`](CBarcodeReader/methods/SetModeArgument.md) | Set argument value for the specified mode parameter. |
-  | [`GetModeArgument`](CBarcodeReader/methods/GetModeArgument.md) | Get argument value for the specified mode parameter. |
-  | [`GetRuntimeSettings`](CBarcodeReader/methods/GetRuntimeSettings.md) | Get current runtime settings. |
-  | [`UpdateRuntimeSettings`](CBarcodeReader/methods/UpdateRuntimeSettings.md) | Modify and update the current runtime settings. |
-  | [`ResetRuntimeSettings`](CBarcodeReader/methods/ResetRuntimeSettings.md) | Reset runtime settings to default. |
+  | [`SetModeArgument`](CBarcodeReader/methods/parameter-and-runtime-settings-basic.md#setmodeargument) | Set argument value for the specified mode parameter. |
+  | [`GetModeArgument`](CBarcodeReader/methods/parameter-and-runtime-settings-basic.md#getmodeargument) | Get argument value for the specified mode parameter. |
+  | [`GetRuntimeSettings`](CBarcodeReader/methods/parameter-and-runtime-settings-basic.md#getruntimesettings) | Get current runtime settings. |
+  | [`UpdateRuntimeSettings`](CBarcodeReader/methods/parameter-and-runtime-settings-basic.md#updateruntimesettings) | Modify and update the current runtime settings. |
+  | [`ResetRuntimeSettings`](CBarcodeReader/methods/parameter-and-runtime-settings-basic.md#resetruntimesettings) | Reset runtime settings to default. |
 
 #### Advanced
   
   | Method               | Description |
   |----------------------|-------------|
-  | [`InitRuntimeSettingsWithFile`](CBarcodeReader/methods/InitRuntimeSettingsWithFile.md)  | Initialize runtime settings with the settings in a given JSON file. |
-  | [`InitRuntimeSettingsWithString`](CBarcodeReader/methods/InitRuntimeSettingsWithString.md) | Initialize runtime settings with the settings in a given JSON string. |
-  | [`AppendTplFileToRuntimeSettings`](CBarcodeReader/methods/AppendTplFileToRuntimeSettings.md) | Append a new template file to the current runtime settings. |
-  | [`AppendTplStringToRuntimeSettings`](CBarcodeReader/methods/AppendTplStringToRuntimeSettings.md) | Append a new template string to the current runtime settings. |
-  | [`GetParameterTemplateCount`](CBarcodeReader/methods/GetParameterTemplateCount.md) | Get the count of the parameter templates. |
-  | [`GetParameterTemplateName`](CBarcodeReader/methods/GetParameterTemplateName.md) | Get the parameter template name by index. |
-  | [`OutputSettingsToFile`](CBarcodeReader/methods/OutputSettingsToFile.md) | Output runtime settings to a settings file (JSON file). |
-  | [`OutputSettingsToString`](CBarcodeReader/methods/OutputSettingsToString.md) | Output runtime settings to a string. |
-  | [`OutputSettingsToStringPtr`](CBarcodeReader/methods/OutputSettingsToStringPtr.md) | Output runtime settings to a string. |
-  | [`FreeSettingsString`](CBarcodeReader/methods/FreeSettingsString.md) | Free memory allocated for runtime settings string. |
+  | [`InitRuntimeSettingsWithFile`](CBarcodeReader/methods/parameter-and-runtime-settings-advanced.md#initruntimesettingswithfile)  | Initialize runtime settings with the settings in a given JSON file. |
+  | [`InitRuntimeSettingsWithString`](CBarcodeReader/methods/parameter-and-runtime-settings-advanced.md#initruntimesettingswithstring) | Initialize runtime settings with the settings in a given JSON string. |
+  | [`AppendTplFileToRuntimeSettings`](CBarcodeReader/methods/parameter-and-runtime-settings-advanced.md#appendtplfiletoruntimesettings) | Append a new template file to the current runtime settings. |
+  | [`AppendTplStringToRuntimeSettings`](CBarcodeReader/methods/parameter-and-runtime-settings-advanced.md#appendtplstringtoruntimesettings) | Append a new template string to the current runtime settings. |
+  | [`GetParameterTemplateCount`](CBarcodeReader/methods/parameter-and-runtime-settings-advanced.md#getparametertemplatecount) | Get the count of the parameter templates. |
+  | [`GetParameterTemplateName`](CBarcodeReader/methods/parameter-and-runtime-settings-advanced.md#getparametertemplatename) | Get the parameter template name by index. |
+  | [`OutputSettingsToFile`](CBarcodeReader/methods/parameter-and-runtime-settings-advanced.md#outputsettingstofile) | Output runtime settings to a settings file (JSON file). |
+  | [`OutputSettingsToString`](CBarcodeReader/methods/parameter-and-runtime-settings-advanced.md#outputsettingstostring) | Output runtime settings to a string. |
+  | [`OutputSettingsToStringPtr`](CBarcodeReader/methods/parameter-and-runtime-settings-advanced.md#outputsettingstostringptr) | Output runtime settings to a string. |
+  | [`FreeSettingsString`](CBarcodeReader/methods/parameter-and-runtime-settings-advanced.md#freesettingsstring) | Free memory allocated for runtime settings string. |
    
       
 &nbsp; 
@@ -78,12 +78,12 @@ sourceCodeUrl: https://github.com/BBong119/bbong119.github.io/blob/master/dbr-de
   
   | Method               | Description |
   |----------------------|-------------|
-  | [`InitLicense`](CBarcodeReader/methods/InitLicense.md) | Read product key and activate the SDK. |
-  | [`InitLicenseFromServer`](CBarcodeReader/methods/InitLicenseFromServer.md) | Initialize license and connect to the specified server for online verification. |
-  | [`InitLicenseFromLicenseContent`](CBarcodeReader/methods/InitLicenseFromLicenseContent.md) | Initialize license from the license content on client machine for offline verification. |
-  | [`OutputLicenseToString`](CBarcodeReader/methods/OutputLicenseToString.md) | Output the license content to a string from the license server. |
-  | [`OutputLicenseToStringPtr`](CBarcodeReader/methods/OutputLicenseToStringPtr.md) | Output the license content to a string from the license server. |
-  | [`FreeLicenseString`](CBarcodeReader/methods/FreeLicenseString.md) | Free memory allocated for the license string. |
+  | [`InitLicense`](CBarcodeReader/methods/license.md#initlicense) | Read product key and activate the SDK. |
+  | [`InitLicenseFromServer`](CBarcodeReader/methods/license.md#initlicensefromserver) | Initialize license and connect to the specified server for online verification. |
+  | [`InitLicenseFromLicenseContent`](CBarcodeReader/methods/license.md#initlicensefromlicensecontent) | Initialize license from the license content on client machine for offline verification. |
+  | [`OutputLicenseToString`](CBarcodeReader/methods/license.md#outputlicensetostring) | Output the license content to a string from the license server. |
+  | [`OutputLicenseToStringPtr`](CBarcodeReader/methods/license.md#outputlicensetostringptr) | Output the license content to a string from the license server. |
+  | [`FreeLicenseString`](CBarcodeReader/methods/license.md#freelicensestring) | Free memory allocated for the license string. |
    
    
 &nbsp; 
@@ -93,10 +93,10 @@ sourceCodeUrl: https://github.com/BBong119/bbong119.github.io/blob/master/dbr-de
    
   | Method               | Description |
   |----------------------|-------------|
-  | [`GetAllTextResults`](CBarcodeReader/methods/GetAllTextResults.md) | Get all recognized barcode results. |
-  | [`FreeTextResults`](CBarcodeReader/methods/FreeTextResults.md) | Free memory allocated for text results. |
-  | [`GetIntermediateResults`](CBarcodeReader/methods/GetIntermediateResults.md) | Get intermediate results. |
-  | [`FreeIntermediateResults`](CBarcodeReader/methods/FreeIntermediateResults.md) | Free memory allocated for the intermediate results. |
+  | [`GetAllTextResults`](CBarcodeReader/methods/result.md#getalltextresults) | Get all recognized barcode results. |
+  | [`FreeTextResults`](CBarcodeReader/methods/result.md#freetextresults) | Free memory allocated for text results. |
+  | [`GetIntermediateResults`](CBarcodeReader/methods/result.md#getintermediateresults) | Get intermediate results. |
+  | [`FreeIntermediateResults`](CBarcodeReader/methods/result.md#freeintermediateresults) | Free memory allocated for the intermediate results. |
    
       
 &nbsp; 
@@ -106,8 +106,8 @@ sourceCodeUrl: https://github.com/BBong119/bbong119.github.io/blob/master/dbr-de
    
   | Method               | Description |
   |----------------------|-------------|
-  | [`GetErrorString`](CBarcodeReader/methods/GetErrorString.md) | Get error message by error code.|
-  | [`GetVersion`](CBarcodeReader/methods/GetVersion.md) | Get version information of SDK.|
+  | [`GetErrorString`](CBarcodeReader/methods/status-retrieval.md#geterrorstring) | Get error message by error code.|
+  | [`GetVersion`](CBarcodeReader/methods/status-retrieval.md#getversion) | Get version information of SDK.|
    
       
 &nbsp; 
@@ -119,30 +119,30 @@ sourceCodeUrl: https://github.com/BBong119/bbong119.github.io/blob/master/dbr-de
     
    | Method               | Description |
    |----------------------|-------------|
-   | [`StartFrameDecoding`](CBarcodeReader/methods/StartFrameDecoding.md) | Decode barcodes from inner frame queue. |
-   | [`StartFrameDecodingEx`](CBarcodeReader/methods/StartFrameDecodingEx.md) | Decode barcodes from inner frame queue. |
-   | [`AppendFrame`](CBarcodeReader/methods/AppendFrame.md) | Append a frame image buffer to the inner frame queue. |
-   | [`StopFrameDecoding`](CBarcodeReader/methods/StopFrameDecoding.md) | Stop thread used for frame decoding. |
+   | [`StartFrameDecoding`](CBarcodeReader/methods/video.md#startframedecoding) | Decode barcodes from inner frame queue. |
+   | [`StartFrameDecodingEx`](CBarcodeReader/methods/video.md#startframedecodingex) | Decode barcodes from inner frame queue. |
+   | [`AppendFrame`](CBarcodeReader/methods/video.md#appendframe) | Append a frame image buffer to the inner frame queue. |
+   | [`StopFrameDecoding`](CBarcodeReader/methods/video.md#stopframedecoding) | Stop thread used for frame decoding. |
 
 #### Parameter
    
    | Method               | Description |
    |----------------------|-------------|
-   | [`InitFrameDecodingParameters`](CBarcodeReader/methods/InitFrameDecodingParameters.md) | Initialize frame decoding parameter. |
+   | [`InitFrameDecodingParameters`](CBarcodeReader/methods/video.md#initframedecodingparameters) | Initialize frame decoding parameter. |
 
 #### Callback
    
    | Method               | Description |
    |----------------------|-------------|
-   | [`SetErrorCallback`](CBarcodeReader/methods/SetErrorCallback.md) | Set callback function to process errors generated during frame decoding. |
-   | [`SetTextResultCallback`](CBarcodeReader/methods/SetTextResultCallback.md) | Set callback function to process text results generated during frame decoding. |
-   | [`SetIntermediateResultCallback`](CBarcodeReader/methods/SetIntermediateResultCallback.md) | Set callback function to process intermediate results generated during frame decoding. |
+   | [`SetErrorCallback`](CBarcodeReader/methods/video.md#seterrorcallback) | Set callback function to process errors generated during frame decoding. |
+   | [`SetTextResultCallback`](CBarcodeReader/methods/video.md#settextresultcallback) | Set callback function to process text results generated during frame decoding. |
+   | [`SetIntermediateResultCallback`](CBarcodeReader/methods/video.md#setintermediateresultcallback) | Set callback function to process intermediate results generated during frame decoding. |
 
 #### Status retrieval
    
    | Method               | Description |
    |----------------------|-------------|
-   | [`GetLengthOfFrameQueue`](CBarcodeReader/methods/GetLengthOfFrameQueue.md) | Get length of current inner frame queue. |
+   | [`GetLengthOfFrameQueue`](CBarcodeReader/methods/video.md#getlengthofframequeue) | Get length of current inner frame queue. |
  
    
 &nbsp; 
