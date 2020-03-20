@@ -1,3 +1,9 @@
+---
+layout: manual-interface-c
+id: interface_c_parameters_advanced
+sourceCodeUrl: https://github.com/BBong119/bbong119.github.io/blob/master/dbr-detailed-info/manual/interface/c-and-cpp/c/methods/parameter-and-runtime-settings-advanced.md
+---
+
 # C API Reference - Parameter and Runtime Settings Advanced Methods
    
   | Method               | Description |
