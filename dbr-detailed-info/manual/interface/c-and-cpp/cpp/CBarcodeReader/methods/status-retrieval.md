@@ -1,3 +1,10 @@
+---
+layout: manual-interface-cpp
+id: interface_cpp_status_retrieval_methods
+sourceCodeUrl: https://github.com/BBong119/bbong119.github.io/blob/master/dbr-detailed-info/manual/interface/c-and-cpp/cpp/CBarcodeReader/methods/status-retrieval.md
+---
+
+
 # C++ API Reference - CBarcodeReader Status Retrieval Methods
 
   | Method               | Description |
