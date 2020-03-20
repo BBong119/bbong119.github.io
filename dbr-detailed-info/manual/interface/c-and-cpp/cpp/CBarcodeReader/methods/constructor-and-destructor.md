@@ -10,7 +10,7 @@ sourceCodeUrl: https://github.com/BBong119/bbong119.github.io/blob/master/dbr-de
   | Method               | Description |
   |----------------------|-------------|
   | [`CBarcodeReader`](#cbarcodereader) | Default constructor of `CBarcodeReader` object.|
-  | [`~CBarcodeReader`](#\~cbarcodereader) | Destructor of `CBarcodeReader` object.|
+  | [`~CBarcodeReader`](#~cbarcodereader) | Destructor of `CBarcodeReader` object.|
 
 ---
 
@@ -31,7 +31,7 @@ CBarcodeReader::CBarcodeReader()
 
 
 
-## \~CBarcodeReader
+## ~CBarcodeReader
 
 Destructor of a `CBarcodeReader` object.
 
