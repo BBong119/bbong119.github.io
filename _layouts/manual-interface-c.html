@@ -22,16 +22,35 @@
 
     <link rel="stylesheet" href="/assets/css/style.css?v=b8601a47f85e9c71565aa6c079c8988cd98cc1e7">
     
-    <style>
-      .currentPageHeader{font-weight: bold;}
-    .currentPageColour{ background:#F0F0F0; color: #FF8040;  font-weight: bold;}
-    .otherLinkColour { color: #696969; }
+    <style type="text/css">
+      .currentPageHeader{
+        font-weight: bold;
+      }
+      .currentPageColour{ 
+        background:#F0F0F0; 
+        color: #FF8040;  
+        font-weight: bold;
+      }
+      .otherLinkColour{
+        color: #696969; 
+      }
+			.sidebar{
+				float: left;/*侧边栏居左，改为right可令侧边栏居右*/
+				width: 200px;
+			}
+		</style>
+
+————————————————
+版权声明：本文为CSDN博主「左阳暖」的原创文章，遵循 CC 4.0 BY-SA 版权协议，转载请附上原文出处链接及本声明。
+原文链接：https://blog.csdn.net/sunshumin/article/details/40680143
       </style>
      
   </head>
      
-  <aside>
-  <div class="container-lg px-3 my-5 markdown-body">
+  <body>
+    <div class="container-lg px-3 my-5 markdown-body">
+
+  <div class="sidebar">
   <ul>
       <li>
       <a href="{{ site.manual_interface_c }}methods/initialize-and-destroy.html" class="otherLinkColour">Initialize and Destroy Methods</a> 
@@ -143,10 +162,7 @@
       </li>
   </ul>
   </div>
-  </aside>
-  <body>
-    <div class="container-lg px-3 my-5 markdown-body">
-
+      
   <h1 id="documentation-home-page"><a href={{ site.homePage }}>Documentation Home Page</a></h1>    
       
       
