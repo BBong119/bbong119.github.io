@@ -1,7 +1,7 @@
 ---
 layout: manual-interface
 id: interface_cpp
-sourceCodeUrl: https://github.com/BBong119/bbong119.github.io/blob/master/dbr-detailed-info/manual/interface/c-and-cpp/cpp/index.md
+sourceCodeUrl: /dbr-detailed-info/manual/interface/c-and-cpp/cpp/index.md
 ---
 
 # Dynamsoft Barcode Reader SDK - C++ API Reference
