@@ -1,7 +1,7 @@
 ---
 layout: manual-interface-cpp
 id: interface_cpp_parameter_basic_methods
-sourceCodeUrl: https://github.com/BBong119/bbong119.github.io/blob/master/dbr-detailed-info/manual/interface/c-and-cpp/cpp/CBarcodeReader/methods/parameter-and-runtime-settings-basic.md
+sourceCodeUrl: /dbr-detailed-info/manual/interface/c-and-cpp/cpp/CBarcodeReader/methods/parameter-and-runtime-settings-basic.md
 ---
 
 
