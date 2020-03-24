@@ -35,12 +35,15 @@
 		}	
 		*{ box-sizing: border-box; margin: 0; padding: 0; }
 		.wrapper { width: 100%; }
-		.wrapper .sideBar { position: fixed; top: 0; left: 0; width: 350px; height: 100vh; border-right: 1px solid #ddd; background: #fff; overflow: auto; }
+		.wrapper .sideBar { position: fixed; top: 0; left: 0; width: 360px; height: 100vh; border-right: 1px solid #ddd; background: #fff; overflow: auto; }
 		.wrapper .container { width: 100%; padding-left: 350px; }
-		.wrapper .container .head { position: fixed; top: 0; width: calc(100% - 350px); height: 40px; color: #ffffff; background: #3196fc; line-height: 40px; padding: 0 20px; }
+		.wrapper .container .head { position: fixed; top: 0; width: calc(100% - 360px); height: 40px; color: #ffffff; background: #3196fc; line-height: 40px; padding: 0 20px; }
 		.wrapper .container .main { margin-top: 40px; padding: 20px; }
 		.wrapper .container .main .content { padding-right: 300px; }
 		.wrapper .container .main .sideMenu { width: 300px; position: fixed; right: 0; }
+		.sideBarHeader { border-bottom: 1px solid #ddd; padding: 0 20px; height: 60px; position: fixed; width: 359px; background: #fff; }
+		.sideName { font-size: 18px; color: #3C3C3C; }
+		.sideHomePage { font-size: 13px; color: #8E8E8E; }
 		table { border-collapse: collapse; text-align: left; table-layout: fixed; }
 		table td, table th { border: 1px solid #cad9ea; color: #666; height: 30px; padding: 5px 10px; }
 		table thead th { background-color: #CCE8EB; text-align: center; }
@@ -53,7 +56,8 @@
 		ul.circle > li p:hover, ul.circle li.on p, ul.square > li.on p, ul.square > li p:hover, ul.disc > li.on p, ul.disc > li p:hover { color: #3196fc; }
 		ul { margin-left: 20px; }
 		ul.disc { margin-left: 0; }
-
+		ul.disc { margin-top: 65px }
+		
 		@media (max-width: 1200px) {
 			.wrapper .sideBar { display:  none; }
 			.wrapper .container { padding-left: 0 } 
@@ -66,6 +70,10 @@
 <body>
 	<div class="wrapper">
 		<div class="sideBar">
+			<div class="sideBarHeader">
+				<p><a href="{{ site.homePage }}" class="sideHomePage">< Documentation Home Page</a></p>
+				<p><a href="{{ site.manual_interface_cpp }}" class="sideName">Dyanamsoft Barcocde Reader - C++ API</a></p>
+			</div>	
 			<a href="{{ site.manual_interface_cpp }}">Dyanamsoft Barcocde Reader - C++ API</a>
 			<ul class="disc">
       				<li>
@@ -180,9 +188,6 @@
 		</div>
 		<div class="container">
 			<div class="main">
-				<h1 id="documentation-home-page"><a href={{ site.homePage }}>Documentation Home Page</a></h1>    
-
-
 				<p align="right"><a href="{{ site.repositoryUrl }}{{ page.sourceCodeUrl }} " align="right" class="otherLinkColour">Edit<img src="{{ site.editIcon }}" width="20px" height="15px" /></a></p>
 				{{ content }}
 			</div>
