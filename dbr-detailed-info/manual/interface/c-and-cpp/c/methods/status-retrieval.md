@@ -1,7 +1,7 @@
 ---
 layout: manual-interface-c
 id: interface_c_status_retrieval_methods
-sourceCodeUrl: https://github.com/BBong119/bbong119.github.io/blob/master/dbr-detailed-info/manual/interface/c-and-cpp/c/methods/status-retrieval.md
+sourceCodeUrl: /dbr-detailed-info/manual/interface/c-and-cpp/c/methods/status-retrieval.md
 ---
 
 # C API Reference - Status Retrieval Methods
