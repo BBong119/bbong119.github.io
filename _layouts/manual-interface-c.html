@@ -36,9 +36,9 @@
 	}	
 	*{ box-sizing: border-box; margin: 0; padding: 0; }
 	.wrapper { width: 100%; }
-	.wrapper .sideBar { position: fixed; top: 0; left: 0; width: 400px; height: 100vh; border-right: 1px solid #ddd; background: #fff; overflow: auto; }
-	.wrapper .container { width: 100%; padding-left: 300px; }
-	.wrapper .container .head { position: fixed; top: 0; width: calc(100% - 300px); height: 40px; color: #ffffff; background: #3196fc; line-height: 40px; padding: 0 20px; }
+	.wrapper .sideBar { position: fixed; top: 0; left: 0; width: 350px; height: 100vh; border-right: 1px solid #ddd; background: #fff; overflow: auto; }
+	.wrapper .container { width: 100%; padding-left: 350px; }
+	.wrapper .container .head { position: fixed; top: 0; width: calc(100% - 350px); height: 40px; color: #ffffff; background: #3196fc; line-height: 40px; padding: 0 20px; }
 	.wrapper .container .main { margin-top: 40px; padding: 20px; }
 	.wrapper .container .main .content { padding-right: 300px; }
 	.wrapper .container .main .sideMenu { width: 300px; position: fixed; right: 0; }
@@ -46,8 +46,9 @@
 	ul.square {list-style-type:square; padding-left: 30px; line-height: 28px;}
 	ul.disc { list-style-type: disc; padding-left: 30px; line-height: 28px; }
 	ul li { cursor: pointer; }
-	ul.circle > li {padding-left: 20px} > li p:hover, ul.circle li.on p, ul.square > li.on p, ul.square > li p:hover, ul.disc > li.on p, ul.disc > li p:hover { color: #3196fc; }
-
+	ul.circle > li p:hover, ul.circle li.on p, ul.square > li.on p, ul.square > li p:hover, ul.disc > li.on p, ul.disc > li p:hover { color: #3196fc; }
+	ul.circle > li { padding-left: 20px; }
+	    
 	@media (max-width: 1200px) {
 		.wrapper .sideBar { display:  none; }
 		.wrapper .container { padding-left: 0 } 
