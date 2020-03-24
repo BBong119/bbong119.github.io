@@ -5,6 +5,7 @@ sourceCodeUrl: /dbr-detailed-info/manual/interface/c-and-cpp/c/methods/license.m
 ---
 
 # C API Reference - License Methods
+
   | Method               | Description |
   |----------------------|-------------|
   | [`DBR_InitLicense`](#dbr_initlicense) | Read product key and activate the SDK. |
