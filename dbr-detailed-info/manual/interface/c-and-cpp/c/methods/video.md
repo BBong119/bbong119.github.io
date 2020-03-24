@@ -27,7 +27,7 @@ sourceCodeUrl: /dbr-detailed-info/manual/interface/c-and-cpp/c/methods/video.md
   |----------------------|-------------|
   | [`DBR_SetErrorCallback`](#dbr_seterrorcallback) | Set callback function to process errors generated during frame decoding. |
   | [`DBR_SetTextResultCallback`](#dbr_settextresultcallback) | Set callback function to process text results generated during frame decoding. |
-  | [`DBR_SetIntermediateResultCallback`]#dbr_setintermediateresultcallback) | Set callback function to process intermediate results generated during frame decoding. |
+  | [`DBR_SetIntermediateResultCallback`](#dbr_setintermediateresultcallback) | Set callback function to process intermediate results generated during frame decoding. |
 
 ## Status retrieval
    
