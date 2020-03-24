@@ -34,6 +34,9 @@
 		.otherLinkColour{
 		color: #696969; 
 		}	
+		.sideHomePage{
+		color: #9D9D9D;
+		}
 		*{ box-sizing: border-box; margin: 0; padding: 0; }
 		.wrapper { width: 100%; }
 		.wrapper .sideBar { position: fixed; top: 0; left: 0; width: 350px; height: 100vh; border-right: 1px solid #ddd; background: #fff; overflow: auto; }
@@ -42,8 +45,8 @@
 		.wrapper .container .main { margin-top: 40px; padding: 20px; }
 		.wrapper .container .main .content { padding-right: 300px; }
 		.wrapper .container .main .sideMenu { width: 300px; position: fixed; right: 0; }
-		.sideName { border-bottom: 1px solid #ddd; padding: 0 20px; height: 55px; font-size: 15px; color: #3C3C3C; font-weight: bold; position: fixed; width: 349px; background: #fff; }
-		
+		.sideName { border-bottom: 1px solid #ddd; padding: 0 20px; height: 55px; font-size: 15px; font-weight: bold; position: fixed; width: 349px; background: #fff; }
+		.sideName a{ color: #3C3C3C; }
 		table { border-collapse: collapse; text-align: left; table-layout: fixed; }
 		table td, table th { border: 1px solid #cad9ea; color: #666; height: 30px; padding: 5px 10px; }
 		table thead th { background-color: #CCE8EB; text-align: center; }
@@ -70,7 +73,10 @@
 <body>
 	<div class="wrapper">
 		<div class="sideBar">	 
-			<div class="sideName"><a href="{{ site.manual_interface_c }}">Dyanamsoft Barcocde Reader - C API</a></div>	
+			<div class="sideName">
+				<p><a href={{ site.homePage }} class="sideHomePage">< Documentation Home Page</a></p>
+				<p><a href="{{ site.manual_interface_c }}">Dyanamsoft Barcocde Reader - C API</a></p>
+			</div>	
 			<ul class="disc">
 				<li>
 					<a href="{{ site.manual_interface_c }}methods/initialize-and-destroy.html" class="otherLinkColour">Initialize and Destroy Methods</a> 
@@ -183,10 +189,7 @@
 			</ul>
 		</div>
 		<div class="container">
-			<div class="main">
-				<h1 id="documentation-home-page"><a href={{ site.homePage }}>Documentation Home Page</a></h1>    
-
-
+			<div class="main">  
 				<p align="right"><a href="{{ site.repositoryUrl }}{{ page.sourceCodeUrl }} " align="right" class="otherLinkColour">Edit<img src="{{ site.editIcon }}" width="20px" height="15px" /></a></p>
 				{{ content }}
 			</div>
