@@ -1,7 +1,7 @@
 ---
 layout: evaluation-tools
 id: evaluation_tools_main
-sourceCodeUrl: https://github.com/BBong119/bbong119.github.io/blob/master/dbr-basic-info/evaluation-tools/index.md
+sourceCodeUrl: dbr-basic-info/evaluation-tools/index.md
 ---
 
 # Content 1
