@@ -1,7 +1,7 @@
 ---
 layout: manual-interface-c
 id: interface_c_initialize_and_destroy
-sourceCodeUrl: https://github.com/BBong119/bbong119.github.io/blob/master/dbr-detailed-info/manual/interface/c-and-cpp/c/methods/initialize-and-destroy.md
+sourceCodeUrl: /dbr-detailed-info/manual/interface/c-and-cpp/c/methods/initialize-and-destroy.md
 ---
 
 
