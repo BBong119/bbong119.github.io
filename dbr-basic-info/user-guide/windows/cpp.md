@@ -7,7 +7,7 @@ sourceCodeUrl: /dbr-basic-info/user-guide/windows/cpp.md
 # Developer guide for Windows Edition - C++
 
 ## Table of Contents
-- [System requirements](#system-requirements)
+- [System Requirements](#system-requirements)
 - [Installation](#installation)
 - [Getting Started: HelloWorld](#getting-started-helloworld)
 - [Decoding Methods](#decoding-methods)
@@ -21,7 +21,7 @@ sourceCodeUrl: /dbr-basic-info/user-guide/windows/cpp.md
 &nbsp; 
 
  
-## System requirements
+## System Requirements
 
 - Operating systems:
    - Windows 7, 8, 10.
