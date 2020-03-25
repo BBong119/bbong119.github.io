@@ -1,3 +1,9 @@
+---
+layout: user-guide
+id: user_guide_cpp
+sourceCodeUrl: /dbr-basic-info/user-guide/windows/cpp.md
+---
+
 # Developer guide for Windows Edition - C++
 
 ## Table of Contents
