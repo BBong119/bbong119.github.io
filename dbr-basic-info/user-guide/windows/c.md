@@ -1,3 +1,10 @@
+---
+layout: user-guide
+id: user_guide_c
+sourceCodeUrl: /dbr-basic-info/user-guide/windows/c.md
+---
+
+
 # Developer guide for Windows Edition - C
 
 ## Table of Contents
