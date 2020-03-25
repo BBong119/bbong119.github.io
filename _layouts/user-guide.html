@@ -1,83 +1,114 @@
 
 <!DOCTYPE html>
 <html lang="en-US">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-<!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>bbong119.github.io | test dbr documentation.</title>
-<meta name="generator" content="Jekyll v3.8.5" />
-<meta property="og:title" content="bbong119.github.io" />
-<meta property="og:locale" content="en_US" />
-<meta name="description" content="test dbr documentation." />
-<meta property="og:description" content="test dbr documentation." />
-<link rel="canonical" href="https://bbong119.github.io/DBR-Basic-Info/overview/" />
-<meta property="og:url" content="https://bbong119.github.io/DBR-Basic-Info/overview/" />
-<meta property="og:site_name" content="bbong119.github.io" />
-<script type="application/ld+json">
-{"@type":"WebPage","description":"user guide layout.","@context":"https://schema.org"}</script>
-<!-- End Jekyll SEO tag -->
+	<!-- Begin Jekyll SEO tag v2.6.1 -->
+	<title>bbong119.github.io | test dbr documentation.</title>
+	<meta name="generator" content="Jekyll v3.8.5" />
+	<meta property="og:title" content="bbong119.github.io" />
+	<meta property="og:locale" content="en_US" />
+	<meta name="description" content="test dbr documentation." />
+	<meta property="og:description" content="test dbr documentation." />
+	<link rel="canonical" href="https://bbong119.github.io/DBR-Basic-Info/overview/" />
+	<meta property="og:url" content="https://bbong119.github.io/DBR-Basic-Info/overview/" />
+	<meta property="og:site_name" content="bbong119.github.io" />
+	<script type="application/ld+json">
+	{"@type":"WebPage","description":"user guide layout.","@context":"https://schema.org"}</script>
+	<!-- End Jekyll SEO tag -->
 
-    <link rel="stylesheet" href="/assets/css/style.css?v=b8601a47f85e9c71565aa6c079c8988cd98cc1e7">
+	<link rel="stylesheet" href="/assets/css/style.css?v=b8601a47f85e9c71565aa6c079c8988cd98cc1e7">
     
-    <style>
-      .currentPageHeader{font-weight: bold;}
-    .currentPageColour{ background:#F0F0F0; color: #FF8040;  font-weight: bold;}
-    .otherLinkColour { color: #696969; }
-      </style>
-    
-  </head>
-  <body>
-    <div class="container-lg px-3 my-5 markdown-body">
-      
-      <h1 id="documentation-home-page"><a href={{ site.homePage }}>Documentation Home Page</a></h1>
-
-{% if page.id == 'user_guide_main' %}
-      <h2 id="user-guide"><a href={{ site.userGuide }} class="currentPageHeader">User Guide</a></h2>
-{% else %}
-      <h2 id="user-guide"><a href={{ site.userGuide }}>User Guide</a></h2>
-{% endif %}
-<ul>
-  
-    {% if page.id == 'user_guide_windows' %}
-        <li><a href={{ site.userGuide_windows }} class="currentPageColour">Windows user guide</a></li>
-    {% else %}
-        <li><a href={{ site.userGuide_windows }} class="otherLinkColour">Windows user guide</a></li>
-    {% endif %}
-  
-    {% if page.id == 'user_guide_linux' %}  
-        <li><a href={{ site.userGuide_linux }} class="currentPageColour">Linux user guide</a></li>
-    {% else %}
-        <li><a href={{ site.userGuide_linux }} class="otherLinkColour">Linux user guide</a></li>
-    {% endif %}
-  
-    {% if page.id == 'user_guide_ios' %}
-        <li><a href={{ site.userGuide_iOS }} class="currentPageColour">iOS user guide</a></li>
-    {% else %}
-        <li><a href={{ site.userGuide_iOS }} class="otherLinkColour">iOS user guide</a></li>
-    {% endif %}
- 
-    {% if page.id == 'user_guide_android' %}
-        <li><a href={{ site.userGuide_android }} class="currentPageColour">Android user guide</a></li>
-    {% else %}
-        <li><a href={{ site.userGuide_android }} class="otherLinkColour">Android user guide</a></li>
-    {% endif %}
-
-    {% if page.id == 'user_guide_wasm' %}
-        <li><a href={{ site.userGuide_wasm }} class="currentPageColour">wasm user guide</a></li>
-    {% else %}
-        <li><a href={{ site.userGuide_wasm }} class="otherLinkColour">wasm user guide</a></li>
-    {% endif %}
-  
-</ul>
-
-<p align="right"><a href="{{ site.repositoryUrl }}{{ page.sourceCodeUrl }} " align="right" class="otherLinkColour">Edit<img src="{{ site.editIcon }}" width="20px" height="15px" /></a></p>
-{{ content }}
-
-      
-    </div>
+	<style type="text/css">
+		.currentPageHeader{
+		font-weight: bold;
+		}
+		.currentPageColour{ 
+		background:#F0F0F0; 
+		color: #FF8040;  
+		font-weight: bold;
+		}
+		.otherLinkColour{
+		color: #696969; 
+		}	
+		*{ box-sizing: border-box; margin: 0; padding: 0; }
+		.wrapper { width: 100%; }
+		.wrapper .sideBar { position: fixed; top: 0; left: 0; width: 360px; height: 100vh; border-right: 1px solid #ddd; background: #fff; overflow: auto; }
+		.wrapper .container { width: 100%; padding-left: 350px; }
+		.wrapper .container .head { position: fixed; top: 0; width: calc(100% - 360px); height: 40px; color: #ffffff; background: #3196fc; line-height: 40px; padding: 0 20px; }
+		.wrapper .container .main { margin-top: 40px; padding: 20px; }
+		.wrapper .container .main .content { padding-right: 300px; }
+		.wrapper .container .main .sideMenu { width: 300px; position: fixed; right: 0; }
+		.sideBarHeader { border-bottom: 1px solid #ddd; padding: 0 20px; height: 60px; position: fixed; width: 359px; background: #fff; }
+		.sideName { font-size: 18px; color: #3C3C3C; }
+		.sideHomePage { font-size: 13px; color: #8E8E8E; }
+		table { border-collapse: collapse; text-align: left; table-layout: fixed; }
+		table td, table th { border: 1px solid #cad9ea; color: #666; height: 30px; padding: 5px 10px; }
+		table thead th { background-color: #CCE8EB; text-align: center; }
+		table tr:nth-child(odd) { background: #fff; }
+		table tr:nth-child(even) { background: #F5FAFA; }
+		ul.circle {list-style-type:circle; padding-left: 30px; line-height: 28px;}
+		ul.square {list-style-type:square; padding-left: 30px; line-height: 28px;}
+		ul.disc { list-style-type: disc; padding-left: 30px; line-height: 28px; }
+		ul li { cursor: pointer; }
+		ul.circle > li p:hover, ul.circle li.on p, ul.square > li.on p, ul.square > li p:hover, ul.disc > li.on p, ul.disc > li p:hover { color: #3196fc; }
+		ul { margin-left: 20px; }
+		ul.disc { margin-left: 0; }
+		ul.disc { margin-top: 65px }
+		
+		@media (max-width: 1200px) {
+			.wrapper .sideBar { display:  none; }
+			.wrapper .container { padding-left: 0 } 
+			.wrapper .container .head { width: 100%;  }
+		}
+	</style>
+     
+</head>
+     
+<body>
+	<div class="wrapper">
+		<div class="sideBar">	 
+			<div class="sideBarHeader">
+				<p><a href="{{ site.homePage }}" class="sideHomePage">< Documentation Home Page</a></p>
+				<p><a href="{{ site.userGuide }}" class="sideName">Dyanamsoft Barcocde Reader - User Guide</a></p>
+			</div>	
+			<ul class="disc">
+				<li>
+					<a href="{{ site.userGuide_windows }}" class="otherLinkColour">Windows</a> 
+					<ul>
+						<li><a href="{{ site.userGuide_windows }}c.html" class="otherLinkColour">C</a></li>
+						<li><a href="{{ site.userGuide_windows }}cpp.html" class="otherLinkColour">C++</a></li>
+            <li><a href="{{ site.userGuide_windows }}csharp.html" class="otherLinkColour">C#</a></li>
+            <li><a href="{{ site.userGuide_windows }}java.html" class="otherLinkColour">Java</a></li>
+            <li><a href="{{ site.userGuide_windows }}php.html" class="otherLinkColour">PHP</a></li>
+            <li><a href="{{ site.userGuide_windows }}python.html" class="otherLinkColour">Python</a></li>
+					</ul> 
+				</li>
+				<li>
+					<a href="{{ site.userGuide_linux }}" class="otherLinkColour">Linux</a>
+				</li>
+				<li>
+          Mobile
+          <ul>
+            <li><a href="{{ site.userGuide_ios }}" class="otherLinkColour">iOS</a></li>
+						<li><a href="{{ site.userGuide_android }}" class="otherLinkColour">Android</a></li>
+          </ul>
+				</li>
+				<li>
+					<a href="{{ site.userGuide_wasm }}" class="otherLinkColour">JavaScript</a>			
+				</li>
+			</ul>
+		</div>
+		<div class="container">
+			<div class="main">  
+				<p align="right"><a href="{{ site.repositoryUrl }}{{ page.sourceCodeUrl }} " align="right" class="otherLinkColour">Edit<img src="{{ site.editIcon }}" width="20px" height="15px" /></a></p>
+				{{ content }}
+			</div>
+		</div>
+    	</div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js" integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"></script>
     <script>anchors.add();</script>
     
