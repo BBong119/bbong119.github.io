@@ -162,9 +162,9 @@ sourceCodeUrl: /dbr-detailed-info/manual/interface/c-and-cpp/cpp/index.md
 ## Function Pointer
   | Function | Description |
   |----------|-------------|
-  | [`CB_Error`](function-points/index.md#cb_error) | Represents the method that will handle the error code returned by the SDK. |
-  | [`CB_IntermediateResult`](function-points/index.md#cb_intermediateresult) | Represents the method that will handle the intermediate result array returned by the SDK. |
-  | [`CB_TextResult`](function-points/index.md#cb_textresult) | Represents the method that will handle the text result array returned by the SDK. | 
+  | [`CB_Error`](function-pointer/index.md#cb_error) | Represents the method that will handle the error code returned by the SDK. |
+  | [`CB_IntermediateResult`](function-pointer/index.md#cb_intermediateresult) | Represents the method that will handle the intermediate result array returned by the SDK. |
+  | [`CB_TextResult`](function-pointer/index.md#cb_textresult) | Represents the method that will handle the text result array returned by the SDK. | 
 
 &nbsp;
 
