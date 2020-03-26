@@ -128,12 +128,12 @@ To deploy your application, make sure the DLLs are in the same folder as the EXE
 ## Decoding Methods
 The SDK provides multiple decoding methods that support reading barcodes from different sources, including static images,
 video stream, files in memory, base64 string, bitmap, etc. Here is a list of all decoding methods:
-- [DBR_DecodeFile]({{ site.manual_interface_c }}methods/DBR_DecodeFile.html): Reads barcodes from a specified file (BMP, JPEG, PNG, GIF, TIFF or PDF).   
-- [DBR_DecodeBase64String]({{ site.manual_interface_c }}methods/DBR_DecodeBase64String.html): Reads barcodes from a base64 encoded string of a file.   
-- [DBR_DecodeBitmap]({{ site.manual_interface_c }}methods/DBR_DecodeBitmap.html) and [DBR_DecodeDIB]({{ site.manual_interface_c }}methods/DBR_DecodeDIB.html): Reads barcodes from a bitmap. When handling multi-page images, it will only decode the
+- [DBR_DecodeFile]({{ site.manual_interface_c }}methods/decode.html#dbr_decodefile): Reads barcodes from a specified file (BMP, JPEG, PNG, GIF, TIFF or PDF).   
+- [DBR_DecodeBase64String]({{ site.manual_interface_c }}methods/ddecode.html#br_decodebase64string): Reads barcodes from a base64 encoded string of a file.   
+- [DBR_DecodeBitmap]({{ site.manual_interface_c }}methods/decode.html#dbr_decodebitmap) and [DBR_DecodeDIB]({{ site.manual_interface_c }}methods/decode.html#dbr_decodedib): Reads barcodes from a bitmap. When handling multi-page images, it will only decode the
 current page.   
-- [DBR_DecodeBuffer]({{ site.manual_interface_c }}methods/DBR_DecodeBuffer.html): Reads barcodes from raw buffer.
-- [DBR_DecodeFileInMemory]({{ site.manual_interface_c }}methods/DBR_DecodeFileInMemory.html): Decodes barcodes from an image file in memory.   
+- [DBR_DecodeBuffer]({{ site.manual_interface_c }}methods/decode.html#dbr_decodebuffer): Reads barcodes from raw buffer.
+- [DBR_DecodeFileInMemory]({{ site.manual_interface_c }}methods/decode.html#dbr_decodefileinmemory): Decodes barcodes from an image file in memory.   
    
 You can find more samples in more programming languages at [Code Gallery](https://www.dynamsoft.com/Downloads/Dynamic-Barcode-Reader-Sample-Download.aspx).
 
@@ -240,7 +240,7 @@ DBR_DestroyInstance(hBarcode);
 ```
 
 ### Use A Template to Change Settings
-Besides the option of using the PublicRuntimeSettings struct, the SDK also provides [`DBR_InitRuntimeSettingsWithString`]({{ site.manual_interface_c }}methods/DBR_InitRuntimeSettingsWithString.html) and [`DBR_InitRuntimeSettingsWithFile`]({{ site.manual_interface_c }}methods/DBR_InitRuntimeSettingsWithFile.html) APIs that enable you to use a template to control all the runtime settings. With a template, instead of writing many codes to modify the settings, you can manage all the runtime settings in a JSON file/string.    
+Besides the option of using the PublicRuntimeSettings struct, the SDK also provides [`DBR_InitRuntimeSettingsWithString`]({{ site.manual_interface_c }}methods/parameter-and-runtime-settings-advanced.html#dbr_initruntimesettingswithstring) and [`DBR_InitRuntimeSettingsWithFile`]({{ site.manual_interface_c }}methods/parameter-and-runtime-settings-advanced.html#dbr_initruntimesettingswithfile) APIs that enable you to use a template to control all the runtime settings. With a template, instead of writing many codes to modify the settings, you can manage all the runtime settings in a JSON file/string.    
 
 ```c
 void *hBarcode = NULL;
