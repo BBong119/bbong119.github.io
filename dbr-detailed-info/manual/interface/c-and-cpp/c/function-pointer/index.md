@@ -3,9 +3,9 @@
 
   | Function | Description |
   |----------|-------------|
-  | [`CB_Error`](function-points/index.md#cb_error) | Represents the method that will handle the error code returned by the SDK. |
-  | [`CB_IntermediateResult`](function-points/index.md#cb_intermediateresult) | Represents the method that will handle the intermediate result array returned by the SDK. |
-  | [`CB_TextResult`](function-points/index.md#cb_textresult) | Represents the method that will handle the text result array returned by the SDK. | 
+  | [`CB_Error`](#cb_error) | Represents the method that will handle the error code returned by the SDK. |
+  | [`CB_IntermediateResult`](#cb_intermediateresult) | Represents the method that will handle the intermediate result array returned by the SDK. |
+  | [`CB_TextResult`](#cb_textresult) | Represents the method that will handle the text result array returned by the SDK. | 
   
 ---
  
@@ -22,7 +22,7 @@ typedef void(* CB_Error) (int frameId, int errorCode, void* pUser)
    
 #### Parameters
 `frameId` 	The ID of the frame.  
-`errorCode` Error Code generated when decoding the frame.
+`errorCode` Error Code generated when decoding the frame.   
 `pUser` Customized arguments passed to your function.
 
 #### See Also
@@ -43,7 +43,7 @@ typedef void(* CB_IntermediateResult) (int frameId, IntermediateResultArray* pRe
    
 #### Parameters
 `frameId` 	The ID of the frame.  
-`pResults` The intermediate results of the frame.
+`pResults` The intermediate results of the frame.   
 `pUser` Arguments passed to your function.
 
 #### See Also
@@ -64,7 +64,7 @@ typedef void(* CB_TextResult) (int frameId, TextResultArray *pResults, void *pUs
    
 #### Parameters
 `frameId` 	The ID of the frame.  
-`errorCode` Recognized barcode results of the frame.
+`errorCode` Recognized barcode results of the frame.   
 `pUser` Arguments passed to your function.
 
 #### See Also
