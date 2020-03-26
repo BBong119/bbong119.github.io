@@ -2,6 +2,8 @@
 layout: manual-interface-c
 id: interface_c_decode_mehtods
 sourceCodeUrl: /dbr-detailed-info/manual/interface/c-and-cpp/c/methods/decode.md
+title: C API Reference - Decode Methods
+description: Dynamsoft Barcode Reader C API Reference Decode Methods
 ---
 
 
