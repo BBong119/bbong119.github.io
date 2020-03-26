@@ -21,9 +21,9 @@ typedef void(* CB_Error) (int frameId, int errorCode, void* pUser)
 ```   
    
 #### Parameters
-`frameId` 	The ID of the frame.  
-`errorCode` Error Code generated when decoding the frame.
-`pUser` Customized arguments passed to your function.
+`frameId` 	The ID of the frame.    
+`errorCode` Error Code generated when decoding the frame.    
+`pUser` Customized arguments passed to your function.   
 
 #### See Also
 [Error Code]({{ site.manual_interface_cpp }}index.html#error-code)
@@ -43,8 +43,8 @@ typedef void(* CB_IntermediateResult) (int frameId, IntermediateResultArray* pRe
    
 #### Parameters
 `frameId` 	The ID of the frame.  
-`pResults` The intermediate results of the frame.
-`pUser` Arguments passed to your function.
+`pResults` The intermediate results of the frame.   
+`pUser` Arguments passed to your function.   
 
 #### See Also
 [IntermediateResultArray]({{ site.manual_interface_struct }}IntermediateResultArray.html)
@@ -64,7 +64,7 @@ typedef void(* CB_TextResult) (int frameId, TextResultArray *pResults, void *pUs
    
 #### Parameters
 `frameId` 	The ID of the frame.  
-`errorCode` Recognized barcode results of the frame.
+`errorCode` Recognized barcode results of the frame.   
 `pUser` Arguments passed to your function.
 
 #### See Also
