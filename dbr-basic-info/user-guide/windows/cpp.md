@@ -122,12 +122,12 @@ To deploy your application, make sure the DLLs are in the same folder as the EXE
 ## Decoding Methods
 The SDK provides multiple decoding methods that support reading barcodes from different sources, including static images,
 video stream, files in memory, base64 string, bitmap, etc. Here is a list of all decoding methods:
-- [DecodeFile]({{ site.manual_interface_cpp }}methods/DecodeFile.html): Reads barcodes from a specified file (BMP, JPEG, PNG, GIF, TIFF or PDF).   
-- [DecodeBase64String]({{ site.manual_interface_cpp }}methods/DecodeBase64String.html): Reads barcodes from a base64 encoded string of a file.   
-- [DecodeBitmap]({{ site.manual_interface_cpp }}methods/DecodeBitmap.html) and [DecodeDIB]({{ site.manual_interface_cpp }}methods/DecodeDIB.html): Reads barcodes from a bitmap. When handling multi-page images, it will only decode the
+- [DecodeFile]({{ site.manual_interface_cpp }}CBarcodeReader/methods/decode.html#decodefile): Reads barcodes from a specified file (BMP, JPEG, PNG, GIF, TIFF or PDF).   
+- [DecodeBase64String]({{ site.manual_interface_cpp }}CBarcodeReader/methods/decode.html#decodebase64string): Reads barcodes from a base64 encoded string of a file.   
+- [DecodeBitmap]({{ site.manual_interface_cpp }}CBarcodeReader/methods/decode.html#decodebitmap) and [DecodeDIB]({{ site.manual_interface_cpp }}CBarcodeReader/methods/decode.html#decodedib): Reads barcodes from a bitmap. When handling multi-page images, it will only decode the
 current page.   
-- [DecodeBuffer]({{ site.manual_interface_cpp }}methods/DecodeBuffer.html): Reads barcodes from raw buffer.
-- [DecodeFileInMemory]({{ site.manual_interface_cpp }}methods/DecodeFileInMemory.html): Decodes barcodes from an image file in memory.   
+- [DecodeBuffer]({{ site.manual_interface_cpp }}CBarcodeReader/methods/decode.html#decodebuffer): Reads barcodes from raw buffer.
+- [DecodeFileInMemory]({{ site.manual_interface_cpp }}CBarcodeReader/methods/decode.html#decodefileinmemory): Decodes barcodes from an image file in memory.   
    
 You can find more samples in more programming languages at [Code Gallery](https://www.dynamsoft.com/Downloads/Dynamic-Barcode-Reader-Sample-Download.aspx).
 
@@ -238,7 +238,7 @@ delete reader;
 ```
 
 ### Use A Template to Change Settings
-Besides the option of using the PublicRuntimeSettings struct, the SDK also provides [`DBR_InitRuntimeSettingsWithString`]({{ site.manual_interface_c }}methods/DBR_InitRuntimeSettingsWithString.html) and [`DBR_InitRuntimeSettingsWithFile`]({{ site.manual_interface_c }}methods/DBR_InitRuntimeSettingsWithFile.html) APIs that enable you to use a template to control all the runtime settings. With a template, instead of writing many codes to modify the settings, you can manage all the runtime settings in a JSON file/string.    
+Besides the option of using the PublicRuntimeSettings struct, the SDK also provides [`InitRuntimeSettingsWithString`]({{ site.manual_interface_cpp }}CBarcodeReader/methods/parameter-and-runtime-settings-advanced.html#initruntimesettingswithstring) and [`InitRuntimeSettingsWithFile`]({{ site.manual_interface_cpp }}CBarcodeReader/methods/parameter-and-runtime-settings-advanced.html#initruntimesettingswithfile) APIs that enable you to use a template to control all the runtime settings. With a template, instead of writing many codes to modify the settings, you can manage all the runtime settings in a JSON file/string.    
 
 ```cpp
 char sError[512];
