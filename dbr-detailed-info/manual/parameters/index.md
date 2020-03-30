@@ -150,6 +150,8 @@
  
 ### Image Process Control
 
+ | Parameter Name | Description |
+ | -------------- | ----------- | 
  | `FormatSpecification.DeblurLevel` | Sets the degree of blurriness of the barcode for the current specified barcode format. | 
  | `FormatSpecification.DeformationResistingModes` | Sets the mode and priority for deformation resisting for the current specified barcode format. Not support yet. |
  | `FormatSpecification.BarcodeComplementModes` | Sets the mode and priority to complement the missing parts in the barcode for current specified barcode format. Not support yet. |
@@ -159,5 +161,7 @@
 
 ### Result Control
 
+ | Parameter Name | Description |
+ | -------------- | ----------- | 
  | `FormatSpecification.MinResultConfidence` | The minimum confidence of the result. | 
  | `FormatSpecification.ReturnPartialBarcodeValue` | Sets whether or not to return partial barcode value(s). Not support yet. | 
