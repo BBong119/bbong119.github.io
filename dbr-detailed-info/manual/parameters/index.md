@@ -1,7 +1,3 @@
-{   
-    "description": "Dynamsoft Barcode Reader SDK - Parameters"
-}   
-
 
 # Dynamsoft Barcode Reader SDK - Parameters
 
@@ -54,7 +50,9 @@
  
  
 ### Format Control
- 
+
+ | Parameter Name | Description |
+ | -------------- | ----------- | 
  | ImageParameter.Pages | Sets the specific pages or the range of pages of a file (.tiff or .pdf) for barcode searching. |
  | ImageParameter.PDFRasterDPI | Sets the output image resolution. |
  | ImageParameter.ScaleDownThreshold | Sets the threshold for the image shrinking. |
@@ -84,10 +82,12 @@
 
 ### Result Control
 
- | ImageParameter.IntermediateResultTypes | 	Sets which types of intermediate result to be kept for further reference. Intermediate result types can be combined. | 
- | ImageParameter.IntermediateResultSavingMode | 	Sets the mode for saving the intermediate result. | 
- | ImageParameter.ResultCoordinateType | 	Specifies the format for the coordinates returned | 
- | ImageParameter.TextResultOrderModes | 	Sets the mode and priority for the order of the text results returned. | 
- | ImageParameter.ReturnBarcodeZoneClarity | 	Sets whether or not to return the clarity of the barcode zone. | 
+ | Parameter Name | Description |
+ | -------------- | ----------- | 
+ | ImageParameter.IntermediateResultTypes | Sets which types of intermediate result to be kept for further reference. Intermediate result types can be combined. | 
+ | ImageParameter.IntermediateResultSavingMode | Sets the mode for saving the intermediate result. | 
+ | ImageParameter.ResultCoordinateType | Specifies the format for the coordinates returned | 
+ | ImageParameter.TextResultOrderModes | Sets the mode and priority for the order of the text results returned. | 
+ | ImageParameter.ReturnBarcodeZoneClarity | Sets whether or not to return the clarity of the barcode zone. | 
 
 
