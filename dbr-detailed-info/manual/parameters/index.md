@@ -1,7 +1,6 @@
-{
-    "name": "Parameters"
+{   
     "description": "Dynamsoft Barcode Reader SDK - Parameters"
-}
+}   
 
 
 # Dynamsoft Barcode Reader SDK - Parameters
