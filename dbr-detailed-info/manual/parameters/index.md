@@ -29,27 +29,15 @@
  | `ImageParameter.ExpectedBarcodesCount` | Sets the number of barcodes expected to be detected for each image. |
 
 
-### Cost Control
-
- | Parameter Name | Description |
- | -------------- | ----------- | 
- | `ImageParameter.TerminatePhase` | Sets the phase where the algorithm stops. |
- | `ImageParameter.Timeout` | Sets the maximum amount of time (in milliseconds) that should be spent searching for a barcode per page. It does not include the time taken to load/decode an image (Tiff, PNG, etc) from disk into memory.|
- | `ImageParameter.MaxAlgorithmThreadCount` | Sets the number of threads the image processing algorithm will use to decode barcodes. |
- | `ImageParameter.ExpectedBarcodesCount` | Sets the number of barcodes expected to be detected for each image. |
-
-
-
 ### Format Control
 
  | Parameter Name | Description |
  | -------------- | ----------- | 
  | `ImageParameter..BarcodeFormatIds` | Sets the formats of the barcode to be read. Barcode formats can be combined. |
- | `ImageParameter.BarcodeFormatIds_2` | Set the encoding table used to code the Customer Information Field of Australian Post Customer Barcode.|
+ | `ImageParameter.BarcodeFormatIds_2` | Sets the formats of the barcode in BarcodeFormat group 2 to be read. Barcode formats in BarcodeFormat group 2 can be combined. |
  
  
- 
-### Format Control
+### Image Process Control
 
  | Parameter Name | Description |
  | -------------- | ----------- | 
@@ -76,8 +64,6 @@
  | `ImageParameter.PDFReadingMode` | Sets the way to detect barcodes from a PDF file when using the DecodeFile method. |
 
 
-
-
 ### Result Control
 
  | Parameter Name | Description |
@@ -89,3 +75,89 @@
  | `ImageParameter.ReturnBarcodeZoneClarity` | Sets whether or not to return the clarity of the barcode zone. | 
 
 
+
+## RegionDefinition Object
+
+### Content Organization Control
+
+ | Parameter Name | Description |
+ | -------------- | ----------- | 
+ | `RegionDefinition.Name` | The name of the RegionDefinition object. |
+ | `RegionDefinition.FormatSpecificationNameArray` | The names of the referenced FormatSpecification object(s). |
+
+
+### Cost Control
+
+ | Parameter Name | Description |
+ | -------------- | ----------- | 
+ | `RegionDefinition.ExpectedBarcodesCount` | Sets the expected number of barcodes to be decoded for the current region. |
+
+
+### Format Control
+
+ | Parameter Name | Description |
+ | -------------- | ----------- | 
+ | `RegionDefinition..BarcodeFormatIds` | Sets which types of barcode(s) in BarcodeFormat group 1 to be read in this region. |
+ | `RegionDefinition.BarcodeFormatIds_2` | Sets which types of barcode(s) in BarcodeFormat group 2 to be read in this region. |
+ 
+ 
+### Image Process Control
+
+ | Parameter Name | Description |
+ | -------------- | ----------- | 
+ | `RegionDefinition.Top` | 	The top-most coordinate or percentage of the region. | 
+ | `RegionDefinition.Left` | 	The left-most coordinate or percentage of the region. | 
+ | `RegionDefinition.Right` | 	The right-most coordinate or percentage of the region. | 
+ | `RegionDefinition.Bottom` | 	The bottom-most coordinate or percentage of the region. | 
+ | `RegionDefinition.MeasuredByPercentage` | 	Sets whether or not to use percentages to measure the Region size. | 
+
+
+
+## FormatSpecification Object
+
+### Content Organization Control
+
+ | Parameter Name | Description |
+ | -------------- | ----------- | 
+ | `FormatSpecification.Name` | The name of the FormatSpecification object. |
+
+
+### Format Control
+
+ | Parameter Name | Description |
+ | -------------- | ----------- | 
+ | `FormatSpecification.BarcodeAngleRangeArray` | Sets the range of angles (in degrees) for barcodes search. | 
+ | `FormatSpecification.BarcodeBytesLengthRangeArray` | Sets the range of barcode bytes length for barcodes search. | 
+ | `FormatSpecification.BarcodeBytesRegExPattern` | Specifies the regular express pattern of barcode byte characters. | 
+ | `FormatSpecification.BarcodeHeightRangeArray` | Sets the range of barcode heights (in pixels) to for barcodes search. | 
+ | `FormatSpecification.BarcodeTextLengthRangeArray` |	Sets the range of barcode text length for barcodes search. | 
+ | `FormatSpecification.BarcodeTextRegExPattern` | Specifies the regular express pattern of barcode characters. | 
+ | `FormatSpecification.BarcodeWidthRangeArray` | Sets the range of barcode widths (in pixels) for barcodes search.(Hint). | 
+ | `FormatSpecification.MinQuietZoneWidth` | The minimum width of the barcode quiet zone. | 
+ | `FormatSpecification.ModuleSizeRangeArray` | Sets the range of module size (in pixels) for barcodes search. (Hint). | 
+ | `FormatSpecification.BarcodeFormatIds` | Sets which barcode format the current FormatSpecification configuration is applied to. | 
+ | `FormatSpecification.MirrorMode` | Sets whether to decode mirrored barcodes. | 
+ | `FormatSpecification.RequireStartStopChars` |	Sets whether the start and stop characters are required when searching for Code 39 barcodes. | 
+ | `FormatSpecification.FindUnevenModuleBarcode` | Specifies whether to find barcodes with uneven barcode modules. Not support yet. | 
+ | `FormatSpecification.AllModuleDeviation` | Set the module size deviation from the standard barcode module size. | 
+ | `FormatSpecification.HeadModuleRatio` | Set the module count and module size ratio of the barcode head part. | 
+ | `FormatSpecification.TailModuleRatio` |	Set the module count and module size ratio of the barcode tail part. | 
+ | `FormatSpecification.StanardFormat` | Set the standard barcode format. | 
+ | `FormatSpecification.Code128Subset` | Set the code 128 subset. | 
+ | `FormatSpecification.AustralianPostEncodingTable` | Set the encoding table used to code the Customer Information Field of Australian Post Customer Barcode. | 
+
+ 
+ 
+### Image Process Control
+
+ | `FormatSpecification.DeblurLevel` | Sets the degree of blurriness of the barcode for the current specified barcode format. | 
+ | `FormatSpecification.DeformationResistingModes` | Sets the mode and priority for deformation resisting for the current specified barcode format. Not support yet. |
+ | `FormatSpecification.BarcodeComplementModes` | Sets the mode and priority to complement the missing parts in the barcode for current specified barcode format. Not support yet. |
+ | `FormatSpecification.AccompanyingTextRecognitionModes` | Sets the mode and priority to recognize accompanying text for the current specified barcode format. | 
+
+
+
+### Result Control
+
+ | `FormatSpecification.MinResultConfidence` | The minimum confidence of the result. | 
+ | `FormatSpecification.ReturnPartialBarcodeValue` | Sets whether or not to return partial barcode value(s). Not support yet. | 
