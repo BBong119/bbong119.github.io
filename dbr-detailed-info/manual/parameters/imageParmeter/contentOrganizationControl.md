@@ -2,7 +2,7 @@
 
  | Parameter Name | Description |
  | -------------- | ----------- | 
- | [`ImageParameter.Name`](#name)] | The name of the ImageParameter object. |
+ | [`ImageParameter.Name`](#name) | The name of the ImageParameter object. |
  | [`ImageParameter.Description`](#description) | The description of the ImageParameter object. |
  | [`ImageParameter.FormatSpecificationNameArray`](#formatspecificationnamearray) | The names of the referenced FormatSpecification object(s). |
  | [`ImageParameter.RegionDefinitionNameArray`](#regiondefinitionnamearray) | The names of the referenced RegionDefinition object(s). |
