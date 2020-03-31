@@ -145,6 +145,7 @@ sourceCodeUrl: /dbr-detailed-info/manual/interface/c-and-cpp/c/index.md
 &nbsp; 
 
 ## Function Pointer
+
   | Function | Description |
   |----------|-------------|
   | [`CB_Error`](function-pointer/index.md#cb_error) | Represents the method that will handle the error code returned by the SDK. |
