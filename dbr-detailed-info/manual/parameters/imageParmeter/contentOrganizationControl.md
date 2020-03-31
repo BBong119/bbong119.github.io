@@ -1,1 +1,1 @@
-# ImageParameter Object - Content Organization Control Object
+# ImageParameter Object - Content Organization Control Parameters
