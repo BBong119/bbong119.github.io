@@ -12,7 +12,7 @@
 ---
 
 
-## IMResultDataType Enumeration
+## IMResultDataType
 Describes the intermediate result data type.
 
 
@@ -44,7 +44,7 @@ Describes the intermediate result data type.
 
 
 
-## IntermediateResultSavingMode Enumeration
+## IntermediateResultSavingMode
 Describes the intermediate result saving mode.
 
 
@@ -70,7 +70,7 @@ Describes the intermediate result saving mode.
 
 
 
-## IntermediateResultType Enumeration
+## IntermediateResultType
 Describes the intermediate result type.
 
 
@@ -107,7 +107,7 @@ Describes the intermediate result type.
 
 
 
-## ResultCoordinateType Enumeration
+## ResultCoordinateType
 Describes the result coordinate type.
 
 
@@ -132,7 +132,7 @@ Describes the result coordinate type.
 
 
 
-## ResultType Enumeration
+## ResultType
 Describes the extended result type.
 
 
@@ -159,7 +159,7 @@ Describes the extended result type.
 
 
 
-## TextResultOrderMode Enumeration
+## TextResultOrderMode
 Describes the text result order mode.
 
 
