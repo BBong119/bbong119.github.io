@@ -14,16 +14,16 @@
  | Parameter Name | Description |
  | -------------- | ----------- | 
  | [`ImageParameter.Name`](imageParmeter/content-organization-control.md#name) | The name of the ImageParameter object. |
- | `ImageParameter.Description` | The description of the ImageParameter object. |
- | `ImageParameter.FormatSpecificationNameArray` | The names of the referenced FormatSpecification object(s). |
- | `ImageParameter.RegionDefinitionNameArray` | The names of the referenced RegionDefinition object(s). |
+ | [`ImageParameter.Description`](imageParmeter/content-organization-control.md#description) | The description of the ImageParameter object. |
+ | [`ImageParameter.FormatSpecificationNameArray`](imageParmeter/content-organization-control.md#formatspecificationnamearray) | The names of the referenced FormatSpecification object(s). |
+ | [`ImageParameter.RegionDefinitionNameArray`](imageParmeter/content-organization-control.md#regiondefinitionnamearray) | The names of the referenced RegionDefinition object(s). |
 
 
 ### Cost Control
 
  | Parameter Name | Description |
  | -------------- | ----------- | 
- | `ImageParameter.TerminatePhase` | Sets the phase where the algorithm stops. |
+ | [`ImageParameter.TerminatePhase`](imageParmeter/content-organization-control.md#formatspecificationnamearray) | Sets the phase where the algorithm stops. |
  | `ImageParameter.Timeout` | Sets the maximum amount of time (in milliseconds) that should be spent searching for a barcode per page. It does not include the time taken to load/decode an image (Tiff, PNG, etc) from disk into memory.|
  | `ImageParameter.MaxAlgorithmThreadCount` | Sets the number of threads the image processing algorithm will use to decode barcodes. |
  | `ImageParameter.ExpectedBarcodesCount` | Sets the number of barcodes expected to be detected for each image. |
