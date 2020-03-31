@@ -1,8 +1,8 @@
 # Dynamsoft Barcode Reader Enumeration - Other Enumeration
 
-  | Method               | Description |
-  |----------------------|-------------|
-  | [`ImagePixelFormat`](#imagepixelformat) | Describes the barcode types in BarcodeFormat group 1. |
+  | Enumeration | Description |
+  |-------------|-------------|
+  | [`ImagePixelFormat`](#imagepixelformat) | Describes the image pixel format. |
   | [`QRCodeErrorCorrectionLevel`](#qrcodeerrorcorrectionlevel) | Describes the QR Code error correction level.   |
   
 ---
