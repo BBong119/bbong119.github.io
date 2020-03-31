@@ -1,7 +1,7 @@
 # Dynamsoft Barcode Reader Enumeration - Parameter Mode Enumeration
 
-  | Method               | Description |
-  |----------------------|-------------|
+  | Enumeration | Description |
+  |-------------|-------------|
   | [`AccompanyingTextRecognitionMode`](#accompanyingtextrecognitionmode) | Describes the accompanying text recognition mode. |
   | [`BarcodeColourMode`](#barcodecolourmode) | Describes the barcode colour mode. |
   | [`BarcodeComplementMode`](#barcodecomplementmode) | Describes the barcode complement mode. |
