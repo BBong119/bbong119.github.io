@@ -13,7 +13,7 @@
 
  | Parameter Name | Description |
  | -------------- | ----------- | 
- | `ImageParameter.Name` | The name of the ImageParameter object. |
+ | [`ImageParameter.Name`](imageParmeter/content-organization-control.md#name) | The name of the ImageParameter object. |
  | `ImageParameter.Description` | The description of the ImageParameter object. |
  | `ImageParameter.FormatSpecificationNameArray` | The names of the referenced FormatSpecification object(s). |
  | `ImageParameter.RegionDefinitionNameArray` | The names of the referenced RegionDefinition object(s). |
