@@ -1,3 +1,10 @@
+---
+layout: manual-interface-enum
+id: interface_enum_other
+sourceCodeUrl: /dbr-detailed-info/manual/interface/enumeration/other-enum.md
+---
+
+
 # Dynamsoft Barcode Reader Enumeration - Other Enumeration
 
   | Enumeration | Description |
