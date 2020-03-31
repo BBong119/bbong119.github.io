@@ -1,7 +1,7 @@
 # Dynamsoft Barcode Reader Enumeration - Format Enumeration
 
-  | Method               | Description |
-  |----------------------|-------------|
+  | Enumeration | Description |
+  |-------------|-------------|
   | [`BarcodeFormat`](#barcodeformat) | Describes the barcode types in BarcodeFormat group 1. |
   | [`BarcodeFormat_2`](#barcodeformat_2) | Describes the barcode types in BarcodeFormat group 2. |
   
