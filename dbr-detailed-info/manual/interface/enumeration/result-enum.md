@@ -1,7 +1,7 @@
 # Dynamsoft Barcode Reader Enumeration - Format Enumeration
 
-  | Method               | Description |
-  |----------------------|-------------|
+  | Enumeration | Description |
+  |-------------|-------------|
   | [`IMResultDataType`](#imresultdatatype) | Describes the intermediate result data type. |
   | [`IntermediateResultSavingMode`](#intermediateresultsavingmode) | Describes the intermediate result saving mode. |
   | [`IntermediateResultType`](#intermediateresulttype) | Describes the intermediate result type. |
