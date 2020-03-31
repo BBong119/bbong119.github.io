@@ -23,7 +23,7 @@
 
  | Parameter Name | Description |
  | -------------- | ----------- | 
- | [`ImageParameter.TerminatePhase`](imageParmeter/content-organization-control.md#formatspecificationnamearray) | Sets the phase where the algorithm stops. |
+ | [`ImageParameter.TerminatePhase`](imageParmeter/cost-control.md#terminatephase) | Sets the phase where the algorithm stops. |
  | `ImageParameter.Timeout` | Sets the maximum amount of time (in milliseconds) that should be spent searching for a barcode per page. It does not include the time taken to load/decode an image (Tiff, PNG, etc) from disk into memory.|
  | `ImageParameter.MaxAlgorithmThreadCount` | Sets the number of threads the image processing algorithm will use to decode barcodes. |
  | `ImageParameter.ExpectedBarcodesCount` | Sets the number of barcodes expected to be detected for each image. |
