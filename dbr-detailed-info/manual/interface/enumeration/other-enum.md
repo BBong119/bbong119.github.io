@@ -7,7 +7,7 @@
   
 ---
 
-## ImagePixelFormat Enumeration
+## ImagePixelFormat
 Describes the image pixel format.
 
 
@@ -40,7 +40,7 @@ Describes the image pixel format.
 
 
 
-## QRCodeErrorCorrectionLevel Enumeration
+## QRCodeErrorCorrectionLevel
 Describes the QR Code error correction level.  
 
 
