@@ -25,7 +25,7 @@
 ---
 
 
-## AccompanyingTextRecognitionMode Enumeration
+## AccompanyingTextRecognitionMode
 Describes the accompanying text recognition mode.   
 
 
@@ -50,7 +50,7 @@ Describes the accompanying text recognition mode.
 
 
 
-## BarcodeColourMode Enumeration
+## BarcodeColourMode
 Describes the barcode colour mode.
 
 
@@ -80,7 +80,7 @@ Describes the barcode colour mode.
 
 
 
-## BarcodeComplementMode Enumeration
+## BarcodeComplementMode
 Describes the barcode complement mode.
 
 
@@ -106,7 +106,7 @@ Describes the barcode complement mode.
 
 
 
-## BinarizationMode Enumeration
+## BinarizationMode
 Describes the binarization mode.
 
 
@@ -132,7 +132,7 @@ Describes the binarization mode.
 
 
 
-## ColourClusteringMode Enumeration
+## ColourClusteringMode
 Describes the colour clustering mode.
 
 
@@ -158,7 +158,7 @@ Describes the colour clustering mode.
 
 
 
-## ColourConversionMode Enumeration
+## ColourConversionMode
 Describes the colour conversion mode.
 
 
@@ -183,7 +183,7 @@ Describes the colour conversion mode.
 
 
 
-## ConflictMode Enumeration
+## ConflictMode
 Describes the conflict mode.
 
 
@@ -208,7 +208,7 @@ Describes the conflict mode.
 
 
 
-## DeformationResistingMode Enumeration
+## DeformationResistingMode
 Describes the deformation resisting mode.
 
 
@@ -234,7 +234,7 @@ Describes the deformation resisting mode.
 
 
 
-## DPMCodeReadingMode Enumeration
+## DPMCodeReadingMode
 Describes the DPM code reading mode.
 
 ### Declarations
@@ -259,7 +259,7 @@ Describes the DPM code reading mode.
 
 
 
-## GrayscaleTransformationMode Enumeration
+## GrayscaleTransformationMode
 Describes the grayscale transformation mode.
 
 
@@ -285,7 +285,7 @@ Describes the grayscale transformation mode.
 
 
 
-## ImagePreprocessingMode Enumeration
+## ImagePreprocessingMode
 Describes the image preprocessing mode.
 
 ### Declarations
@@ -313,7 +313,7 @@ Describes the image preprocessing mode.
 
 
 
-## LocalizationMode Enumeration
+## LocalizationMode
 Describes the localization mode.
 
 
@@ -344,7 +344,7 @@ Describes the localization mode.
 
 
 
-## RegionPredetectionMode Enumeration
+## RegionPredetectionMode
 Describes the region predetection mode.
 
 
@@ -373,7 +373,7 @@ Describes the region predetection mode.
 
 
 
-## ScaleUpMode Enumeration
+## ScaleUpMode
 Describes the scale up mode. 
 
 
@@ -400,7 +400,7 @@ Describes the scale up mode.
 
 
 
-## TerminatePhase Enumeration
+## TerminatePhase
 Describes the terminate phase.
 
 
@@ -429,7 +429,7 @@ Describes the terminate phase.
 
 
 
-## TextAssistedCorrectionMode Enumeration
+## TextAssistedCorrectionMode
 Describes the text assisted correction mode.
 
 ### Declarations
@@ -455,7 +455,7 @@ Describes the text assisted correction mode.
 
 
 
-## TextFilterMode Enumeration
+## TextFilterMode
 Describes the text filter mode.
 
 ### Declarations
@@ -480,7 +480,7 @@ Describes the text filter mode.
 
 
 
-## TextureDetectionMode Enumeration
+## TextureDetectionMode
 Describes the texture detection mode.
 
 
