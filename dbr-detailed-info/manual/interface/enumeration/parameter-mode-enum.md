@@ -1,3 +1,9 @@
+---
+layout: manual-interface-enum
+id: interface_enum_parameter_mode
+sourceCodeUrl: /dbr-detailed-info/manual/interface/enumeration/parameter-mode-enum.md
+---
+
 # Dynamsoft Barcode Reader Enumeration - Parameter Mode Enumeration
 
   | Enumeration | Description |
