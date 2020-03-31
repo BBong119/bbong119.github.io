@@ -1,3 +1,10 @@
+---
+layout: manual-interface-enum
+id: interface_enum_format
+sourceCodeUrl: /dbr-detailed-info/manual/interface/enumeration/format-enum.md
+---
+
+
 # Dynamsoft Barcode Reader Enumeration - Format Enumeration
 
   | Enumeration | Description |
