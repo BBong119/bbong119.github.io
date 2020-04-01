@@ -9,7 +9,10 @@
  
  
 ## TerminatePhase
-Sets the phase where the algorithm stops.
+Sets the phase where the algorithm stops.   
+
+**Remarks**
+When the recognition result is not desired, this parameter can be set to skip certain processing stages.
 
 ### As Json Parameter
 
@@ -17,6 +20,12 @@ Sets the phase where the algorithm stops.
 | ----------- | ------------------- | ----------------------- | ----------------------------- | ------------------------------ | ---------------------------------- |
 | ImageParameter | TerminatePhase | ImageParameter.TerminatePhase | *string* | Any one of the `TerminatePhase Enumeration` items | `"TP_BARCODE_RECOGNIZED"` |
 
+**Json Parameter Example**   
+```
+{
+    "TerminatePhase":"TP_BARCODE_RECOGNIZED"
+}
+```
 
 ### As `PublicRuntimeSetting` Member
 
@@ -24,6 +33,9 @@ Sets the phase where the algorithm stops.
 | ------ | ------------------ | ------------------------ | ------------------------- | --------------------------- |
 | `PubuliRuntimeSettings` | `terminatePhase` | `TerminatePhase` | Any one of the `TerminatePhase Enumeration` items | `TP_BARCODE_RECOGNIZED` |
 
+**See Also**   
+- [`PublicRuntimeSettings`]
+- [`TerminatePhase Enumeration`]
 
 ## Timeout
 Sets the maximum amount of time (in milliseconds) that should be spent searching for a barcode per page. It does not include the time taken to load/decode an image (Tiff, PNG, etc) from disk into memory.
