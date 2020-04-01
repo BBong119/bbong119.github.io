@@ -27,9 +27,12 @@ It must be a unique name.
     ""Name"":""ImageParameter1""
 }
 ```
- 
+
+
 ## Description
 The description of the ImageParameter object.
+
+### As Json Parameter
 
 | Json Object |	Json Parameter Name |	Json Parameter Key Name | Json Parameter Key Value Type |	Json Parameter Key Default Value |
 | ----------- | ------------------- | ----------------------- | ----------------------------- | ------------------------------- |
@@ -46,13 +49,16 @@ The description of the ImageParameter object.
 ## FormatSpecificationNameArray
 The names of the referenced FormatSpecification object(s). 
 
+**Remark**   
+An array item is a name of any available `FormatSpecifications`.   
+
+### As Json Parameter
+
 | Json Object |	Json Parameter Name |	Json Parameter Key Name | Json Parameter Key Value Type |	Json Parameter Key Default Value |
 | ----------- | ------------------- | ----------------------- | ----------------------------- | ------------------------------- |
 | ImageParameter | FormatSpecificationNameArray | ImageParameter.FormatSpecificationNameArray | *string Array* | `null` |
 
-**Remark**   
-An array item is a name of any available `FormatSpecifications`.    
-
+   
 **Json Parameter Example**   
 ```
 {
@@ -66,12 +72,15 @@ An array item is a name of any available `FormatSpecifications`.
 ## RegionDefinitionNameArray
 The names of the referenced RegionDefinition object(s). 
 
+**Remark**   
+An array item is a name of any available `RegionDefinitions`.    
+
+### As Json Parameter
+
 | Json Object |	Json Parameter Name |	Json Parameter Key Name | Json Parameter Key Value Type |	Json Parameter Key Default Value |
 | ----------- | ------------------- | ----------------------- | ----------------------------- | ------------------------------- |
 | ImageParameter | RegionDefinitionNameArray | ImageParameter.RegionDefinitionNameArray | *string Array* | `null` |
 
-**Remark**   
-An array item is a name of any available `RegionDefinitions`.    
 
 **Json Parameter Example**   
 ```
