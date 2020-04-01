@@ -28,7 +28,7 @@ manual_interface_c_and_cpp: /dbr-detailed-info/manual/interface/c-and-cpp/
 manual_interface_struct: /dbr-detailed-info/manual/interface/c-and-cpp/struct/
 manual_interface_c: /dbr-detailed-info/manual/interface/c-and-cpp/c/
 manual_interface_cpp: /dbr-detailed-info/manual/interface/c-and-cpp/cpp/
-manual_parameters: /dbr-detailed-info/manual/parameters/
+manual_parameter: /dbr-detailed-info/manual/parameters/
 
 demosSamples: /dbr-detailed-info/samples-and-demos/
 demosSamples_appDemo: /dbr-detailed-info/samples-and-demos/
