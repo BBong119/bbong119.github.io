@@ -24,7 +24,7 @@ It must be a unique name.
 **Json Parameter Example**   
 ```
 {
-    ""Name"":""ImageParameter1""
+    "Name":"ImageParameter1"
 }
 ```
 
@@ -41,7 +41,7 @@ The description of the ImageParameter object.
 **Json Parameter Example**   
 ```
 {
-    ""Description"":""This template demonstrate...""
+    "Description":"This template demonstrate..."
 }
 ```
   
@@ -62,9 +62,9 @@ An array item is a name of any available `FormatSpecifications`.
 **Json Parameter Example**   
 ```
 {
-    ""FormatSpecificationNameArray"":[
-        ""FormatSpecification1"",
-        ""FormatSpecification2""
+    "FormatSpecificationNameArray":[
+        "FormatSpecification1",
+        "FormatSpecification2"
     ]
 }
 ```
@@ -85,9 +85,9 @@ An array item is a name of any available `RegionDefinitions`.
 **Json Parameter Example**   
 ```
 {
-    ""RegionDefinitionNameArray"":[
-        ""RegionDefinition1"",
-        ""RegionDefinition2""
+    "RegionDefinitionNameArray":[
+        "RegionDefinition1",
+        "RegionDefinition2"
     ]
 }
 ```
