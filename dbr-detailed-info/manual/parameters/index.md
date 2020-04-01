@@ -30,7 +30,7 @@ sourceCodeUrl: /dbr-detailed-info/manual/parameters/index.md
  | Parameter Name | Description |
  | -------------- | ----------- | 
  | [`ImageParameter.TerminatePhase`](imageParmeter/cost-control.md#terminatephase) | Sets the phase where the algorithm stops. |
- | [`ImageParameter.Timeout`](imageParmeter/cost-control.md#timeout) | Sets the maximum amount of time (in milliseconds) that should be spent searching for a barcode per page. It does not include the time taken to load/decode an image (Tiff, PNG, etc) from disk into memory.|
+ | [`ImageParameter.Timeout`](imageParmeter/cost-control.md#timeout) | Sets the maximum amount of time (in milliseconds) that should be spent searching for a barcode per page. |
  | [`ImageParameter.MaxAlgorithmThreadCount`](imageParmeter/cost-control.md#maxalgorithmthreadcount) | Sets the number of threads the image processing algorithm will use to decode barcodes. |
  | [`ImageParameter.ExpectedBarcodesCount`](imageParmeter/cost-control.md#expectedbarcodescount) | Sets the number of barcodes expected to be detected for each image. |
 
