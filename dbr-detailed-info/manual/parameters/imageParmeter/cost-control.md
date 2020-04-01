@@ -34,11 +34,40 @@ When the recognition result is not desired, this parameter can be set to skip ce
 | `PubuliRuntimeSettings` | `terminatePhase` | `TerminatePhase` | Any one of the `TerminatePhase Enumeration` items | `TP_BARCODE_RECOGNIZED` |
 
 **See Also**   
-- [`PublicRuntimeSettings`]
-- [`TerminatePhase Enumeration`]
+- [`PublicRuntimeSettings`]()
+- [`TerminatePhase Enumeration`]()
+
+
+
+
 
 ## Timeout
 Sets the maximum amount of time (in milliseconds) that should be spent searching for a barcode per page. It does not include the time taken to load/decode an image (Tiff, PNG, etc) from disk into memory.
+
+**Remarks**
+If you want to stop reading barcodes after a specified amount of time, you can use this parameter to set a timeout.
+
+### As Json Parameter
+
+| Json Object |	Json Parameter Name |	Json Parameter Key Name | Json Parameter Key Value Type |	Json Parameter Key Value Range | Json Parameter Key Default Value |
+| ----------- | ------------------- | ----------------------- | ----------------------------- | ------------------------------ | ---------------------------------- |
+| ImageParameter | Timeout | ImageParameter.Timeout | *int* | [0,0x7fffffff] | 10000 |
+
+**Json Parameter Example**   
+```
+{
+    "Timeout":10000
+}
+```
+
+### As `PublicRuntimeSetting` Member
+
+| Struct |	Struct Member Name |	Struct Member Value Type |	Struct Member Value Range | Struct Member Default Value |
+| ------ | ------------------ | ------------------------ | ------------------------- | --------------------------- |
+| `PubuliRuntimeSettings` | `timeout` | `int` | [0,0x7fffffff] | 10000 |
+
+**See Also**   
+- [`PublicRuntimeSettings`]()
 
 
 ## MaxAlgorithmThreadCount
