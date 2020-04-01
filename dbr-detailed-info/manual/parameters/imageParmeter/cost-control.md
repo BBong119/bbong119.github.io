@@ -11,9 +11,18 @@
 ## TerminatePhase
 Sets the phase where the algorithm stops.
 
-| Json Parameter Key Name |	PublicRuntimeSetting struct	| PublicRuntimeSetting Name |	Enumeration | Argument |
-| ----------------------- | --------------------------- | ------------------------- | ----------- | -------- |
-| ImageParameter.TerminatePhase	| N/A | terminatePhase | {{ site.manual_interface_enum }}TerminatePhase.html | N/A |
+### As Json Parameter
+
+| Json Object |	Json Parameter Name |	Json Parameter Key Name | Json Parameter Key Value Type |	Json Parameter Key Value Range | Json Parameter Key Default Value |
+| ----------- | ------------------- | ----------------------- | ----------------------------- | ------------------------------ | ---------------------------------- |
+| ImageParameter | TerminatePhase | ImageParameter.TerminatePhase | *string* | Any one of the `TerminatePhase Enumeration` items | `"TP_BARCODE_RECOGNIZED"` |
+
+
+### As `PublicRuntimeSetting` Member
+
+| Struct |	Struct Member Name |	Struct Member Value Type |	Struct Member Value Range | Struct Member Default Value |
+| ------ | ------------------ | ------------------------ | --------------------------- | 
+| `PubuliRuntimeSettings` | `terminatePhase` | `TerminatePhase` | Any one of the `TerminatePhase Enumeration` items | `TP_BARCODE_RECOGNIZED` |
 
 
 ## Timeout
