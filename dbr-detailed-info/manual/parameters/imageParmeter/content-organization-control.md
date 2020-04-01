@@ -35,6 +35,12 @@ It must be a unique name.
 ```
 
 
+
+&nbsp;
+
+
+
+
 ## Description
 The description of the ImageParameter object.
 
@@ -51,6 +57,12 @@ The description of the ImageParameter object.
 }
 ```
   
+
+
+&nbsp;
+
+
+
 
 ## FormatSpecificationNameArray
 The names of the referenced FormatSpecification object(s). 
@@ -74,6 +86,13 @@ An array item is a name of any available `FormatSpecifications`.
     ]
 }
 ```
+
+
+
+&nbsp;
+
+
+
 
 ## RegionDefinitionNameArray
 The names of the referenced RegionDefinition object(s). 
