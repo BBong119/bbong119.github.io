@@ -1,3 +1,9 @@
+---
+layout: manual-paramter
+id: parameter_main
+sourceCodeUrl: /dbr-detailed-info/manual/parameters/index.md
+---
+
 
 # Dynamsoft Barcode Reader SDK - Parameters
 
