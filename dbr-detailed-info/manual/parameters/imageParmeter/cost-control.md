@@ -21,7 +21,7 @@ Sets the phase where the algorithm stops.
 ### As `PublicRuntimeSetting` Member
 
 | Struct |	Struct Member Name |	Struct Member Value Type |	Struct Member Value Range | Struct Member Default Value |
-| ------ | ------------------ | ------------------------ | --------------------------- | 
+| ------ | ------------------ | ------------------------ | ------------------------- | --------------------------- |
 | `PubuliRuntimeSettings` | `terminatePhase` | `TerminatePhase` | Any one of the `TerminatePhase Enumeration` items | `TP_BARCODE_RECOGNIZED` |
 
 
