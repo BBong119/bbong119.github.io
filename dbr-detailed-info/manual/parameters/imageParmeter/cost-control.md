@@ -46,6 +46,10 @@ When the recognition result is not desired, this parameter can be set to skip ce
 
 
 
+&nbsp;
+
+
+
 
 ## Timeout
 Sets the maximum amount of time (in milliseconds) that should be spent searching for a barcode per page. It does not include the time taken to load/decode an image (Tiff, PNG, etc) from disk into memory.   
@@ -76,6 +80,13 @@ If you want to stop reading barcodes after a specified amount of time, you can u
 - [`PublicRuntimeSettings`]()
 
 
+
+
+&nbsp;
+
+
+
+
 ## MaxAlgorithmThreadCount
 Sets the number of threads the image processing algorithm will use to decode barcodes.   
 
@@ -104,6 +115,13 @@ By default, the library concurrently runs four different threads for decoding ba
 
 **See Also**   
 - [`PublicRuntimeSettings`]()
+
+
+
+
+&nbsp;
+
+
 
 
 ## ExpectedBarcodesCount
