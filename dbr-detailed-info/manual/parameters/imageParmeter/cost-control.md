@@ -34,14 +34,14 @@ When the recognition result is not desired, this parameter can be set to skip ce
 }
 ```
 
-### As `PublicRuntimeSetting` Member
+### As `PublicRuntimeSettings` Member
 
 | Struct |	Struct Member Name |	Struct Member Value Type |	Struct Member Value Range | Struct Member Default Value |
 | ------ | ------------------ | ------------------------ | ------------------------- | --------------------------- |
-| [`PubuliRuntimeSettings`]({{ site.manual_interface_struct }}PubuliRuntimeSettings.html) | [`terminatePhase`]({{ site.manual_interface_struct }}PubuliRuntimeSettings.html#terminatephase) | [`TerminatePhase`]({{ site.manual_interface_enum }}parameter-mode-enum.html#terminatephase) | Any one of the [`TerminatePhase` Enumeration]({{ site.manual_interface_enum }}parameter-mode-enum.html#terminatephase) items | `TP_BARCODE_RECOGNIZED` |
+| [`PublicRuntimeSettings`]({{ site.manual_interface_struct }}PublicRuntimeSettings.html) | [`terminatePhase`]({{ site.manual_interface_struct }}PublicRuntimeSettings.html#terminatephase) | [`TerminatePhase`]({{ site.manual_interface_enum }}parameter-mode-enum.html#terminatephase) | Any one of the [`TerminatePhase` Enumeration]({{ site.manual_interface_enum }}parameter-mode-enum.html#terminatephase) items | `TP_BARCODE_RECOGNIZED` |
 
 **See Also**   
-- [`PublicRuntimeSettings` Struct]({{ site.manual_interface_struct }}PubuliRuntimeSettings.html)
+- [`PublicRuntimeSettings` Struct]({{ site.manual_interface_struct }}PublicRuntimeSettings.html)
 - [`TerminatePhase` Enumeration]({{ site.manual_interface_enum }}parameter-mode-enum.html#terminatephase)
 
 
@@ -71,14 +71,14 @@ If you want to stop reading barcodes after a specified amount of time, you can u
 }
 ```
 
-### As `PublicRuntimeSetting` Member
+### As `PublicRuntimeSettings` Member
 
 | Struct |	Struct Member Name |	Struct Member Value Type |	Struct Member Value Range | Struct Member Default Value |
 | ------ | ------------------ | ------------------------ | ------------------------- | --------------------------- |
-| [`PubuliRuntimeSettings`]({{ site.manual_interface_struct }}PubuliRuntimeSettings.html) | [`timeout`]({{ site.manual_interface_struct }}PubuliRuntimeSettings.html#timeout) | `int` | [0,0x7fffffff] | 10000 |
+| [`PublicRuntimeSettings`]({{ site.manual_interface_struct }}PublicRuntimeSettings.html) | [`timeout`]({{ site.manual_interface_struct }}PublicRuntimeSettings.html#timeout) | `int` | [0,0x7fffffff] | 10000 |
 
 **See Also**   
-- [`PublicRuntimeSettings` Struct]({{ site.manual_interface_struct }}PubuliRuntimeSettings.html)
+- [`PublicRuntimeSettings` Struct]({{ site.manual_interface_struct }}PublicRuntimeSettings.html)
 
 
 
@@ -109,14 +109,14 @@ By default, the library concurrently runs four different threads for decoding ba
 }
 ```
 
-### As `PublicRuntimeSetting` Member
+### As `PublicRuntimeSettings` Member
 
 | Struct |	Struct Member Name |	Struct Member Value Type |	Struct Member Value Range | Struct Member Default Value |
 | ------ | ------------------ | ------------------------ | ------------------------- | --------------------------- |
-| [`PubuliRuntimeSettings`]({{ site.manual_interface_struct }}PubuliRuntimeSettings.html) | [`maxAlgorithmThreadCount`]({{ site.manual_interface_struct }}PubuliRuntimeSettings.html#maxalgorithmthreadcount) | `int` | [1,4] | 4 |
+| [`PublicRuntimeSettings`]({{ site.manual_interface_struct }}PublicRuntimeSettings.html) | [`maxAlgorithmThreadCount`]({{ site.manual_interface_struct }}PublicRuntimeSettings.html#maxalgorithmthreadcount) | `int` | [1,4] | 4 |
 
 **See Also**   
-- [`PublicRuntimeSettings` Struct]({{ site.manual_interface_struct }}PubuliRuntimeSettings.html)
+- [`PublicRuntimeSettings` Struct]({{ site.manual_interface_struct }}PublicRuntimeSettings.html)
 
 
 
@@ -149,12 +149,12 @@ n: try to find n barcodes. If the library only finds m (m < n) barcode, it will 
 
 ```
 
-### As `PublicRuntimeSetting` Member
+### As `PublicRuntimeSettings` Member
 
 | Struct |	Struct Member Name |	Struct Member Value Type |	Struct Member Value Range | Struct Member Default Value |
 | ------ | ------------------ | ------------------------ | ------------------------- | --------------------------- |
-| [`PubuliRuntimeSettings`]({{ site.manual_interface_struct }}PubuliRuntimeSettings.html) | [`expectedBarcodesCount`]({{ site.manual_interface_struct }}expectedbarcodescount.html) | `int` | [0,0x7fffffff] | 0 |
+| [`PublicRuntimeSettings`]({{ site.manual_interface_struct }}PublicRuntimeSettings.html) | [`expectedBarcodesCount`]({{ site.manual_interface_struct }}PublicRuntimeSettings.html#expectedbarcodescount) | `int` | [0,0x7fffffff] | 0 |
 
 **See Also**   
-- [`PublicRuntimeSettings` Struct]({{ site.manual_interface_struct }}PubuliRuntimeSettings.html)
+- [`PublicRuntimeSettings` Struct]({{ site.manual_interface_struct }}PublicRuntimeSettings.html)
 
