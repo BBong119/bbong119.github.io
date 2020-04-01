@@ -13,7 +13,8 @@ sourceCodeUrl: /dbr-detailed-info/manual/parameters/imageParmeter/cost-control.m
  | [`ImageParameter.MaxAlgorithmThreadCount`](#maxalgorithmthreadcount) | Sets the number of threads the image processing algorithm will use to decode barcodes. |
  | [`ImageParameter.ExpectedBarcodesCount`](#expectedbarcodescount) | Sets the number of barcodes expected to be detected for each image. |
  
- 
+---
+
 ## TerminatePhase
 Sets the phase where the algorithm stops.   
 
@@ -24,7 +25,7 @@ When the recognition result is not desired, this parameter can be set to skip ce
 
 | Json Object |	Json Parameter Name |	Json Parameter Key Name | Json Parameter Key Value Type |	Json Parameter Key Value Range | Json Parameter Key Default Value |
 | ----------- | ------------------- | ----------------------- | ----------------------------- | ------------------------------ | ---------------------------------- |
-| ImageParameter | TerminatePhase | ImageParameter.TerminatePhase | *string* | Any one of the `TerminatePhase Enumeration` items | `"TP_BARCODE_RECOGNIZED"` |
+| ImageParameter | TerminatePhase | ImageParameter.TerminatePhase | *string* |Any one of the [`TerminatePhase` Enumeration]({{ site.manual_interface_enum }}parameter-mode-enum.html#terminatephase) items | `"TP_BARCODE_RECOGNIZED"` |
 
 **Json Parameter Example**   
 ```
@@ -37,11 +38,11 @@ When the recognition result is not desired, this parameter can be set to skip ce
 
 | Struct |	Struct Member Name |	Struct Member Value Type |	Struct Member Value Range | Struct Member Default Value |
 | ------ | ------------------ | ------------------------ | ------------------------- | --------------------------- |
-| `PubuliRuntimeSettings` | `terminatePhase` | `TerminatePhase` | Any one of the `TerminatePhase Enumeration` items | `TP_BARCODE_RECOGNIZED` |
+| [`PubuliRuntimeSettings`]({{ site.manual_interface_struct }}PubuliRuntimeSettings.html) | [`terminatePhase`]({{ site.manual_interface_struct }}PubuliRuntimeSettings.html#terminatephase) | [`TerminatePhase`]({{ site.manual_interface_enum }}parameter-mode-enum.html#terminatephase) | Any one of the [`TerminatePhase` Enumeration]({{ site.manual_interface_enum }}parameter-mode-enum.html#terminatephase) items | `TP_BARCODE_RECOGNIZED` |
 
 **See Also**   
-- [`PublicRuntimeSettings`]()
-- [`TerminatePhase Enumeration`]()
+- [`PublicRuntimeSettings` Struct]({{ site.manual_interface_struct }}PubuliRuntimeSettings.html)
+- [`TerminatePhase` Enumeration]({{ site.manual_interface_enum }}parameter-mode-enum.html#terminatephase)
 
 
 
@@ -74,15 +75,16 @@ If you want to stop reading barcodes after a specified amount of time, you can u
 
 | Struct |	Struct Member Name |	Struct Member Value Type |	Struct Member Value Range | Struct Member Default Value |
 | ------ | ------------------ | ------------------------ | ------------------------- | --------------------------- |
-| `PubuliRuntimeSettings` | `timeout` | `int` | [0,0x7fffffff] | 10000 |
+| [`PubuliRuntimeSettings`]({{ site.manual_interface_struct }}PubuliRuntimeSettings.html) | [`timeout`]({{ site.manual_interface_struct }}PubuliRuntimeSettings.html#timeout) | `int` | [0,0x7fffffff] | 10000 |
 
 **See Also**   
-- [`PublicRuntimeSettings`]()
+- [`PublicRuntimeSettings` Struct]({{ site.manual_interface_struct }}PubuliRuntimeSettings.html)
 
 
 
 
 &nbsp;
+
 
 
 
@@ -111,10 +113,10 @@ By default, the library concurrently runs four different threads for decoding ba
 
 | Struct |	Struct Member Name |	Struct Member Value Type |	Struct Member Value Range | Struct Member Default Value |
 | ------ | ------------------ | ------------------------ | ------------------------- | --------------------------- |
-| `PubuliRuntimeSettings` | `maxAlgorithmThreadCount` | `int` | [1,4] | 4 |
+| [`PubuliRuntimeSettings`]({{ site.manual_interface_struct }}PubuliRuntimeSettings.html) | [`maxAlgorithmThreadCount`]({{ site.manual_interface_struct }}PubuliRuntimeSettings.html#maxalgorithmthreadcount) | `int` | [1,4] | 4 |
 
 **See Also**   
-- [`PublicRuntimeSettings`]()
+- [`PublicRuntimeSettings` Struct]({{ site.manual_interface_struct }}PubuliRuntimeSettings.html)
 
 
 
@@ -151,8 +153,8 @@ n: try to find n barcodes. If the library only finds m (m < n) barcode, it will 
 
 | Struct |	Struct Member Name |	Struct Member Value Type |	Struct Member Value Range | Struct Member Default Value |
 | ------ | ------------------ | ------------------------ | ------------------------- | --------------------------- |
-| `PubuliRuntimeSettings` | `expectedBarcodesCount` | `int` | [0,0x7fffffff] | 0 |
+| [`PubuliRuntimeSettings`]({{ site.manual_interface_struct }}PubuliRuntimeSettings.html) | [`expectedBarcodesCount`]({{ site.manual_interface_struct }}expectedbarcodescount.html) | `int` | [0,0x7fffffff] | 0 |
 
 **See Also**   
-- [`PublicRuntimeSettings`]()
+- [`PublicRuntimeSettings` Struct]({{ site.manual_interface_struct }}PubuliRuntimeSettings.html)
 
