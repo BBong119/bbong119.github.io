@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en-US">
+	
+{%- include head.html -%}
+     
+<body>
+	<div class="wrapper">
+		<div class="sideBar">	 
+			<div class="sideBarHeader">
+				<p><a href="{{ site.homePage }}" class="sideHomePage">< Documentation Home Page</a></p>
+				<p><a href="{{ site.manual_interface_enum }}" class="sideName">Dyanamsoft Barcocde Reader - Enumeration</a></p>
+			</div>	
+			<ul class="disc">
+				<li>ImageParameter Object
+         <ul>
+          <li><a href="{{ site.manual_parameter}}imageParmeter/content-organization-control.html" class="otherLinkColour">Content Organization Control</a>
+           <ul>
+            <li><a href="{{ site.manual_parameter}}imageParmeter/content-organization-control.html#name" class="otherLinkColour">Name</a></li>
+            <li><a href="{{ site.manual_parameter}}imageParmeter/content-organization-control.html#description" class="otherLinkColour">Description</a></li>
+            <li><a href="{{ site.manual_parameter}}imageParmeter/content-organization-control.html#formatspecificationnamearray" class="otherLinkColour">FormatSpecificationNameArray</a></li>
+            <li><a href="{{ site.manual_parameter}}imageParmeter/content-organization-control.html#regiondefinitionnamearray" class="otherLinkColour">RegionDefinitionNameArray</a></li>
+           </ul>
+          </li>
+          <li><a href="{{ site.manual_parameter}}imageParmeter/cost-control.html" class="otherLinkColour">Cost Control</a>
+           <ul>
+            <li><a href="{{ site.manual_parameter}}imageParmeter/cost-control.html#terminatephase" class="otherLinkColour">TerminatePhase</a></li>
+            <li><a href="{{ site.manual_parameter}}imageParmeter/cost-control.html#timeout" class="otherLinkColour">Timeout</a></li>
+            <li><a href="{{ site.manual_parameter}}imageParmeter/cost-control.html#maxalgorithmthreadcount" class="otherLinkColour">MaxAlgorithmThreadCount</a></li>
+            <li><a href="{{ site.manual_parameter}}imageParmeter/cost-control.html#expectedbarcodescount" class="otherLinkColour">ExpectedBarcodesCount</a></li>
+           </ul>
+          </li>
+         </ul>
+        </li>
+				<li>RegionDefinition Object
+         <ul>
+         
+         </ul>
+        </li>
+        <li>FormatSpecification Object
+         <ul>
+         
+         </ul>
+        </li>
+			</ul>
+		</div>
+		<div class="container">
+			<div class="main">  
+				<p align="right"><a href="{{ site.repositoryUrl }}{{ page.sourceCodeUrl }} " align="right" class="otherLinkColour">Edit<img src="{{ site.editIcon }}" width="20px" height="15px" /></a></p>
+				{{ content }}
+			</div>
+		</div>
+    	</div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js" integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"></script>
+    <script>anchors.add();</script>
+    
+  </body>
+</html>
