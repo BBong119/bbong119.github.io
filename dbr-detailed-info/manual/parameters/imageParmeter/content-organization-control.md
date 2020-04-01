@@ -10,11 +10,14 @@
  
  
 ## Name
-The name of the ImageParameter object.   
+The name of the ImageParameter object.  
+
+### As Json Parameter
 
 | Json Object |	Json Parameter Name |	Json Parameter Key Name | Json Parameter Key Value Type |	Json Parameter Key Default Value |
 | ----------- | ------------------- | ----------------------- | ----------------------------- | ------------------------------- |
 | ImageParameter | Name | ImageParameter.Name | *string* | It must be a mandatory setting value. |
+
 
 **Remark**    
 It must be a unique name.   
