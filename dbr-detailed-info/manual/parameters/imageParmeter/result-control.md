@@ -59,7 +59,7 @@ Sets the mode for saving the intermediate result.
 
 | Json Object |	Json Parameter Name | Value Type | Default Value |
 | ----------- | ------------------- | ---------- | ------------- |
-| ImageParameter | IntermediateResultSavingMode | *"JSON Object or string* | `"IRSM_MEMORY"` |
+| ImageParameter | IntermediateResultSavingMode | *JSON Object or string* | `"IRSM_MEMORY"` |
 
 **Remarks**   
 - As a string, the value can be any one of the [`IntermediateResultSavingMode` Enumeration]({{ site.manual_interface_enum }}result-enum.html#intermediateresultsavingmode) items.   
