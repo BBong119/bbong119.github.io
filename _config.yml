@@ -61,3 +61,7 @@ imageProcessingKnowledge: /dbr-extended-info/image-processing-knowledge/
 
 
 editIcon: /other-material/icon/editIcon.png
+
+
+kramdown:                                         
+  syntax_highlighter: rouge  
