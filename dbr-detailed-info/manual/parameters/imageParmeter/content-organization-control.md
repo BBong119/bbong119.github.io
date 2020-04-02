@@ -24,8 +24,8 @@ It must be a unique name.
 
 ### As Json Parameter
 
-| Json Object |	Json Parameter Name |	Json Parameter Key Name | Json Parameter Key Value Type |	Json Parameter Key Default Value |
-| ----------- | ------------------- | ----------------------- | ----------------------------- | ------------------------------- |
+| Json Object |	Json Parameter Name |	Json Parameter Key Name | Value Type | Default Value |
+| ----------- | ------------------- | ----------------------- | ---------- | ------------- |
 | ImageParameter | Name | ImageParameter.Name | *string* | It must be a mandatory setting value. |
 
 **Json Parameter Example**   
@@ -47,8 +47,8 @@ The description of the ImageParameter object.
 
 ### As Json Parameter
 
-| Json Object |	Json Parameter Name |	Json Parameter Key Name | Json Parameter Key Value Type |	Json Parameter Key Default Value |
-| ----------- | ------------------- | ----------------------- | ----------------------------- | ------------------------------- |
+| Json Object |	Json Parameter Name |	Json Parameter Key Name | Value Type | Default Value |
+| ----------- | ------------------- | ----------------------- | ---------- | ------------- |
 | ImageParameter | Description | ImageParameter.Description | *string* | `""` |
 
 **Json Parameter Example**   
@@ -73,8 +73,8 @@ An array item is a name of any available `FormatSpecifications`.
 
 ### As Json Parameter
 
-| Json Object |	Json Parameter Name |	Json Parameter Key Name | Json Parameter Key Value Type |	Json Parameter Key Default Value |
-| ----------- | ------------------- | ----------------------- | ----------------------------- | ------------------------------- |
+| Json Object |	Json Parameter Name |	Json Parameter Key Name | Value Type | Default Value |
+| ----------- | ------------------- | ----------------------- | ---------- | ------------- |
 | ImageParameter | FormatSpecificationNameArray | ImageParameter.FormatSpecificationNameArray | *string Array* | `null` |
 
    
@@ -103,8 +103,8 @@ An array item is a name of any available `RegionDefinitions`.
 
 ### As Json Parameter
 
-| Json Object |	Json Parameter Name |	Json Parameter Key Name | Json Parameter Key Value Type |	Json Parameter Key Default Value |
-| ----------- | ------------------- | ----------------------- | ----------------------------- | ------------------------------- |
+| Json Object |	Json Parameter Name |	Json Parameter Key Name | Value Type | Default Value |
+| ----------- | ------------------- | ----------------------- | ---------- | ------------- |
 | ImageParameter | RegionDefinitionNameArray | ImageParameter.RegionDefinitionNameArray | *string Array* | `null` |
 
 
