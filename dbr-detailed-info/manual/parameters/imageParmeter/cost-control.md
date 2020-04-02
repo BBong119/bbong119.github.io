@@ -23,8 +23,8 @@ When the recognition result is not desired, this parameter can be set to skip ce
 
 ### As Json Parameter
 
-| Json Object |	Json Parameter Name |	Json Parameter Key Name | Json Parameter Key Value Type |	Json Parameter Key Value Range | Json Parameter Key Default Value |
-| ----------- | ------------------- | ----------------------- | ----------------------------- | ------------------------------ | ---------------------------------- |
+| Json Object |	Json Parameter Name |	Json Parameter Key Name | Value Type | Value Range | Default Value |
+| ----------- | ------------------- | ----------------------- | ---------- | ----------- | ------------- |
 | ImageParameter | TerminatePhase | ImageParameter.TerminatePhase | *string* |Any one of the [`TerminatePhase` Enumeration]({{ site.manual_interface_enum }}parameter-mode-enum.html#terminatephase) items | `"TP_BARCODE_RECOGNIZED"` |
 
 **Json Parameter Example**   
@@ -36,8 +36,8 @@ When the recognition result is not desired, this parameter can be set to skip ce
 
 ### As `PublicRuntimeSettings` Member
 
-| Struct |	Struct Member Name |	Struct Member Value Type |	Struct Member Value Range | Struct Member Default Value |
-| ------ | ------------------ | ------------------------ | ------------------------- | --------------------------- |
+| Struct |	Struct Member Name |	Value Type | Value Range |  Default Value |
+| ------ | ------------------ | ---------- | ----------- | -------------- |
 | [`PublicRuntimeSettings`]({{ site.manual_interface_struct }}PublicRuntimeSettings.html) | [`terminatePhase`]({{ site.manual_interface_struct }}PublicRuntimeSettings.html#terminatephase) | [`TerminatePhase`]({{ site.manual_interface_enum }}parameter-mode-enum.html#terminatephase) | Any one of the [`TerminatePhase` Enumeration]({{ site.manual_interface_enum }}parameter-mode-enum.html#terminatephase) items | `TP_BARCODE_RECOGNIZED` |
 
 **See Also**   
@@ -60,8 +60,8 @@ If you want to stop reading barcodes after a specified amount of time, you can u
 
 ### As Json Parameter
 
-| Json Object |	Json Parameter Name |	Json Parameter Key Name | Json Parameter Key Value Type |	Json Parameter Key Value Range | Json Parameter Key Default Value |
-| ----------- | ------------------- | ----------------------- | ----------------------------- | ------------------------------ | ---------------------------------- |
+| Json Object |	Json Parameter Name |	Json Parameter Key Name | Value Type | Value Range | Default Value |
+| ----------- | ------------------- | ----------------------- | ---------- | ----------- | ------------- |
 | ImageParameter | Timeout | ImageParameter.Timeout | *int* | [0,0x7fffffff] | 10000 |
 
 **Json Parameter Example**   
@@ -73,8 +73,8 @@ If you want to stop reading barcodes after a specified amount of time, you can u
 
 ### As `PublicRuntimeSettings` Member
 
-| Struct |	Struct Member Name |	Struct Member Value Type |	Struct Member Value Range | Struct Member Default Value |
-| ------ | ------------------ | ------------------------ | ------------------------- | --------------------------- |
+| Struct |	Struct Member Name |	Value Type | Value Range |  Default Value |
+| ------ | ------------------ | ---------- | ----------- | -------------- |
 | [`PublicRuntimeSettings`]({{ site.manual_interface_struct }}PublicRuntimeSettings.html) | [`timeout`]({{ site.manual_interface_struct }}PublicRuntimeSettings.html#timeout) | `int` | [0,0x7fffffff] | 10000 |
 
 **See Also**   
@@ -98,8 +98,8 @@ By default, the library concurrently runs four different threads for decoding ba
 
 ### As Json Parameter
 
-| Json Object |	Json Parameter Name |	Json Parameter Key Name | Json Parameter Key Value Type |	Json Parameter Key Value Range | Json Parameter Key Default Value |
-| ----------- | ------------------- | ----------------------- | ----------------------------- | ------------------------------ | ---------------------------------- |
+| Json Object |	Json Parameter Name |	Json Parameter Key Name | Value Type | Value Range | Default Value |
+| ----------- | ------------------- | ----------------------- | ---------- | ----------- | ------------- |
 | ImageParameter | MaxAlgorithmThreadCount | ImageParameter.MaxAlgorithmThreadCount | *int* | [1,4] | 4 |
 
 **Json Parameter Example**   
@@ -111,8 +111,8 @@ By default, the library concurrently runs four different threads for decoding ba
 
 ### As `PublicRuntimeSettings` Member
 
-| Struct |	Struct Member Name |	Struct Member Value Type |	Struct Member Value Range | Struct Member Default Value |
-| ------ | ------------------ | ------------------------ | ------------------------- | --------------------------- |
+| Struct |	Struct Member Name |	Value Type | Value Range |  Default Value |
+| ------ | ------------------ | ---------- | ----------- | -------------- |
 | [`PublicRuntimeSettings`]({{ site.manual_interface_struct }}PublicRuntimeSettings.html) | [`maxAlgorithmThreadCount`]({{ site.manual_interface_struct }}PublicRuntimeSettings.html#maxalgorithmthreadcount) | `int` | [1,4] | 4 |
 
 **See Also**   
@@ -137,8 +137,8 @@ n: try to find n barcodes. If the library only finds m (m < n) barcode, it will 
 
 ### As Json Parameter
 
-| Json Object |	Json Parameter Name |	Json Parameter Key Name | Json Parameter Key Value Type |	Json Parameter Key Value Range | Json Parameter Key Default Value |
-| ----------- | ------------------- | ----------------------- | ----------------------------- | ------------------------------ | ---------------------------------- |
+| Json Object |	Json Parameter Name |	Json Parameter Key Name | Value Type | Value Range | Default Value |
+| ----------- | ------------------- | ----------------------- | ---------- | ----------- | ------------- |
 | ImageParameter | ExpectedBarcodesCount | ImageParameter.ExpectedBarcodesCount | *int* | [0,0x7fffffff] | 0 |
 
 **Json Parameter Example**   
@@ -151,8 +151,8 @@ n: try to find n barcodes. If the library only finds m (m < n) barcode, it will 
 
 ### As `PublicRuntimeSettings` Member
 
-| Struct |	Struct Member Name |	Struct Member Value Type |	Struct Member Value Range | Struct Member Default Value |
-| ------ | ------------------ | ------------------------ | ------------------------- | --------------------------- |
+| Struct |	Struct Member Name |	Value Type | Value Range |  Default Value |
+| ------ | ------------------ | ---------- | ----------- | -------------- |
 | [`PublicRuntimeSettings`]({{ site.manual_interface_struct }}PublicRuntimeSettings.html) | [`expectedBarcodesCount`]({{ site.manual_interface_struct }}PublicRuntimeSettings.html#expectedbarcodescount) | `int` | [0,0x7fffffff] | 0 |
 
 **See Also**   
