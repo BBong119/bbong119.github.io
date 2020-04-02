@@ -64,7 +64,7 @@ Sets the mode for saving the intermediate result.
 **Remarks**   
 - As a string, the value can be any one of the [`IntermediateResultSavingMode` Enumeration]({{ site.manual_interface_enum }}result-enum.html#intermediateresultsavingmode) items.   
 
-- As a JSON Object, it contains keys - "Mode", "FolderPath", "RecordsetSizeOfLatestImages". "Mode" is mandatory ant its value can be any one of the [`IntermediateResultSavingMode` Enumeration]({{ site.manual_interface_enum }}result-enum.html#intermediateresultsavingmode) items. Check arguments of [IntermediateResultSavingMode]({{ site.manual_interface_argument}}IntermediateResultSavingMode.html) for available argument settings.   
+- As a JSON Object, it contains keys - "Mode", "FolderPath", "RecordsetSizeOfLatestImages". "Mode" is mandatory and its value can be any one of the [`IntermediateResultSavingMode` Enumeration]({{ site.manual_interface_enum }}result-enum.html#intermediateresultsavingmode) items. Other keys please check [arguments of `IntermediateResultSavingMode`]({{ site.manual_interface_argument}}IntermediateResultSavingMode.html) for available settings.   
 
 **Json Parameter Example**   
 ```
