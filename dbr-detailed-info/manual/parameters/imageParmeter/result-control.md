@@ -159,23 +159,4 @@ Mode is Mandatory;
 Value range of key Mode:  Any one of the TextResultOrderMode Enumeration items."
 
 
-**Json Parameter Example**   
-```
-{
-    "ResultCoordinateType":"RCT_PIXEL"
-}
-```
-
-### As `PublicRuntimeSettings` Member
-
-| Struct |	Struct Member Name | Value Type | Value Range | Default Value |
-| ------ | ------------------ | ---------- | ----------- | ------------- |
-| [`PublicRuntimeSettings`]({{ site.manual_interface_struct }}PublicRuntimeSettings.html) | [`resultCoordinateType`]({{ site.manual_interface_struct }}PublicRuntimeSettings.html#resultcoordinatetype) | [`ResultCoordinateType`]({{ site.manual_interface_enum }}result-enum.html#resultcoordinatetype) | Any one of the [`ResultCoordinateType` Enumeration]({{ site.manual_interface_enum }}result-enum.html#resultcoordinatetype) items.| `IRSM_MEMORY`|
-
-**See Also**   
-- [`PublicRuntimeSettings` Struct]({{ site.manual_interface_struct }}PublicRuntimeSettings.html)
-- [`ResultCoordinateType` Enumeration]({{ site.manual_interface_enum }}result-enum.html#resultcoordinatetype)
-
-
-
 &nbsp;
