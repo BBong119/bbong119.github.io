@@ -21,25 +21,11 @@ Sets which types of intermediate result to be kept for further reference. Interm
 
 ### As Json Parameter
 
-- **Json Object**   
-   ImageParameter
-   
-- **Json Parameter Name**   
-   IntermediateResultTypes
-   
-- **Json Parameter Key Name**   
-   ImageParameter.IntermediateResultTypes
-   
-- **Json Parameter Key Value Type**   
-   *string Aarry* 
-   
-- **Json Parameter Key Value Range**     
-   An array item can be any one of the [`IntermediateResultTypes` Enumeration]({{ site.manual_interface_enum }}result-enum.html##intermediateresulttype) items.
-    
-- **Json Parameter Key Default Value**   
-   `null`
+| Json Object |	Json Parameter Name | Value Type | Value Range | Default Value |
+| ----------- | ------------------- | ---------- | ----------- | ------------- |
+| ImageParameter | IntermediateResultTypes | *string Aarry* | An array item can be any one of the [`IntermediateResultTypes` Enumeration]({{ site.manual_interface_enum }}result-enum.html##intermediateresulttype) items | `null` |
 
-- **Json Parameter Example**     
+**Json Parameter Example**   
 ```
 {
     "IntermediateResultTypes": [
@@ -48,15 +34,11 @@ Sets which types of intermediate result to be kept for further reference. Interm
     ]
 }
 ```
-- **See Also**   
-   - [`IntermediateResultType` Enumeration]({{ site.manual_interface_enum }}result-enum.html##intermediateresulttype)
-   
-   
 
 ### As `PublicRuntimeSettings` Member
 
-| Struct |	Struct Member Name | Value Type | Value Range | Default Value |
-| ------ | ------------------ | ---------- | ----------- | ------------- |
+| Struct |	Struct Member Name |	Struct Member Value Type |	Struct Member Value Range | Struct Member Default Value |
+| ------ | ------------------ | ------------------------ | ------------------------- | --------------------------- |
 | [`PublicRuntimeSettings`]({{ site.manual_interface_struct }}PublicRuntimeSettings.html) | [`intermediateResultTypes`]({{ site.manual_interface_struct }}PublicRuntimeSettings.html#intermediateresulttypes) | *int* | A combined value of [`IntermediateResultType` Enumeration]({{ site.manual_interface_enum }}result-enum.html##intermediateresulttype) items. | `IRT_NO_RESULT` (0) |
 
 **See Also**   
@@ -66,6 +48,8 @@ Sets which types of intermediate result to be kept for further reference. Interm
 
 
 &nbsp;
+
+
 
 
 
