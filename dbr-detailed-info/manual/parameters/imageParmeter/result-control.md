@@ -21,25 +21,25 @@ Sets which types of intermediate result to be kept for further reference. Interm
 
 ### As Json Parameter
 
-- **Json Object**
+- **Json Object**   
    ImageParameter
    
-- **Json Parameter Name**
+- **Json Parameter Name**   
    IntermediateResultTypes
    
-- **Json Parameter Key Name**
+- **Json Parameter Key Name**   
    ImageParameter.IntermediateResultTypes
    
-- **Json Parameter Key Value Type**
+- **Json Parameter Key Value Type**   
    *string Aarry* 
    
-- **Json Parameter Key Value Range**
+- **Json Parameter Key Value Range**     
    An array item can be any one of the [`IntermediateResultTypes` Enumeration]({{ site.manual_interface_enum }}result-enum.html##intermediateresulttype) items.
-   
-- **Json Parameter Key Default Value**
+    
+- **Json Parameter Key Default Value**   
    `null`
 
-- **Json Parameter Example**   
+- **Json Parameter Example**     
 ```
 {
     "IntermediateResultTypes": [
@@ -50,6 +50,8 @@ Sets which types of intermediate result to be kept for further reference. Interm
 ```
 - **See Also**   
    - [`IntermediateResultType` Enumeration]({{ site.manual_interface_enum }}result-enum.html##intermediateresulttype)
+   
+   
 
 ### As `PublicRuntimeSettings` Member
 
