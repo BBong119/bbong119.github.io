@@ -37,8 +37,8 @@ Sets which types of intermediate result to be kept for further reference. Interm
 
 ### As `PublicRuntimeSettings` Member
 
-| Struct |	Struct Member Name |	Struct Member Value Type |	Struct Member Value Range | Struct Member Default Value |
-| ------ | ------------------ | ------------------------ | ------------------------- | --------------------------- |
+| Struct |	Struct Member Name | Value Type | Value Range | Default Value |
+| ------ | ------------------ | ---------- | ----------- | ------------- |
 | [`PublicRuntimeSettings`]({{ site.manual_interface_struct }}PublicRuntimeSettings.html) | [`intermediateResultTypes`]({{ site.manual_interface_struct }}PublicRuntimeSettings.html#intermediateresulttypes) | *int* | A combined value of [`IntermediateResultType` Enumeration]({{ site.manual_interface_enum }}result-enum.html##intermediateresulttype) items. | `IRT_NO_RESULT` (0) |
 
 **See Also**   
