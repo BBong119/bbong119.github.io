@@ -23,7 +23,7 @@ Sets which types of intermediate result to be kept for further reference. Interm
 
 | Json Object |	Json Parameter Name |	Json Parameter Key Name | Json Parameter Key Value Type |	Json Parameter Key Value Range | Json Parameter Key Default Value |
 | ----------- | ------------------- | ----------------------- | ----------------------------- | ------------------------------ | ---------------------------------- |
-| ImageParameter | IntermediateResultTypes | ImageParameter.IntermediateResultTypes | *string Aarry* | An array item can be any one of the [`IntermediateResultTypes` Enumeration]({{ site.manual_interface_enum }}parameter-mode-enum.html#intermediateresulttype) items | `null` |
+| ImageParameter | IntermediateResultTypes | ImageParameter.IntermediateResultTypes | *string Aarry* | An array item can be any one of the [`IntermediateResultTypes` Enumeration]({{ site.manual_interface_enum }}result-enum.html#intermediateresultsavingmode) items | `null` |
 
 **Json Parameter Example**   
 ```
@@ -39,12 +39,11 @@ Sets which types of intermediate result to be kept for further reference. Interm
 
 | Struct |	Struct Member Name |	Struct Member Value Type |	Struct Member Value Range | Struct Member Default Value |
 | ------ | ------------------ | ------------------------ | ------------------------- | --------------------------- |
-| [`PublicRuntimeSettings`]({{ site.manual_interface_struct }}PublicRuntimeSettings.html) | [`intermediateResultTypes`]({{ site.manual_interface_struct }}PublicRuntimeSettings.html#intermediateresulttypes) | *int* | A combined value of [`IntermediateResultType` Enumeration]({{ site.manual_interface_enum }}parameter-mode-enum.html#intermediateresulttype) items. | `IRT_NO_RESULT` |
+| [`PublicRuntimeSettings`]({{ site.manual_interface_struct }}PublicRuntimeSettings.html) | [`intermediateResultTypes`]({{ site.manual_interface_struct }}PublicRuntimeSettings.html#intermediateresulttypes) | *int* | A combined value of [`IntermediateResultType` Enumeration]({{ site.manual_interface_enum }}result-enum.html#intermediateresultsavingmode) items. | `IRT_NO_RESULT` (0) |
 
 **See Also**   
 - [`PublicRuntimeSettings` Struct]({{ site.manual_interface_struct }}PublicRuntimeSettings.html)
-- [`IntermediateResultType` Enumeration]({{ site.manual_interface_enum }}parameter-mode-enum.html#intermediateresulttype)
-
+- [`IntermediateResultType` Enumeration]({{ site.manual_interface_enum }}result-enum.html#intermediateresultsavingmode)
 
 
 
