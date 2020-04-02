@@ -23,7 +23,7 @@ Sets which types of intermediate result to be kept for further reference. Interm
 
 | Json Object |	Json Parameter Name | Value Type | Value Range | Default Value |
 | ----------- | ------------------- | ---------- | ----------- | ------------- |
-| ImageParameter | IntermediateResultTypes | *string Aarry* | An array item can be any one of the [`IntermediateResultTypes` Enumeration]({{ site.manual_interface_enum }}result-enum.html##intermediateresulttype) items | `null` |
+| ImageParameter | IntermediateResultTypes | *string Aarry* | An array item can be any one of the [`IntermediateResultTypes` Enumeration]({{ site.manual_interface_enum }}result-enum.html#intermediateresulttype) items | `null` |
 
 **Json Parameter Example**   
 ```
@@ -32,6 +32,55 @@ Sets which types of intermediate result to be kept for further reference. Interm
         "IRT_BINARIZED_IMAGE",
         "IRT_ORIGINAL_IMAGE"
     ]
+}
+```
+
+### As `PublicRuntimeSettings` Member
+
+| Struct |	Struct Member Name | Value Type | Value Range | Default Value |
+| ------ | ------------------ | ---------- | ----------- | ------------- |
+| [`PublicRuntimeSettings`]({{ site.manual_interface_struct }}PublicRuntimeSettings.html) | [`intermediateResultTypes`]({{ site.manual_interface_struct }}PublicRuntimeSettings.html#intermediateresulttypes) | *int* | A combined value of [`IntermediateResultType` Enumeration]({{ site.manual_interface_enum }}result-enum.html#intermediateresulttype) items. | `IRT_NO_RESULT` (0) |
+
+**See Also**   
+- [`PublicRuntimeSettings` Struct]({{ site.manual_interface_struct }}PublicRuntimeSettings.html)
+- [`IntermediateResultType` Enumeration]({{ site.manual_interface_enum }}result-enum.html#intermediateresulttype)
+
+
+
+&nbsp;
+
+
+
+
+## IntermediateResultSavingMode
+Sets the mode for saving the intermediate result.
+
+### As Json Parameter
+
+| Json Object |	Json Parameter Name | Value Type | Default Value |
+| ----------- | ------------------- | ---------- | ------------- |
+| ImageParameter | IntermediateResultSavingMode | *"JSON Object or string* | `"IRSM_MEMORY"` |
+
+**Remarks**   
+- As a string, the value can be any one of the [`IntermediateResultSavingMode` Enumeration]({{ site.manual_interface_enum }}result-enum.html#intermediateresultsavingmode) items.   
+
+- As a JSON Object, it contains keys - "Mode", "FolderPath", "RecordsetSizeOfLatestImages". "Mode" is mandatory ant its value can be any one of the [`IntermediateResultSavingMode` Enumeration]({{ site.manual_interface_enum }}result-enum.html#intermediateresultsavingmode) items. Check arguments of [IntermediateResultSavingMode]({{ site.manual_interface_argument}}IntermediateResultSavingMode.html) for available argument settings.   
+
+**Json Parameter Example**   
+```
+{
+    "IntermediateResultSavingMode":"IRSM_MEMORY",
+}
+or
+{
+    "IntermediateResultSavingMode": {
+            "Mode"": ""IRSM_FILESYSTEM",
+            "FolderPath": "C:\", 
+        }
+}
+or
+{
+    "IntermediateResultSavingMode":"IRSM_FILESYSTEM(C:\)",
 }
 ```
 
