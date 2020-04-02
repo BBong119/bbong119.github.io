@@ -10,7 +10,7 @@ sourceCodeUrl: /dbr-detailed-info/manual/parameters/imageParmeter/result-control
  | -------------- | ----------- | 
  | [`ImageParameter.IntermediateResultTypes`](#intermediateresulttypes) | Sets which types of intermediate result to be kept for further reference. Intermediate result types can be combined. | 
  | [`ImageParameter.IntermediateResultSavingMode`](#intermediateresultsavingmode) | Sets the mode for saving the intermediate result. | 
- | [`ImageParameter.ResultCoordinateType`](#resultcoordinatetype) | Specifies the format for the coordinates returned | 
+ | [`ImageParameter.ResultCoordinateType`](#resultcoordinatetype) | Specifies the format for the coordinates returned. | 
  | [`ImageParameter.TextResultOrderModes`](#textresultordermodes) | Sets the mode and priority for the order of the text results returned. | 
  | [`ImageParameter.ReturnBarcodeZoneClarity`](#returnbarcodezoneclarity) | Sets whether or not to return the clarity of the barcode zone. |  
  
@@ -62,9 +62,9 @@ Sets the mode for saving the intermediate result.
 | ImageParameter | IntermediateResultSavingMode | *JSON Object or string* | `"IRSM_MEMORY"` |
 
 **Remarks**   
-- As a string, the value can be any one of the [`IntermediateResultSavingMode` Enumeration]({{ site.manual_interface_enum }}result-enum.html#intermediateresultsavingmode) items.   
+- As a *string*, the value can be any one of the [`IntermediateResultSavingMode` Enumeration]({{ site.manual_interface_enum }}result-enum.html#intermediateresultsavingmode) items.   
 
-- As a JSON Object, it contains keys - `Mode`, `FolderPath`, `RecordsetSizeOfLatestImages`. `Mode` is **mandatory** and its value can be any one of the [`IntermediateResultSavingMode` Enumeration]({{ site.manual_interface_enum }}result-enum.html#intermediateresultsavingmode) items. Other keys please check [arguments of `IntermediateResultSavingMode`]({{ site.manual_interface_argument}}IntermediateResultSavingMode.html) for available settings.   
+- As a *JSON Object*, it contains keys - `Mode`, `FolderPath`, `RecordsetSizeOfLatestImages`. `Mode` is **mandatory** and its value can be any one of the [`IntermediateResultSavingMode` Enumeration]({{ site.manual_interface_enum }}result-enum.html#intermediateresultsavingmode) items. Other keys please check [arguments of `IntermediateResultSavingMode`]({{ site.manual_interface_argument}}IntermediateResultSavingMode.html) for available settings.   
 
 **Json Parameter Example**   
 ```
@@ -108,5 +108,74 @@ or
 
 
 
+## ResultCoordinateType
+Specifies the format for the coordinates returned.
+
+### As Json Parameter
+
+| Json Object |	Json Parameter Name | Value Type | Value Range | Default Value |
+| ----------- | ------------------- | ---------- | ----------- | ------------- |
+| ImageParameter | ResultCoordinateType | *string* | Any one of the [`ResultCoordinateType` Enumeration]({{ site.manual_interface_enum }}result-enum.html#resultcoordinatetype) items | `"RCT_PIXEL"` |
+
+**Json Parameter Example**   
+```
+{
+    "ResultCoordinateType":"RCT_PIXEL"
+}
+```
+
+### As `PublicRuntimeSettings` Member
+
+| Struct |	Struct Member Name | Value Type | Value Range | Default Value |
+| ------ | ------------------ | ---------- | ----------- | ------------- |
+| [`PublicRuntimeSettings`]({{ site.manual_interface_struct }}PublicRuntimeSettings.html) | [`resultCoordinateType`]({{ site.manual_interface_struct }}PublicRuntimeSettings.html#resultcoordinatetype) | [`ResultCoordinateType`]({{ site.manual_interface_enum }}result-enum.html#resultcoordinatetype) | Any one of the [`ResultCoordinateType` Enumeration]({{ site.manual_interface_enum }}result-enum.html#resultcoordinatetype) items.| `IRSM_MEMORY`|
+
+**See Also**   
+- [`PublicRuntimeSettings` Struct]({{ site.manual_interface_struct }}PublicRuntimeSettings.html)
+- [`ResultCoordinateType` Enumeration]({{ site.manual_interface_enum }}result-enum.html#resultcoordinatetype)
 
 
+
+&nbsp;
+
+
+
+
+## TextResultOrderModes
+Sets the mode and priority for the order of the text results returned.
+
+**Remark**   
+The array index represents the priority of the item. The smaller index is, the higher priority is.
+   
+
+### As Json Parameter
+
+| Json Object |	Json Parameter Name | Value Type | Default Value |
+| ----------- | ------------------- | ---------- | ------------- |
+| ImageParameter | TextResultOrderModes | *JSON Object Array or string Array* | `{ "TextResultOrderModes": ["Confidence", "Position", "Format"] }` |
+
+"Consists of one or more JSON objects,each JSON object contains Key, ""Mode"":
+Mode is Mandatory;
+Value range of key Mode:  Any one of the TextResultOrderMode Enumeration items."
+
+
+**Json Parameter Example**   
+```
+{
+    "ResultCoordinateType":"RCT_PIXEL"
+}
+```
+
+### As `PublicRuntimeSettings` Member
+
+| Struct |	Struct Member Name | Value Type | Value Range | Default Value |
+| ------ | ------------------ | ---------- | ----------- | ------------- |
+| [`PublicRuntimeSettings`]({{ site.manual_interface_struct }}PublicRuntimeSettings.html) | [`resultCoordinateType`]({{ site.manual_interface_struct }}PublicRuntimeSettings.html#resultcoordinatetype) | [`ResultCoordinateType`]({{ site.manual_interface_enum }}result-enum.html#resultcoordinatetype) | Any one of the [`ResultCoordinateType` Enumeration]({{ site.manual_interface_enum }}result-enum.html#resultcoordinatetype) items.| `IRSM_MEMORY`|
+
+**See Also**   
+- [`PublicRuntimeSettings` Struct]({{ site.manual_interface_struct }}PublicRuntimeSettings.html)
+- [`ResultCoordinateType` Enumeration]({{ site.manual_interface_enum }}result-enum.html#resultcoordinatetype)
+
+
+
+&nbsp;
