@@ -1,4 +1,8 @@
-
+---
+layout: manual-parameter
+id: parameter_image_TextResultOrderModes
+sourceCodeUrl: /dbr-detailed-info/manual/parameters/imageParmeter/TextResultOrderModes.md
+---
 
 ## TextResultOrderModes
 Sets the mode and priority for the order of the text results returned.
