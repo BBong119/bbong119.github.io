@@ -61,6 +61,8 @@ imageProcessingKnowledge: /dbr-extended-info/image-processing-knowledge/
 
 
 editIcon: /other-material/icon/editIcon.png
+dynamsoft_logo: /other-material/logo/dynamsoft_log.png
+dbr_logo: /other-material/logo/dbr_log.png
 
 
 kramdown:                                         
