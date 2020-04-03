@@ -1,6 +1,40 @@
 ## IntermediateResultSavingMode
 Sets the mode for saving the intermediate result.
 
+### As Json Parameter
+
+| Json Object |	Json Parameter Name | Value Type | Default Value |
+| ----------- | ------------------- | ---------- | ------------- |
+| ImageParameter | IntermediateResultSavingMode | *JSON Object* | {<br>&emsp;"IntermediateResultSavingMode": <br>&emsp;{<br>&emsp;&emsp;Mode: "IRSM_MEMORY"<br>&emsp;}<br>} |
+
+**Remark**   
+IntermediateResultSavingMode is a JSON Object with several keys which can be found in [Mode Argument](#mode-argument).
+
+**Json Parameter Example**   
+```
+{
+    "IntermediateResultSavingMode": {
+            "Mode"": ""IRSM_FILESYSTEM",
+            "FolderPath": "C:\"
+        }
+}
+```
+
+**See Also**
+- [`IntermediateResultSavingMode` Enumeration]({{ site.manual_interface_enum }}result-enum.html#intermediateresultsavingmode)
+
+
+### As `PublicRuntimeSettings` Member
+
+| Struct |	Struct Member Name | Value Type | Value Range | Default Value |
+| ------ | ------------------ | ---------- | ----------- | ------------- |
+| [`PublicRuntimeSettings`]({{ site.manual_interface_struct }}PublicRuntimeSettings.html) | [`intermediateResultSavingMode`]({{ site.manual_interface_struct }}PublicRuntimeSettings.html#intermediateresultsavingmode) | [`IntermediateResultSavingMode`]({{ site.manual_interface_enum }}result-enum.html#intermediateresultsavingmode) | Any one of the [`IntermediateResultSavingMode` Enumeration]({{ site.manual_interface_enum }}result-enum.html#intermediateresultsavingmode) items.| `IRSM_MEMORY`|
+
+**See Also**   
+- [`PublicRuntimeSettings` Struct]({{ site.manual_interface_struct }}PublicRuntimeSettings.html)
+- [`IntermediateResultSavingMode` Enumeration]({{ site.manual_interface_enum }}result-enum.html#intermediateresultsavingmode)
+
+
 ### Mode Argument
 
 - [Mode](#mode)
@@ -38,35 +72,3 @@ Sets the maximum count of recordset to store the latest images' intermediate res
 - **Remark**     
     0: no limitation on the count of recordset.   
     When the count exceeds, the old recordset will be replaced by the new one.
-
-## As Json Parameter
-
-| Json Object |	Json Parameter Name | Value Type | Default Value |
-| ----------- | ------------------- | ---------- | ------------- |
-| ImageParameter | IntermediateResultSavingMode | *JSON Object* | {<br>&emsp;"IntermediateResultSavingMode": <br>&emsp;{<br>&emsp;&emsp;Mode: "IRSM_MEMORY"<br>&emsp;}<br>} |
-
-**Json Parameter Example**   
-```
-{
-    "IntermediateResultSavingMode": {
-            "Mode"": ""IRSM_FILESYSTEM",
-            "FolderPath": "C:\"
-        }
-}
-```
-
-**See Also**
-- [`IntermediateResultSavingMode` Enumeration]({{ site.manual_interface_enum }}result-enum.html#intermediateresultsavingmode)
-
-
-### As `PublicRuntimeSettings` Member
-
-| Struct |	Struct Member Name | Value Type | Value Range | Default Value |
-| ------ | ------------------ | ---------- | ----------- | ------------- |
-| [`PublicRuntimeSettings`]({{ site.manual_interface_struct }}PublicRuntimeSettings.html) | [`intermediateResultSavingMode`]({{ site.manual_interface_struct }}PublicRuntimeSettings.html#intermediateresultsavingmode) | [`IntermediateResultSavingMode`]({{ site.manual_interface_enum }}result-enum.html#intermediateresultsavingmode) | Any one of the [`IntermediateResultSavingMode` Enumeration]({{ site.manual_interface_enum }}result-enum.html#intermediateresultsavingmode) items.| `IRSM_MEMORY`|
-
-**See Also**   
-- [`PublicRuntimeSettings` Struct]({{ site.manual_interface_struct }}PublicRuntimeSettings.html)
-- [`IntermediateResultSavingMode` Enumeration]({{ site.manual_interface_enum }}result-enum.html#intermediateresultsavingmode)
-
-
