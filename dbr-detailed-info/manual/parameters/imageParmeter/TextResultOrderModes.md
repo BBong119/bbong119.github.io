@@ -13,7 +13,7 @@ The array index represents the priority of the item. The smaller index is, the h
 | ImageParameter | TextResultOrderModes | *JSON Object Array* | {<br>&emsp;"TextResultOrderModes": [ <br>&emsp;&emsp;{"Mode":"TROM_CONFIDENCE"}, <br>&emsp;&emsp;{"Mode":"TROM_POSITION"},<br>&emsp;&emsp;{"Mode":"TROM_FORMAT"}<br>&emsp;]<br>} |
 
 **Remark**   
-`TextResultOrderModes` Consists of one or more JSON objects.
+`TextResultOrderModes` consists of one or more JSON object, each JSON object has several keys which can be found in [Mode Argument](#mode-argument)
 
 **Json Parameter Example**   
 ```
@@ -40,13 +40,15 @@ The array index represents the priority of the item. The smaller index is, the h
 - [`TextResultOrderMode` Enumeration]({{ site.manual_interface_enum }}result-enum.html#textresultordermode)
 
 
-### TextResultOrderModes Json Object Arguments
-- **Mode** (*mandatory*)  
-    Sets the mode for the order of the text results returned.
-    - **Value type**:    
-        *string*
+### Mode Arguments
+- [Mode](#mode)
 
-    - **Value range**:   
-        Any one of the [`TextResultOrderMode` Enumeration]({{ site.manual_interface_enum }}result-enum.html#textresultordermode) items.   
+#### Mode  
+Sets the mode for the order of the text results returned.
 
-&nbsp;
+| Value Type | Value Range | Default Value |
+| ---------- | ----------- | ------------- |
+| *string* | "TROM_SKIP"<br>"TROM_CONFIDENCE"<br>"TROM_POSITION"<br>"TROM_FORMAT" | It must be a mandatory setting value. |
+
+- **See also**:   
+    [`TextResultOrderMode` Enumeration]({{ site.manual_interface_enum }}result-enum.html#textresultordermode)
