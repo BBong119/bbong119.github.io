@@ -55,6 +55,8 @@ Sets which types of intermediate result to be kept for further reference. Interm
 ## IntermediateResultSavingMode
 Sets the mode for saving the intermediate result.
 
+### Mode Arguments
+
 ### As Json Parameter
 
 | Json Object |	Json Parameter Name | Value Type | Default Value |
