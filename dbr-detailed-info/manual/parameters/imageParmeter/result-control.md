@@ -59,7 +59,7 @@ Sets the mode for saving the intermediate result.
 
 | Json Object |	Json Parameter Name | Value Type | Default Value |
 | ----------- | ------------------- | ---------- | ------------- |
-| ImageParameter | IntermediateResultSavingMode | *JSON Object* | `"IntermediateResultSavingMode": { <br>Mode: "IRSM_MEMORY"<br>}` |
+| ImageParameter | IntermediateResultSavingMode | *JSON Object* | "IntermediateResultSavingMode": { <br>Mode: "IRSM_MEMORY"<br>} |
 
 **Json Parameter Example**   
 ```
