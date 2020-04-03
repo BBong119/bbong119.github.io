@@ -25,7 +25,7 @@ When the recognition result is not desired, this parameter can be set to skip ce
 
 | Json Object |	Json Parameter Name |	Value Type | Value Range | Default Value |
 | ----------- | ------------------- | ---------- | ----------- | ------------- |
-| ImageParameter | TerminatePhase | *string* |Any one of the [`TerminatePhase` Enumeration]({{ site.manual_interface_enum }}parameter-mode-enum.html#terminatephase) items | `"TP_BARCODE_RECOGNIZED"` |
+| ImageParameter | TerminatePhase | *string* |Any one of the [`TerminatePhase` Enumeration]({{ site.manual_interface_enum }}parameter-mode-enum.html#terminatephase) items | "TP_BARCODE_RECOGNIZED" |
 
 **Json Parameter Example**   
 ```
