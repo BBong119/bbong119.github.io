@@ -38,6 +38,9 @@ Sets the mode for saving the intermediate result.
 }
 ```
 
+&nbsp;
+
+
 ### As `PublicRuntimeSettings` Member
 
 | Struct |	Struct Member Name | Value Type | Value Range | Default Value |
@@ -47,6 +50,9 @@ Sets the mode for saving the intermediate result.
 **See Also**   
 - [`PublicRuntimeSettings` Struct]({{ site.manual_interface_struct }}PublicRuntimeSettings.html)
 - [`IntermediateResultSavingMode` Enumeration]({{ site.manual_interface_enum }}result-enum.html#intermediateresultsavingmode)
+
+
+&nbsp;
 
 
 ### Mode Arguments
