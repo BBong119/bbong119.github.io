@@ -59,12 +59,9 @@ Sets the mode for saving the intermediate result.
 
 | Json Object |	Json Parameter Name | Value Type | Default Value |
 | ----------- | ------------------- | ---------- | ------------- |
-| ImageParameter | IntermediateResultSavingMode | *JSON Object or string* | `"IRSM_MEMORY"` |
-
-**Remarks**   
-- As a *string*, the value can be any one of the [`IntermediateResultSavingMode` Enumeration]({{ site.manual_interface_enum }}result-enum.html#intermediateresultsavingmode) items.   
-
-- As a *JSON Object*, it contains keys - `Mode`, `FolderPath`, `RecordsetSizeOfLatestImages`. `Mode` is **mandatory** and its value can be any one of the [`IntermediateResultSavingMode` Enumeration]({{ site.manual_interface_enum }}result-enum.html#intermediateresultsavingmode) items. Other keys please check [arguments of `IntermediateResultSavingMode`]({{ site.manual_interface_argument}}IntermediateResultSavingMode.html) for available settings.   
+| ImageParameter | IntermediateResultSavingMode | *JSON Object* | `"IntermediateResultSavingMode": { 
+Mode: "IRSM_MEMORY"` 
+} |
 
 **Json Parameter Example**   
 ```
@@ -115,7 +112,7 @@ Specifies the format for the coordinates returned.
 
 | Json Object |	Json Parameter Name | Value Type | Value Range | Default Value |
 | ----------- | ------------------- | ---------- | ----------- | ------------- |
-| ImageParameter | ResultCoordinateType | *string* | Any one of the [`ResultCoordinateType` Enumeration]({{ site.manual_interface_enum }}result-enum.html#resultcoordinatetype) items | `"RCT_PIXEL"` |
+| ImageParameter | ResultCoordinateType | *string* | Any one of the [`ResultCoordinateType` Enumeration]({{ site.manual_interface_enum }}result-enum.html#resultcoordinatetype) items | "RCT_PIXEL" |
 
 **Json Parameter Example**   
 ```
