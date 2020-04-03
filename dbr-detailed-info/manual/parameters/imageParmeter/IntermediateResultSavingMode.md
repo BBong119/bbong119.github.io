@@ -2,7 +2,7 @@
 Sets the mode for saving the intermediate result.
 
 ## Mode Argument
-- **Mode** (*mandatory*)   
+### Mode (*mandatory*)   
     Sets the mode for saving the intermediate result.
     
     | Value Type | Value Range | 
@@ -12,7 +12,7 @@ Sets the mode for saving the intermediate result.
     - **See also**:   
         [`IntermediateResultSavingMode` Enumeration]({{ site.manual_interface_enum }}result-enum.html#intermediateresultsavingmode)  
         
-- **FolderPath** (*optional*)   
+### FolderPath (*optional*)   
     Sets the path of the output folder which stores intermediate results.   
     
     | Value Type | Value Range | Default Value | Vaild Modes | 
@@ -23,7 +23,7 @@ Sets the mode for saving the intermediate result.
         "": The library path.    
         Please make sure the path exists and your application has the appropriate permissions for saving the results.   
 
-- **RecordsetSizeOfLatestImages** (*optional*)   
+### RecordsetSizeOfLatestImages (*optional*)   
     Sets the maximum count of recordset to store the latest images' intermediate results.
     
     | Value Type | Value Range | Default Value | Vaild Modes | 
