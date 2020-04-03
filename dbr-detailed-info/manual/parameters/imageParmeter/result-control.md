@@ -216,7 +216,7 @@ The array index represents the priority of the item. The smaller index is, the h
 
 
 ### TextResultOrderModes Json Object Arguments
-- **Mode:**   
+- **Mode** (*mandatory*)  
     Sets the mode for the order of the text results returned.
     - **Value type**:    
         *string*
