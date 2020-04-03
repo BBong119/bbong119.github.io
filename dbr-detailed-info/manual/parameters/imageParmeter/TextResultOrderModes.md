@@ -17,7 +17,7 @@ The array index represents the priority of the item. The smaller index is, the h
 | ImageParameter | TextResultOrderModes | *JSON Object Array* | {<br>&emsp;"TextResultOrderModes": [ <br>&emsp;&emsp;{"Mode":"TROM_CONFIDENCE"}, <br>&emsp;&emsp;{"Mode":"TROM_POSITION"},<br>&emsp;&emsp;{"Mode":"TROM_FORMAT"}<br>&emsp;]<br>} |
 
 **Remark**   
-`TextResultOrderModes` consists of one or more JSON object, each JSON object has several keys which can be found in [Mode Argument](#mode-argument).
+`TextResultOrderModes` consists of one or more JSON object, each JSON object has several keys which can be found in [Mode Arguments](#mode-arguments).
 
 **Json Parameter Example**   
 ```
