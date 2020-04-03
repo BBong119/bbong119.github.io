@@ -49,7 +49,7 @@ The description of the ImageParameter object.
 
 | Json Object |	Json Parameter Name | Value Type | Default Value |
 | ----------- | ------------------- | ---------- | ------------- |
-| ImageParameter | Description | *string* | `""` |
+| ImageParameter | Description | *string* | "" |
 
 **Json Parameter Example**   
 ```
