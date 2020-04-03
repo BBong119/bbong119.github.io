@@ -16,7 +16,7 @@ Sets the mode for saving the intermediate result.
     Sets the path of the output folder which stores intermediate results.   
     
     | Value Type | Value Range | Default Value | Vaild Modes | 
-    | ---------- | ----------- |
+    | ---------- | ----------- | ------------- | ----------- |
     | *string* | A string value representing the folder path with max length 480. | "" | "IRSM_FILESYSTEM"<br>"IRSM_BOTH" |         
     
     - **Remark**     
@@ -27,7 +27,7 @@ Sets the mode for saving the intermediate result.
     Sets the maximum count of recordset to store the latest images' intermediate results.
     
     | Value Type | Value Range | Default Value | Vaild Modes | 
-    | ---------- | ----------- |
+    | ---------- | ----------- | ------------- | ----------- |
     | *int* | [0,0x7fffffff]  |  0 | "IRSM_MEMORY"<br>"IRSM_FILESYSTEM"<br>"IRSM_BOTH" | 
     
     - **Remark**     
