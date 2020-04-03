@@ -4,25 +4,20 @@ Sets the mode for saving the intermediate result.
 ## Mode Argument
 - **Mode** (*mandatory*)   
     Sets the mode for saving the intermediate result.
-    - **Value type**:    
-        *string*
+    
+    | Value Type | Value Range | 
+    | ---------- | ----------- |
+    | *string* | "IRSM_MEMORY"<br>"IRSM_FILESYSTEM"<br>"IRSM_BOTH" | 
 
-    - **Value range**:   
-        Any one of the [`IntermediateResultSavingMode` Enumeration]({{ site.manual_interface_enum }}result-enum.html#intermediateresultsavingmode) items.   
+    - **See also**:   
+        [`IntermediateResultSavingMode` Enumeration]({{ site.manual_interface_enum }}result-enum.html#intermediateresultsavingmode)  
         
 - **FolderPath** (*optional*)   
     Sets the path of the output folder which stores intermediate results.   
-    - **Valid modes**   
-        `IRSM_FILESYSTEM`, `IRSM_BOTH`
-
-    - **Value type**   
-        *string*
-
-    - **Value range**   
-        A string value representing the folder path with max length 480.   
     
-    - **Default value**   
-        ""  
+    | Value Type | Value Range | Default Value | Vaild Modes | 
+    | ---------- | ----------- |
+    | *string* | A string value representing the folder path with max length 480. | "" | "IRSM_FILESYSTEM"<br>"IRSM_BOTH" |         
     
     - **Remark**     
         "": The library path.    
@@ -30,17 +25,10 @@ Sets the mode for saving the intermediate result.
 
 - **RecordsetSizeOfLatestImages** (*optional*)   
     Sets the maximum count of recordset to store the latest images' intermediate results.
-    - **Valid modes**   
-        `IRSM_MEMORY`, `IRSM_FILESYSTEM`, `IRSM_BOTH`
-
-    - **Value type**   
-        *int*
-
-    - **Value range**   
-        [0,0x7fffffff]   
     
-    - **Default value**   
-        0  
+    | Value Type | Value Range | Default Value | Vaild Modes | 
+    | ---------- | ----------- |
+    | *int* | [0,0x7fffffff]  |  0 | "IRSM_MEMORY"<br>"IRSM_FILESYSTEM"<br>"IRSM_BOTH" | 
     
     - **Remark**     
         0: no limitation on the count of recordset.   
@@ -66,7 +54,6 @@ Sets the mode for saving the intermediate result.
 - [`IntermediateResultSavingMode` Enumeration]({{ site.manual_interface_enum }}result-enum.html#intermediateresultsavingmode)
 
 
-
 ### As `PublicRuntimeSettings` Member
 
 | Struct |	Struct Member Name | Value Type | Value Range | Default Value |
@@ -77,6 +64,4 @@ Sets the mode for saving the intermediate result.
 - [`PublicRuntimeSettings` Struct]({{ site.manual_interface_struct }}PublicRuntimeSettings.html)
 - [`IntermediateResultSavingMode` Enumeration]({{ site.manual_interface_enum }}result-enum.html#intermediateresultsavingmode)
 
-
-### IntermediateResultSavingMode Json Object Arguments
 
