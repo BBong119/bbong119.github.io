@@ -1,18 +1,23 @@
-# IntermediateResultSavingMode
+## IntermediateResultSavingMode
 Sets the mode for saving the intermediate result.
 
-## Mode Argument
-### Mode (*mandatory*)   
+### Mode Argument
+
+- [Mode](#mode)
+- [FolderPath](#folderpath)
+- [RecordsetSizeOfLatestImages](recordsetsizeoflatestimages)
+
+#### Mode 
 Sets the mode for saving the intermediate result.
 
-| Value Type | Value Range | 
-| ---------- | ----------- |
-| *string* | "IRSM_MEMORY"<br>"IRSM_FILESYSTEM"<br>"IRSM_BOTH" | 
+| Value Type | Value Range | Default Value |
+| ---------- | ----------- | ------------- |
+| *string* | "IRSM_MEMORY"<br>"IRSM_FILESYSTEM"<br>"IRSM_BOTH" | It must be a mandatory setting value. |
 
 - **See also**:   
     [`IntermediateResultSavingMode` Enumeration]({{ site.manual_interface_enum }}result-enum.html#intermediateresultsavingmode)  
         
-### FolderPath (*optional*)   
+#### FolderPath 
 Sets the path of the output folder which stores intermediate results.   
 
 | Value Type | Value Range | Default Value | Vaild Modes | 
@@ -23,7 +28,7 @@ Sets the path of the output folder which stores intermediate results.
     "": The library path.    
     Please make sure the path exists and your application has the appropriate permissions for saving the results.   
 
-### RecordsetSizeOfLatestImages (*optional*)   
+#### RecordsetSizeOfLatestImages
 Sets the maximum count of recordset to store the latest images' intermediate results.
 
 | Value Type | Value Range | Default Value | Vaild Modes | 
