@@ -33,6 +33,10 @@ The array index represents the priority of the item. The smaller index is, the h
 **See also**   
 - [Arguments of `TextResultOrderModes`](#textresultordermodes-json-object-arguments)
 
+
+&nbsp;
+
+
 ### As `PublicRuntimeSettings` Member
 
 | Struct |	Struct Member Name | Value Type | Value Range | Default Value |
@@ -42,6 +46,9 @@ The array index represents the priority of the item. The smaller index is, the h
 **See Also**   
 - [`PublicRuntimeSettings` Struct]({{ site.manual_interface_struct }}PublicRuntimeSettings.html)
 - [`TextResultOrderMode` Enumeration]({{ site.manual_interface_enum }}result-enum.html#textresultordermode)
+
+
+&nbsp;
 
 
 ### Mode Arguments
