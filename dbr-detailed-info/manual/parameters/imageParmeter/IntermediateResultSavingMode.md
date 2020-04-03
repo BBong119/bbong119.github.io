@@ -20,10 +20,6 @@ IntermediateResultSavingMode is a JSON Object with several keys which can be fou
 }
 ```
 
-**See Also**
-- [`IntermediateResultSavingMode` Enumeration]({{ site.manual_interface_enum }}result-enum.html#intermediateresultsavingmode)
-
-
 ### As `PublicRuntimeSettings` Member
 
 | Struct |	Struct Member Name | Value Type | Value Range | Default Value |
