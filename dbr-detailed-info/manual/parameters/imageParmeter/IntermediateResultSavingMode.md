@@ -20,7 +20,7 @@ Sets the mode for saving the intermediate result.
 | ImageParameter | IntermediateResultSavingMode | *JSON Object* | {<br>&emsp;"IntermediateResultSavingMode": <br>&emsp;{<br>&emsp;&emsp;Mode: "IRSM_MEMORY"<br>&emsp;}<br>} |
 
 **Remark**   
-`IntermediateResultSavingMode` is a JSON Object with several keys which can be found in [Mode Argument](#mode-argument).
+`IntermediateResultSavingMode` is a JSON object with several keys which can be found in [Mode Argument](#mode-argument).
 
 **Json Parameter Example**   
 ```
