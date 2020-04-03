@@ -3,36 +3,36 @@ Sets the mode for saving the intermediate result.
 
 ## Mode Argument
 ### Mode (*mandatory*)   
-    Sets the mode for saving the intermediate result.
-    
-    | Value Type | Value Range | 
-    | ---------- | ----------- |
-    | *string* | "IRSM_MEMORY"<br>"IRSM_FILESYSTEM"<br>"IRSM_BOTH" | 
+Sets the mode for saving the intermediate result.
 
-    - **See also**:   
-        [`IntermediateResultSavingMode` Enumeration]({{ site.manual_interface_enum }}result-enum.html#intermediateresultsavingmode)  
+| Value Type | Value Range | 
+| ---------- | ----------- |
+| *string* | "IRSM_MEMORY"<br>"IRSM_FILESYSTEM"<br>"IRSM_BOTH" | 
+
+- **See also**:   
+    [`IntermediateResultSavingMode` Enumeration]({{ site.manual_interface_enum }}result-enum.html#intermediateresultsavingmode)  
         
 ### FolderPath (*optional*)   
-    Sets the path of the output folder which stores intermediate results.   
-    
-    | Value Type | Value Range | Default Value | Vaild Modes | 
-    | ---------- | ----------- | ------------- | ----------- |
-    | *string* | A string value representing the folder path with max length 480. | "" | "IRSM_FILESYSTEM"<br>"IRSM_BOTH" |         
-    
-    - **Remark**     
-        "": The library path.    
-        Please make sure the path exists and your application has the appropriate permissions for saving the results.   
+Sets the path of the output folder which stores intermediate results.   
+
+| Value Type | Value Range | Default Value | Vaild Modes | 
+| ---------- | ----------- | ------------- | ----------- |
+| *string* | A string value representing the folder path with max length 480. | "" | "IRSM_FILESYSTEM"<br>"IRSM_BOTH" |         
+
+- **Remark**     
+    "": The library path.    
+    Please make sure the path exists and your application has the appropriate permissions for saving the results.   
 
 ### RecordsetSizeOfLatestImages (*optional*)   
-    Sets the maximum count of recordset to store the latest images' intermediate results.
-    
-    | Value Type | Value Range | Default Value | Vaild Modes | 
-    | ---------- | ----------- | ------------- | ----------- |
-    | *int* | [0,0x7fffffff]  |  0 | "IRSM_MEMORY"<br>"IRSM_FILESYSTEM"<br>"IRSM_BOTH" | 
-    
-    - **Remark**     
-        0: no limitation on the count of recordset.   
-        When the count exceeds, the old recordset will be replaced by the new one.
+Sets the maximum count of recordset to store the latest images' intermediate results.
+
+| Value Type | Value Range | Default Value | Vaild Modes | 
+| ---------- | ----------- | ------------- | ----------- |
+| *int* | [0,0x7fffffff]  |  0 | "IRSM_MEMORY"<br>"IRSM_FILESYSTEM"<br>"IRSM_BOTH" | 
+
+- **Remark**     
+    0: no limitation on the count of recordset.   
+    When the count exceeds, the old recordset will be replaced by the new one.
 
 ## As Json Parameter
 
