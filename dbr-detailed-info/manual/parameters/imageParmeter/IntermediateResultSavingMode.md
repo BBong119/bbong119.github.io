@@ -1,3 +1,6 @@
+# ImageParameter Object - Result Control
+
+
 ## IntermediateResultSavingMode
 Sets the mode for saving the intermediate result.
 
