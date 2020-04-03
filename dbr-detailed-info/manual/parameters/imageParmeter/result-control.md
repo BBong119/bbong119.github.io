@@ -11,7 +11,7 @@ sourceCodeUrl: /dbr-detailed-info/manual/parameters/imageParmeter/result-control
  | [`ImageParameter.IntermediateResultTypes`](#intermediateresulttypes) | Sets which types of intermediate result to be kept for further reference. Intermediate result types can be combined. | 
  | [`ImageParameter.IntermediateResultSavingMode`](IntermediateResultSavingMode.md#intermediateresultsavingmode) | Sets the mode for saving the intermediate result. | 
  | [`ImageParameter.ResultCoordinateType`](#resultcoordinatetype) | Specifies the format for the coordinates returned. | 
- | [`ImageParameter.TextResultOrderModes`](#textresultordermodes) | Sets the mode and priority for the order of the text results returned. | 
+ | [`ImageParameter.TextResultOrderModes`](TextResultOrderModes.md#textresultordermodes) | Sets the mode and priority for the order of the text results returned. | 
  | [`ImageParameter.ReturnBarcodeZoneClarity`](#returnbarcodezoneclarity) | Sets whether or not to return the clarity of the barcode zone. |  
  
 ---
