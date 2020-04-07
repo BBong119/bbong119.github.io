@@ -2,10 +2,10 @@
 
  | Parameter Name | Description |
  | -------------- | ----------- | 
- | `ImageParameter.Pages` | Sets the specific pages or the range of pages of a file (.tiff or .pdf) for barcode searching. |
- | `ImageParameter.PDFRasterDPI` | Sets the output image resolution. |
- | `ImageParameter.ScaleDownThreshold` | Sets the threshold for the image shrinking. |
- | `ImageParameter.ColourClusteringModes` | Sets the mode and priority for colour categorization. Not supported yet. |
+ | [`ImageParameter.Pages`](#pages) | Sets the specific pages or the range of pages of a file (.tiff or .pdf) for barcode searching. |
+ | [`ImageParameter.PDFRasterDPI`](#pdfrasterdpi) | Sets the output image resolution. |
+ | [`ImageParameter.ScaleDownThreshold`](#scaledownthreshold) | Sets the threshold for the image shrinking. |
+ | [`ImageParameter.ColourClusteringModes`](ColourClusteringModes.md) | Sets the mode and priority for colour categorization. Not supported yet. |
  | `ImageParameter.ColourConversionModes` | Sets the mode and priority for converting a colour image to a grayscale image. |
  | `ImageParameter.GrayscaleTransformationModes` | Sets the mode and priority for the grayscale image conversion. |
  | `ImageParameter.RegionPredetectionModes` | Sets the region pre-detection mode for barcodes search. |
