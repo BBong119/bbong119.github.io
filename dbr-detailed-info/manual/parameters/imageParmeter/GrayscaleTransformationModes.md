@@ -1,3 +1,10 @@
+---
+layout: manual-parameter
+id: parameter_image_GrayscaleTransformationModes
+sourceCodeUrl: /dbr-detailed-info/manual/parameters/imageParmeter/GrayscaleTransformationModes.md
+---
+
+
 # ImageParameter Object - Image Process Control
 
  | Parameter Name | Description |
