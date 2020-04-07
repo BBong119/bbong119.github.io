@@ -72,7 +72,8 @@ Sets the maximum count of recordset to store the latest images' intermediate res
 {
     "IntermediateResultSavingMode": {
             "Mode"": ""IRSM_FILESYSTEM",
-            "FolderPath": "C:\"
+            "FolderPath": "C:\",
+            "RecordsetSizeOfLatestImages": 0
         }
 }
 ```
