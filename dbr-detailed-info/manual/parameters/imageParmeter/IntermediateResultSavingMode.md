@@ -17,16 +17,55 @@ sourceCodeUrl: /dbr-detailed-info/manual/parameters/imageParmeter/IntermediateRe
 ---
 
 ## IntermediateResultSavingMode
+
+### Mode Properties
+IntermediateResultSavingMode is a parameter with several arguments. It is used for setting the intermediate result saving mode and opitons.
+
+#### Mode Arguments
+- [Mode](#mode)
+- [FolderPath](#folderpath)
+- [RecordsetSizeOfLatestImages](recordsetsizeoflatestimages)
+
+##### Mode 
 Sets the mode for saving the intermediate result.
 
-### As Json Parameter
+| Value Type | Value Range | Default Value |
+| ---------- | ----------- | ------------- |
+| *string* or *[`IntermediateResultSavingMode`]({{ site.manual_interface_enum }}result-enum.html#intermediateresultsavingmode) enum* | "IRSM_MEMORY"<br>"IRSM_FILESYSTEM"<br>"IRSM_BOTH" | "IRSM_MEMORY" |
 
-| Json Object |	Json Parameter Name | Value Type | Default Value |
-| ----------- | ------------------- | ---------- | ------------- |
-| ImageParameter | IntermediateResultSavingMode | *JSON Object* | {<br>&emsp;"IntermediateResultSavingMode": <br>&emsp;{<br>&emsp;&emsp;Mode: "IRSM_MEMORY"<br>&emsp;}<br>} |
+- **See also**:   
+    [`IntermediateResultSavingMode` Enumeration]({{ site.manual_interface_enum }}result-enum.html#intermediateresultsavingmode)  
+        
+##### FolderPath 
+Sets the path of the output folder which stores intermediate results.   
 
-**Remark**   
-`IntermediateResultSavingMode` is a JSON object with several keys which can be found in [Mode Arguments](#mode-arguments).
+| Value Type | Value Range | Default Value | Vaild Modes | 
+| ---------- | ----------- | ------------- | ----------- |
+| *string* | A string value representing the folder path with max length 480. | "" | "IRSM_FILESYSTEM"<br>"IRSM_BOTH" |         
+
+- **Remark**     
+    "": The library path.    
+    Please make sure the path exists and your application has the appropriate permissions for saving the results.   
+
+##### RecordsetSizeOfLatestImages
+Sets the maximum count of recordset to store the latest images' intermediate results.
+
+| Value Type | Value Range | Default Value | Vaild Modes | 
+| ---------- | ----------- | ------------- | ----------- |
+| *int* | [0,0x7fffffff]  |  0 | "IRSM_MEMORY"<br>"IRSM_FILESYSTEM"<br>"IRSM_BOTH" | 
+
+- **Remark**     
+    0: no limitation on the count of recordset.   
+    When the count exceeds, the old recordset will be replaced by the new one.
+
+### Setting Methods
+
+#### As JSON Parameter
+`IntermediateResultSavingMode` as a JSON parameter is a JSON Object with several keys for setting the value of [arguments](#mode-arguments) correspondingly.
+
+| Json Object |	Json Parameter Name | Value Type |
+| ----------- | ------------------- | ---------- |
+| ImageParameter | IntermediateResultSavingMode | *JSON Object* |
 
 **Json Parameter Example**   
 ```
@@ -41,7 +80,8 @@ Sets the mode for saving the intermediate result.
 &nbsp;
 
 
-### As `PublicRuntimeSettings` Member
+#### As `PublicRuntimeSettings` Member
+`IntermediateResultSavingMode` as a member of `PublicRuntimeSettings` struct is a [`IntermediateResultSavingMode`]({{ site.manual_interface_enum }}result-enum.html#intermediateresultsavingmode) enum type for setting the value of `Mode` in the argument list. 
 
 | Struct |	Struct Member Name | Value Type | Value Range | Default Value |
 | ------ | ------------------ | ---------- | ----------- | ------------- |
@@ -53,42 +93,3 @@ Sets the mode for saving the intermediate result.
 
 
 &nbsp;
-
-
-### Mode Arguments
-
-- [Mode](#mode)
-- [FolderPath](#folderpath)
-- [RecordsetSizeOfLatestImages](recordsetsizeoflatestimages)
-
-#### Mode 
-Sets the mode for saving the intermediate result.
-
-| Value Type | Value Range | Default Value |
-| ---------- | ----------- | ------------- |
-| *string* | "IRSM_MEMORY"<br>"IRSM_FILESYSTEM"<br>"IRSM_BOTH" | It must be a mandatory setting value. |
-
-- **See also**:   
-    [`IntermediateResultSavingMode` Enumeration]({{ site.manual_interface_enum }}result-enum.html#intermediateresultsavingmode)  
-        
-#### FolderPath 
-Sets the path of the output folder which stores intermediate results.   
-
-| Value Type | Value Range | Default Value | Vaild Modes | 
-| ---------- | ----------- | ------------- | ----------- |
-| *string* | A string value representing the folder path with max length 480. | "" | "IRSM_FILESYSTEM"<br>"IRSM_BOTH" |         
-
-- **Remark**     
-    "": The library path.    
-    Please make sure the path exists and your application has the appropriate permissions for saving the results.   
-
-#### RecordsetSizeOfLatestImages
-Sets the maximum count of recordset to store the latest images' intermediate results.
-
-| Value Type | Value Range | Default Value | Vaild Modes | 
-| ---------- | ----------- | ------------- | ----------- |
-| *int* | [0,0x7fffffff]  |  0 | "IRSM_MEMORY"<br>"IRSM_FILESYSTEM"<br>"IRSM_BOTH" | 
-
-- **Remark**     
-    0: no limitation on the count of recordset.   
-    When the count exceeds, the old recordset will be replaced by the new one.
