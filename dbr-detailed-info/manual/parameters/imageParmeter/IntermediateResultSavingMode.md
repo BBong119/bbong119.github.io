@@ -61,7 +61,7 @@ Sets the maximum count of recordset to store the latest images' intermediate res
 ### Setting Methods
 
 #### As JSON Parameter
-`IntermediateResultSavingMode` as a JSON parameter is a JSON Object with several keys for setting the value of [arguments](#mode-arguments) correspondingly.
+`IntermediateResultSavingMode` as a JSON parameter is a JSON Object with several keys for setting the value of [arguments](#mode-arguments) correspondingly. Default values will be used if there is no manual setting.
 
 | Json Object |	Json Parameter Name | Value Type |
 | ----------- | ------------------- | ---------- |
@@ -81,13 +81,16 @@ Sets the maximum count of recordset to store the latest images' intermediate res
 
 
 #### As `PublicRuntimeSettings` Member
-`IntermediateResultSavingMode` as a member of `PublicRuntimeSettings` struct is a [`IntermediateResultSavingMode`]({{ site.manual_interface_enum }}result-enum.html#intermediateresultsavingmode) enum type for setting the value of `Mode` in the argument list. 
+`IntermediateResultSavingMode` as a member of `PublicRuntimeSettings` struct is a [`IntermediateResultSavingMode`]({{ site.manual_interface_enum }}result-enum.html#intermediateresultsavingmode) enum type for setting the value of [`Mode`](#mode) in the argument list. Default value will be used if there is no manual setting.
 
-| Struct |	Struct Member Name | Value Type | Value Range | Default Value |
-| ------ | ------------------ | ---------- | ----------- | ------------- |
-| [`PublicRuntimeSettings`]({{ site.manual_interface_struct }}PublicRuntimeSettings.html) | [`intermediateResultSavingMode`]({{ site.manual_interface_struct }}PublicRuntimeSettings.html#intermediateresultsavingmode) | [`IntermediateResultSavingMode`]({{ site.manual_interface_enum }}result-enum.html#intermediateresultsavingmode) | Any one of the [`IntermediateResultSavingMode` Enumeration]({{ site.manual_interface_enum }}result-enum.html#intermediateresultsavingmode) items.| `IRSM_MEMORY`|
+| Struct |	Struct Member Name | Value Type |
+| ------ | ------------------ | ---------- |
+| [`PublicRuntimeSettings`]({{ site.manual_interface_struct }}PublicRuntimeSettings.html) | [`intermediateResultSavingMode`]({{ site.manual_interface_struct }}PublicRuntimeSettings.html#intermediateresultsavingmode) | [`IntermediateResultSavingMode`]({{ site.manual_interface_enum }}result-enum.html#intermediateresultsavingmode) |
 
-**See Also**   
+**Remark**   
+[`GetModeArgument`]() and [`SetModeArgument`]() need to be called for getting or setting the value of [arguments](#mode-arguments) except [`Mode`](#mode).
+
+**See Also**    
 - [`PublicRuntimeSettings` Struct]({{ site.manual_interface_struct }}PublicRuntimeSettings.html)
 - [`IntermediateResultSavingMode` Enumeration]({{ site.manual_interface_enum }}result-enum.html#intermediateresultsavingmode)
 
