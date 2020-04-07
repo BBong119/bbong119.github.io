@@ -21,6 +21,7 @@ sourceCodeUrl: /dbr-detailed-info/manual/parameters/imageParmeter/IntermediateRe
 ### Mode Properties
 IntermediateResultSavingMode is a parameter with several arguments. It is used for setting the intermediate result saving mode and opitons.
 
+IntermediateResultSavingMode is a parameter with several arguments. It is used for setting the intermediate result saving mode and opitons.IntermediateResultSavingMode is a parameter with several arguments. It is used for setting the intermediate result saving mode and opitons.IntermediateResultSavingMode is a parameter with several arguments. It is used for setting the intermediate result saving mode and opitons.IntermediateResultSavingMode is a parameter with several arguments. It is used for setting the intermediate result saving mode and opitons.
 #### Mode Arguments
 - [Mode](#mode)
 - [FolderPath](#folderpath)
