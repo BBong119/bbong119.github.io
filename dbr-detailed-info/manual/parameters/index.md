@@ -47,27 +47,27 @@ sourceCodeUrl: /dbr-detailed-info/manual/parameters/index.md
 
  | Parameter Name | Description |
  | -------------- | ----------- | 
- | `ImageParameter.Pages` | Sets the specific pages or the range of pages of a file (.tiff or .pdf) for barcode searching. |
- | `ImageParameter.PDFRasterDPI` | Sets the output image resolution. |
- | `ImageParameter.ScaleDownThreshold` | Sets the threshold for the image shrinking. |
- | `ImageParameter.ColourClusteringModes` | Sets the mode and priority for colour categorization. Not supported yet. |
- | `ImageParameter.ColourConversionModes` | Sets the mode and priority for converting a colour image to a grayscale image. |
- | `ImageParameter.GrayscaleTransformationModes` | Sets the mode and priority for the grayscale image conversion. |
- | `ImageParameter.RegionPredetectionModes` | Sets the region pre-detection mode for barcodes search. |
- | `ImageParameter.ImagePreprocessingModes` | Sets the mode and priority for image preprocessing algorithms. |
- | `ImageParameter.BinarizationModes` | 	Sets the mode and priority for binarization. |
- | `ImageParameter.TextureDetectionModes` | 	Sets the mode and priority for texture detection. |
- | `ImageParameter.LocalizationModes` | 	Sets the mode and priority for localization algorithms. |
- | `ImageParameter.TextFilterModes` | 	Sets the mode and priority for text filter. |
- | `ImageParameter.TextAssistedCorrectionMode` | Sets the mode of text assisted correction for barcode decoding. Not support yet. |
- | `ImageParameter.DPMCodeReadingModes` | Sets the mode and priority for DPM code reading. Not support yet. |
- | `ImageParameter.DeformationResistingModes` | Sets the mode and priority for deformation resisting. |
- | `ImageParameter.BarcodeComplementModes` | Sets the mode and priority to complement the missing parts in the barcode. |
- | `ImageParameter.BarcodeColourModes` | Sets the mode and priority for the barcode colour mode used to process the barcode zone. |
- | `ImageParameter.DeblurLevel` | Sets the degree of blurriness of the barcode. |
- | `ImageParameter.AccompanyingTextRecognitionModes` | Sets the mode and priority to recognize accompanying text. |
- | `ImageParameter.ScaleUpModes` | Sets the mode and priority to control the sampling methods of scale-up for linear barcodes with small module sizes. | 
- | `ImageParameter.PDFReadingMode` | Sets the way to detect barcodes from a PDF file when using the DecodeFile method. |
+ | [`ImageParameter.Pages`](imageParmeter/image-process-control.md#pages) | Sets the specific pages or the range of pages of a file (.tiff or .pdf) for barcode searching. |
+ | [`ImageParameter.PDFRasterDPI`](imageParmeter/image-process-control.md#pdfrasterdpi) | Sets the output image resolution. |
+ | [`ImageParameter.ScaleDownThreshold`](imageParmeter/image-process-control.md#scaledownthreshold) | Sets the threshold for the image shrinking. |
+ | [`ImageParameter.ColourClusteringModes`](imageParmeter/ColourClusteringModes.md#colourclusteringmodes) | Sets the mode and priority for colour categorization. Not supported yet. |
+ | [`ImageParameter.ColourConversionModes`](imageParmeter/ColourConversionModes.md#colourconversionmodes) | Sets the mode and priority for converting a colour image to a grayscale image. |
+ | [`ImageParameter.GrayscaleTransformationModes`](imageParmeter/GrayscaleTransformationModes.md#grayscaletransformationmodes) | Sets the mode and priority for the grayscale image conversion. |
+ | [`ImageParameter.RegionPredetectionModes`](imageParmeter/RegionPredetectionModes.md#regionpredetectionmodes) | Sets the region pre-detection mode for barcodes search. |
+ | [`ImageParameter.ImagePreprocessingModes`](imageParmeter/ImagePreprocessingModes.md#imagepreprocessingmodes) | Sets the mode and priority for image preprocessing algorithms. |
+ | [`ImageParameter.BinarizationModes`](imageParmeter/BinarizationModes.md#binarizationmodes) | 	Sets the mode and priority for binarization. |
+ | [`ImageParameter.TextureDetectionModes`](imageParmeter/TextureDetectionModes.md#texturedetectionmodes) | 	Sets the mode and priority for texture detection. |
+ | [`ImageParameter.LocalizationModes`](imageParmeter/LocalizationModes.md#localizationmodes) | 	Sets the mode and priority for localization algorithms. |
+ | [`ImageParameter.TextFilterModes`](imageParmeter/TextFilterModes.md#textfiltermodes) | 	Sets the mode and priority for text filter. |
+ | [`ImageParameter.TextAssistedCorrectionMode`](imageParmeter/TextAssistedCorrectionMode.md#textassistedcorrectionmode) | Sets the mode of text assisted correction for barcode decoding. Not support yet. |
+ | [`ImageParameter.DPMCodeReadingModes`](imageParmeter/DPMCodeReadingModes.md#dpmcodereadingmodes) | Sets the mode and priority for DPM code reading. Not support yet. |
+ | [`ImageParameter.DeformationResistingModes`](imageParmeter/DeformationResistingModes.md#deformationresistingmodes) | Sets the mode and priority for deformation resisting. |
+ | [`ImageParameter.BarcodeComplementModes`](imageParmeter/BarcodeComplementModes.md#barcodecomplementmodes) | Sets the mode and priority to complement the missing parts in the barcode. |
+ | [`ImageParameter.BarcodeColourModes`](imageParmeter/BarcodeColourModes.md#barcodecolourmodes) | Sets the mode and priority for the barcode colour mode used to process the barcode zone. |
+ | [`ImageParameter.DeblurLevel`](imageParmeter/image-process-control.md#deblurlevel) | Sets the degree of blurriness of the barcode. |
+ | [`ImageParameter.AccompanyingTextRecognitionModes`](imageParmeter/AccompanyingTextRecognitionModes.md#accompanyingtextrecognitionmodes) | Sets the mode and priority to recognize accompanying text. |
+ | [`ImageParameter.ScaleUpModes`](imageParmeter/ScaleUpModes.md#scaleupmodes) | Sets the mode and priority to control the sampling methods of scale-up for linear barcodes with small module sizes. | 
+ | [`ImageParameter.PDFReadingMode`](imageParmeter/image-process-control.md#pdfreadingmode) | Sets the way to detect barcodes from a PDF file when using the DecodeFile method. |
 
 
 ### Result Control
