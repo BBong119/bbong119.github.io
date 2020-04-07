@@ -41,7 +41,8 @@ Returns error code. Possible return(s): DBR_OK; DBRERR_SET_MODE_ARGUMENT_ERROR.
 *You can call [`GetErrorString`](status-retrieval.md#geterrorstring) to get detailed error message.*
 
 #### Remark
-Check [Mode Argument List]({{ site.manual_interface_argument }}) for available argument settings.
+Available modes: [AccompanyingTextRecognitionModes](), [BarcodeColourModes](), [BinarizationModes](), [ColourClusteringModes](), [ColourConversionModes](), [DeformationResistingModes](), [ImagePreprocessingModes](), [IntermediateResultSavingMode](), [LocalizationModes](), [RegionPredetectionModes](), [ScaleUpModes](), [TextAssistedCorrectionMode](), [TextFilterModes](), [TextureDetectionModes]().   
+Check [Mode Argument List]({{ site.manual_interface_argument }}) for available argument settings.   
 
 #### Code Snippet
 ```cpp
@@ -85,7 +86,8 @@ Returns error code. Possible return(s): DBR_OK; DBRERR_GET_MODE_ARGUMENT_ERROR.
 *You can call [`GetErrorString`](status-retrieval.md#geterrorstring) to get detailed error message.*
 
 #### Remark
-Check [Mode Argument List]({{ site.manual_interface_argument }}) for available argument settings.
+Available modes: [AccompanyingTextRecognitionModes](), [BarcodeColourModes](), [BinarizationModes](), [ColourClusteringModes](), [ColourConversionModes](), [DeformationResistingModes](), [ImagePreprocessingModes](), [IntermediateResultSavingMode](), [LocalizationModes](), [RegionPredetectionModes](), [ScaleUpModes](), [TextAssistedCorrectionMode](), [TextFilterModes](), [TextureDetectionModes]().   
+Check [Mode Argument List]({{ site.manual_interface_argument }}) for available argument settings.   
 
 #### Code Snippet
 ```cpp
