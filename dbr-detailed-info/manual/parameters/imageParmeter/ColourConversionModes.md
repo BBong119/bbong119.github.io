@@ -1,3 +1,10 @@
+---
+layout: manual-parameter
+id: parameter_image_ColourConversionModes
+sourceCodeUrl: /dbr-detailed-info/manual/parameters/imageParmeter/ColourConversionModes.md
+---
+
+
 # ImageParameter Object - Image Process Control
 
  | Parameter Name | Description |
