@@ -1,3 +1,9 @@
+---
+layout: manual-parameter
+id: parameter_image_image_process
+sourceCodeUrl: /dbr-detailed-info/manual/parameters/imageParmeter/image-process-control.md
+---
+
 # ImageParameter Object - Image Process Control
 
  | Parameter Name | Description |
