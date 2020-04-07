@@ -1,3 +1,10 @@
+---
+layout: manual-parameter
+id: parameter_image_TextureDetectionModes
+sourceCodeUrl: /dbr-detailed-info/manual/parameters/imageParmeter/TextureDetectionModes.md
+---
+
+
 # ImageParameter Object - Image Process Control
 
  | Parameter Name | Description |
