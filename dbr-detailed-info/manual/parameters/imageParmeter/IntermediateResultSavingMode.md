@@ -88,7 +88,7 @@ Sets the maximum count of recordset to store the latest images' intermediate res
 | [`PublicRuntimeSettings`]({{ site.manual_interface_struct }}PublicRuntimeSettings.html) | [`intermediateResultSavingMode`]({{ site.manual_interface_struct }}PublicRuntimeSettings.html#intermediateresultsavingmode) | [`IntermediateResultSavingMode`]({{ site.manual_interface_enum }}result-enum.html#intermediateresultsavingmode) |
 
 **Remark**   
-[`GetModeArgument`]() and [`SetModeArgument`]() need to be called for getting or setting the value of [arguments](#mode-arguments) except [`Mode`](#mode).
+[`GetModeArgument`]({{ site.manual_interface_cpp }}CBarcodeReaer/methods/parameter-and-runtime-settings-basic.html#getmodeargument) and [`SetModeArgument`]({{ site.manual_interface_cpp }}CBarcodeReaer/methods/parameter-and-runtime-settings-basic.html#setmodeargument) need to be called for getting or setting the value of [arguments](#mode-arguments) except [`Mode`](#mode).
 
 **See Also**    
 - [`PublicRuntimeSettings` Struct]({{ site.manual_interface_struct }}PublicRuntimeSettings.html)
