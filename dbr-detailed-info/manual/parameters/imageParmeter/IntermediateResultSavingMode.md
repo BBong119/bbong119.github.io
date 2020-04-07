@@ -19,15 +19,7 @@ sourceCodeUrl: /dbr-detailed-info/manual/parameters/imageParmeter/IntermediateRe
 ## IntermediateResultSavingMode
 
 ### Mode Properties
-IntermediateResultSavingMode is a parameter with several arguments. It is used for setting the intermediate result saving mode and opitons.
-
-#### Mode Arguments
-- [Mode](#mode)
-- [FolderPath](#folderpath)
-- [RecordsetSizeOfLatestImages](recordsetsizeoflatestimages)
-
-##### Mode 
-Sets the mode for saving the intermediate result.
+`IntermediateResultSavingMode` is a parameter for setting the intermediate result saving mode. Each mode has several arguments for setting the saving options.   
 
 | Value Type | Value Range | Default Value |
 | ---------- | ----------- | ------------- |
@@ -35,7 +27,11 @@ Sets the mode for saving the intermediate result.
 
 - **See also**:   
     [`IntermediateResultSavingMode` Enumeration]({{ site.manual_interface_enum }}result-enum.html#intermediateresultsavingmode)  
-        
+    
+#### Mode Arguments
+- [FolderPath](#folderpath)
+- [RecordsetSizeOfLatestImages](recordsetsizeoflatestimages)
+ 
 ##### FolderPath 
 Sets the path of the output folder which stores intermediate results.   
 
@@ -61,7 +57,7 @@ Sets the maximum count of recordset to store the latest images' intermediate res
 ### Setting Methods
 
 #### As JSON Parameter
-`IntermediateResultSavingMode` as a JSON parameter is a JSON Object with several keys for setting the value of [arguments](#mode-arguments) correspondingly. Default values will be used if there is no manual setting.
+`IntermediateResultSavingMode` as a JSON parameter is a JSON Object with several keys for setting intermediate result saving mode and the value of [arguments](#mode-arguments) correspondingly. Default values will be used if there is no manual setting.
 
 | Json Object |	Json Parameter Name | Value Type |
 | ----------- | ------------------- | ---------- |
@@ -82,14 +78,14 @@ Sets the maximum count of recordset to store the latest images' intermediate res
 
 
 #### As `PublicRuntimeSettings` Member
-`IntermediateResultSavingMode` as a member of `PublicRuntimeSettings` struct is a [`IntermediateResultSavingMode`]({{ site.manual_interface_enum }}result-enum.html#intermediateresultsavingmode) enum type for setting the value of [`Mode`](#mode) in the argument list. Default value will be used if there is no manual setting.
+`IntermediateResultSavingMode` as a member of `PublicRuntimeSettings` struct is a [`IntermediateResultSavingMode`]({{ site.manual_interface_enum }}result-enum.html#intermediateresultsavingmode) enum type for setting the intermediate result saving mode. Default value will be used if there is no manual setting.
 
 | Struct |	Struct Member Name | Value Type |
 | ------ | ------------------ | ---------- |
 | [`PublicRuntimeSettings`]({{ site.manual_interface_struct }}PublicRuntimeSettings.html) | [`intermediateResultSavingMode`]({{ site.manual_interface_struct }}PublicRuntimeSettings.html#intermediateresultsavingmode) | [`IntermediateResultSavingMode`]({{ site.manual_interface_enum }}result-enum.html#intermediateresultsavingmode) |
 
 **Remark**   
-[`GetModeArgument`]({{ site.manual_interface_cpp }}CBarcodeReader/methods/parameter-and-runtime-settings-basic.html#getmodeargument) and [`SetModeArgument`]({{ site.manual_interface_cpp }}CBarcodeReader/methods/parameter-and-runtime-settings-basic.html#setmodeargument) need to be called for getting or setting the value of [arguments](#mode-arguments) except [`Mode`](#mode).
+[`GetModeArgument`]({{ site.manual_interface_cpp }}CBarcodeReader/methods/parameter-and-runtime-settings-basic.html#getmodeargument) and [`SetModeArgument`]({{ site.manual_interface_cpp }}CBarcodeReader/methods/parameter-and-runtime-settings-basic.html#setmodeargument) need to be called for getting or setting the value of [arguments](#mode-arguments).
 
 **See Also**    
 - [`PublicRuntimeSettings` Struct]({{ site.manual_interface_struct }}PublicRuntimeSettings.html)
