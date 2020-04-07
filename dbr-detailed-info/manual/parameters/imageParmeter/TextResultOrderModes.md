@@ -28,7 +28,7 @@ sourceCodeUrl: /dbr-detailed-info/manual/parameters/imageParmeter/IntermediateRe
 
 | Value Type | Value Range | Default Value |
 | ---------- | ----------- | ------------- |
-| *string array* or *[`TextResultOrderMode`]({{ site.manual_interface_enum }}result-enum.html#textresultordermode) array* | "TROM_SKIP"<br>"TROM_CONFIDENCE"<br>"TROM_POSITION"<br>"TROM_FORMAT" | ["TROM_CONFIDENCE", "TROM_POSITION", "TROM_FORMAT", ""TROM_SKIP"", "TROM_SKIP", "TROM_SKIP", "TROM_SKIP", "TROM_SKIP"] |
+| *string array* or *[`TextResultOrderMode`]({{ site.manual_interface_enum }}result-enum.html#textresultordermode) array* | "TROM_SKIP"<br>"TROM_CONFIDENCE"<br>"TROM_POSITION"<br>"TROM_FORMAT" | ["TROM_CONFIDENCE", "TROM_POSITION", "TROM_FORMAT", "TROM_SKIP", "TROM_SKIP", "TROM_SKIP", "TROM_SKIP", "TROM_SKIP"] |
 
 - **See also**:   
     [`TextResultOrderMode` Enumeration]({{ site.manual_interface_enum }}result-enum.html#textresultordermode)
