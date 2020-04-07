@@ -32,7 +32,7 @@ sourceCodeUrl: /dbr-detailed-info/manual/parameters/imageParmeter/TextResultOrde
 ### Setting Methods
 
 #### As JSON Parameter
-`TextResultOrderModes` as a JSON parameter is a JSON Object array. Each JSON Object has a key "`MODE`" for setting the mode, and the array index decides the priority for the order of the text results returned. Default values will be used if there is no manual setting.
+`TextResultOrderModes` as a JSON parameter is a JSON Object array. Each JSON Object has a key `Mode` for setting the mode, and the array index decides the priority for the order of the text results returned. Default values will be used if there is no manual setting.
 
 
 | Json Object |	Json Parameter Name | Value Type |
