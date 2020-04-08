@@ -35,10 +35,10 @@ sourceCodeUrl: /dbr-detailed-info/manual/parameters/imageParmeter/AccompanyingTe
 
 
 
-## AccompanyingTextRecognitionModess  
+## AccompanyingTextRecognitionModes  
 
 ### Mode Properties
-`AccompanyingTextRecognitionModess` is a parameter for setting the mode to recognize accompanying text. It consisits of one or more `AccompanyingTextRecognitionMode` items and each item has its own arguments. The array index represents the priority of the item. The smaller index is, the higher priority is.
+`AccompanyingTextRecognitionModes` is a parameter for setting the mode to recognize accompanying text. It consisits of one or more `AccompanyingTextRecognitionMode` items and each item has its own arguments. The array index represents the priority of the item. The smaller index is, the higher priority is.
 
 | Value Type | Value Range | Default Value |
 | ---------- | ----------- | ------------- |
@@ -91,12 +91,12 @@ Specifies the y-coordinate of the top-left corner of the region in percentage. T
 ### Setting Methods
 
 #### As JSON Parameter
-`AccompanyingTextRecognitionModess` as a JSON parameter is a JSON Object array. Each JSON Object has several keys for setting the mode and the value of arguments. The array index decides the priority the mode to recognize accompanying text. Default values will be used if there is no manual setting.   
+`AccompanyingTextRecognitionModes` as a JSON parameter is a JSON Object array. Each JSON Object has several keys for setting the mode and the value of arguments. The array index decides the priority the mode to recognize accompanying text. Default values will be used if there is no manual setting.   
 
 
 | Json Object |	Json Parameter Name | Value Type |
 | ----------- | ------------------- | ---------- |
-| ImageParameter | AccompanyingTextRecognitionModess | *JSON Object Array* | 
+| ImageParameter | AccompanyingTextRecognitionModes | *JSON Object Array* | 
 
 **Json Parameter Example**   
 ```
@@ -119,7 +119,7 @@ Specifies the y-coordinate of the top-left corner of the region in percentage. T
 
 
 #### As `PublicRuntimeSettings` Member
-`AccompanyingTextRecognitionModess` is a [`AccompanyingTextRecognitionMode`]({{ site.manual_interface_enum }}result-enum.html#intermediateresultsavingmode) array defines in `furtherModes` which is a struct member of `PublicRuntimeSettings`. It is used for setting the modes and the priority to recognize accompanying text. Default value will be used if there is no manual setting.
+`AccompanyingTextRecognitionModes` is a [`AccompanyingTextRecognitionMode`]({{ site.manual_interface_enum }}result-enum.html#intermediateresultsavingmode) array defines in `furtherModes` which is a struct member of `PublicRuntimeSettings`. It is used for setting the modes and the priority to recognize accompanying text. Default value will be used if there is no manual setting.
 
 | Struct |	Struct Member Name | Value Type |
 | ------ | ------------------ | ---------- |
