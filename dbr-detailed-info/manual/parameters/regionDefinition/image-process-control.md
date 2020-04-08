@@ -16,6 +16,7 @@ sourceCodeUrl: /dbr-detailed-info/manual/parameters/regionDefinition/image-proce
  | [`RegionDefinition.MeasuredByPercentage`](#measuredbypercentage) | Sets whether or not to use percentages to measure the Region size. | 
 
 
+---
 
 ## Top
 The top-most coordinate or percentage of the region.  
