@@ -108,12 +108,13 @@ Sets the weight value of Red Colour Channel used for converting a colour image t
 
 
 #### As `PublicRuntimeSettings` Member
-`ColourConversionModes` is a [`ColourConversionMode`]({{ site.manual_interface_enum }}result-enum.html#intermediateresultsavingmode) array defines in [`furtherModes`] which is a struct member of `PublicRuntimeSettings`. It is used for setting the modes and the priority for converting a colour image to a grayscale image. Default value will be used if there is no manual setting.
+`ColourConversionModes` is a [`ColourConversionMode`]({{ site.manual_interface_enum }}result-enum.html#intermediateresultsavingmode) array defines in `furtherModes` which is a struct member of `PublicRuntimeSettings`. It is used for setting the modes and the priority for converting a colour image to a grayscale image. Default value will be used if there is no manual setting.
 
 | Struct |	Struct Member Name | Value Type |
 | ------ | ------------------ | ---------- |
-| [`PublicRuntimeSettings`]({{ site.manual_interface_struct }}PublicRuntimeSettings.html)->furtherModes({{ site.manual_interface_struct }}PublicRuntimeSettings.html#furthermodes) | [`colourConversionModes`]({{ site.manual_interface_struct }}FurtherModes.html#colourconversionmodes)) | [`ColourConversionMode`]({{ site.manual_interface_enum }}parameter-mode-enum.html#colourconversionmode)[8] |
+| [`PublicRuntimeSettings`]({{ site.manual_interface_struct }}PublicRuntimeSettings.html)->[`furtherModes`]({{ site.manual_interface_struct }}PublicRuntimeSettings.html#furthermodes) | [`colourConversionModes`]({{ site.manual_interface_struct }}FurtherModes.html#colourconversionmodes)) | [`ColourConversionMode`]({{ site.manual_interface_enum }}parameter-mode-enum.html#colourconversionmode)[8] |
 
 **See Also**    
 - [`PublicRuntimeSettings` Struct]({{ site.manual_interface_struct }}PublicRuntimeSettings.html)
+- [`FurtherModes`]({{ site.manual_interface_struct }}FurtherModes.html)
 - [`ColourConversionMode` Enumeration]({{ site.manual_interface_enum }}parameter-mode-enum.html#colourconversionmode)
