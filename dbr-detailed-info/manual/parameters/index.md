@@ -88,34 +88,34 @@ sourceCodeUrl: /dbr-detailed-info/manual/parameters/index.md
 
  | Parameter Name | Description |
  | -------------- | ----------- | 
- | `RegionDefinition.Name` | The name of the RegionDefinition object. |
- | `RegionDefinition.FormatSpecificationNameArray` | The names of the referenced FormatSpecification object(s). |
+ | [`RegionDefinition.Name`](regionDefinition/content-organization-control.md#name) | The name of the RegionDefinition object. |
+ | [`RegionDefinition.FormatSpecificationNameArray`](regionDefinition/content-organization-control.md#formatspecificationnamearray) | The names of the referenced FormatSpecification object(s). |
 
 
 ### Cost Control
 
  | Parameter Name | Description |
  | -------------- | ----------- | 
- | `RegionDefinition.ExpectedBarcodesCount` | Sets the expected number of barcodes to be decoded for the current region. |
+ | [`RegionDefinition.ExpectedBarcodesCount`](regionDefinition/cost-control.md#expectedbarcodescount) | Sets the expected number of barcodes to be decoded for the current region. |
 
 
 ### Format Control
 
  | Parameter Name | Description |
  | -------------- | ----------- | 
- | `RegionDefinition..BarcodeFormatIds` | Sets which types of barcode(s) in BarcodeFormat group 1 to be read in this region. |
- | `RegionDefinition.BarcodeFormatIds_2` | Sets which types of barcode(s) in BarcodeFormat group 2 to be read in this region. |
+ | [`RegionDefinition..BarcodeFormatIds`](regionDefinition/format-control.md#barcodeformatids) | Sets which types of barcode(s) in BarcodeFormat group 1 to be read in this region. |
+ | [`RegionDefinition.BarcodeFormatIds_2`](regionDefinition/format-control.md#barcodeformatids_2) | Sets which types of barcode(s) in BarcodeFormat group 2 to be read in this region. |
  
  
 ### Image Process Control
 
  | Parameter Name | Description |
  | -------------- | ----------- | 
- | `RegionDefinition.Top` | 	The top-most coordinate or percentage of the region. | 
- | `RegionDefinition.Left` | 	The left-most coordinate or percentage of the region. | 
- | `RegionDefinition.Right` | 	The right-most coordinate or percentage of the region. | 
- | `RegionDefinition.Bottom` | 	The bottom-most coordinate or percentage of the region. | 
- | `RegionDefinition.MeasuredByPercentage` | 	Sets whether or not to use percentages to measure the Region size. | 
+ | [`RegionDefinition.Top`](regionDefinition/image-process-control.md#top) | 	The top-most coordinate or percentage of the region. | 
+ | [`RegionDefinition.Left`](regionDefinition/image-process-control.md#left) | 	The left-most coordinate or percentage of the region. | 
+ | [`RegionDefinition.Right`](regionDefinition/image-process-control.md#right) | 	The right-most coordinate or percentage of the region. | 
+ | [`RegionDefinition.Bottom`](regionDefinition/image-process-control.md#bottom) | 	The bottom-most coordinate or percentage of the region. | 
+ | [`RegionDefinition.MeasuredByPercentage`](regionDefinition/image-process-control.md#measuredbypercentage) | 	Sets whether or not to use percentages to measure the Region size. | 
 
 
 
