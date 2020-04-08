@@ -148,7 +148,7 @@ If you have a blurry image, you can set this property to a larger value. The hig
 
 | Json Object |	Json Parameter Name | Value Type | Value Range | Default Value |
 | ----------- | ------------------- | ---------- | ----------- | ------------- |
-| ImageParameter | deblurLevel | *int* | [0, 9] | 9 |
+| ImageParameter | DeblurLevel | *int* | [0, 9] | 9 |
 
 
 **Json Parameter Example**   
