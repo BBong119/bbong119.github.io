@@ -13,6 +13,7 @@ sourceCodeUrl: /dbr-detailed-info/manual/parameters/regionDefinition/format-cont
  | [`RegionDefinition.BarcodeFormatIds_2`](#barcodeformatids_2) | Sets which types of barcode(s) in BarcodeFormat group 2 to be read in this region. |
 
 
+---
 
 ## BarcodeFormatIds
 Sets which types of barcode(s) in BarcodeFormat group 1 to be read in this region.  
