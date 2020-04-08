@@ -86,12 +86,13 @@ Sets the sensitivity used for colour categorization.
 
 
 #### As `PublicRuntimeSettings` Member
-`ColourClusteringModes` is a [`ColourClusteringMode`]({{ site.manual_interface_enum }}result-enum.html#intermediateresultsavingmode) array defines in [`furtherModes`] which is a struct member of `PublicRuntimeSettings`. It is used for setting the modes and the priority for colour categorization. Default value will be used if there is no manual setting.
+`ColourClusteringModes` is a [`ColourClusteringMode`]({{ site.manual_interface_enum }}result-enum.html#intermediateresultsavingmode) array defines in `furtherModes` which is a struct member of `PublicRuntimeSettings`. It is used for setting the modes and the priority for colour categorization. Default value will be used if there is no manual setting.
 
 | Struct |	Struct Member Name | Value Type |
 | ------ | ------------------ | ---------- |
-| [`PublicRuntimeSettings`]({{ site.manual_interface_struct }}PublicRuntimeSettings.html)->furtherModes({{ site.manual_interface_struct }}PublicRuntimeSettings.html#furthermodes) | [`colourClusteringModes`]({{ site.manual_interface_struct }}FurtherModes.html#colourclusteringmodes)) | [`ColourClusteringMode`]({{ site.manual_interface_enum }}parameter-mode-enum.html#colourclusteringmode)[8] |
+| [`PublicRuntimeSettings`]({{ site.manual_interface_struct }}PublicRuntimeSettings.html)->[`furtherModes`]({{ site.manual_interface_struct }}PublicRuntimeSettings.html#furthermodes) | [`colourClusteringModes`]({{ site.manual_interface_struct }}FurtherModes.html#colourclusteringmodes)) | [`ColourClusteringMode`]({{ site.manual_interface_enum }}parameter-mode-enum.html#colourclusteringmode)[8] |
 
 **See Also**    
 - [`PublicRuntimeSettings` Struct]({{ site.manual_interface_struct }}PublicRuntimeSettings.html)
+- [`FurtherModes`]({{ site.manual_interface_struct }}FurtherModes.html)
 - [`ColourClusteringMode` Enumeration]({{ site.manual_interface_enum }}parameter-mode-enum.html#colourclusteringmode)
