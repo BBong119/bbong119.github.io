@@ -125,32 +125,32 @@ sourceCodeUrl: /dbr-detailed-info/manual/parameters/index.md
 
  | Parameter Name | Description |
  | -------------- | ----------- | 
- | `FormatSpecification.Name` | The name of the FormatSpecification object. |
+ | [`FormatSpecification.Name`](formatSpecification/content-organization-control.md#name) | The name of the FormatSpecification object. |
 
 
 ### Format Control
 
  | Parameter Name | Description |
  | -------------- | ----------- | 
- | `FormatSpecification.BarcodeAngleRangeArray` | Sets the range of angles (in degrees) for barcodes search. | 
- | `FormatSpecification.BarcodeBytesLengthRangeArray` | Sets the range of barcode bytes length for barcodes search. | 
- | `FormatSpecification.BarcodeBytesRegExPattern` | Specifies the regular express pattern of barcode byte characters. | 
- | `FormatSpecification.BarcodeHeightRangeArray` | Sets the range of barcode heights (in pixels) to for barcodes search. | 
- | `FormatSpecification.BarcodeTextLengthRangeArray` |	Sets the range of barcode text length for barcodes search. | 
- | `FormatSpecification.BarcodeTextRegExPattern` | Specifies the regular express pattern of barcode characters. | 
- | `FormatSpecification.BarcodeWidthRangeArray` | Sets the range of barcode widths (in pixels) for barcodes search.(Hint). | 
- | `FormatSpecification.MinQuietZoneWidth` | The minimum width of the barcode quiet zone. | 
- | `FormatSpecification.ModuleSizeRangeArray` | Sets the range of module size (in pixels) for barcodes search. (Hint). | 
- | `FormatSpecification.BarcodeFormatIds` | Sets which barcode format the current FormatSpecification configuration is applied to. | 
- | `FormatSpecification.MirrorMode` | Sets whether to decode mirrored barcodes. | 
- | `FormatSpecification.RequireStartStopChars` |	Sets whether the start and stop characters are required when searching for Code 39 barcodes. | 
- | `FormatSpecification.FindUnevenModuleBarcode` | Specifies whether to find barcodes with uneven barcode modules. Not support yet. | 
- | `FormatSpecification.AllModuleDeviation` | Set the module size deviation from the standard barcode module size. | 
- | `FormatSpecification.HeadModuleRatio` | Set the module count and module size ratio of the barcode head part. | 
- | `FormatSpecification.TailModuleRatio` |	Set the module count and module size ratio of the barcode tail part. | 
- | `FormatSpecification.StanardFormat` | Set the standard barcode format. | 
- | `FormatSpecification.Code128Subset` | Set the code 128 subset. | 
- | `FormatSpecification.AustralianPostEncodingTable` | Set the encoding table used to code the Customer Information Field of Australian Post Customer Barcode. | 
+ | [`FormatSpecification.BarcodeAngleRangeArray`](formatSpecification/format-control.md#barcodeanglerangearray) | Sets the range of angles (in degrees) for barcodes search. | 
+ | [`FormatSpecification.BarcodeBytesLengthRangeArray`](formatSpecification/format-control.md#barcodebyteslengthrangearray) | Sets the range of barcode bytes length for barcodes search. | 
+ | [`FormatSpecification.BarcodeBytesRegExPattern`](formatSpecification/format-control.md#barcodebytesregexpattern) | Specifies the regular express pattern of barcode byte characters. | 
+ | [`FormatSpecification.BarcodeHeightRangeArray`](formatSpecification/format-control.md#barcodeheightrangearray) | Sets the range of barcode heights (in pixels) to for barcodes search. | 
+ | [`FormatSpecification.BarcodeTextLengthRangeArray`](formatSpecification/format-control.md#barcodetextlengthrangearray) |	Sets the range of barcode text length for barcodes search. | 
+ | [`FormatSpecification.BarcodeTextRegExPattern`](formatSpecification/format-control.md#barcodetextregexpattern) | Specifies the regular express pattern of barcode characters. | 
+ | [`FormatSpecification.BarcodeWidthRangeArray`](formatSpecification/format-control.md#barcodewidthrangearray) | Sets the range of barcode widths (in pixels) for barcodes search.(Hint). | 
+ | [`FormatSpecification.MinQuietZoneWidth`](formatSpecification/format-control.md#minquietzonewidth) | The minimum width of the barcode quiet zone. | 
+ | [`FormatSpecification.ModuleSizeRangeArray`](formatSpecification/format-control.md#modulesizerangearray) | Sets the range of module size (in pixels) for barcodes search. (Hint). | 
+ | [`FormatSpecification.BarcodeFormatIds`](formatSpecification/format-control.md#barcodeformatids) | Sets which barcode format the current FormatSpecification configuration is applied to. | 
+ | [`FormatSpecification.MirrorMode`](formatSpecification/format-control.md#mirrormode) | Sets whether to decode mirrored barcodes. | 
+ | [`FormatSpecification.RequireStartStopChars`](formatSpecification/format-control.md#requirestartstopchars) |	Sets whether the start and stop characters are required when searching for Code 39 barcodes. | 
+ | [`FormatSpecification.FindUnevenModuleBarcode`](formatSpecification/format-control.md#findunevenmodulebarcode) | Specifies whether to find barcodes with uneven barcode modules. Not support yet. | 
+ | [`FormatSpecification.AllModuleDeviation`](formatSpecification/format-control.md#allmoduledeviation) | Set the module size deviation from the standard barcode module size. | 
+ | [`FormatSpecification.HeadModuleRatio`](formatSpecification/format-control.md#headmoduleratio) | Set the module count and module size ratio of the barcode head part. | 
+ | [`FormatSpecification.TailModuleRatio`](formatSpecification/format-control.md#tailmoduleratio) |	Set the module count and module size ratio of the barcode tail part. | 
+ | [`FormatSpecification.StanardFormat`](formatSpecification/format-control.md#stanardformat) | Set the standard barcode format. | 
+ | [`FormatSpecification.Code128Subset`](formatSpecification/format-control.md#code128subset) | Set the code 128 subset. | 
+ | [`FormatSpecification.AustralianPostEncodingTable`](formatSpecification/format-control.md#australianpostencodingtable) | Set the encoding table used to code the Customer Information Field of Australian Post Customer Barcode. | 
 
  
  
@@ -158,10 +158,10 @@ sourceCodeUrl: /dbr-detailed-info/manual/parameters/index.md
 
  | Parameter Name | Description |
  | -------------- | ----------- | 
- | `FormatSpecification.DeblurLevel` | Sets the degree of blurriness of the barcode for the current specified barcode format. | 
- | `FormatSpecification.DeformationResistingModes` | Sets the mode and priority for deformation resisting for the current specified barcode format. Not support yet. |
- | `FormatSpecification.BarcodeComplementModes` | Sets the mode and priority to complement the missing parts in the barcode for current specified barcode format. Not support yet. |
- | `FormatSpecification.AccompanyingTextRecognitionModes` | Sets the mode and priority to recognize accompanying text for the current specified barcode format. | 
+ | [`FormatSpecification.DeblurLevel`](formatSpecification/image-process-control.md#deblurlevel) | Sets the degree of blurriness of the barcode for the current specified barcode format. | 
+ | [`FormatSpecification.DeformationResistingModes`](formatSpecification/image-process-control.md#deformationresistingmodes)  | Sets the mode and priority for deformation resisting for the current specified barcode format. Not support yet. |
+ | [`FormatSpecification.BarcodeComplementModes`](formatSpecification/image-process-control.md#barcodecomplementmodes) | Sets the mode and priority to complement the missing parts in the barcode for current specified barcode format. Not support yet. |
+ | [`FormatSpecification.AccompanyingTextRecognitionModes`](formatSpecification/image-process-control.md#accompanyingtextrecognitionmodes) | Sets the mode and priority to recognize accompanying text for the current specified barcode format. | 
 
 
 
@@ -169,5 +169,5 @@ sourceCodeUrl: /dbr-detailed-info/manual/parameters/index.md
 
  | Parameter Name | Description |
  | -------------- | ----------- | 
- | `FormatSpecification.MinResultConfidence` | The minimum confidence of the result. | 
- | `FormatSpecification.ReturnPartialBarcodeValue` | Sets whether or not to return partial barcode value(s). Not support yet. | 
+ | [`FormatSpecification.MinResultConfidence`](formatSpecification/result-control.md#minresultconfidence) | The minimum confidence of the result. | 
+ | [`FormatSpecification.ReturnPartialBarcodeValue`](formatSpecification/result-control.md#returnpartialbarcodevalue) | Sets whether or not to return partial barcode value(s). Not support yet. | 
