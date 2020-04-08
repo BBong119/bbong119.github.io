@@ -40,7 +40,7 @@ sourceCodeUrl: /dbr-detailed-info/manual/parameters/imageParmeter/ImagePreproces
 
 | Value Type | Value Range | Default Value |
 | ---------- | ----------- | ------------- |
-| *string array* or *[`ImagePreprocessingMode`]({{ site.manual_interface_enum }}parameter-mode-enum.html#imagepreprocessingmode) array* | "RPM_SKIP"<br>"RPM_AUTO"<br>"RPM_GENERAL"<br>"RPM_GENERAL_RGB_CONTRAST"<br>"RPM_GENERAL_GRAY_CONTRAST"<br>"RPM_GENERAL_HSV_CONTRAST" | ["RPM_GENERAL", "RPM_SKIP", "RPM_SKIP", "RPM_SKIP", "RPM_SKIP", "RPM_SKIP", "RPM_SKIP", "RPM_SKIP"] |
+| *string array* or *[`ImagePreprocessingMode`]({{ site.manual_interface_enum }}parameter-mode-enum.html#imagepreprocessingmode) array* | "IPM_SKIP"<br>"IPM_AUTO"<br>"IPM_GENERAL"<br>"IPM_GRAY_EQUALIZE"<br>"IPM_GRAY_SMOOTH"<br>"IPM_SHARPEN_SMOOTH" | ["IPM_GENERAL", "IPM_SKIP", "IPM_SKIP", "IPM_SKIP", "IPM_SKIP", "IPM_SKIP", "IPM_SKIP", "IPM_SKIP"] |
 
 - **See also**:   
     [`ImagePreprocessingMode` Enumeration]({{ site.manual_interface_enum }}parameter-mode-enum.html#imagepreprocessingmode)
