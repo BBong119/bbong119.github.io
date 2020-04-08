@@ -39,8 +39,8 @@ sourceCodeUrl: /dbr-detailed-info/manual/parameters/index.md
 
  | Parameter Name | Description |
  | -------------- | ----------- | 
- | `ImageParameter..BarcodeFormatIds` | Sets the formats of the barcode to be read. Barcode formats can be combined. |
- | `ImageParameter.BarcodeFormatIds_2` | Sets the formats of the barcode in BarcodeFormat group 2 to be read. Barcode formats in BarcodeFormat group 2 can be combined. |
+ | [`ImageParameter.BarcodeFormatIds`](imageParmeter/format-control.md#barcodeformatids) | Sets the formats of the barcode to be read. Barcode formats can be combined. |
+ | [`ImageParameter.BarcodeFormatIds_2`](imageParmeter/format-control.md#barcodeformatids_2) | Sets the formats of the barcode in BarcodeFormat group 2 to be read. Barcode formats in BarcodeFormat group 2 can be combined. |
  
  
 ### Image Process Control
