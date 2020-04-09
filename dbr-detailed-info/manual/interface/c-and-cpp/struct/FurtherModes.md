@@ -1,3 +1,10 @@
+---
+layout: manual-interface-struct
+id: interface_struct_FurtherModes
+sourceCodeUrl: /dbr-detailed-info/manual/interface/c-and-cpp/struct/FurtherModes.md
+---
+
+
 # FurtherModes
 Stores the FurtherModes. 
 
