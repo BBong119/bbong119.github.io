@@ -1,3 +1,10 @@
+---
+layout: manual-interface-struct
+id: interface_struct_Contour
+sourceCodeUrl: /dbr-detailed-info/manual/interface/c-and-cpp/struct/Contour.md
+---
+
+
 # Contour
 Stores the contour information.
 
