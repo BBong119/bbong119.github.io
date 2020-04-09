@@ -1,3 +1,10 @@
+---
+layout: manual-interface-struct
+id: interface_struct_DBRPoint
+sourceCodeUrl: /dbr-detailed-info/manual/interface/c-and-cpp/struct/DBRPoint.md
+---
+
+
 # DBRPoint
 Stores an x- and y-coordinate pair in two-dimensional space.
 
