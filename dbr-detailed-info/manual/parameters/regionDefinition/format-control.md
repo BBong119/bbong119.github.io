@@ -35,6 +35,11 @@ If you already know the barcode type(s) before performing barcode reading, speci
 ```
 
 
+
+&nbsp;
+
+
+
 ## BarcodeFormatIds_2 
 Sets which types of barcode(s) in BarcodeFormat group 2 to be read in this region.  
 
