@@ -1,3 +1,10 @@
+---
+layout: manual-interface-struct
+id: interface_struct_TextResult
+sourceCodeUrl: /dbr-detailed-info/manual/interface/c-and-cpp/struct/TextResult.md
+---
+
+
 # TextResult
 Stores the text result.
 
