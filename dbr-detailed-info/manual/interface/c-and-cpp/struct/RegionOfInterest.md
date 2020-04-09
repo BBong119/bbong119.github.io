@@ -1,3 +1,10 @@
+---
+layout: manual-interface-struct
+id: interface_struct_RegionOfInterest
+sourceCodeUrl: /dbr-detailed-info/manual/interface/c-and-cpp/struct/RegionOfInterest.md
+---
+
+
 # RegionOfInterest
 Stores the region of interest.  
 
