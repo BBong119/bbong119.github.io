@@ -1,3 +1,10 @@
+---
+layout: manual-interface-struct
+id: interface_struct_SamplingImageData
+sourceCodeUrl: /dbr-detailed-info/manual/interface/c-and-cpp/struct/SamplingImageData.md
+---
+
+
 # SamplingImageData
 Stores the sampling image data.
 
