@@ -1,3 +1,10 @@
+---
+layout: manual-interface-struct
+id: interface_struct_ImageData
+sourceCodeUrl: /dbr-detailed-info/manual/interface/c-and-cpp/struct/ImageData.md
+---
+
+
 # ImageData
 Stores the image data.  
 
