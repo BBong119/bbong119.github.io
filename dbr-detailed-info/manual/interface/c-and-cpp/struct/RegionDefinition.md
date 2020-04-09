@@ -1,3 +1,10 @@
+---
+layout: manual-interface-struct
+id: interface_struct_RegionDefinition
+sourceCodeUrl: /dbr-detailed-info/manual/interface/c-and-cpp/struct/RegionDefinition.md
+---
+
+
 # RegionDefinition
 Stores the region information.  
 
