@@ -1,3 +1,10 @@
+---
+layout: manual-interface-struct
+id: interface_struct_PublicRuntimeSettings
+sourceCodeUrl: /dbr-detailed-info/manual/interface/c-and-cpp/struct/PublicRuntimeSettings.md
+---
+
+
 # PublicRuntimeSettings
 Defines a struct to configure the barcode reading runtime settings. These settings control the barcode recognition process such as which barcode types to decode.
 
