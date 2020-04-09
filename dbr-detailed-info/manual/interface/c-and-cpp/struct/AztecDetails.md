@@ -1,3 +1,10 @@
+---
+layout: manual-interface-struct
+id: interface_struct_AztecDetails
+sourceCodeUrl: /dbr-detailed-info/manual/interface/c-and-cpp/struct/AztecDetails.md
+---
+
+
 # AztecDetails
 Stores the Aztec details.
   
