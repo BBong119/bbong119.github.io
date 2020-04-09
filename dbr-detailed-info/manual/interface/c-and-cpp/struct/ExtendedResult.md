@@ -1,3 +1,9 @@
+---
+layout: manual-interface-struct
+id: interface_struct_ExtendedResult
+sourceCodeUrl: /dbr-detailed-info/manual/interface/c-and-cpp/struct/ExtendedResult.md
+---
+
 
 # ExtendedResult
 Stores the extended result. 
