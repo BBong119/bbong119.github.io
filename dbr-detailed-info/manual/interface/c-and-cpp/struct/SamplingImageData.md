@@ -1,5 +1,5 @@
 # SamplingImageData
-  
+Stores the sampling image data.
 
 ## Typedefs
 
