@@ -1,3 +1,10 @@
+---
+layout: manual-interface-struct
+id: interface_struct_LocalizationResult
+sourceCodeUrl: /dbr-detailed-info/manual/interface/c-and-cpp/struct/LocalizationResult.md
+---
+
+
 # LocalizationResult
 Stores the localization result.
 
