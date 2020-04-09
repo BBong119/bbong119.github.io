@@ -1,3 +1,10 @@
+---
+layout: manual-interface-struct
+id: interface_struct_LineSegment
+sourceCodeUrl: /dbr-detailed-info/manual/interface/c-and-cpp/struct/LineSegment.md
+---
+
+
 # LineSegment
 Stores line segment data.
 
