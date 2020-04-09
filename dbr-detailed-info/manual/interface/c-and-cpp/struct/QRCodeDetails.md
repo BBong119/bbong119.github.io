@@ -1,3 +1,10 @@
+---
+layout: manual-interface-struct
+id: interface_struct_QRCodeDetails
+sourceCodeUrl: /dbr-detailed-info/manual/interface/c-and-cpp/struct/QRCodeDetails.md
+---
+
+
 # QRCodeDetails
 Stores the QRCode details.  
 
