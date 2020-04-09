@@ -1,3 +1,9 @@
+---
+layout: manual-interface-struct
+id: interface_struct_OneDCodeDetails
+sourceCodeUrl: /dbr-detailed-info/manual/interface/c-and-cpp/struct/OneDCodeDetails.md
+---
+
 # OneDCodeDetails
 Stores the OneD code details.
 
