@@ -1,3 +1,10 @@
+---
+layout: manual-interface-struct
+id: interface_struct_PDF417Details
+sourceCodeUrl: /dbr-detailed-info/manual/interface/c-and-cpp/struct/PDF417Details.md
+---
+
+
 # PDF417Details
 Stores the PDF417 details.
 
