@@ -1,3 +1,10 @@
+---
+layout: manual-interface-struct
+id: interface_struct_main
+sourceCodeUrl: /dbr-detailed-info/manual/interface/c-and-cpp/struct/index.md
+---
+
+
 ### Dynamsoft Barcode Reader SDK - C and C++ Struct
 
  | Struct | Description |
