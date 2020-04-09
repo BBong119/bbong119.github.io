@@ -1,3 +1,10 @@
+---
+layout: manual-interface-struct
+id: interface_struct_IntermediateResultArray
+sourceCodeUrl: /dbr-detailed-info/manual/interface/c-and-cpp/struct/IntermediateResultArray.md
+---
+
+
 # IntermediateResultArray
 Stores the intermediate result array.
 
