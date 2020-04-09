@@ -1,3 +1,10 @@
+---
+layout: manual-interface-struct
+id: interface_struct_FrameDecodingParameters
+sourceCodeUrl: /dbr-detailed-info/manual/interface/c-and-cpp/struct/FrameDecodingParameters.md
+---
+
+
 # FrameDecodingParameters
 Defines a struct to configure the frame decoding Parameters.  
 
