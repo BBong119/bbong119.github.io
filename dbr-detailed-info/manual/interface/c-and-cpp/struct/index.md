@@ -5,7 +5,7 @@ sourceCodeUrl: /dbr-detailed-info/manual/interface/c-and-cpp/struct/index.md
 ---
 
 
-### Dynamsoft Barcode Reader SDK - C and C++ Struct
+# Dynamsoft Barcode Reader SDK - C and C++ Struct
 
  | Struct | Description |
  | ------ | ----------- |
