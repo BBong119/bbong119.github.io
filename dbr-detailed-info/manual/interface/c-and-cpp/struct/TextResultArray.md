@@ -1,3 +1,10 @@
+---
+layout: manual-interface-struct
+id: interface_struct_TextResultArray
+sourceCodeUrl: /dbr-detailed-info/manual/interface/c-and-cpp/struct/TextResultArray.md
+---
+
+
 # TextResultArray
 Stores the text result array.  
 
