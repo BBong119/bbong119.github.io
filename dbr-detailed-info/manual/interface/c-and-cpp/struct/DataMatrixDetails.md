@@ -1,3 +1,10 @@
+---
+layout: manual-interface-struct
+id: interface_struct_DataMatrixDetails
+sourceCodeUrl: /dbr-detailed-info/manual/interface/c-and-cpp/struct/DataMatrixDetails.md
+---
+
+
 # DataMatrixDetails
 Stores the DataMatrix details.
 
