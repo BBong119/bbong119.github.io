@@ -75,11 +75,11 @@ sourceCodeUrl: /dbr-detailed-info/manual/parameters/imageParmeter/DPMCodeReading
 
 
 #### As `PublicRuntimeSettings` Member
-`DPMCodeReadingModes` is a [`DPMCodeReadingMode`]({{ site.manual_interface_enum }}result-enum.html#intermediateresultsavingmode) array defines in `furtherModes` which is a struct member of `PublicRuntimeSettings`. It is used for setting the modes and the priority for DPM code reading. Default value will be used if there is no manual setting.
+`DPMCodeReadingModes` is a [`DPMCodeReadingMode`]({{ site.manual_interface_enum }}parameter-mode-enum.html#dpmcodereadingmode) array defines in `furtherModes` which is a struct member of `PublicRuntimeSettings`. It is used for setting the modes and the priority for DPM code reading. Default value will be used if there is no manual setting.
 
 | Struct |	Struct Member Name | Value Type |
 | ------ | ------------------ | ---------- |
-| [`PublicRuntimeSettings`]({{ site.manual_interface_struct }}PublicRuntimeSettings.html)->[`furtherModes`]({{ site.manual_interface_struct }}PublicRuntimeSettings.html#furthermodes) | [`dpmCodeReadingModes`]({{ site.manual_interface_struct }}FurtherModes.html#dpmcodereadingmodes)) | [`DPMCodeReadingMode`]({{ site.manual_interface_enum }}parameter-mode-enum.html#dpmcodereadingmode)[8] |
+| [`PublicRuntimeSettings`]({{ site.manual_interface_struct }}PublicRuntimeSettings.html)->[`furtherModes`]({{ site.manual_interface_struct }}PublicRuntimeSettings.html#furthermodes) | [`dpmCodeReadingModes`]({{ site.manual_interface_struct }}FurtherModes.html#dpmcodereadingmodes) | [`DPMCodeReadingMode`]({{ site.manual_interface_enum }}parameter-mode-enum.html#dpmcodereadingmode)[8] |
 
 **See Also**    
 - [`PublicRuntimeSettings` Struct]({{ site.manual_interface_struct }}PublicRuntimeSettings.html)
