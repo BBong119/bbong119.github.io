@@ -104,10 +104,10 @@ Specifies the y-coordinate of the top-left corner of the region in percentage. T
     "AccompanyingTextRecognitionModes": [
         {
             "Mode": "ATRM_GENERAL",
-            "BottomTextPercentageSize": 50, 
-            "LeftTextPercentageSize": 50,
-            "RightTextPercentageSize": 50, 
-            "TopTextPercentageSize": 50
+            "RegionBottom": 50, 
+            "RegionLeft": 50,
+            "RegionRight": 50, 
+            "RegionTop": 50
         }
 ]
 }
