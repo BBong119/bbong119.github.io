@@ -90,9 +90,9 @@ Sets the sensitivity used for colour categorization.
 
 | Struct |	Struct Member Name | Value Type |
 | ------ | ------------------ | ---------- |
-| [`PublicRuntimeSettings`]({{ site.manual_interface_struct }}PublicRuntimeSettings.html)->[`furtherModes`]({{ site.manual_interface_struct }}PublicRuntimeSettings.html#furthermodes) | [`colourClusteringModes`]({{ site.manual_interface_struct }}FurtherModes.html#colourclusteringmodes)) | [`ColourClusteringMode`]({{ site.manual_interface_enum }}parameter-mode-enum.html#colourclusteringmode)[8] |
+| [`PublicRuntimeSettings`]({{ site.manual_interface_struct }}PublicRuntimeSettings.html)->[`furtherModes`]({{ site.manual_interface_struct }}PublicRuntimeSettings.html#furthermodes) | [`colourClusteringModes`]({{ site.manual_interface_struct }}FurtherModes.html#colourclusteringmodes) | [`ColourClusteringMode`]({{ site.manual_interface_enum }}parameter-mode-enum.html#colourclusteringmode)[8] |
 
 **See Also**    
 - [`PublicRuntimeSettings` Struct]({{ site.manual_interface_struct }}PublicRuntimeSettings.html)
-- [`FurtherModes`]({{ site.manual_interface_struct }}FurtherModes.html)
+- [`FurtherModes` Struct]({{ site.manual_interface_struct }}FurtherModes.html)
 - [`ColourClusteringMode` Enumeration]({{ site.manual_interface_enum }}parameter-mode-enum.html#colourclusteringmode)
