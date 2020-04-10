@@ -137,10 +137,15 @@ Sets the percentage of the top accompanying text zone comparing to the barcode z
 
 | Struct |	Struct Member Name | Value Type |
 | ------ | ------------------ | ---------- |
-| [`PublicRuntimeSettings`]({{ site.manual_interface_struct }}PublicRuntimeSettings.html)->[`furtherModes`]({{ site.manual_interface_struct }}PublicRuntimeSettings.html#furthermodes) | [`textAssistedCorrectionMode`]({{ site.manual_interface_struct }}FurtherModes.html#textassistedcorrectionmode)) | [`textAssistedCorrectionMode`]({{ site.manual_interface_enum }}parameter-mode-enum.html#textassistedcorrectionmode) |
+| [`PublicRuntimeSettings`]({{ site.manual_interface_struct }}PublicRuntimeSettings.html)->[`furtherModes`]({{ site.manual_interface_struct }}PublicRuntimeSettings.html#furthermodes) | [`textAssistedCorrectionMode`]({{ site.manual_interface_struct }}FurtherModes.html#textassistedcorrectionmode) | [`textAssistedCorrectionMode`]({{ site.manual_interface_enum }}parameter-mode-enum.html#textassistedcorrectionmode) |
+
+
+**Remark**   
+[`GetModeArgument`]({{ site.manual_interface_cpp }}CBarcodeReader/methods/parameter-and-runtime-settings-basic.html#getmodeargument) and [`SetModeArgument`]({{ site.manual_interface_cpp }}CBarcodeReader/methods/parameter-and-runtime-settings-basic.html#setmodeargument) need to be called for getting or setting the value of [arguments](#mode-arguments).
+
 
 **See Also**    
 - [`PublicRuntimeSettings` Struct]({{ site.manual_interface_struct }}PublicRuntimeSettings.html)
-- [`FurtherModes`]({{ site.manual_interface_struct }}FurtherModes.html)
+- [`FurtherModes` Struct]({{ site.manual_interface_struct }}FurtherModes.html)
 - [`textAssistedCorrectionMode` Enumeration]({{ site.manual_interface_enum }}result-enum.html#textassistedcorrectionmode)
 
