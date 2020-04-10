@@ -75,13 +75,13 @@ sourceCodeUrl: /dbr-detailed-info/manual/parameters/imageParmeter/GrayscaleTrans
 
 
 #### As `PublicRuntimeSettings` Member
-`GrayscaleTransformationModes` is a [`GrayscaleTransformationMode`]({{ site.manual_interface_enum }}result-enum.html#intermediateresultsavingmode) array defines in `furtherModes` which is a struct member of `PublicRuntimeSettings`. It is used for setting the modes and the priority for the grayscale image conversion. Default value will be used if there is no manual setting.
+`GrayscaleTransformationModes` is a [`GrayscaleTransformationMode`]({{ site.manual_interface_enum }}parameter-mode-enum.html#grayscaletransformationmode) array defines in `furtherModes` which is a struct member of `PublicRuntimeSettings`. It is used for setting the modes and the priority for the grayscale image conversion. Default value will be used if there is no manual setting.
 
 | Struct |	Struct Member Name | Value Type |
 | ------ | ------------------ | ---------- |
-| [`PublicRuntimeSettings`]({{ site.manual_interface_struct }}PublicRuntimeSettings.html)->[`furtherModes`]({{ site.manual_interface_struct }}PublicRuntimeSettings.html#furthermodes) | [`grayscaleTransformationModes`]({{ site.manual_interface_struct }}FurtherModes.html#grayscaletransformationmodes)) | [`GrayscaleTransformationMode`]({{ site.manual_interface_enum }}parameter-mode-enum.html#grayscaletransformationmode)[8] |
+| [`PublicRuntimeSettings`]({{ site.manual_interface_struct }}PublicRuntimeSettings.html)->[`furtherModes`]({{ site.manual_interface_struct }}PublicRuntimeSettings.html#furthermodes) | [`grayscaleTransformationModes`]({{ site.manual_interface_struct }}FurtherModes.html#grayscaletransformationmodes) | [`GrayscaleTransformationMode`]({{ site.manual_interface_enum }}parameter-mode-enum.html#grayscaletransformationmode)[8] |
 
 **See Also**    
 - [`PublicRuntimeSettings` Struct]({{ site.manual_interface_struct }}PublicRuntimeSettings.html)
-- [`FurtherModes`]({{ site.manual_interface_struct }}FurtherModes.html)
+- [`FurtherModes` Struct]({{ site.manual_interface_struct }}FurtherModes.html)
 - [`GrayscaleTransformationMode` Enumeration]({{ site.manual_interface_enum }}parameter-mode-enum.html#grayscaletransformationmode)
