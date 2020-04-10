@@ -149,13 +149,17 @@ Constant subtracted from the mean or weighted mean. Normally, it is positive but
 
 
 #### As `PublicRuntimeSettings` Member
-`BinarizationModes` is a [`BinarizationMode`]({{ site.manual_interface_enum }}result-enum.html#intermediateresultsavingmode) array defines in `furtherModes` which is a struct member of `PublicRuntimeSettings`. It is used for setting the modes and the priority  for binarization. Default value will be used if there is no manual setting.
+`BinarizationModes` is a [`BinarizationMode`]({{ site.manual_interface_enum }}parameter-mode-enum.html#binarizationmode) array defines in `furtherModes` which is a struct member of `PublicRuntimeSettings`. It is used for setting the modes and the priority  for binarization. Default value will be used if there is no manual setting.
 
 | Struct |	Struct Member Name | Value Type |
 | ------ | ------------------ | ---------- |
-| [`PublicRuntimeSettings`]({{ site.manual_interface_struct }}PublicRuntimeSettings.html)->[`furtherModes`]({{ site.manual_interface_struct }}PublicRuntimeSettings.html#furthermodes) | [`binarizationModes`]({{ site.manual_interface_struct }}FurtherModes.html#binarizationmodes)) | [`BinarizationMode`]({{ site.manual_interface_enum }}parameter-mode-enum.html#binarizationmode)[8] |
+| [`PublicRuntimeSettings`]({{ site.manual_interface_struct }}PublicRuntimeSettings.html)->[`furtherModes`]({{ site.manual_interface_struct }}PublicRuntimeSettings.html#furthermodes) | [`binarizationModes`]({{ site.manual_interface_struct }}FurtherModes.html#binarizationmodes) | [`BinarizationMode`]({{ site.manual_interface_enum }}parameter-mode-enum.html#binarizationmode)[8] |
+
+**Remark**   
+[`GetModeArgument`]({{ site.manual_interface_cpp }}CBarcodeReader/methods/parameter-and-runtime-settings-basic.html#getmodeargument) and [`SetModeArgument`]({{ site.manual_interface_cpp }}CBarcodeReader/methods/parameter-and-runtime-settings-basic.html#setmodeargument) need to be called for getting or setting the value of [arguments](#mode-arguments).
+
 
 **See Also**    
 - [`PublicRuntimeSettings` Struct]({{ site.manual_interface_struct }}PublicRuntimeSettings.html)
-- [`FurtherModes`]({{ site.manual_interface_struct }}FurtherModes.html)
+- [`FurtherModes` Struct]({{ site.manual_interface_struct }}FurtherModes.html)
 - [`BinarizationMode` Enumeration]({{ site.manual_interface_enum }}parameter-mode-enum.html#binarizationmode)
