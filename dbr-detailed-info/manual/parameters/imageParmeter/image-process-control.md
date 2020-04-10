@@ -65,7 +65,7 @@ Sets the specific pages or the range of pages of a file (.tiff or .pdf) for barc
 Sets the output image resolution.
 
 **Remarks**   
-When you are trying to decode a PDF file using DecodeFile method, the library will convert the pdf file to image(s) first, then perform barcode recognition.    
+When you are trying to decode a PDF file using `DecodeFile` method, the library will convert the pdf file to image(s) first, then perform barcode recognition.    
 To ensure your barcodes in the PDF files are readable, please set the resolution to at least 300 dpi.    
 
 
