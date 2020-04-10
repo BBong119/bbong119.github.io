@@ -30,7 +30,7 @@ sourceCodeUrl: /dbr-detailed-info/manual/parameters/imageParmeter/IntermediateRe
     
 #### Mode Arguments
 - [FolderPath](#folderpath)
-- [RecordsetSizeOfLatestImages](recordsetsizeoflatestimages)
+- [RecordsetSizeOfLatestImages](#recordsetsizeoflatestimages)
  
 ##### FolderPath 
 Sets the path of the output folder which stores intermediate results.   
