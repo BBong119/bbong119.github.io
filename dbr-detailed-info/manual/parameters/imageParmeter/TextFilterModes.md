@@ -102,15 +102,20 @@ Sets the sensitivity used for text filtering.
 
 
 #### As `PublicRuntimeSettings` Member
-`TextFilterModes` is a [`TextFilterMode`]({{ site.manual_interface_enum }}result-enum.html#intermediateresultsavingmode) array defines in `furtherModes` which is a struct member of `PublicRuntimeSettings`. It is used for setting the modes and the priority for text filter. Default value will be used if there is no manual setting.
+`TextFilterModes` is a [`TextFilterMode`]({{ site.manual_interface_enum }}parameter-mode-enum.html#textfiltermode) array defines in `furtherModes` which is a struct member of `PublicRuntimeSettings`. It is used for setting the modes and the priority for text filter. Default value will be used if there is no manual setting.
 
 | Struct |	Struct Member Name | Value Type |
 | ------ | ------------------ | ---------- |
-| [`PublicRuntimeSettings`]({{ site.manual_interface_struct }}PublicRuntimeSettings.html)->[`furtherModes`]({{ site.manual_interface_struct }}PublicRuntimeSettings.html#furthermodes) | [`textFilterModes`]({{ site.manual_interface_struct }}FurtherModes.html#textfiltermodes)) | [`TextFilterMode`]({{ site.manual_interface_enum }}parameter-mode-enum.html#textfiltermode)[8] |
+| [`PublicRuntimeSettings`]({{ site.manual_interface_struct }}PublicRuntimeSettings.html)->[`furtherModes`]({{ site.manual_interface_struct }}PublicRuntimeSettings.html#furthermodes) | [`textFilterModes`]({{ site.manual_interface_struct }}FurtherModes.html#textfiltermodes) | [`TextFilterMode`]({{ site.manual_interface_enum }}parameter-mode-enum.html#textfiltermode)[8] |
+
+
+**Remark**   
+[`GetModeArgument`]({{ site.manual_interface_cpp }}CBarcodeReader/methods/parameter-and-runtime-settings-basic.html#getmodeargument) and [`SetModeArgument`]({{ site.manual_interface_cpp }}CBarcodeReader/methods/parameter-and-runtime-settings-basic.html#setmodeargument) need to be called for getting or setting the value of [arguments](#mode-arguments).
+
 
 **See Also**    
 - [`PublicRuntimeSettings` Struct]({{ site.manual_interface_struct }}PublicRuntimeSettings.html)
-- [`FurtherModes`]({{ site.manual_interface_struct }}FurtherModes.html)
+- [`FurtherModes` Struct]({{ site.manual_interface_struct }}FurtherModes.html)
 - [`TextFilterMode` Enumeration]({{ site.manual_interface_enum }}parameter-mode-enum.html#textfiltermode)
 
 
