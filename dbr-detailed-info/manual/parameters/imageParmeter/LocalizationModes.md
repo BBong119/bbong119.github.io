@@ -105,11 +105,16 @@ Sets the scan direction when searching barcode.
 
 
 #### As `PublicRuntimeSettings` Member
-`LocalizationModes` as a member of `PublicRuntimeSettings` struct is a [`LocalizationMode`]({{ site.manual_interface_enum }}result-enum.html#intermediateresultsavingmode) array for setting the modes and the priority for localization algorithms. Default value will be used if there is no manual setting.
+`LocalizationModes` as a member of `PublicRuntimeSettings` struct is a [`LocalizationMode`]({{ site.manual_interface_enum }}parameter-mode-enum.html#localizationmode) array for setting the modes and the priority for localization algorithms. Default value will be used if there is no manual setting.
 
 | Struct |	Struct Member Name | Value Type |
 | ------ | ------------------ | ---------- |
-| [`PublicRuntimeSettings`]({{ site.manual_interface_struct }}PublicRuntimeSettings.html) | [`localizationModes`]({{ site.manual_interface_struct }}PublicRuntimeSettings.html#localizationmodes)) | [`LocalizationMode`]({{ site.manual_interface_enum }}parameter-mode-enum.html#localizationmode)[8] |
+| [`PublicRuntimeSettings`]({{ site.manual_interface_struct }}PublicRuntimeSettings.html) | [`localizationModes`]({{ site.manual_interface_struct }}PublicRuntimeSettings.html#localizationmodes) | [`LocalizationMode`]({{ site.manual_interface_enum }}parameter-mode-enum.html#localizationmode)[8] |
+
+
+**Remark**   
+[`GetModeArgument`]({{ site.manual_interface_cpp }}CBarcodeReader/methods/parameter-and-runtime-settings-basic.html#getmodeargument) and [`SetModeArgument`]({{ site.manual_interface_cpp }}CBarcodeReader/methods/parameter-and-runtime-settings-basic.html#setmodeargument) need to be called for getting or setting the value of [arguments](#mode-arguments).
+
 
 **See Also**    
 - [`PublicRuntimeSettings` Struct]({{ site.manual_interface_struct }}PublicRuntimeSettings.html)
