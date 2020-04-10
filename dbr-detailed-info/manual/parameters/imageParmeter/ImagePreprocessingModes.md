@@ -143,13 +143,18 @@ Default values will be used if there is no manual setting.
 
 
 #### As `PublicRuntimeSettings` Member
-`ImagePreprocessingModes` is a [`ImagePreprocessingMode`]({{ site.manual_interface_enum }}result-enum.html#intermediateresultsavingmode) array defines in `furtherModes` which is a struct member of `PublicRuntimeSettings`. It is used for setting the modes and the priority for image preprocessing algorithms. Default value will be used if there is no manual setting.
+`ImagePreprocessingModes` is a [`ImagePreprocessingMode`]({{ site.manual_interface_enum }}parameter-mode-enum.html#imagepreprocessingmode) array defines in `furtherModes` which is a struct member of `PublicRuntimeSettings`. It is used for setting the modes and the priority for image preprocessing algorithms. Default value will be used if there is no manual setting.
 
 | Struct |	Struct Member Name | Value Type |
 | ------ | ------------------ | ---------- |
-| [`PublicRuntimeSettings`]({{ site.manual_interface_struct }}PublicRuntimeSettings.html)->[`furtherModes`]({{ site.manual_interface_struct }}PublicRuntimeSettings.html#furthermodes) | [`imagePreprocessingModes`]({{ site.manual_interface_struct }}FurtherModes.html#imagepreprocessingmodes)) | [`ImagePreprocessingMode`]({{ site.manual_interface_enum }}parameter-mode-enum.html#imagepreprocessingmode)[8] |
+| [`PublicRuntimeSettings`]({{ site.manual_interface_struct }}PublicRuntimeSettings.html)->[`furtherModes`]({{ site.manual_interface_struct }}PublicRuntimeSettings.html#furthermodes) | [`imagePreprocessingModes`]({{ site.manual_interface_struct }}FurtherModes.html#imagepreprocessingmodes) | [`ImagePreprocessingMode`]({{ site.manual_interface_enum }}parameter-mode-enum.html#imagepreprocessingmode)[8] |
+
+
+**Remark**   
+[`GetModeArgument`]({{ site.manual_interface_cpp }}CBarcodeReader/methods/parameter-and-runtime-settings-basic.html#getmodeargument) and [`SetModeArgument`]({{ site.manual_interface_cpp }}CBarcodeReader/methods/parameter-and-runtime-settings-basic.html#setmodeargument) need to be called for getting or setting the value of [arguments](#mode-arguments).
+
 
 **See Also**    
 - [`PublicRuntimeSettings` Struct]({{ site.manual_interface_struct }}PublicRuntimeSettings.html)
-- [`FurtherModes`]({{ site.manual_interface_struct }}FurtherModes.html)
+- [`FurtherModes` Struct]({{ site.manual_interface_struct }}FurtherModes.html)
 - [`ImagePreprocessingMode` Enumeration]({{ site.manual_interface_enum }}parameter-mode-enum.html#imagepreprocessingmode)
