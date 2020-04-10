@@ -91,14 +91,18 @@ Sets the minimum image dimension (in pixels) to filter the text.
 
 
 #### As `PublicRuntimeSettings` Member
-`BarcodeColourModes` is a [`BarcodeColourMode`]({{ site.manual_interface_enum }}result-enum.html#intermediateresultsavingmode) array defines in `furtherModes` which is a struct member of `PublicRuntimeSettings`. It is used for setting the modes and the priority Sets for the barcode colour mode used to process the barcode zone. Default value will be used if there is no manual setting.
+`BarcodeColourModes` is a [`BarcodeColourMode`]({{ site.manual_interface_enum }}parameter-mode-enum.html#barcodecolourmode) array defines in `furtherModes` which is a struct member of `PublicRuntimeSettings`. It is used for setting the modes and the priority Sets for the barcode colour mode used to process the barcode zone. Default value will be used if there is no manual setting.
 
 | Struct |	Struct Member Name | Value Type |
 | ------ | ------------------ | ---------- |
-| [`PublicRuntimeSettings`]({{ site.manual_interface_struct }}PublicRuntimeSettings.html)->[`furtherModes`]({{ site.manual_interface_struct }}PublicRuntimeSettings.html#furthermodes) | [`barcodeColourModes`]({{ site.manual_interface_struct }}FurtherModes.html#barcodecolourmodes)) | [`BarcodeColourMode`]({{ site.manual_interface_enum }}parameter-mode-enum.html#barcodecolourmode)[8] |
+| [`PublicRuntimeSettings`]({{ site.manual_interface_struct }}PublicRuntimeSettings.html)->[`furtherModes`]({{ site.manual_interface_struct }}PublicRuntimeSettings.html#furthermodes) | [`barcodeColourModes`]({{ site.manual_interface_struct }}FurtherModes.html#barcodecolourmodes) | [`BarcodeColourMode`]({{ site.manual_interface_enum }}parameter-mode-enum.html#barcodecolourmode)[8] |
+
+**Remark**   
+[`GetModeArgument`]({{ site.manual_interface_cpp }}CBarcodeReader/methods/parameter-and-runtime-settings-basic.html#getmodeargument) and [`SetModeArgument`]({{ site.manual_interface_cpp }}CBarcodeReader/methods/parameter-and-runtime-settings-basic.html#setmodeargument) need to be called for getting or setting the value of [arguments](#mode-arguments).
+
 
 **See Also**    
 - [`PublicRuntimeSettings` Struct]({{ site.manual_interface_struct }}PublicRuntimeSettings.html)
-- [`FurtherModes`]({{ site.manual_interface_struct }}FurtherModes.html)
+- [`FurtherModes` Struct]({{ site.manual_interface_struct }}FurtherModes.html)
 - [`BarcodeColourMode` Enumeration]({{ site.manual_interface_enum }}parameter-mode-enum.html#barcodecolourmode)
 
