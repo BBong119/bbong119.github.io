@@ -92,6 +92,9 @@ Sets the sensitivity used for colour categorization.
 | ------ | ------------------ | ---------- |
 | [`PublicRuntimeSettings`]({{ site.manual_interface_struct }}PublicRuntimeSettings.html)->[`furtherModes`]({{ site.manual_interface_struct }}PublicRuntimeSettings.html#furthermodes) | [`colourClusteringModes`]({{ site.manual_interface_struct }}FurtherModes.html#colourclusteringmodes) | [`ColourClusteringMode`]({{ site.manual_interface_enum }}parameter-mode-enum.html#colourclusteringmode)[8] |
 
+**Remark**   
+[`GetModeArgument`]({{ site.manual_interface_cpp }}CBarcodeReader/methods/parameter-and-runtime-settings-basic.html#getmodeargument) and [`SetModeArgument`]({{ site.manual_interface_cpp }}CBarcodeReader/methods/parameter-and-runtime-settings-basic.html#setmodeargument) need to be called for getting or setting the value of [arguments](#mode-arguments).
+
 **See Also**    
 - [`PublicRuntimeSettings` Struct]({{ site.manual_interface_struct }}PublicRuntimeSettings.html)
 - [`FurtherModes` Struct]({{ site.manual_interface_struct }}FurtherModes.html)
