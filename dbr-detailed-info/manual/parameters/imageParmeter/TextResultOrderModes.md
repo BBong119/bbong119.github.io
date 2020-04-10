@@ -54,7 +54,7 @@ sourceCodeUrl: /dbr-detailed-info/manual/parameters/imageParmeter/TextResultOrde
 
 
 #### As `PublicRuntimeSettings` Member
-`TextResultOrderModes` as a member of `PublicRuntimeSettings` struct is a [`TextResultOrderMode`]({{ site.manual_interface_enum }}result-enum.html#intermediateresultsavingmode) array for setting modes and the priority for the order of the text results returned. Default value will be used if there is no manual setting.
+`TextResultOrderModes` as a member of `PublicRuntimeSettings` struct is a [`TextResultOrderMode`]({{ site.manual_interface_enum }}result-enum.html#textresultordermode) array for setting modes and the priority for the order of the text results returned. Default value will be used if there is no manual setting.
 
 | Struct |	Struct Member Name | Value Type |
 | ------ | ------------------ | ---------- |
