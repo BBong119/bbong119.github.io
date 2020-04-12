@@ -2,6 +2,7 @@
 layout: manual-parameter
 id: parameter_region_cost
 sourceCodeUrl: /dbr-detailed-info/manual/parameters/regionDefinition/cost-control.md
+objectName: regionDefinition
 ---
 
 
