@@ -170,21 +170,21 @@
 		  	var nav1s = navWrap.getElementsByTagName("span");
 			var nav2s = document.getElementsByName("listLevel2");
 			
-			if (String({{ page.objectName }}) == "imageParameter"){
+			if ("{{ page.objectName }}" == "imageParameter"){
 				nav2s[0].style.display = "block";
 			}
 			else{
 				nav2s[0].style.display = "none";
 			}
 								  
-			if (String({{ page.objectName }}) == "regionDefinition"){
+			if ("{{ page.objectName }}" == "regionDefinition"){
 				nav2s[1].style.display = "block";
 			}
 			else{
 				nav2s[1].style.display = "none";
 			}
 								  
-			if (String({{ page.objectName }}) == "formatSpecification"){
+			if ("{{ page.objectName }}" == "formatSpecification"){
 				nav2s[2].style.display = "block";
 			}
 			else{
