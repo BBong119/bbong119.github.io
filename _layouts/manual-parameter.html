@@ -5,6 +5,9 @@
 {%- include head.html -%}
      
 <body>
+	<style>
+		#menuLsitContainer ul{display:none}
+	</style>
 	<div class="wrapper">
 		<div class="sideBar">	 
 			<div class="sideBarHeader">
@@ -169,13 +172,7 @@
 		  	var navWrap = document.getElementById("menuLsitContainer");
 		  	var nav1s = navWrap.getElementsByTagName("span");
 			var nav2s = document.getElementsByName("listLevel2");
-									   
-			if (nav1s.length != nav2s.length) {
-				navWrap.style.display = "block";  
-			}
-			else {
-				navWrap.style.display = "none";  
-			}
+						   
 			for(var i = 0, len = nav1s.length; i < len; i++){
    				nav1s[i].onclick=(function(i){
     					return function(){
