@@ -2,6 +2,7 @@
 layout: manual-parameter
 id: parameter_image_cost
 sourceCodeUrl: /dbr-detailed-info/manual/parameters/imageParmeter/cost-control.md
+objectName: imageParmeter
 ---
 
 # ImageParameter Object - Cost Control Parameters
