@@ -1,8 +1,8 @@
 ---
 layout: manual-parameter
 id: parameter_image_TextureDetectionModes
-sourceCodeUrl: /dbr-detailed-info/manual/parameters/imageParmeter/TextureDetectionModes.md
-objectName: imageParmeter
+sourceCodeUrl: /dbr-detailed-info/manual/parameters/imageParameter/TextureDetectionModes.md
+objectName: imageParameter
 ---
 
 
