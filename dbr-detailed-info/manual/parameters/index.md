@@ -20,66 +20,66 @@ objectName: mainPage
 
  | Parameter Name | Description |
  | -------------- | ----------- | 
- | [`ImageParameter.Name`](imageParmeter/content-organization-control.md#name) | The name of the ImageParameter object. |
- | [`ImageParameter.Description`](imageParmeter/content-organization-control.md#description) | The description of the ImageParameter object. |
- | [`ImageParameter.FormatSpecificationNameArray`](imageParmeter/content-organization-control.md#formatspecificationnamearray) | The names of the referenced FormatSpecification object(s). |
- | [`ImageParameter.RegionDefinitionNameArray`](imageParmeter/content-organization-control.md#regiondefinitionnamearray) | The names of the referenced RegionDefinition object(s). |
+ | [`ImageParameter.Name`](imageParameter/content-organization-control.md#name) | The name of the ImageParameter object. |
+ | [`ImageParameter.Description`](imageParameter/content-organization-control.md#description) | The description of the ImageParameter object. |
+ | [`ImageParameter.FormatSpecificationNameArray`](imageParameter/content-organization-control.md#formatspecificationnamearray) | The names of the referenced FormatSpecification object(s). |
+ | [`ImageParameter.RegionDefinitionNameArray`](imageParameter/content-organization-control.md#regiondefinitionnamearray) | The names of the referenced RegionDefinition object(s). |
 
 
 ### Cost Control
 
  | Parameter Name | Description |
  | -------------- | ----------- | 
- | [`ImageParameter.TerminatePhase`](imageParmeter/cost-control.md#terminatephase) | Sets the phase where the algorithm stops. |
- | [`ImageParameter.Timeout`](imageParmeter/cost-control.md#timeout) | Sets the maximum amount of time (in milliseconds) that should be spent searching for a barcode per page. |
- | [`ImageParameter.MaxAlgorithmThreadCount`](imageParmeter/cost-control.md#maxalgorithmthreadcount) | Sets the number of threads the image processing algorithm will use to decode barcodes. |
- | [`ImageParameter.ExpectedBarcodesCount`](imageParmeter/cost-control.md#expectedbarcodescount) | Sets the number of barcodes expected to be detected for each image. |
+ | [`ImageParameter.TerminatePhase`](imageParameter/cost-control.md#terminatephase) | Sets the phase where the algorithm stops. |
+ | [`ImageParameter.Timeout`](imageParameter/cost-control.md#timeout) | Sets the maximum amount of time (in milliseconds) that should be spent searching for a barcode per page. |
+ | [`ImageParameter.MaxAlgorithmThreadCount`](imageParameter/cost-control.md#maxalgorithmthreadcount) | Sets the number of threads the image processing algorithm will use to decode barcodes. |
+ | [`ImageParameter.ExpectedBarcodesCount`](imageParameter/cost-control.md#expectedbarcodescount) | Sets the number of barcodes expected to be detected for each image. |
 
 
 ### Format Control
 
  | Parameter Name | Description |
  | -------------- | ----------- | 
- | [`ImageParameter.BarcodeFormatIds`](imageParmeter/format-control.md#barcodeformatids) | Sets the formats of the barcode to be read. Barcode formats can be combined. |
- | [`ImageParameter.BarcodeFormatIds_2`](imageParmeter/format-control.md#barcodeformatids_2) | Sets the formats of the barcode in BarcodeFormat group 2 to be read. Barcode formats in BarcodeFormat group 2 can be combined. |
+ | [`ImageParameter.BarcodeFormatIds`](imageParameter/format-control.md#barcodeformatids) | Sets the formats of the barcode to be read. Barcode formats can be combined. |
+ | [`ImageParameter.BarcodeFormatIds_2`](imageParameter/format-control.md#barcodeformatids_2) | Sets the formats of the barcode in BarcodeFormat group 2 to be read. Barcode formats in BarcodeFormat group 2 can be combined. |
  
  
 ### Image Process Control
 
  | Parameter Name | Description |
  | -------------- | ----------- | 
- | [`ImageParameter.Pages`](imageParmeter/image-process-control.md#pages) | Sets the specific pages or the range of pages of a file (.tiff or .pdf) for barcode searching. |
- | [`ImageParameter.PDFRasterDPI`](imageParmeter/image-process-control.md#pdfrasterdpi) | Sets the output image resolution. |
- | [`ImageParameter.ScaleDownThreshold`](imageParmeter/image-process-control.md#scaledownthreshold) | Sets the threshold for the image shrinking. |
- | [`ImageParameter.ColourClusteringModes`](imageParmeter/ColourClusteringModes.md#colourclusteringmodes) | Sets the mode and priority for colour categorization. Not supported yet. |
- | [`ImageParameter.ColourConversionModes`](imageParmeter/ColourConversionModes.md#colourconversionmodes) | Sets the mode and priority for converting a colour image to a grayscale image. |
- | [`ImageParameter.GrayscaleTransformationModes`](imageParmeter/GrayscaleTransformationModes.md#grayscaletransformationmodes) | Sets the mode and priority for the grayscale image conversion. |
- | [`ImageParameter.RegionPredetectionModes`](imageParmeter/RegionPredetectionModes.md#regionpredetectionmodes) | Sets the region pre-detection mode for barcodes search. |
- | [`ImageParameter.ImagePreprocessingModes`](imageParmeter/ImagePreprocessingModes.md#imagepreprocessingmodes) | Sets the mode and priority for image preprocessing algorithms. |
- | [`ImageParameter.BinarizationModes`](imageParmeter/BinarizationModes.md#binarizationmodes) | 	Sets the mode and priority for binarization. |
- | [`ImageParameter.TextureDetectionModes`](imageParmeter/TextureDetectionModes.md#texturedetectionmodes) | 	Sets the mode and priority for texture detection. |
- | [`ImageParameter.LocalizationModes`](imageParmeter/LocalizationModes.md#localizationmodes) | 	Sets the mode and priority for localization algorithms. |
- | [`ImageParameter.TextFilterModes`](imageParmeter/TextFilterModes.md#textfiltermodes) | 	Sets the mode and priority for text filter. |
- | [`ImageParameter.TextAssistedCorrectionMode`](imageParmeter/TextAssistedCorrectionMode.md#textassistedcorrectionmode) | Sets the mode of text assisted correction for barcode decoding. Not support yet. |
- | [`ImageParameter.DPMCodeReadingModes`](imageParmeter/DPMCodeReadingModes.md#dpmcodereadingmodes) | Sets the mode and priority for DPM code reading. Not support yet. |
- | [`ImageParameter.DeformationResistingModes`](imageParmeter/DeformationResistingModes.md#deformationresistingmodes) | Sets the mode and priority for deformation resisting. |
- | [`ImageParameter.BarcodeComplementModes`](imageParmeter/BarcodeComplementModes.md#barcodecomplementmodes) | Sets the mode and priority to complement the missing parts in the barcode. |
- | [`ImageParameter.BarcodeColourModes`](imageParmeter/BarcodeColourModes.md#barcodecolourmodes) | Sets the mode and priority for the barcode colour mode used to process the barcode zone. |
- | [`ImageParameter.DeblurLevel`](imageParmeter/image-process-control.md#deblurlevel) | Sets the degree of blurriness of the barcode. |
- | [`ImageParameter.AccompanyingTextRecognitionModes`](imageParmeter/AccompanyingTextRecognitionModes.md#accompanyingtextrecognitionmodes) | Sets the mode and priority to recognize accompanying text. |
- | [`ImageParameter.ScaleUpModes`](imageParmeter/ScaleUpModes.md#scaleupmodes) | Sets the mode and priority to control the sampling methods of scale-up for linear barcodes with small module sizes. | 
- | [`ImageParameter.PDFReadingMode`](imageParmeter/image-process-control.md#pdfreadingmode) | Sets the way to detect barcodes from a PDF file when using the DecodeFile method. |
+ | [`ImageParameter.Pages`](imageParameter/image-process-control.md#pages) | Sets the specific pages or the range of pages of a file (.tiff or .pdf) for barcode searching. |
+ | [`ImageParameter.PDFRasterDPI`](imageParameter/image-process-control.md#pdfrasterdpi) | Sets the output image resolution. |
+ | [`ImageParameter.ScaleDownThreshold`](imageParameter/image-process-control.md#scaledownthreshold) | Sets the threshold for the image shrinking. |
+ | [`ImageParameter.ColourClusteringModes`](imageParameter/ColourClusteringModes.md#colourclusteringmodes) | Sets the mode and priority for colour categorization. Not supported yet. |
+ | [`ImageParameter.ColourConversionModes`](imageParameter/ColourConversionModes.md#colourconversionmodes) | Sets the mode and priority for converting a colour image to a grayscale image. |
+ | [`ImageParameter.GrayscaleTransformationModes`](imageParameter/GrayscaleTransformationModes.md#grayscaletransformationmodes) | Sets the mode and priority for the grayscale image conversion. |
+ | [`ImageParameter.RegionPredetectionModes`](imageParameter/RegionPredetectionModes.md#regionpredetectionmodes) | Sets the region pre-detection mode for barcodes search. |
+ | [`ImageParameter.ImagePreprocessingModes`](imageParameter/ImagePreprocessingModes.md#imagepreprocessingmodes) | Sets the mode and priority for image preprocessing algorithms. |
+ | [`ImageParameter.BinarizationModes`](imageParameter/BinarizationModes.md#binarizationmodes) | 	Sets the mode and priority for binarization. |
+ | [`ImageParameter.TextureDetectionModes`](imageParameter/TextureDetectionModes.md#texturedetectionmodes) | 	Sets the mode and priority for texture detection. |
+ | [`ImageParameter.LocalizationModes`](imageParameter/LocalizationModes.md#localizationmodes) | 	Sets the mode and priority for localization algorithms. |
+ | [`ImageParameter.TextFilterModes`](imageParameter/TextFilterModes.md#textfiltermodes) | 	Sets the mode and priority for text filter. |
+ | [`ImageParameter.TextAssistedCorrectionMode`](imageParameter/TextAssistedCorrectionMode.md#textassistedcorrectionmode) | Sets the mode of text assisted correction for barcode decoding. Not support yet. |
+ | [`ImageParameter.DPMCodeReadingModes`](imageParameter/DPMCodeReadingModes.md#dpmcodereadingmodes) | Sets the mode and priority for DPM code reading. Not support yet. |
+ | [`ImageParameter.DeformationResistingModes`](imageParameter/DeformationResistingModes.md#deformationresistingmodes) | Sets the mode and priority for deformation resisting. |
+ | [`ImageParameter.BarcodeComplementModes`](imageParameter/BarcodeComplementModes.md#barcodecomplementmodes) | Sets the mode and priority to complement the missing parts in the barcode. |
+ | [`ImageParameter.BarcodeColourModes`](imageParameter/BarcodeColourModes.md#barcodecolourmodes) | Sets the mode and priority for the barcode colour mode used to process the barcode zone. |
+ | [`ImageParameter.DeblurLevel`](imageParameter/image-process-control.md#deblurlevel) | Sets the degree of blurriness of the barcode. |
+ | [`ImageParameter.AccompanyingTextRecognitionModes`](imageParameter/AccompanyingTextRecognitionModes.md#accompanyingtextrecognitionmodes) | Sets the mode and priority to recognize accompanying text. |
+ | [`ImageParameter.ScaleUpModes`](imageParameter/ScaleUpModes.md#scaleupmodes) | Sets the mode and priority to control the sampling methods of scale-up for linear barcodes with small module sizes. | 
+ | [`ImageParameter.PDFReadingMode`](imageParameter/image-process-control.md#pdfreadingmode) | Sets the way to detect barcodes from a PDF file when using the DecodeFile method. |
 
 
 ### Result Control
 
  | Parameter Name | Description |
  | -------------- | ----------- | 
- | [`ImageParameter.IntermediateResultTypes`](imageParmeter/result-control.md#intermediateresulttypes) | Sets which types of intermediate result to be kept for further reference. Intermediate result types can be combined. | 
- | [`ImageParameter.IntermediateResultSavingMode`](imageParmeter/result-control.md#intermediateresultsavingmode) | Sets the mode for saving the intermediate result. | 
- | [`ImageParameter.ResultCoordinateType`](imageParmeter/result-control.md#resultcoordinatetype) | Specifies the format for the coordinates returned | 
- | [`ImageParameter.TextResultOrderModes`](imageParmeter/result-control.md#textresultordermodes) | Sets the mode and priority for the order of the text results returned. | 
- | [`ImageParameter.ReturnBarcodeZoneClarity`](imageParmeter/result-control.md#returnbarcodezoneclarity) | Sets whether or not to return the clarity of the barcode zone. | 
+ | [`ImageParameter.IntermediateResultTypes`](imageParameter/result-control.md#intermediateresulttypes) | Sets which types of intermediate result to be kept for further reference. Intermediate result types can be combined. | 
+ | [`ImageParameter.IntermediateResultSavingMode`](imageParameter/result-control.md#intermediateresultsavingmode) | Sets the mode for saving the intermediate result. | 
+ | [`ImageParameter.ResultCoordinateType`](imageParameter/result-control.md#resultcoordinatetype) | Specifies the format for the coordinates returned | 
+ | [`ImageParameter.TextResultOrderModes`](imageParameter/result-control.md#textresultordermodes) | Sets the mode and priority for the order of the text results returned. | 
+ | [`ImageParameter.ReturnBarcodeZoneClarity`](imageParameter/result-control.md#returnbarcodezoneclarity) | Sets whether or not to return the clarity of the barcode zone. | 
 
 
 
