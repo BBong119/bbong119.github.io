@@ -173,14 +173,12 @@
 		  	var nav1s = navWrap.getElementsByTagName("span");
 			var nav2s = document.getElementsByName("listLevel2");
 						  
-   			nav1s[0].onclick=(function(){
-				if (nav2s[0].style.display == "none"){
-					nav2s[0].style.display = "block";
-				}
-				else if(nav2s[0].style.display == "block"){
-					nav2s[0].style.display = "none";
-				}				       						
-			})()			     
+			if (nav2s[0].style.display == "none"){
+				nav2s[0].style.display = "block";
+			}
+			else if(nav2s[0].style.display == "block"){
+				nav2s[0].style.display = "none";
+			}			     
 		 })()
 	</script>
     
