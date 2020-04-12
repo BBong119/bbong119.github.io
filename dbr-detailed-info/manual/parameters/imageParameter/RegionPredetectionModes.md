@@ -1,8 +1,8 @@
 ---
 layout: manual-parameter
 id: parameter_image_RegionPredetectionModes
-sourceCodeUrl: /dbr-detailed-info/manual/parameters/imageParmeter/RegionPredetectionModes.md
-objectName: imageParmeter
+sourceCodeUrl: /dbr-detailed-info/manual/parameters/imageParameter/RegionPredetectionModes.md
+objectName: imageParameter
 ---
 
 
