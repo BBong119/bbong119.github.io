@@ -2,6 +2,7 @@
 layout: manual-parameter
 id: parameter_format_image_process
 sourceCodeUrl: /dbr-detailed-info/manual/parameters/formatSpecification/image-process-control.md
+objectName: formatSpecification
 ---
 
 # FormatSpecification Object - Image Process Control
