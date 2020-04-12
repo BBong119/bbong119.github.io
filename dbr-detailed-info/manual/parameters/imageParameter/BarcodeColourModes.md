@@ -1,8 +1,8 @@
 ---
 layout: manual-parameter
 id: parameter_image_BarcodeColourModes
-sourceCodeUrl: /dbr-detailed-info/manual/parameters/imageParmeter/BarcodeColourModes.md
-objectName: imageParmeter
+sourceCodeUrl: /dbr-detailed-info/manual/parameters/imageParameter/BarcodeColourModes.md
+objectName: imageParameter
 ---
 
 
