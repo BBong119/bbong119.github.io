@@ -169,14 +169,13 @@
 			(function(){
 		  		var navWrap = document.getElementById("menuLsitContainer");
 		  		var nav1s = navWrap.getElementsByTagName("span");
-		  		var nav2s = navWrap.getElementsByName("listLevel2");
 		  		for(var i = 0, len = nav1s.length; i<len; i++){
+					var nav2s = nav1s[i].getElementsByName("listLevel2");
 		   			nav1s[i].onclick=(function(i){
 		    				return function(){
 		     					for(var j = 0, len2 = nav2s.length; j < len2; j++){
-		      						nav2s[j].style.display="none";
-		     					}
-		     					nav1s[i].style.display="block";
+		      						nav1s[i].style.display="block";
+		     					}		     					
 		    				}
 		   			})(i)
 		  		}
