@@ -1,8 +1,8 @@
 ---
 layout: manual-parameter
 id: parameter_image_ImagePreprocessingModes
-sourceCodeUrl: /dbr-detailed-info/manual/parameters/imageParmeter/ImagePreprocessingModes.md
-objectName: imageParmeter
+sourceCodeUrl: /dbr-detailed-info/manual/parameters/imageParameter/ImagePreprocessingModes.md
+objectName: imageParameter
 ---
 
 # ImageParameter Object - Image Process Control
