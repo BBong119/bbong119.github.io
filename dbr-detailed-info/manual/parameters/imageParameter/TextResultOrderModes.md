@@ -1,8 +1,8 @@
 ---
 layout: manual-parameter
 id: parameter_image_TextResultOrderModes
-sourceCodeUrl: /dbr-detailed-info/manual/parameters/imageParmeter/TextResultOrderModes.md
-objectName: imageParmeter
+sourceCodeUrl: /dbr-detailed-info/manual/parameters/imageParameter/TextResultOrderModes.md
+objectName: imageParameter
 ---
 
 # ImageParameter Object - Result Control
