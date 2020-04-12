@@ -143,8 +143,8 @@
 						</li>
 						<li><a href="{{ site.manual_parameter }}formatSpecification/result-control.html" class="otherLinkColour">Result Control</a>
 						    	<ul name="listLevel3">
-								<li name="listLevel3"><a href="{{ site.manual_parameter }}formatSpecification/result-control.html#minresultconfidence" class="otherLinkColour">MinResultConfidence</a></li>
-								<li name="listLevel3"><a href="{{ site.manual_parameter }}formatSpecification/result-control.html#returnpartialbarcodevalue" class="otherLinkColour">ReturnPartialBarcodeValue</a></li>
+								<li><a href="{{ site.manual_parameter }}formatSpecification/result-control.html#minresultconfidence" class="otherLinkColour">MinResultConfidence</a></li>
+								<li><a href="{{ site.manual_parameter }}formatSpecification/result-control.html#returnpartialbarcodevalue" class="otherLinkColour">ReturnPartialBarcodeValue</a></li>
 						    	</ul>
 						</li>
         				</ul>
@@ -168,10 +168,25 @@
 		(function(){
 		  	var navWrap = document.getElementById("menuLsitContainer");
 		  	var nav1s = navWrap.getElementsByTagName("span");
-			var nav2s = navWrap.getElementsByTagName("ul");
-			nav2s[0].style.display = "none";
-			nav2s[1].style.display = "none";
-			nav2s[2].style.display = "none";
+			var nav2s = document.getElementsByTagName("ul");
+			if (nav1s.length != nav2s.length) {
+				navWrap.style.display = "block";  
+			}
+			else{
+				navWrap.style.display = "none";  
+			}						    
+  			for(var i = 0, len = nav1s.length; i < len; i++){
+   				nav1s[i].onclick=(function(i){
+    					return function(){
+     						if (nav2s[i].style.display= "none"){
+							nav2s[i].style.display= "block";
+						}
+						else (nav2s[i].style.display= "block"){
+							nav2s[i].style.display= "none";
+						}				       						
+    					}
+   				})(i)
+  			}
 		 })()
 	</script>
     
