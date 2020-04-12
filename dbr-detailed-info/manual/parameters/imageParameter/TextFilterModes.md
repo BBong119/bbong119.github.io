@@ -1,8 +1,8 @@
 ---
 layout: manual-parameter
 id: parameter_image_TextFilterModes
-sourceCodeUrl: /dbr-detailed-info/manual/parameters/imageParmeter/TextFilterModes.md
-objectName: imageParmeter
+sourceCodeUrl: /dbr-detailed-info/manual/parameters/imageParameter/TextFilterModes.md
+objectName: imageParameter
 ---
 
 # ImageParameter Object - Image Process Control
