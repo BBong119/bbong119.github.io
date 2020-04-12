@@ -6,7 +6,7 @@
      
 <body>
 	<style>
-		#menuLsitContainer ul{display:none}
+		#menuLsitContainer ul{display:block}
 	</style>
 	<div class="wrapper">
 		<div class="sideBar">	 
@@ -75,7 +75,7 @@
         			  		</li>
         			 	</ul>
         			</li>
-				<li name="listLevel1"><span>RegionDefinition Object</span>
+				<li><span>RegionDefinition Object</span>
         				<ul name="listLevel2">
 						<li><a href="{{ site.manual_parameter }}regionDefinition/content-organization-control.html" class="otherLinkColour">Content Organization Control</a>
 							<ul name="listLevel3">
@@ -105,7 +105,7 @@
 						</li>
         			 	</ul>
         			</li>
-        			<li  name="listLevel1"><span>FormatSpecification Object</span>
+        			<li><span>FormatSpecification Object</span>
         				<ul name="listLevel2">
 						<li><a href="{{ site.manual_parameter }}formatSpecification/content-organization-control.html" class="otherLinkColour">Content Organization Control</a>
 						    	<ul name="listLevel3">
@@ -168,21 +168,12 @@
     	<script>anchors.add();</script>
 
 	<script type="text/javascript">
-		<!--
-			(function(){
-		  		var navWrap = document.getElementById("menuLsitContainer");
-		  		var nav1s = navWrap.getElementsByTagName("span");
-				var nav2s = navWrap.getElementsByName("listLevel2");
-		  		for(var i = 0, len = nav1s.length; i<len; i++){
-					
-		   			nav1s[i].onclick=(function(i){
-		    				return function(){
-		      					nav2s[i].style.display="block";		     					
-		    				}
-		   			})(i)
-		  		}
-		 	})()
-		//-->
+		function(){
+		  	var navWrap = document.getElementById("menuLsitContainer");
+		  	var nav1s = navWrap.getElementsByTagName("span");
+			var nav2s = navWrap.getElementsByName("listLevel2");
+			nav2s[1].sytle.display = "none";
+		 })()
 	</script>
     
   </body>
