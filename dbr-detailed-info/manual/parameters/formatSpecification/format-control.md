@@ -2,6 +2,7 @@
 layout: manual-parameter
 id: parameter_format_format
 sourceCodeUrl: /dbr-detailed-info/manual/parameters/formatSpecification/format-control.md
+objectName: formatSpecification
 ---
 
 # FormatSpecification Object - Format Control
