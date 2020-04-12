@@ -5,9 +5,6 @@
 {%- include head.html -%}
      
 <body>
-	<style>
-		#menuLsitContainer ul{display:none}
-	</style>
 	<div class="wrapper">
 		<div class="sideBar">	 
 			<div class="sideBarHeader">
@@ -172,15 +169,36 @@
 		  	var navWrap = document.getElementById("menuLsitContainer");
 		  	var nav1s = navWrap.getElementsByTagName("span");
 			var nav2s = document.getElementsByName("listLevel2");
-						  
+			
+			if ({{ page.objectName }} == "imageParameter"){
+				nav2s[0] = .style.display = "block";
+			}
+			else{
+				nav2s[0] = .style.display = "none";
+			}
+								  
+			if ({{ page.objectName }} == "regionDefinition"){
+				nav2s[1] = .style.display = "block";
+			}
+			else{
+				nav2s[1] = .style.display = "none";
+			}
+								  
+			if ({{ page.objectName }} == "formatSpecification"){
+				nav2s[2] = .style.display = "block";
+			}
+			else{
+				nav2s[2] = .style.display = "none";
+			}
+
 			for(var i = 0, len = nav1s.length; i < len; i++){
    				nav1s[i].onclick=(function(i){
     					return function(){
      						if (nav2s[i].style.display == "block"){
-							nav2s[i].style.display= "none";
+							nav2s[i].style.display = "none";
 						}
 						else{
-							nav2s[i].style.display= "block";
+							nav2s[i].style.display = "block";
 						}				       						
     					}
    				})(i)
