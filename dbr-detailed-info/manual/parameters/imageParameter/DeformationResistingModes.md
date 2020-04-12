@@ -1,8 +1,8 @@
 ---
 layout: manual-parameter
 id: parameter_image_DeformationResistingModes
-sourceCodeUrl: /dbr-detailed-info/manual/parameters/imageParmeter/DeformationResistingModes.md
-objectName: imageParmeter
+sourceCodeUrl: /dbr-detailed-info/manual/parameters/imageParameter/DeformationResistingModes.md
+objectName: imageParameter
 ---
 
 
