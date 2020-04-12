@@ -1,8 +1,8 @@
 ---
 layout: manual-parameter
 id: parameter_image_GrayscaleTransformationModes
-sourceCodeUrl: /dbr-detailed-info/manual/parameters/imageParmeter/GrayscaleTransformationModes.md
-objectName: imageParmeter
+sourceCodeUrl: /dbr-detailed-info/manual/parameters/imageParameter/GrayscaleTransformationModes.md
+objectName: imageParameter
 ---
 
 
