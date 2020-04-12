@@ -1,8 +1,8 @@
 ---
 layout: manual-parameter
 id: parameter_image_result
-sourceCodeUrl: /dbr-detailed-info/manual/parameters/imageParmeter/result-control.md
-objectName: imageParmeter
+sourceCodeUrl: /dbr-detailed-info/manual/parameters/imageParameter/result-control.md
+objectName: imageParameter
 ---
 
 # ImageParameter Object - Result Control Parameters
