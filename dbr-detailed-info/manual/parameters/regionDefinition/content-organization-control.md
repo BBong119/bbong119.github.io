@@ -2,6 +2,7 @@
 layout: manual-parameter
 id: parameter_region_content
 sourceCodeUrl: /dbr-detailed-info/manual/parameters/regionDefinition/content-organization-control.md
+objectName: regionDefinition
 ---
 
 # RegionDefinition Object - Content Organization Control Parameters
