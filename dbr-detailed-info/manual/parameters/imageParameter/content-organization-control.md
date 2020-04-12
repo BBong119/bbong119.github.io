@@ -1,8 +1,8 @@
 ---
 layout: manual-parameter
 id: parameter_image_content
-sourceCodeUrl: /dbr-detailed-info/manual/parameters/imageParmeter/content-organization-control.md
-objectName: imageParmeter
+sourceCodeUrl: /dbr-detailed-info/manual/parameters/imageParameter/content-organization-control.md
+objectName: imageParameter
 ---
 
 # ImageParameter Object - Content Organization Control Parameters
