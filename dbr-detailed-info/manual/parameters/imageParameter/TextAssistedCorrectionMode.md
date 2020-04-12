@@ -1,8 +1,8 @@
 ---
 layout: manual-parameter
 id: parameter_image_TextAssistedCorrectionMode
-sourceCodeUrl: /dbr-detailed-info/manual/parameters/imageParmeter/TextAssistedCorrectionMode.md
-objectName: imageParmeter
+sourceCodeUrl: /dbr-detailed-info/manual/parameters/imageParameter/TextAssistedCorrectionMode.md
+objectName: imageParameter
 ---
 
 # ImageParameter Object - Image Process Control
