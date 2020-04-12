@@ -2,6 +2,7 @@
 layout: manual-parameter
 id: parameter_image_IntermediateResultSavingMode
 sourceCodeUrl: /dbr-detailed-info/manual/parameters/imageParmeter/IntermediateResultSavingMode.md
+objectName: imageParmeter
 ---
 
 # ImageParameter Object - Result Control
