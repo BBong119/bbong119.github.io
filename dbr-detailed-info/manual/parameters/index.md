@@ -2,7 +2,7 @@
 layout: manual-parameter
 id: parameter_main
 sourceCodeUrl: /dbr-detailed-info/manual/parameters/index.md
-objectName: null
+objectName: mainPage
 ---
 
 
