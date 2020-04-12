@@ -2,6 +2,7 @@
 layout: manual-parameter
 id: parameter_image_format
 sourceCodeUrl: /dbr-detailed-info/manual/parameters/imageParmeter/format-control.md
+objectName: imageParmeter
 ---
 
 
