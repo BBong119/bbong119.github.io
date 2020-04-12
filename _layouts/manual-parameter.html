@@ -168,12 +168,26 @@
 		(function(){
 		  	var navWrap = document.getElementById("menuLsitContainer");
 		  	var nav1s = navWrap.getElementsByTagName("span");
-			var nav2s = document.getElementsByName("listLevel2");					    
-  			nav2s[0].style.display = "none";
-			if (nav2s[0].style.display == "none"){
-				nav2s[0].style.display = "block";
+			var nav2s = document.getElementsByName("listLevel2");
+									   
+			if (nav1s.length != nav2s.length) {
+				navWrap.style.display = "block";  
 			}
-						     
+			else {
+				navWrap.style.display = "none";  
+			}
+			for(var i = 0, len = nav1s.length; i < len; i++){
+   				nav1s[i].onclick=(function(i){
+    					return function(){
+     						if (nav2s[i].style.display == "none"){
+							nav2s[i].style.display= "block";
+						}
+						else if(nav2s[i].style.display == "block"){
+							nav2s[i].style.display= "none";
+						}				       						
+    					}
+   				})(i)
+  			}			     
 		 })()
 	</script>
     
