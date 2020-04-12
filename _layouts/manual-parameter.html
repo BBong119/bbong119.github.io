@@ -171,8 +171,10 @@
 		function test(){
 		  	var navWrap = document.getElementById("menuLsitContainer");
 		  	var nav1s = navWrap.getElementsByTagName("span");
-			var nav2s = navWrap.getElementsByTagName("ul");
+			var nav2s = navWrap.getElementsByName("listLevel2");
+			nav2s[0].sytle.display = "none";
 			nav2s[1].sytle.display = "none";
+			nav2s[2].sytle.display = "none";
 		 })()
 	</script>
     
