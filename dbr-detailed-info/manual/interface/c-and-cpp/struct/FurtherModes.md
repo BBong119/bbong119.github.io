@@ -21,19 +21,19 @@ typedef struct tagFurtherModes  FurtherModes
   
 | Attribute | Type |
 |---------- | ---- |
-| [`colourClusteringModes`](#colourclusteringmodes) | [`ColourClusteringMode`]({{ site.manual_interface_enum}}ColourClusteringMode.html)\[8\] |
-| [`colourConversionModes`](#colourconversionmodes) | [`ColourConversionMode`]({{ site.manual_interface_enum}}ColourConversionMode.html)\[8\] |
-| [`grayscaleTransformationModes`](#grayscaletransformationmodes) | [`GrayscaleTransformationMode`]({{ site.manual_interface_enum}}GrayscaleTransformationMode.html)\[8\] |
-| [`regionPredetectionModes`](#regionpredetectionmodes) | [`RegionPredetectionMode`]({{ site.manual_interface_enum}}RegionPredetectionMode.html)\[8\] |
-| [`imagePreprocessingModes`](#imagepreprocessingmodes) | [`ImagePreprocessingMode`]({{ site.manual_interface_enum}}ImagePreprocessingMode.html)\[8\] |
-| [`textureDetectionModes`](#texturedetectionmodes) | [`TextureDetectionMode`]({{ site.manual_interface_enum}}TextureDetectionMode.html)\[8\] |
-| [`textFilterModes`](#textfiltermodes) | [`TextFilterMode`]({{ site.manual_interface_enum}}TextFilterMode.html)\[8\] |
-| [`textAssistedCorrectionMode`](#textassistedcorrectionmode) | [`TextAssistedCorrectionMode`]({{ site.manual_interface_enum}}TextAssistedCorrectionMode.html) |
-| [`dpmCodeReadingModes`](#dpmcodereadingmodes) | [`DPMCodeReadingMode`]({{ site.manual_interface_enum}}DPMCodeReadingMode.html)\[8\] |
-| [`deformationResistingModes`](#deformationresistingmodes) | [`DeformationResistingMode`]({{ site.manual_interface_enum}}DeformationResistingMode.html)\[8\] |
-| [`barcodeComplementModes`](#barcodecomplementmodes) | [`BarcodeComplementMode`]({{ site.manual_interface_enum}}BarcodeComplementMode.html)\[8\] |
-| [`barcodeColourModes`](#barcodecolourmodes) | [`BarcodeColourMode`]({{ site.manual_interface_enum}}BarcodeColourMode.html)\[8\] |
-| [`accompanyingTextRecognitionModes`](#accompanyingtextrecognitionmodes) | [`AccompanyingTextRecognitionMode`]({{ site.manual_interface_enum}}AccompanyingTextRecognitionMode.html)\[8\] |
+| [`colourClusteringModes`](#colourclusteringmodes) | [`ColourClusteringMode`]({{ site.manual_interface_enum}}parameter-mode-enum.html#colourclusteringmode)\[8\] |
+| [`colourConversionModes`](#colourconversionmodes) | [`ColourConversionMode`]({{ site.manual_interface_enum}}parameter-mode-enum.html#colourconversionmode)\[8\] |
+| [`grayscaleTransformationModes`](#grayscaletransformationmodes) | [`GrayscaleTransformationMode`]({{ site.manual_interface_enum}}parameter-mode-enum.html#grayscaletransformationmode)\[8\] |
+| [`regionPredetectionModes`](#regionpredetectionmodes) | [`RegionPredetectionMode`]({{ site.manual_interface_enum}}parameter-mode-enum.html#regionpredetectionmode)\[8\] |
+| [`imagePreprocessingModes`](#imagepreprocessingmodes) | [`ImagePreprocessingMode`]({{ site.manual_interface_enum}}parameter-mode-enum.html#imagepreprocessingmode)\[8\] |
+| [`textureDetectionModes`](#texturedetectionmodes) | [`TextureDetectionMode`]({{ site.manual_interface_enum}}parameter-mode-enum.html#texturedetectionmode)\[8\] |
+| [`textFilterModes`](#textfiltermodes) | [`TextFilterMode`]({{ site.manual_interface_enum}}parameter-mode-enum.html#textfiltermode)\[8\] |
+| [`textAssistedCorrectionMode`](#textassistedcorrectionmode) | [`TextAssistedCorrectionMode`]({{ site.manual_interface_enum}}parameter-mode-enum.html#textassistedcorrectionmode) |
+| [`dpmCodeReadingModes`](#dpmcodereadingmodes) | [`DPMCodeReadingMode`]({{ site.manual_interface_enum}}parameter-mode-enum.html#dpmcodereadingmode)\[8\] |
+| [`deformationResistingModes`](#deformationresistingmodes) | [`DeformationResistingMode`]({{ site.manual_interface_enum}}parameter-mode-enum.html#deformationresistingmode)\[8\] |
+| [`barcodeComplementModes`](#barcodecomplementmodes) | [`BarcodeComplementMode`]({{ site.manual_interface_enum}}parameter-mode-enum.html#barcodecomplementmode)\[8\] |
+| [`barcodeColourModes`](#barcodecolourmodes) | [`BarcodeColourMode`]({{ site.manual_interface_enum}}parameter-mode-enum.html#barcodecolourmode)\[8\] |
+| [`accompanyingTextRecognitionModes`](#accompanyingtextrecognitionmodes) | [`AccompanyingTextRecognitionMode`]({{ site.manual_interface_enum}}parameter-mode-enum.html#accompanyingtextrecognitionmode)\[8\] |
 | [`reserved`](#reserved) | *char\[32\]* |
 
 ### colourClusteringModes
@@ -42,7 +42,7 @@ Sets the mode and priority for colour categorization. Not supported yet.
 ColourClusteringMode tagFurtherModes::colourClusteringModes[8]
 ```
 - **Value range**  
-   Each array item can be any one of the [`ColourClusteringMode`]({{ site.manual_interface_enum}}ColourClusteringMode.html) Enumeration items.  
+   Each array item can be any one of the [`ColourClusteringMode`]({{ site.manual_interface_enum}}parameter-mode-enum.html#colourclusteringmode) Enumeration items.  
      
 - **Default value**  
    `[CCM_SKIP,CCM_SKIP,CCM_SKIP,CCM_SKIP,CCM_SKIP,CCM_SKIP,CCM_SKIP,CCM_SKIP]`  
@@ -51,7 +51,7 @@ ColourClusteringMode tagFurtherModes::colourClusteringModes[8]
    The array index represents the priority of the item. The smaller index is, the higher priority is. 
    
 - **See also**  
-   [`ColourClusteringMode`]({{ site.manual_interface_enum}}ColourClusteringMode.html)
+   [`ColourClusteringMode`]({{ site.manual_interface_enum}}parameter-mode-enum.html#colourclusteringmode)
 
 ### colourConversionModes
 Sets the mode and priority for converting a colour image to a grayscale image.
@@ -59,7 +59,7 @@ Sets the mode and priority for converting a colour image to a grayscale image.
 ColourConversionMode tagFurtherModes::colourConversionModes[8]
 ```
 - **Value range**  
-   Each array item can be any one of the [`ColourConversionMode`]({{ site.manual_interface_enum}}ColourConversionMode.html) Enumeration items. 
+   Each array item can be any one of the [`ColourConversionMode`]({{ site.manual_interface_enum}}parameter-mode-enum.html#colourconversionmode) Enumeration items. 
      
 - **Default value**  
    `[CICM_GENERAL,CICM_SKIP,CICM_SKIP,CICM_SKIP,CICM_SKIP,CICM_SKIP,CICM_SKIP,CICM_SKIP]`  
@@ -68,7 +68,7 @@ ColourConversionMode tagFurtherModes::colourConversionModes[8]
    The array index represents the priority of the item. The smaller index is, the higher priority is.  
    
 - **See also**  
-   [`ColourConversionMode`]({{ site.manual_interface_enum}}ColourConversionMode.html)
+   [`ColourConversionMode`]({{ site.manual_interface_enum}}parameter-mode-enum.html#colourconversionmode)
    
 ### grayscaleTransformationModes
 Sets the mode and priority for the grayscale image conversion.
@@ -76,7 +76,7 @@ Sets the mode and priority for the grayscale image conversion.
 GrayscaleTransformationMode tagFurtherModes::grayscaleTransformationModes[8]
 ```
 - **Value range**  
-   Each array item can be any one of the [`GrayscaleTransformationMode`]({{ site.manual_interface_enum}}GrayscaleTransformationMode.html) Enumeration items. 
+   Each array item can be any one of the [`GrayscaleTransformationMode`]({{ site.manual_interface_enum}}parameter-mode-enum.html#grayscaletransformationmode) Enumeration items. 
      
 - **Default value**  
    `[GTM_ORIGINAL,GTM_SKIP,GTM_SKIP,GTM_SKIP,GTM_SKIP,GTM_SKIP,GTM_SKIP,GTM_SKIP]`  
@@ -85,7 +85,7 @@ GrayscaleTransformationMode tagFurtherModes::grayscaleTransformationModes[8]
    The array index represents the priority of the item. The smaller index is, the higher priority is.  
    
 - **See also**  
-   [`GrayscaleTransformationMode`]({{ site.manual_interface_enum}}GrayscaleTransformationMode.html)
+   [`GrayscaleTransformationMode`]({{ site.manual_interface_enum}}parameter-mode-enum.html#grayscaletransformationmode)
 
 ### regionPredetectionModes
 Sets the region pre-detection mode for barcodes search.
@@ -93,7 +93,7 @@ Sets the region pre-detection mode for barcodes search.
 RegionPredetectionMode tagFurtherModes::regionPredetectionModes[8]
 ```
 - **Value range**  
-   Each array item can be any one of the [`RegionPredetectionMode`]({{ site.manual_interface_enum}}RegionPredetectionMode.html) Enumeration items.  
+   Each array item can be any one of the [`RegionPredetectionMode`]({{ site.manual_interface_enum}}parameter-mode-enum.html#regionpredetectionmode) Enumeration items.  
      
 - **Default value**  
    `[RPM_GENERAL,RPM_SKIP,RPM_SKIP,RPM_SKIP,RPM_SKIP,RPM_SKIP,RPM_SKIP,RPM_SKIP]`  
@@ -102,7 +102,7 @@ RegionPredetectionMode tagFurtherModes::regionPredetectionModes[8]
    The array index represents the priority of the item. The smaller index is, the higher priority is. If the image is large and the barcode on the image is very small, it is recommended to enable region predetection to speed up the localization process and recognition accuracy.
    
 - **See also**  
-   [`RegionPredetectionMode`]({{ site.manual_interface_enum}}RegionPredetectionMode.html)
+   [`RegionPredetectionMode`]({{ site.manual_interface_enum}}parameter-mode-enum.html#regionpredetectionmode)
 
 ### imagePreprocessingModes
 Sets the mode and priority for image preprocessing algorithms.
@@ -110,7 +110,7 @@ Sets the mode and priority for image preprocessing algorithms.
 ImagePreprocessingMode tagFurtherModes::imagePreprocessingModes[8]
 ```
 - **Value range**  
-   Each array item can be any one of the [`ImagePreprocessingMode`]({{ site.manual_interface_enum}}ImagePreprocessingMode.html) Enumeration items.  
+   Each array item can be any one of the [`ImagePreprocessingMode`]({{ site.manual_interface_enum}}parameter-mode-enum.html#imagepreprocessingmode) Enumeration items.  
      
 - **Default value**  
    `[IPM_GENERAL,IPM_SKIP,IPM_SKIP,IPM_SKIP,IPM_SKIP,IPM_SKIP,IPM_SKIP,IPM_SKIP]`  
@@ -119,7 +119,7 @@ ImagePreprocessingMode tagFurtherModes::imagePreprocessingModes[8]
    The array index represents the priority of the item. The smaller index is, the higher priority is.
    
 - **See also**  
-   [`ImagePreprocessingMode`]({{ site.manual_interface_enum}}ImagePreprocessingMode.html)
+   [`ImagePreprocessingMode`]({{ site.manual_interface_enum}}parameter-mode-enum.html#imagepreprocessingmode)
 
 ### textureDetectionModes
 Sets the mode and priority for texture detection. 
@@ -127,7 +127,7 @@ Sets the mode and priority for texture detection.
 TextureDetectionMode tagFurtherModes::textureDetectionModes[8]
 ```
 - **Value range**  
-   Each array item can be any one of the [`TextureDetectionMode`]({{ site.manual_interface_enum}}TextureDetectionMode.html) Enumeration items.  
+   Each array item can be any one of the [`TextureDetectionMode`]({{ site.manual_interface_enum}}parameter-mode-enum.html#texturedetectionmode) Enumeration items.  
      
 - **Default value**  
    `[TDM_GENERAL_WIDTH_CONCENTRATION,TDM_SKIP,TDM_SKIP,TDM_SKIP,TDM_SKIP,TDM_SKIP,TDM_SKIP,TDM_SKIP]`  
@@ -136,7 +136,7 @@ TextureDetectionMode tagFurtherModes::textureDetectionModes[8]
    The array index represents the priority of the item. The smaller index is, the higher priority is.
    
 - **See also**  
-   [`TextureDetectionMode`]({{ site.manual_interface_enum}}TextureDetectionMode.html)
+   [`TextureDetectionMode`]({{ site.manual_interface_enum}}parameter-mode-enum.html#texturedetectionmode)
    
 ### textFilterModes
 Sets the mode and priority for text filter.
@@ -144,7 +144,7 @@ Sets the mode and priority for text filter.
 TextFilterMode tagFurtherModes::textFilterModes[8]
 ```
 - **Value range**  
-   Each array item can be any one of the [`TextFilterMode`]({{ site.manual_interface_enum}}TextFilterMode.html) Enumeration items.  
+   Each array item can be any one of the [`TextFilterMode`]({{ site.manual_interface_enum}}parameter-mode-enum.html#textfiltermode) Enumeration items.  
      
 - **Default value**  
    `[TFM_GENERAL_CONTOUR,TFM_SKIP,TFM_SKIP,TFM_SKIP,TFM_SKIP,TFM_SKIP,TFM_SKIP,TFM_SKIP]`  
@@ -153,7 +153,7 @@ TextFilterMode tagFurtherModes::textFilterModes[8]
    The array index represents the priority of the item. The smaller index is, the higher priority is. If the image contains a lot of text, you can enable text filter to speed up the localization process.
    
 - **See also**  
-   [`TextFilterMode`]({{ site.manual_interface_enum}}TextFilterMode.html)
+   [`TextFilterMode`]({{ site.manual_interface_enum}}parameter-mode-enum.html#textfiltermode)
    
 ### textAssistedCorrectionMode
 Sets the mode of text assisted correction for barcode decoding. ***Not supported yet***.
@@ -161,13 +161,13 @@ Sets the mode of text assisted correction for barcode decoding. ***Not supported
 TextAssistedCorrectionMode tagFurtherModes::textAssistedCorrectionMode
 ```
 - **Value range**  
-   Any one of the [`TextAssistedCorrectionMode`]({{ site.manual_interface_enum}}TextAssistedCorrectionMode.html) Enumeration items.  
+   Any one of the [`TextAssistedCorrectionMode`]({{ site.manual_interface_enum}}parameter-mode-enum.html#textassistedcorrectionmode) Enumeration items.  
      
 - **Default value**  
    `TACM_VERIFYING`  
    
 - **See also**  
-   [`TextAssistedCorrectionMode`]({{ site.manual_interface_enum}}TextAssistedCorrectionMode.html)
+   [`TextAssistedCorrectionMode`]({{ site.manual_interface_enum}}parameter-mode-enum.html#textassistedcorrectionmode)
    
 ### dpmCodeReadingModes
 Sets the mode and priority for DPM code reading.
@@ -175,7 +175,7 @@ Sets the mode and priority for DPM code reading.
 DPMCodeReadingMode tagFurtherModes::dpmCodeReadingModes[8]
 ```
 - **Value range**  
-   Each array item can be any one of the [`DPMCodeReadingMode`]({{ site.manual_interface_enum}}DPMCodeReadingMode.html) Enumeration items.  
+   Each array item can be any one of the [`DPMCodeReadingMode`]({{ site.manual_interface_enum}}parameter-mode-enum.html#dpmcodereadingmode) Enumeration items.  
      
 - **Default value**  
    `[DPMCRM_GENERAL,DPMCRM_SKIP,DPMCRM_SKIP,DPMCRM_SKIP,DPMCRM_SKIP,DPMCRM_SKIP,DPMCRM_SKIP,DPMCRM_SKIP]`  
@@ -184,7 +184,7 @@ DPMCodeReadingMode tagFurtherModes::dpmCodeReadingModes[8]
    The array index represents the priority of the item. The smaller index is, the higher priority is.  
    
 - **See also**  
-   [`DPMCodeReadingMode`]({{ site.manual_interface_enum}}DPMCodeReadingMode.html)
+   [`DPMCodeReadingMode`]({{ site.manual_interface_enum}}parameter-mode-enum.html#dpmcodereadingmode)
 
 ### deformationResistingModes
 Sets the mode and priority for deformation resisting.
@@ -192,7 +192,7 @@ Sets the mode and priority for deformation resisting.
 DeformationResistingMode tagFurtherModes::deformationResistingModes[8]
 ```
 - **Value range**  
-   Each array item can be any one of the [`DeformationResistingMode`]({{ site.manual_interface_enum}}DeformationResistingMode.html) Enumeration items.  
+   Each array item can be any one of the [`DeformationResistingMode`]({{ site.manual_interface_enum}}parameter-mode-enum.html#deformationresistingmode) Enumeration items.  
      
 - **Default value**  
    `[DRM_SKIP,DRM_SKIP,DRM_SKIP,DRM_SKIP,DRM_SKIP,DRM_SKIP,DRM_SKIP,DRM_SKIP]`  
@@ -201,7 +201,7 @@ DeformationResistingMode tagFurtherModes::deformationResistingModes[8]
    The array index represents the priority of the item. The smaller index is, the higher priority is.  
    
 - **See also**  
-   [`DeformationResistingMode`]({{ site.manual_interface_enum}}DeformationResistingMode.html) 
+   [`DeformationResistingMode`]({{ site.manual_interface_enum}}parameter-mode-enum.html#deformationresistingmode) 
 
 ### barcodeComplementModes
 Sets the mode and priority to complement the missing parts in the barcode.
@@ -209,7 +209,7 @@ Sets the mode and priority to complement the missing parts in the barcode.
 BarcodeComplementMode tagFurtherModes::barcodeComplementModes[8]
 ```
 - **Value range**  
-   Each array item can be any one of the [`BarcodeComplementMode`]({{ site.manual_interface_enum}}BarcodeComplementMode.html) Enumeration items.  
+   Each array item can be any one of the [`BarcodeComplementMode`]({{ site.manual_interface_enum}}parameter-mode-enum.html#barcodecomplementmode) Enumeration items.  
      
 - **Default value**  
    `[BCM_SKIP,BCM_SKIP,BCM_SKIP,BCM_SKIP,BCM_SKIP,BCM_SKIP,BCM_SKIP,BCM_SKIP]`  
@@ -218,7 +218,7 @@ BarcodeComplementMode tagFurtherModes::barcodeComplementModes[8]
    The array index represents the priority of the item. The smaller index is, the higher priority is.  
    
 - **See also**  
-   [`BarcodeComplementMode`]({{ site.manual_interface_enum}}BarcodeComplementMode.html) 
+   [`BarcodeComplementMode`]({{ site.manual_interface_enum}}parameter-mode-enum.html#barcodecomplementmode) 
 
 ### barcodeColourModes
 Sets the mode and priority for the barcode colour mode used to process the barcode zone.
@@ -226,7 +226,7 @@ Sets the mode and priority for the barcode colour mode used to process the barco
 BarcodeColourMode tagFurtherModes::barcodeColourModes[8]
 ```
 - **Value range**  
-   Each array item can be any one of the [`BarcodeColourMode`]({{ site.manual_interface_enum}}BarcodeColourMode.html) Enumeration items.  
+   Each array item can be any one of the [`BarcodeColourMode`]({{ site.manual_interface_enum}}parameter-mode-enum.html#barcodecolourmode) Enumeration items.  
      
 - **Default value**  
    `[BICM_DARK_ON_LIGHT,BICM_SKIP,BICM_SKIP,BICM_SKIP,BICM_SKIP,BICM_SKIP,BICM_SKIP,BICM_SKIP]`  
@@ -235,7 +235,7 @@ BarcodeColourMode tagFurtherModes::barcodeColourModes[8]
    The array index represents the priority of the item. The smaller index is, the higher priority is.  
    
 - **See also**  
-   [`BarcodeColourMode`]({{ site.manual_interface_enum}}BarcodeColourMode.html)
+   [`BarcodeColourMode`]({{ site.manual_interface_enum}}parameter-mode-enum.html#barcodecolourmode)
 
 ### accompanyingTextRecognitionModes
 Sets the mode and priority to recognize accompanying text.
@@ -243,7 +243,7 @@ Sets the mode and priority to recognize accompanying text.
 AccompanyingTextRecognitionMode tagFurtherModes::accompanyingTextRecognitionModes[8]
 ```
 - **Value range**  
-   Each array item can be any one of the [`AccompanyingTextRecognitionMode`]({{ site.manual_interface_enum}}AccompanyingTextRecognitionMode.html) Enumeration items.  
+   Each array item can be any one of the [`AccompanyingTextRecognitionMode`]({{ site.manual_interface_enum}}parameter-mode-enum.html#accompanyingtextrecognitionmode) Enumeration items.  
      
 - **Default value**  
    `[ATRM_SKIP,ATRM_SKIP,ATRM_SKIP,ATRM_SKIP,ATRM_SKIP,ATRM_SKIP,ATRM_SKIP,ATRM_SKIP]`  
@@ -252,7 +252,7 @@ AccompanyingTextRecognitionMode tagFurtherModes::accompanyingTextRecognitionMode
    The array index represents the priority of the item. The smaller index is, the higher priority is.  
    
 - **See also**  
-   [`AccompanyingTextRecognitionMode`]({{ site.manual_interface_enum}}AccompanyingTextRecognitionMode.html)
+   [`AccompanyingTextRecognitionMode`]({{ site.manual_interface_enum}}parameter-mode-enum.html#accompanyingtextrecognitionmode)
 
 ### reserved
 Reserved memory for struct. The length of this array indicates the size of the memory reserved for this struct.
