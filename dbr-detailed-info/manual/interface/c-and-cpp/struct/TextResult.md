@@ -22,9 +22,9 @@ typedef struct tagTextResult*  PTextResult
   
 | Attribute | Type |
 |---------- | ---- |
-| [`barcodeFormat`](#barcodeformat) | [`BarcodeFormat`]({{ site.manual_interface_enum }}BarcodeFormat.html) |
+| [`barcodeFormat`](#barcodeformat) | [`BarcodeFormat`]({{ site.manual_interface_enum}}format-enum.html#barcodeformat) |
 | [`barcodeFormatString`](#barcodeformatstring) | *const char \** |
-| [`barcodeFormat_2`](#barcodeformat_2) | [`BarcodeFormat_2`]({{ site.manual_interface_enum }}BarcodeFormat_2.html) |
+| [`barcodeFormat_2`](#barcodeformat_2) | [`BarcodeFormat_2`]({{ site.manual_interface_enum}}format-enum.html#barcodeformat_2) |
 | [`barcodeFormatString_2`](#barcodeformatstring_2) | *const char \** |
 | [`barcodeText`](#barcodetext) | *const char \** |
 | [`barcodeBytes`](#barcodebytes) | *unsigned char \** |
