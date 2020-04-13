@@ -154,7 +154,7 @@ Constant subtracted from the mean or weighted mean. Normally, it is positive but
 
 | Struct |	Struct Member Name | Value Type |
 | ------ | ------------------ | ---------- |
-| [`PublicRuntimeSettings`]({{ site.manual_interface_struct }}PublicRuntimeSettings.html)->[`furtherModes`]({{ site.manual_interface_struct }}PublicRuntimeSettings.html#furthermodes) | [`binarizationModes`]({{ site.manual_interface_struct }}FurtherModes.html#binarizationmodes) | [`BinarizationMode`]({{ site.manual_interface_enum }}parameter-mode-enum.html#binarizationmode)[8] |
+| [`PublicRuntimeSettings`]({{ site.manual_interface_struct }}PublicRuntimeSettings.html) | [`binarizationModes`]({{ site.manual_interface_struct }}PublicRuntimeSettings.html#binarizationmodes) | [`BinarizationMode`]({{ site.manual_interface_enum }}parameter-mode-enum.html#binarizationmode)[8] |
 
 **Remark**   
 [`GetModeArgument`]({{ site.manual_interface_cpp }}CBarcodeReader/methods/parameter-and-runtime-settings-basic.html#getmodeargument) and [`SetModeArgument`]({{ site.manual_interface_cpp }}CBarcodeReader/methods/parameter-and-runtime-settings-basic.html#setmodeargument) need to be called for getting or setting the value of [arguments](#mode-arguments).
@@ -162,5 +162,4 @@ Constant subtracted from the mean or weighted mean. Normally, it is positive but
 
 **See Also**    
 - [`PublicRuntimeSettings` Struct]({{ site.manual_interface_struct }}PublicRuntimeSettings.html)
-- [`FurtherModes` Struct]({{ site.manual_interface_struct }}FurtherModes.html)
 - [`BinarizationMode` Enumeration]({{ site.manual_interface_enum }}parameter-mode-enum.html#binarizationmode)
