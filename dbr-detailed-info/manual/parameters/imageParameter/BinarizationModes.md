@@ -150,7 +150,7 @@ Constant subtracted from the mean or weighted mean. Normally, it is positive but
 
 
 #### As `PublicRuntimeSettings` Member
-`BinarizationModes` is a [`BinarizationMode`]({{ site.manual_interface_enum }}parameter-mode-enum.html#binarizationmode) array defines in `furtherModes` which is a struct member of `PublicRuntimeSettings`. It is used for setting the modes and the priority  for binarization. Default value will be used if there is no manual setting.
+`BinarizationModes` as a member of `PublicRuntimeSettings` struct is a [`BinarizationMode`]({{ site.manual_interface_enum }}parameter-mode-enum.html#binarizationmode) array for setting the modes and the priority  for binarization. Default value will be used if there is no manual setting.
 
 | Struct |	Struct Member Name | Value Type |
 | ------ | ------------------ | ---------- |
