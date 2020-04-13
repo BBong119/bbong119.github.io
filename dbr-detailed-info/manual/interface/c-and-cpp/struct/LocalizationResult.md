@@ -22,10 +22,10 @@ typedef struct tagLocalizationResult*  PLocalizationResult
   
 | Attribute | Type |
 |---------- | ---- |
-| [`terminatePhase`](#terminatephase) | [`TerminatePhase`]({{ site.manual_interface_enum }}TerminatePhase.html) |
-| [`barcodeFormat`](#barcodeformat) | [`BarcodeFormat`]({{ site.manual_interface_enum }}BarcodeFormat.html) |
+| [`terminatePhase`](#terminatephase) | [`TerminatePhase`]({{ site.manual_interface_enum}}parameter-mode-enum.html#terminatephase) |
+| [`barcodeFormat`](#barcodeformat) | [`BarcodeFormat`]({{ site.manual_interface_enum}}format-enum.html#barcodeformat) |
 | [`barcodeFormatString`](#barcodeformatstring) | *const char \** |
-| [`barcodeFormat_2 `](#barcodeformat_2 ) | [`BarcodeFormat_2 `]({{ site.manual_interface_enum }}BarcodeFormat_2.html) |
+| [`barcodeFormat_2 `](#barcodeformat_2 ) | [`BarcodeFormat_2 `]({{ site.manual_interface_enum}}format-enum.html#barcodeformat_2) |
 | [`barcodeFormatString_2`](#barcodeformatstring_2) | *const char \** |
 | [`x1`](#x1) | *int* |
 | [`y1`](#y1) | *int* |
@@ -40,7 +40,7 @@ typedef struct tagLocalizationResult*  PLocalizationResult
 | [`pageNumber`](#pagenumber) | *int* |
 | [`regionName`](#regionname) | *const char \** |
 | [`documentName`](#documentname)| *const char \** |
-| [`resultCoordinateType`](#resultcoordinatetype) | [`ResultCoordinateType`]({{ site.manual_interface_enum }}ResultCoordinateType.html) |
+| [`resultCoordinateType`](#resultcoordinatetype) | [`ResultCoordinateType`]({{ site.manual_interface_enum}}result-enum.html#resultcoordinatetype) |
 | [`accompanyingTextBytes`](#accompanyingtextbytes) | *unsigned char \** |
 | [`accompanyingTextBytesLength`](#accompanyingtextbyteslength) | *int* |
 | [`confidence`](#confidence) | *int* |
