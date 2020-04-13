@@ -290,9 +290,4 @@ sourceCodeUrl: /dbr-detailed-info/manual/interface/c-and-cpp/cpp/index.md
 - [`TextFilterMode`]({{ site.manual_interface_enum}}parameter-mode-enum.html#textfiltermode)	
 - [`TextResultOrderMode`]({{ site.manual_interface_enum}}result-enum.html#textresultordermode)	
 - [`TextureDetectionMode`]({{ site.manual_interface_enum}}parameter-mode-enum.html#texturedetectionmode)
-- [`TerminatePhase`]({{ site.manual_interface_enum}}TerminatePhase.html)	
-- [`TextAssistedCorrectionMode`]({{ site.manual_interface_enum}}TextAssistedCorrectionMode.html)	
-- [`TextFilterMode`]({{ site.manual_interface_enum}}TextFilterMode.html)	
-- [`TextResultOrderMode`]({{ site.manual_interface_enum}}TextResultOrderMode.html)	
-- [`TextureDetectionMode`]({{ site.manual_interface_enum}}TextureDetectionMode.html)	
 
