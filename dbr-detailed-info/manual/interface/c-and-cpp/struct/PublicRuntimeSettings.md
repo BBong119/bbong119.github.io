@@ -351,7 +351,7 @@ ScaleUpMode tagPublicRuntimeSettings::scaleUpModes[8]
     [`ScaleUpMode`]({{ site.manual_interface_enum}}parameter-mode-enum.html#scaleupmode)
 
 
-### scaleUpModes
+### pdfReadingMode
 Sets the way to detect barcodes from a PDF file when using the DecodeFile method.
 ```cpp
 PDFReadingMode tagPublicRuntimeSettings::pdfReadingMode
