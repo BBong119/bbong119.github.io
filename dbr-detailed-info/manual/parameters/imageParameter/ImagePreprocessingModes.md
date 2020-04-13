@@ -41,7 +41,7 @@ objectName: imageParameter
 
 | Value Type | Value Range | Default Value |
 | ---------- | ----------- | ------------- |
-| *string array* or *[`ImagePreprocessingMode`]({{ site.manual_interface_enum }}parameter-mode-enum.html#imagepreprocessingmode) array* | "IPM_SKIP"<br>"IPM_AUTO"<br>"IPM_GENERAL"<br>"IPM_GRAY_EQUALIZE"<br>"IPM_GRAY_SMOOTH"<br>"IPM_SHARPEN_SMOOTH" | ["IPM_GENERAL", "IPM_SKIP", "IPM_SKIP", "IPM_SKIP", "IPM_SKIP", "IPM_SKIP", "IPM_SKIP", "IPM_SKIP"] |
+| *string array* or *[`ImagePreprocessingMode`]({{ site.manual_interface_enum }}parameter-mode-enum.html#imagepreprocessingmode) array* | "IPM_SKIP"<br>"IPM_AUTO"<br>"IPM_GENERAL"<br>"IPM_GRAY_EQUALIZE"<br>"IPM_GRAY_SMOOTH"<br>"IPM_SHARPEN_SMOOTH"<br>"IPM_SHARPEN_MORPHOLOGY" | ["IPM_GENERAL", "IPM_SKIP", "IPM_SKIP", "IPM_SKIP", "IPM_SKIP", "IPM_SKIP", "IPM_SKIP", "IPM_SKIP"] |
 
 - **See also**:   
     [`ImagePreprocessingMode` Enumeration]({{ site.manual_interface_enum }}parameter-mode-enum.html#imagepreprocessingmode)
@@ -52,6 +52,10 @@ objectName: imageParameter
 - [SmoothBlockSizeY](#smoothblocksizey)
 - [SharpenBlockSizeX](#sharpenblocksizex)
 - [SharpenBlockSizeY](#sharpenblocksizey)
+- [MorphOperation](#morphoperation)
+- [MorphShape](#morphshape)
+- [MorphOperationKernelSizeX](#morphoperationkernelsizex )
+- [MorphOperationKernelSizeY](#morphoperationkernelsizey)
  
 ##### Sensitivity 
 Sets the sensitivity used for gray equalization.
@@ -106,6 +110,52 @@ Sets the vertical block size for the sharpening process.
 
 - **Remark**     
   Block size refers to the size of a pixel neighborhood used to calculate the threshold for the pixel. An appropriate value can help increase the accuracy of barcode localization.
+  
+
+
+##### MorphOperation 
+Sets the morph operation for the morphology process. 
+
+| Value Type | Value Range | Default Value | Vaild Modes | 
+| ---------- | ----------- | ------------- | ----------- |
+| *string* | "Erode"<br>"Dilate"<br>"Open"<br>"Close" | "Close" | "IPM_SHARPEN_MORPHOLOGY" |         
+
+- **Remark**    
+   - "Erode": 
+   - "Dilate": 
+   - "Open": 
+   - "Close": 
+
+
+##### MorphShape  
+ Sets the morph shape for the morphology process.  
+
+| Value Type | Value Range | Default Value | Vaild Modes | 
+| ---------- | ----------- | ------------- | ----------- |
+| *string* | "Rectangle"<br>"Cross"<br>"Ellipse" | "Rectangle" | "IPM_SHARPEN_MORPHOLOGY" |         
+
+- **Remark**    
+   - "Rectangle": 
+   - "Cross": 
+   - "Ellipse": 
+
+
+
+##### MorphOperationKernelSizeX  
+Sets the horizontal kernel size for the morphology process. 
+
+| Value Type | Value Range | Default Value | Vaild Modes | 
+| ---------- | ----------- | ------------- | ----------- |
+| *int* | [0, 1000]  | 0 | "IPM_SHARPEN_MORPHOLOGY" |         
+
+
+
+##### MorphOperationKernelSizeY  
+ Sets the vertical kernel size for the morphology process.  
+
+| Value Type | Value Range | Default Value | Vaild Modes | 
+| ---------- | ----------- | ------------- | ----------- |
+| *int* | [0, 1000]  | 0 | "IPM_SHARPEN_MORPHOLOGY" |       
 
 
 ### Setting Methods
