@@ -1,6 +1,9 @@
 ---
 layout: dbr-basic
+id: dbr_overview
+sourceCodeUrl: /dbr-basic-info/overview/index.md
 ---
+
 
 # Overview of Dynamsoft Barcode Reader  
 
