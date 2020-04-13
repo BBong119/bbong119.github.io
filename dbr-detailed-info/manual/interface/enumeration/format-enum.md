@@ -93,4 +93,5 @@ Describes the barcode types in BarcodeFormat group 2. Note: The barcode format o
 | BF2_PLANET | 0x00400000 | Planet |
 | BF2_AUSTRALIANPOST | 0x00800000 | Australian Post |
 | BF2_RM4SCC | 0x01000000 | Royal Mail 4-State Customer Barcode |
+| BF2_DOTCODE | 0x02 | DotCode |
 
