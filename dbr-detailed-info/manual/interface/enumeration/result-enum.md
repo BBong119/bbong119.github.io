@@ -39,9 +39,10 @@ Describes the intermediate result data type.
 | IMRDT_LINESEGMENT | 0x04 | Specifies the `LineSegment`. |
 | IMRDT_LOCALIZATIONRESULT | 0x08 | Specifies the `LocalizationResult`. |
 | IMRDT_REGIONOFINTEREST  | 0x10 | Specifies the `RegionOfInterest`. |
+| IMRDT_QUADRILATERAL | 0x20 | Specifies the `Quadrilateral`. |  
 
 **See also**
-- C / C++: [`ImageData`]({{ site.manual_interface_c_and_cpp }}struct/ImageData.html), [`Contour`]({{ site.manual_interface_c_and_cpp }}struct/Contour.html), [`LineSegment`]({{ site.manual_interface_c_and_cpp }}struct/LineSegment.html), [`LocalizationResult`]({{ site.manual_interface_c_and_cpp }}struct/LocalizationResult.html), [`RegionOfInterest`]({{ site.manual_interface_c_and_cpp }}struct/RegionOfInterest.html).   
+- C / C++: [`ImageData`]({{ site.manual_interface_c_and_cpp }}struct/ImageData.html), [`Contour`]({{ site.manual_interface_c_and_cpp }}struct/Contour.html), [`LineSegment`]({{ site.manual_interface_c_and_cpp }}struct/LineSegment.html), [`LocalizationResult`]({{ site.manual_interface_c_and_cpp }}struct/LocalizationResult.html), [`RegionOfInterest`]({{ site.manual_interface_c_and_cpp }}struct/RegionOfInterest.html), [`Quadrilateral`]({{ site.manual_interface_c_and_cpp }}struct/Quadrilateral.html).   
 - .Net: 
 
 
@@ -106,7 +107,7 @@ Describes the intermediate result type.
 | IRT_FORM | 0x400 | Form **(not supported yet)** |
 | IRT_SEGMENTATION_BLOCK | 0x800 | Segmentation block **(not supported yet)** |
 | IRT_TYPED_BARCODE_ZONE | 0x1000 | Typed barcode zone |
-
+| IRT_PREDETECTED_QUADRILATERAL |  0x2000  | Predetected quadrilateral |
 
 
 &nbsp;
