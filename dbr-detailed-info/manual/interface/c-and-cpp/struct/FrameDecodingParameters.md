@@ -30,8 +30,8 @@ typedef struct tagFrameDecodingParameters  FrameDecodingParameters
 | [`threshold`](#threshold) | *float* |
 | [`fps`](#fps) | *int* |
 | [`autoFilter`](#autofilter) | *int* |
-| [`clarityCalculationMethod`](#claritycalculationmethod) | [`ClarityCalculationMethod`]({{ site.manual_enum }}frame-decoding.html#claritycalculationmethod) |
-| [`clarityFilterMode`](#clarityfiltermode) | [`ClarityFilterMode`]({{ site.manual_enum }}frame-decoding.html#clarityfiltermode) |
+| [`clarityCalculationMethod`](#claritycalculationmethod) | [`ClarityCalculationMethod`]({{ site.manual_interface_enum }}frame-decoding.html#claritycalculationmethod) |
+| [`clarityFilterMode`](#clarityfiltermode) | [`ClarityFilterMode`]({{ site.manual_interface_enum }}frame-decoding.html#clarityfiltermode) |
 | [`reserved`](#reserved) | *char\[28\]* |
 
 
@@ -164,13 +164,13 @@ Sets the method used for calculating the clarity of the frames.
 ClarityCalculationMethod tagFrameDecodingParameters::clarityCalculationMethod
 ```
 - **Value range**   
-    Any one of the [`ClarityCalculationMethod`]({{ site.manual_enum }}frame-decoding.html#claritycalculationmethod) Enumeration items.   
+    Any one of the [`ClarityCalculationMethod`]({{ site.manual_interface_enum }}frame-decoding.html#claritycalculationmethod) Enumeration items.   
       
 - **Default value**   
     ECCM_CONTRAST   
     
 - **See also**  
-    [`ClarityCalculationMethod`]({{ site.manual_enum }}frame-decoding.html#claritycalculationmethod)    
+    [`ClarityCalculationMethod`]({{ site.manual_interface_enum }}frame-decoding.html#claritycalculationmethod)    
     
 
 ### clarityFilterMode
@@ -179,13 +179,13 @@ Sets the mode used for filtering frames by calculated clarity.
 ClarityFilterMode tagFrameDecodingParameters::clarityFilterMode
 ```
 - **Value range**   
-    Any one of the [`ClarityFilterMode`]({{ site.manual_enum }}frame-decoding.html#clarityfiltermode) Enumeration items.   
+    Any one of the [`ClarityFilterMode`]({{ site.manual_interface_enum }}frame-decoding.html#clarityfiltermode) Enumeration items.   
       
 - **Default value**   
     CFM_GENERAL   
     
 - **See also**  
-    [`ClarityFilterMode`]({{ site.manual_enum }}frame-decoding.html#clarityfiltermode)    
+    [`ClarityFilterMode`]({{ site.manual_interface_enum }}frame-decoding.html#clarityfiltermode)    
     
 
 ### reserved
