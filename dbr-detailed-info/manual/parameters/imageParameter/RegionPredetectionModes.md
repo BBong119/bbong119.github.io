@@ -53,6 +53,11 @@ If the image is large and the barcode on the image is very small, it is recommen
 #### Mode Arguments
 - [MinImageDimension](#minimagedimension)
 - [Sensitivity](#sensitivity)
+- [RelativeBarcodeRegions](#relativebarcoderegions)
+- [ForeAndBackgroundColours](#foreandbackgroundcolours )
+- [AspectRatioRange](#aspectratiorange )
+- [HeightRange](#heightrange)
+- [WidthRange](#widthrange)
  
 ##### MinImageDimension 
 Sets the minimum image dimension (in pixels) to pre-detect barcode regions.
@@ -73,7 +78,22 @@ Sets the sensitivity used for region predetection algorithm.
 | *int* | [1, 9] | 1 | "RPM_GENERAL_GRAY_CONTRAST"<br>"RPM_GENERAL_HSV_CONTRAST"<br>"RPM_GENERAL_RGB_CONTRAST" |         
 
 - **Remark**     
-  A larger value means the library will take more effort to detect regions.   
+  A larger value means the library will take more effort to detect regions.  
+
+
+##### RelativeBarcodeRegions 
+ Sets the barcode regions relative to the predetected region.  
+
+| Value Type | Value Range | Default Value | Vaild Modes | 
+| ---------- | ----------- | ------------- | ----------- |
+| *string* | A string value representing one or more regions. | "" | "RPM_GENERAL_HSV_CONTRAST" |         
+
+
+- **Remark**     
+  Each region need to be defined as "[`Left`, `Top`, `Right`, `Bottom`, `Index`]".   
+  
+  
+ 
   
 
 ### Setting Methods
