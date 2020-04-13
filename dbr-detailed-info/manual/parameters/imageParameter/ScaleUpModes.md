@@ -120,11 +120,11 @@ Sets the target module size for scale-up.
 
 
 #### As `PublicRuntimeSettings` Member
-`ScaleUpModes` is a [`ScaleUpMode`]({{ site.manual_interface_enum }}parameter-mode-enum.html#scaleupmode) array defines in `furtherModes` which is a struct member of `PublicRuntimeSettings`. It is used for setting the modes and the priority to control the sampling methods of scale-up for linear barcodes with small module sizes. Default value will be used if there is no manual setting.
+`ScaleUpModes` as a member of `PublicRuntimeSettings` struct is a [`ScaleUpMode`]({{ site.manual_interface_enum }}parameter-mode-enum.html#scaleupmode) array for setting the modes and the priority to control the sampling methods of scale-up for linear barcodes with small module sizes. Default value will be used if there is no manual setting.
 
 | Struct |	Struct Member Name | Value Type |
 | ------ | ------------------ | ---------- |
-| [`PublicRuntimeSettings`]({{ site.manual_interface_struct }}PublicRuntimeSettings.html)->[`furtherModes`]({{ site.manual_interface_struct }}PublicRuntimeSettings.html#furthermodes) | [`scaleUpModes`]({{ site.manual_interface_struct }}FurtherModes.html#scaleupmodes) | [`ScaleUpMode`]({{ site.manual_interface_enum }}parameter-mode-enum.html#scaleupmode)[8] |
+| [`PublicRuntimeSettings`]({{ site.manual_interface_struct }}PublicRuntimeSettings.html) | [`scaleUpModes`]({{ site.manual_interface_struct }}PublicRuntimeSettings.html#scaleupmodes) | [`ScaleUpMode`]({{ site.manual_interface_enum }}parameter-mode-enum.html#scaleupmode)[8] |
 
 
 **Remark**   
@@ -133,6 +133,5 @@ Sets the target module size for scale-up.
 
 **See Also**    
 - [`PublicRuntimeSettings` Struct]({{ site.manual_interface_struct }}PublicRuntimeSettings.html)
-- [`FurtherModes` Struct]({{ site.manual_interface_struct }}FurtherModes.html)
 - [`ScaleUpMode` Enumeration]({{ site.manual_interface_enum }}parameter-mode-enum.html#scaleupmode)
 
