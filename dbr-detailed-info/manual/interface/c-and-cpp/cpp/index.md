@@ -10,8 +10,8 @@ sourceCodeUrl: /dbr-detailed-info/manual/interface/c-and-cpp/cpp/index.md
 - [`CBarcodeReader` Attributes](#cbarcodereader-protected-attribute) 
 - [Function Pointer](#function-pointer)
 - [Error Code](#error-code)
-- [Struct](#struct)  
-- [Enumeration](#enumeration)
+- [Structs](#structs)  
+- [Enumerations](#enumerations)
 
      
 &nbsp; 
@@ -160,6 +160,7 @@ sourceCodeUrl: /dbr-detailed-info/manual/interface/c-and-cpp/cpp/index.md
 &nbsp; 
 
 ## Function Pointer
+
   | Function | Description |
   |----------|-------------|
   | [`CB_Error`](function-pointer/index.md#cb_error) | Represents the method that will handle the error code returned by the SDK. |
