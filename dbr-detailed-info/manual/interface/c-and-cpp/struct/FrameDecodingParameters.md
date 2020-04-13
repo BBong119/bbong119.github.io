@@ -30,8 +30,8 @@ typedef struct tagFrameDecodingParameters  FrameDecodingParameters
 | [`threshold`](#threshold) | *float* |
 | [`fps`](#fps) | *int* |
 | [`autoFilter`](#autofilter) | *int* |
-| [`clarityCalculationMethod`](#claritycalculationmethod) | Sets the method used for calculating the clarity of the frames. |
-| [`clarityFilterMode`](#clarityfiltermode) | Sets the mode used for filtering frames by calculated clarity. |
+| [`clarityCalculationMethod`](#claritycalculationmethod) | [`ClarityCalculationMethod`]({{ site.manual_enum }}frame-decoding.html#claritycalculationmethod) |
+| [`clarityFilterMode`](#clarityfiltermode) | [`ClarityFilterMode`]({{ site.manual_enum }}frame-decoding.html#clarityfiltermode) |
 | [`reserved`](#reserved) | *char\[28\]* |
 
 
