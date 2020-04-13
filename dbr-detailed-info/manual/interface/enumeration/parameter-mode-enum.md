@@ -20,6 +20,7 @@ sourceCodeUrl: /dbr-detailed-info/manual/interface/enumeration/parameter-mode-en
   | [`GrayscaleTransformationMode`](#grayscaletransformationmode) | Describes the grayscale transformation mode. |
   | [`ImagePreprocessingMode`](#imagepreprocessingmode) | Describes the image preprocessing mode. |
   | [`LocalizationMode`](#localizationmode) | Describes the localization mode. | 
+  | [`PDFReadingMode`](#pdfreadingmode) | Describes the PDF reading mode.  |
   | [`RegionPredetectionMode`](#regionpredetectionmode) | Describes the region predetection mode. |
   | [`ScaleUpMode`](#scaleupmode) | Describes the scale up mode. |
   | [`TerminatePhase`](#terminatephase) | Describes the terminate phase. |
@@ -348,6 +349,31 @@ Describes the localization mode.
 
 &nbsp;
 
+
+
+## PDFReadingMode
+Describes the PDF reading mode. 
+
+
+### Declarations
+   
+| Language | Declaration |
+| -------- | ----------- |
+| C / C++ | `enum PDFReadingMode` |
+| .Net | `enum Dynamsoft.Barcode.EnumPDFReadingMode` |
+
+
+### Members
+   
+| Member | Value | Description |
+| ------ | ----- | ----------- |
+| PDFRM_AUTO | 0x01 | Lets the library choose the reading mode automatically. |
+| PDFRM_VECTOR | 0x02 | Detects barcode from vector data in PDF file. |
+| PDFRM_RASTER | 0x04 | Converts the PDF file to image(s) first, then perform barcode recognition. |
+
+
+
+&nbsp;
 
 
 ## RegionPredetectionMode
