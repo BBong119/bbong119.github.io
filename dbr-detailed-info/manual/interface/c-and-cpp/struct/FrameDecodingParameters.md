@@ -30,6 +30,8 @@ typedef struct tagFrameDecodingParameters  FrameDecodingParameters
 | [`threshold`](#threshold) | *float* |
 | [`fps`](#fps) | *int* |
 | [`autoFilter`](#autofilter) | *int* |
+| [`clarityCalculationMethod`](#claritycalculationmethod) | Sets the method used for calculating the clarity of the frames. |
+| [`clarityFilterMode`](#clarityfiltermode) | Sets the mode used for filtering frames by calculated clarity. |
 | [`reserved`](#reserved) | *char\[28\]* |
 
 
@@ -155,7 +157,37 @@ int tagFrameDecodingParameters::autoFilter
 - **Remark**  
     0: Diable filtering frames automatically. 1: Enable filtering frames automatically. 
     
+
+### clarityCalculationMethod
+Sets the method used for calculating the clarity of the frames.
+```cpp
+ClarityCalculationMethod tagFrameDecodingParameters::clarityCalculationMethod
+```
+- **Value range**   
+    Any one of the [`ClarityCalculationMethod`]({{ site.manual_enum }}frame-decoding.html#claritycalculationmethod) Enumeration items.   
+      
+- **Default value**   
+    ECCM_CONTRAST   
     
+- **See also**  
+    [`ClarityCalculationMethod`]({{ site.manual_enum }}frame-decoding.html#claritycalculationmethod)    
+    
+
+### clarityFilterMode
+Sets the mode used for filtering frames by calculated clarity.
+```cpp
+ClarityFilterMode tagFrameDecodingParameters::clarityFilterMode
+```
+- **Value range**   
+    Any one of the [`ClarityFilterMode`]({{ site.manual_enum }}frame-decoding.html#clarityfiltermode) Enumeration items.   
+      
+- **Default value**   
+    CFM_GENERAL   
+    
+- **See also**  
+    [`ClarityFilterMode`]({{ site.manual_enum }}frame-decoding.html#clarityfiltermode)    
+    
+
 ### reserved
 Reserved memory for the struct. The length of this array indicates the size of the memory reserved for this struct.
 ```cpp
