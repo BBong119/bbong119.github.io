@@ -280,6 +280,7 @@ sourceCodeUrl: /dbr-detailed-info/manual/interface/c-and-cpp/cpp/index.md
 - [`IntermediateResultSavingMode`]({{ site.manual_interface_enum}}result-enum.html#intermediateresultsavingmode)	
 - [`IntermediateResultType`]({{ site.manual_interface_enum}}result-enum.html#intermediateresulttype)	
 - [`LocalizationMode`]({{ site.manual_interface_enum}}parameter-mode-enum.html#localizationmode)	
+- [`PDFReadingMode`]({{ site.manual_interface_enum}}parameter-mode-enum.html#pdfreadingmode)   
 - [`QRCodeErrorCorrectionLevel`]({{ site.manual_interface_enum}}other-enum.html#qrcodeerrorcorrectionlevel)	
 - [`RegionPredetectionMode`]({{ site.manual_interface_enum}}parameter-mode-enum.html#regionpredetectionmode)	
 - [`ResultCoordinateType`]({{ site.manual_interface_enum}}result-enum.html#resultcoordinatetype)	
