@@ -173,7 +173,7 @@
 			for(var i = 0, len = nav1s.length; i < len; i++){
 				var nav3s = nav2s[i].getElementsByTagName("li");
 				var isfound = false;
-				for (int j = 0, len2 = nav3s.length; j < len2; j++)
+				for (var j = 0, len2 = nav3s.length; j < len2; j++)
 				{
 					var hrefValue = nav3s[j].getElementsByTagName("a")[0].href;
 					if (URL.search(hrefValue) != -1)
