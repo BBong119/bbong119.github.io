@@ -129,7 +129,7 @@ To deploy your application, make sure the DLLs are in the same folder as the EXE
 The SDK provides multiple decoding methods that support reading barcodes from different sources, including static images,
 video stream, files in memory, base64 string, bitmap, etc. Here is a list of all decoding methods:
 - [DBR_DecodeFile]({{ site.manual_interface_c }}methods/decode.html#dbr_decodefile): Reads barcodes from a specified file (BMP, JPEG, PNG, GIF, TIFF or PDF).   
-- [DBR_DecodeBase64String]({{ site.manual_interface_c }}methods/ddecode.html#br_decodebase64string): Reads barcodes from a base64 encoded string of a file.   
+- [DBR_DecodeBase64String]({{ site.manual_interface_c }}methods/decode.html#br_decodebase64string): Reads barcodes from a base64 encoded string of a file.   
 - [DBR_DecodeBitmap]({{ site.manual_interface_c }}methods/decode.html#dbr_decodebitmap) and [DBR_DecodeDIB]({{ site.manual_interface_c }}methods/decode.html#dbr_decodedib): Reads barcodes from a bitmap. When handling multi-page images, it will only decode the
 current page.   
 - [DBR_DecodeBuffer]({{ site.manual_interface_c }}methods/decode.html#dbr_decodebuffer): Reads barcodes from raw buffer.
