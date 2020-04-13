@@ -34,20 +34,7 @@
 					</ul>
 				</li>
 
-				<li><span>DBR Enhancements</span>
-					<ul name="listLevel2">
-						<li><a href="{{ site.intermediateResults }}" class="otherLinkColour">Intermediate Results</a></li>
-						<li><a href="{{ site.dpm }}" class="otherLinkColour">Direct Part Marking (DPM)</a></li>
-						<li><a href="{{ site.panoramaOverlap }}" class="otherLinkColour">Panorama / Overlap</a></li>
-						<li><a href="{{ site.3dReconstruction }}" class="otherLinkColour">3D Reconstruction</a></li>
-						<li><a href="{{ site.pdfVectors }}" class="otherLinkColour">PDF Vectors</a></li>
-					</ul>
-				</li>
-
-				<li><span>DBR Extended Information</span>
-					<ul name="listLevel2">
-						<li><a href="{{ site.industrialSolutions }}" class="otherLinkColour">Industrial solutions</a></li>
-						<li><a href="{{ site.parameterUsage }}" class="otherLinkColour">How to use parameters</a></li>
+				<li><span>DBR Enhancements</span>rUsage }}" class="otherLinkColour">How to use parameters</a></li>
 						<li><a href="{{ site.complicateImageHandling }}" class="otherLinkColour">How to handle complicate images</a></li>
 						<li><a href="{{ site.licenseUsageTracking }}" class="otherLinkColour">License &amp; Usage Tracking</a></li>
 						<li><a href="{{ site.barcodeBasisKnowledge }}" class="otherLinkColour">Barcode basis knowledge</a></li>
@@ -74,8 +61,28 @@
 		  	var navWrap = document.getElementById("menuLsitContainer");
 		  	var nav1s = navWrap.getElementsByTagName("span");
 			var nav2s = document.getElementsByName("listLevel2");
+			var URL = document.URL;
 			for(var i = 0, len = nav1s.length; i < len; i++){
-				nav2s[i].style.display = "none";
+				var nav3s = nav2s[i].getElementsByTagName("li");
+				var isfound = false;
+				for (int j = 0; j < nav3.length; j++)
+				{
+					var hrefValue = nav3[j].getElementsByTagName("a")[0].href;
+					if (URL.search(hrefValue) != -1)
+					{
+						isfound=true;
+						nav2s[i].style.display = "block";
+						break;
+					}
+				}
+				if (isfound)
+				{
+					break;
+				}
+				else
+				{
+					nav2s[i].style.display = "none";
+				}
 			}
 			for(var i = 0, len = nav1s.length; i < len; i++){
    				nav1s[i].onclick=(function(i){
