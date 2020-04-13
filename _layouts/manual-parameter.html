@@ -170,9 +170,15 @@
 		  	var nav1s = navWrap.getElementsByTagName("span");
 			var nav2s = document.getElementsByName("listLevel2");
 			var URL = document.URL;
+			
+			var isfound = false;
 			for(var i = 0, len = nav1s.length; i < len; i++){
-				var nav3s = nav2s[i].getElementsByTagName("li");
-				var isfound = false;
+				if (isfound)
+				{
+					nav2s[i].style.display = "none";
+					continue;
+				}
+				var nav3s = nav2s[i].getElementsByTagName("li");				
 				for (var j = 0, len2 = nav3s.length; j < len2; j++)
 				{
 					var hrefValue = nav3s[j].getElementsByTagName("a")[0].href;
@@ -183,11 +189,7 @@
 						break;
 					}
 				}
-				if (isfound)
-				{
-					break;
-				}
-				else
+				if (!isfound)
 				{
 					nav2s[i].style.display = "none";
 				}
