@@ -8,7 +8,7 @@ sourceCodeUrl: /dbr-basic-info/user-guide/windows/c.md
 # Developer guide for Windows Edition - C
 
 ## Table of Contents
-- [System requirements](#system-requirements)
+- [System Requirements](#system-requirements)
 - [Installation](#installation)
 - [Getting Started: HelloWorld](#getting-started-helloworld)
 - [Decoding Methods](#decoding-methods)
