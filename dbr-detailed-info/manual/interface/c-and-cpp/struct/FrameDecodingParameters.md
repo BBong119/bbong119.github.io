@@ -25,7 +25,7 @@ typedef struct tagFrameDecodingParameters  FrameDecodingParameters
 | [`width`](#width) | *int* |
 | [`height`](#height) | *int* |
 | [`stride`](#stride) | *int* |
-| [`imagePixelFormat`](#imagepixelformat) | [`ImagePixelFormat`]({{ site.manual_interface_enum }}ImagePixelFormat.html) |
+| [`imagePixelFormat`](#imagepixelformat) | [`ImagePixelFormat`]({{ site.manual_interface_enum}}other-enum.html#imagepixelformat) |
 | [`region`](#region) | [`RegionDefinition`](RegionDefinition.md) |
 | [`threshold`](#threshold) | *float* |
 | [`fps`](#fps) | *int* |
@@ -94,13 +94,13 @@ The image pixel format used in the image byte array.
 ImagePixelFormat tagFrameDecodingParameters::imagePixelFormat
 ```
 - **Value range**   
-    A value of [`ImagePixelFormat`]({{ site.manual_interface_enum }}ImagePixelFormat.html) Enumeration items.
+    A value of [`ImagePixelFormat`]({{ site.manual_interface_enum}}other-enum.html#imagepixelformat) Enumeration items.
       
 - **Default value**   
     `IPF_GRAYSCALED`
     
 - **See also**  
-    [`ImagePixelFormat`]({{ site.manual_interface_enum }}ImagePixelFormat.html)
+    [`ImagePixelFormat`]({{ site.manual_interface_enum}}other-enum.html#imagepixelformat)
       
 ### region
 The region definition of the frame to calculate the internal indicator.  
@@ -125,10 +125,10 @@ float tagFrameDecodingParameters::threshold
     0.1
     
 - **Remark**  
-    The SDK will calculate an inner indicator for each frame from [`AppendFrame`]({{ site.manual_interface_cpp}}CBarcodeReader/methods/AppendFrame.html) or  [`DBR_AppendFrame`]({{ site.manual_interface_c}}methods/DBR_AppendFrame.html), if the change rate of the indicators between the current frame and the history frames is larger than the given threshold, the current frame will not be added to the inner frame queue waiting for decoding.
+    The SDK will calculate an inner indicator for each frame from [`AppendFrame`]({{ site.manual_interface_cpp}}CBarcodeReader/methods/video.html#appendframe) or  [`DBR_AppendFrame`]({{ site.manual_interface_c}}methods/video.html#dbr_appendframe), if the change rate of the indicators between the current frame and the history frames is larger than the given threshold, the current frame will not be added to the inner frame queue waiting for decoding.
 
 ### fps
-The frequency of calling [`AppendFrame`]({{ site.manual_interface_cpp}}CBarcodeReader/methods/AppendFrame.html) or  [`DBR_AppendFrame`]({{ site.manual_interface_c}}methods/DBR_AppendFrame.html) per second.
+The frequency of calling [`AppendFrame`]({{ site.manual_interface_cpp}}CBarcodeReader/methods/video.html#appendframe) or  [`DBR_AppendFrame`]({{ site.manual_interface_c}}methods/video.html#dbr_appendframe) per second.
 ```cpp
 int tagFrameDecodingParameters::fps
 ```
