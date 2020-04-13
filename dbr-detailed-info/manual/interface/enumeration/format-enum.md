@@ -24,7 +24,7 @@ Describes the barcode types in BarcodeFormat group 1. All the formats can be com
 | Language | Declaration |
 | -------- | ----------- |
 | C / C++ | `enum BarcodeFormat` |
-| .Net | `Dynamsoft.Barcode.EnumBarcodeFormat ` |
+| .Net | `enum Dynamsoft.Barcode.EnumBarcodeFormat ` |
 
 
 ### Members
