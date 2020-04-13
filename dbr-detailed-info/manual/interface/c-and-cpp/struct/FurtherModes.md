@@ -178,7 +178,7 @@ DPMCodeReadingMode tagFurtherModes::dpmCodeReadingModes[8]
    Each array item can be any one of the [`DPMCodeReadingMode`]({{ site.manual_interface_enum}}parameter-mode-enum.html#dpmcodereadingmode) Enumeration items.  
      
 - **Default value**  
-   `[DPMCRM_GENERAL,DPMCRM_SKIP,DPMCRM_SKIP,DPMCRM_SKIP,DPMCRM_SKIP,DPMCRM_SKIP,DPMCRM_SKIP,DPMCRM_SKIP]`  
+   `[DPMCRM_SKIP,DPMCRM_SKIP,DPMCRM_SKIP,DPMCRM_SKIP,DPMCRM_SKIP,DPMCRM_SKIP,DPMCRM_SKIP,DPMCRM_SKIP]`  
      
 - **Remark**  
    The array index represents the priority of the item. The smaller index is, the higher priority is.  
