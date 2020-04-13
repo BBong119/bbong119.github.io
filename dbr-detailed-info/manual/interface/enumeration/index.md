@@ -29,6 +29,7 @@ sourceCodeUrl: /dbr-detailed-info/manual/interface/enumeration/index.md
   | [`GrayscaleTransformationMode`](parameter-mode-enum.md#grayscaletransformationmode) | Describes the grayscale transformation mode. |
   | [`ImagePreprocessingMode`](parameter-mode-enum.md#imagepreprocessingmode) | Describes the image preprocessing mode. |
   | [`LocalizationMode`](parameter-mode-enum.md#localizationmode) | Describes the localization mode. | 
+  | [`PDFReadingMode`](parameter-mode-enum.md#pdfreadingmode) | Describes the PDF reading mode. |
   | [`RegionPredetectionMode`](parameter-mode-enum.md#regionpredetectionmode) | Describes the region predetection mode. |
   | [`ScaleUpMode`](parameter-mode-enum.md#scaleupmode) | Describes the scale up mode. |
   | [`TerminatePhase`](parameter-mode-enum.md#terminatephase) | Describes the terminate phase. |
