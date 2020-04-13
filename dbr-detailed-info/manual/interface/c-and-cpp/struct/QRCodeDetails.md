@@ -24,7 +24,7 @@ typedef struct tagQRCodeDetails  QRCodeDetails
 | [`moduleSize`](#modulesize) | *int* |
 | [`rows`](#rows) | *int* |
 | [`columns`](#columns) | *int* |
-| [`errorCorrectionLevel`](#errorcorrectionlevel) | [`QRCodeErrorCorrectionLevel`]({{ site.manual_interface_enum }}QRCodeErrorCorrectionLevel.html) |
+| [`errorCorrectionLevel`](#errorcorrectionlevel) | [`QRCodeErrorCorrectionLevel`]({{ site.manual_interface_enum}}other-enum.html#qrcodeerrorcorrectionlevel) |
 | [`version`](#version) | *int* |
 | [`model`](#model) | *int* |
 | [`reserved`](#reserved) | *char\[32\]* |
