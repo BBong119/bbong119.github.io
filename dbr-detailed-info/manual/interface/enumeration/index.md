@@ -41,13 +41,20 @@ sourceCodeUrl: /dbr-detailed-info/manual/interface/enumeration/index.md
 
   | Enumeration | Description |
   |-------------|-------------|
-  | [`IMResultDataType`](result-enum.md##imresultdatatype) | Describes the intermediate result data type. |
-  | [`IntermediateResultSavingMode`](result-enum.md##intermediateresultsavingmode) | Describes the intermediate result saving mode. |
-  | [`IntermediateResultType`](result-enum.md##intermediateresulttype) | Describes the intermediate result type. |
-  | [`ResultCoordinateType`](result-enum.md##resultcoordinatetype) | Describes the result coordinate type. |
-  | [`ResultType`](result-enum.md##resulttype) | Describes the extended result type. |
-  | [`TextResultOrderMode`](result-enum.md##textresultordermode) | Describes the text result order mode. |
+  | [`IMResultDataType`](result-enum.md#imresultdatatype) | Describes the intermediate result data type. |
+  | [`IntermediateResultSavingMode`](result-enum.md#intermediateresultsavingmode) | Describes the intermediate result saving mode. |
+  | [`IntermediateResultType`](result-enum.md#intermediateresulttype) | Describes the intermediate result type. |
+  | [`ResultCoordinateType`](result-enum.md#resultcoordinatetype) | Describes the result coordinate type. |
+  | [`ResultType`](result-enum.md#resulttype) | Describes the extended result type. |
+  | [`TextResultOrderMode`](result-enum.md#textresultordermode) | Describes the text result order mode. |
 
+## [Frame Decoding Enumeration](frame-decoding-enum.md)
+
+  | Enumeration | Description |
+  |-------------|-------------|
+  | [`ClarityCalculationMethod`](frame-decoding-enum.md#claritycalculationmethod) | Describes the clarity calculation method. |
+  | [`ClarityFilterMode`](frame-decoding-enum.md#clarityfiltermode) | Describes the clarity filter mode. |
+  
 ## [Other Enumeration](other-enum.md)
 
   | Enumeration | Description |
