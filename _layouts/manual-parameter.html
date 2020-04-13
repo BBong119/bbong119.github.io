@@ -169,26 +169,28 @@
 		  	var navWrap = document.getElementById("menuLsitContainer");
 		  	var nav1s = navWrap.getElementsByTagName("span");
 			var nav2s = document.getElementsByName("listLevel2");
-			
-			if ("{{ page.objectName }}" == "imageParameter"){
-				nav2s[0].style.display = "block";
-			}
-			else{
-				nav2s[0].style.display = "none";
-			}
-								  
-			if ("{{ page.objectName }}" == "regionDefinition"){
-				nav2s[1].style.display = "block";
-			}
-			else{
-				nav2s[1].style.display = "none";
-			}
-								  
-			if ("{{ page.objectName }}" == "formatSpecification"){
-				nav2s[2].style.display = "block";
-			}
-			else{
-				nav2s[2].style.display = "none";
+			var URL = document.url;
+			for(var i = 0, len = nav1s.length; i < len; i++){
+				var nav3s = nav2s[i].getElementsByTagName("li");
+				var isfound = false;
+				for (int j = 0; j < nav3.length; j++)
+				{
+					var hrefValue = nav3[j].getElementsByTagName("a")[0].href;
+					if (URL.search(hrefValue) != -1)
+					{
+						isfound=true;
+						nav2s[i].style.display = "block";
+						break;
+					}
+				}
+				if (isfound)
+				{
+					break;
+				}
+				else
+				{
+					nav2s[i].style.display = "none";
+				}
 			}
 
 			for(var i = 0, len = nav1s.length; i < len; i++){
