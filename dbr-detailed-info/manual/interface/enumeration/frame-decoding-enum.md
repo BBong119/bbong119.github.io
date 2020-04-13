@@ -1,3 +1,10 @@
+---
+layout: manual-interface-enum
+id: interface_enum_frame_decoding
+sourceCodeUrl: /dbr-detailed-info/manual/interface/enumeration/frame-decoding-enum.md
+---
+
+
 # Dynamsoft Barcode Reader Enumeration - Frame Decoding Enumeration
 
   | Enumeration | Description |
