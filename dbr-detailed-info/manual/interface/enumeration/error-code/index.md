@@ -65,6 +65,8 @@ sourceCodeUrl: /dbr-detailed-info/manual/interface/enumeration/error-code/index.
   | `DBRERR_MAXICODE_LICENSE_INVALID` | -10057 | The Maxicode license is invalid. |
   | `DBRERR_GS1_DATABAR_LICENSE_INVALID` | -10058 | The GS1 Databar license is invalid. |
   | `DBRERR_GS1_COMPOSITE_LICENSE_INVALID` | -10059 | The GS1 Composite code license is invalid. |
+  | `DBRERR_PANORAMA_LICENSE_INVALID`   | -10060 | The panorama license is invalid. |
+  | `DBRERR_DOTCODE_LICENSE_INVALID` | -10061 | The DotCode license is invalid. |
 
 
   
