@@ -1,0 +1,121 @@
+
+<!DOCTYPE html>
+<html lang="en-US">
+	
+{%- include head.html -%}
+     
+<body>
+	<div class="wrapper">
+		<div class="sideBar">	 
+			{%- include sideBarProductPage.html -%}
+			<div class="sideBarHeader">
+				<p><a href="{{ site.homePage }}" class="sideHomePage">< Documentation Home Page</a></p>
+				<p class="sideName">Dyanamsoft Barcocde Reader - Basic Information</p>
+			</div>	
+			<ul class="disc" id= "menuLsitContainer" name="listLevel1">
+				<li><span>DBR Basic Information</span>
+					<ul name="listLevel2">
+						<li><a href="{{ site.dbrOverview }}" class="otherLinkColour">Overview</a></li>
+						<li><a href="{{ site.dbrPrinciples }}" class="otherLinkColour">Principles</a></li>
+						<li><a href="{{ site.userGuide }}" class="otherLinkColour">User Guides</a></li>
+						<li><a href="{{ site.evaluationTools }}" class="otherLinkColour">Evaluation Tools</a></li>
+						<li><a href="{{ site.securityIssues }}" class="otherLinkColour">Security Issues</a></li>
+					</ul>
+				</li>
+
+				<li><span>DBR Detailed Information</span>
+					<ul name="listLevel2">
+						<li><a href="{{ site.manual }}" class="otherLinkColour">Manual</a>
+						<ul name="listLevel3">
+							<li><a href="{{ site.manual_interface }}" class="otherLinkColour">interface</a></li>
+							<li><a href="{{ site.manual_parameter }}" class="otherLinkColour">parameters</a></li>
+						</ul>
+						</li>
+						<li><a href="{{ site.demosSamples }}" class="otherLinkColour">Demos and Samples</a></li>
+					</ul>
+				</li>
+
+				<li><span>DBR Enhancements</span>
+					<ul name="listLevel2">
+						<li><a href="{{ site.intermediateResults }}" class="otherLinkColour">Intermediate Results</a></li>
+						<li><a href="{{ site.dpm }}" class="otherLinkColour">Direct Part Marking (DPM)</a></li>
+						<li><a href="{{ site.panoramaOverlap }}" class="otherLinkColour">Panorama / Overlap</a></li>
+						<li><a href="{{ site.3dReconstruction }}" class="otherLinkColour">3D Reconstruction</a></li>
+						<li><a href="{{ site.pdfVectors }}" class="otherLinkColour">PDF Vectors</a></li>
+					</ul>
+				</li>
+
+				<li><span>DBR Extended Information</span>
+					<ul name="listLevel2">
+						<li><a href="{{ site.industrialSolutions }}" class="otherLinkColour">Industrial solutions</a></li>
+						<li><a href="{{ site.parameterUsage }}" class="otherLinkColour">How to use parameters</a></li>
+						<li><a href="{{ site.complicateImageHandling }}" class="otherLinkColour">How to handle complicate images</a></li>
+						<li><a href="{{ site.licenseUsageTracking }}" class="otherLinkColour">License &amp; Usage Tracking</a></li>
+						<li><a href="{{ site.barcodeBasisKnowledge }}" class="otherLinkColour">Barcode basis knowledge</a></li>
+						<li><a href="{{ site.imageProcessingKnowledge }}" class="otherLinkColour">Image processing knowledge</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<div class="container">
+			<div class="main">
+				<div class = "content markdown-body">
+					<p align="left"><img src="{{ site.dynamsoft_logo }}"  alt="Dynamsoft Logo"/></p>
+					<h2 id="in-the-process-of-development">in the process of development…</h2>
+					<p>Back to <a href="/">Homepage</a></p>
+				<div>
+			</div>
+		</div>
+    	</div>
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js" integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"></script>
+    	<script>anchors.add();</script>
+
+	<script type="text/javascript">
+		(function(){
+		  	var navWrap = document.getElementById("menuLsitContainer");
+		  	var nav1s = navWrap.getElementsByTagName("span");
+			var nav2s = document.getElementsByName("listLevel2");
+			var URL = document.URL;
+			
+			var isfound = false;
+			for(var i = 0, len = nav1s.length; i < len; i++){
+				if (isfound)
+				{
+					nav2s[i].style.display = "none";
+					continue;
+				}
+				var nav3s = nav2s[i].getElementsByTagName("li");				
+				for (var j = 0, len2 = nav3s.length; j < len2; j++)
+				{
+					var hrefValue = nav3s[j].getElementsByTagName("a")[0].href;
+					if (URL.search(hrefValue) != -1)
+					{
+						isfound=true;
+						nav2s[i].style.display = "block";
+						break;
+					}
+				}
+				if (!isfound)
+				{
+					nav2s[i].style.display = "none";
+				}
+			}
+			
+			for(var i = 0, len = nav1s.length; i < len; i++){
+   				nav1s[i].onclick=(function(i){
+    					return function(){
+     						if (nav2s[i].style.display == "block"){
+							nav2s[i].style.display = "none";
+						}
+						else{
+							nav2s[i].style.display = "block";
+						}				       						
+    					}
+   				})(i)
+  			}			     
+		 })()
+	</script>
+    
+  </body>
+</html>
+
