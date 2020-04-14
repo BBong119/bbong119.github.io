@@ -90,16 +90,34 @@ Sets the sensitivity used for region predetection algorithm.
 
 
 - **Remark**     
-  - Each region need to be defined as "[`Left`, `Top`, `Right`, `Bottom`, `Index`]". If you want to define multiple regions, you can use a "";"" to separate them. If there is no region defined, the library will consider the predetected regions as barcode regions.    
+  - Each region need to be defined as [`Left`, `Top`, `Right`, `Bottom`, `Index`]. If you want to define multiple regions, you can use a "";"" to separate them. If there is no region defined, the library will consider the predetected regions as barcode regions.    
   - `Left`, `Top`, `Right`, `Bottom` are four percentage values relative to top-left corner of the predetected region. 
   - `Index` means the index of a specific colour set in [`ForeAndBackgroundColours`](#foreandbackgroundcolours) which the current region is applied to. If the value of `index` is set to -1, the current region will be applied to all colour sets in [`ForeAndBackgroundColours`](#foreandbackgroundcolours).
   - Value range of `Left`, `Top`, `Right`, `Bottom`: [-10000,10000]
   - Value range of `index`: [-1, 0x7fffffff]
   
   
+##### ForeAndBackgroundColours 
+Specifies a set (or multiple sets) of the foreground and background colours used for region predetection algorithm.
+
+| Value Type | Value Range | Default Value | Vaild Modes | 
+| ---------- | ----------- | ------------- | ----------- |
+| *string* | A string value representing one or more colour sets. | "" | "RPM_GENERAL_HSV_CONTRAST" |         
+
+
+- **Remark**     
+  - Each set of the foreground and background colours need to be defined as [`ForegroundColour`, `BackgroundColour`, Tolerance]. If you want to define multiple sets, you can use a "";"" to separate them. This argument is mandatory, if there is no 
+  - `Left`, `Top`, `Right`, `Bottom` are four percentage values relative to top-left corner of the predetected region. 
+  - `Index` means the index of a specific colour set in [`ForeAndBackgroundColours`](#foreandbackgroundcolours) which the current region is applied to. If the value of `index` is set to -1, the current region will be applied to all colour sets in [`ForeAndBackgroundColours`](#foreandbackgroundcolours).
+  - Value range of `Left`, `Top`, `Right`, `Bottom`: [-10000,10000]
+  - Value range of `index`: [-1, 0x7fffffff]  
   
-  
- 
+ "1. Here is an example to define a set of colours: 
+2. If you want to define multiple sets of colours, please use "";"" to separate them.
+3. The allowed values for ForegroundColour and BackgroundColour is [-1, 360].
+4. The value for ForegroundColour and BackgroundColour is the Hue value in the HSV colour space. -1 means black, gray, white.
+5. The allowed values for Tolerance is [0, 360], which indicates if the surrounding colour of ForegroundColour/BackGroundColour will be regarded as a specified colour."
+
   
 
 ### Setting Methods
