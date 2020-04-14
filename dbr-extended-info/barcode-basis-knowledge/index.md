@@ -1,5 +1,6 @@
-### in the process of development...
-Back to [Homepage]({{ site.homePage }})
+---
+layout: developing
+sourceCodeUrl: /dbr-extended-info/barcode-basis-knowledge/index.md
+---
 
-
-// barcode basis knowledge
+barcode basis knowledge
