@@ -1,5 +1,4 @@
 ---
-layout: tmpHomePage
 id: dbr_docHomePage
 sourceCodeUrl: /index.md
 ---
