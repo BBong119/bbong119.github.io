@@ -1,9 +1,10 @@
 ---
-sourceCodeUrl: https://github.com/BBong119/bbong119.github.io/blob/master/index.md
+layout: dbr-basic
+id: dbr_docHomePage
+sourceCodeUrl: /index.md
 ---
 
 # Dynamsoft Barcode Reader Documentation  
-<p align="right"><a href="{{ page.sourceCodeUrl }} " align="right" class="#otherLinkColour">Edit<img src="{{ site.editIcon }}" width="20px" height="15px" /></a></p>   
 
 ## Basic Information of Dynamsoft Barcode Reader  
 - [Overview]({{ site.dbrOverview }})  
