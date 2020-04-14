@@ -124,7 +124,7 @@ Sets the aspect ratio range of the bounding rectangle of the predetected region.
 
 - **Remark**     
   -  The aspect ratio range need to be defined as [`MinAspectRatio`, `MaxAspectRatio`]. There will be no limitation without manual setting.
-  - Aspect ratio equal to *height/width\*100*. `MinAspectRatio` and `MaxAspectRatio` are used for limiting the aspect ratio range of the predetected region.
+  - Aspect ratio equals to *height/width\*100*. `MinAspectRatio` and `MaxAspectRatio` are used for limiting the aspect ratio range of the predetected region.
   - Value range of `MinAspectRatio`, `MaxAspectRatio`: [1,10000]
   
   
