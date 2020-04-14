@@ -1,5 +1,5 @@
 ---
-layout: evaluation-tools
+layout: developing
 id: evaluation_tools_batchTestSuite
 sourceCodeUrl: /dbr-basic-info/evaluation-tools/batch-test-suite/index.md
 ---
