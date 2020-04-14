@@ -49,7 +49,7 @@ Describes the accompanying text recognition mode.
 | Member | Value | Description |
 | ------ | ----- | ----------- |
 | ATRM_SKIP | 0x00 | Skips the accompanying text recognition. |
-| ATRM_GENERAL  | 0x01 | Recognizes accompanying texts using the general algorithm. Check arguments of [`AccompanyingTextRecognitionModes`]({{ site.manual_parameter }}imageParmeter/AccompanyingTextRecognitionModes.html#mode-arguments) for available argument settings. |
+| ATRM_GENERAL  | 0x01 | Recognizes accompanying texts using the general algorithm. Check arguments of [`AccompanyingTextRecognitionModes`]({{ site.manual_parameter }}imageParameter/AccompanyingTextRecognitionModes.html#mode-arguments) for available argument settings. |
 
 
 
