@@ -8,10 +8,6 @@
 	<div class="wrapper">
 		<div class="sideBar">	 
 			{%- include sideBarProductPage.html -%}
-			<div class="sideBarHeader">
-				<p><a href="{{ site.homePage }}" class="sideHomePage">< Documentation Home Page</a></p>
-				<p class="sideName">Dyanamsoft Barcocde Reader - Basic Information</p>
-			</div>	
 			<ul class="mainPage" id= "menuLsitContainer" name="listLevel1">
 				<li><span>DBR Basic Information</span>
 					<ul name="listLevel2">
@@ -68,54 +64,7 @@
 		</div>
     	</div>
     	<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js" integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"></script>
-    	<script>anchors.add();</script>
-
-	<script type="text/javascript">
-		(function(){
-		  	var navWrap = document.getElementById("menuLsitContainer");
-		  	var nav1s = navWrap.getElementsByTagName("span");
-			var nav2s = document.getElementsByName("listLevel2");
-			var URL = document.URL;
-			
-			var isfound = false;
-			for(var i = 0, len = nav1s.length; i < len; i++){
-				if (isfound)
-				{
-					nav2s[i].style.display = "none";
-					continue;
-				}
-				var nav3s = nav2s[i].getElementsByTagName("li");				
-				for (var j = 0, len2 = nav3s.length; j < len2; j++)
-				{
-					var hrefValue = nav3s[j].getElementsByTagName("a")[0].href;
-					if (URL.search(hrefValue) != -1)
-					{
-						isfound=true;
-						nav2s[i].style.display = "block";
-						break;
-					}
-				}
-				if (!isfound)
-				{
-					nav2s[i].style.display = "none";
-				}
-			}
-			
-			for(var i = 0, len = nav1s.length; i < len; i++){
-   				nav1s[i].onclick=(function(i){
-    					return function(){
-     						if (nav2s[i].style.display == "block"){
-							nav2s[i].style.display = "none";
-						}
-						else{
-							nav2s[i].style.display = "block";
-						}				       						
-    					}
-   				})(i)
-  			}			     
-		 })()
-	</script>
-    
+    	<script>anchors.add();</script>  
   </body>
 </html>
 
