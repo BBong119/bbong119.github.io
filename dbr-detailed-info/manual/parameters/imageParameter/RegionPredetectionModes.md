@@ -110,7 +110,49 @@ Specifies a set (or multiple sets) of the foreground and background colours used
   - `ForegroundColour`and `BackgroundColour` are the Hue values in the HSV colour space for defining the foreground and background colours of the regions you want to predetect. The value -1 means black, gray, white.
   - `Tolerance` is the allowable deviation of the Hue value defined by `ForegroundColour`. 
   - Value range of `ForegroundColour`, `BackgroundColour`: [-1,360]
-  - Value range of `index`: [0, 360]
+  - Value range of `Tolerance`: [0, 360]
+  
+ 
+ 
+##### AspectRatioRange 
+Sets the aspect ratio range of the bounding rectangle of the predetected region.
+
+| Value Type | Value Range | Default Value | Vaild Modes | 
+| ---------- | ----------- | ------------- | ----------- |
+| *string* | A string value representing aspect ratio range. | "" | "RPM_GENERAL_HSV_CONTRAST" |         
+
+
+- **Remark**     
+  -  The aspect ratio range need to be defined as [`MinAspectRatio`, `MaxAspectRatio`]. There will be no limitation without manual setting.
+  - Aspect ratio equal to *height/width\*100*. `MinAspectRatio` and `MaxAspectRatio` are used for limiting the aspect ratio range of the predetected region.
+  - Value range of `MinAspectRatio`, `MaxAspectRatio`: [1,10000]
+  
+  
+  
+##### HeightRange 
+Sets the height range of the bounding rectangle of the predetected region.
+
+| Value Type | Value Range | Default Value | Vaild Modes | 
+| ---------- | ----------- | ------------- | ----------- |
+| *string* | A string value representing height range. | "" | "RPM_GENERAL_HSV_CONTRAST" |         
+
+
+- **Remark**     
+  - The height range need to be defined as [`MinHeight`, `MaxHeight`]. There will be no limitation without manual setting.
+  - Value range of `MinHeight`, `MaxHeight`: [1,0x7fffffff]
+
+
+##### WidthRange 
+Sets the width range of the bounding rectangle of the predetected region.
+
+| Value Type | Value Range | Default Value | Vaild Modes | 
+| ---------- | ----------- | ------------- | ----------- |
+| *string* | A string value representing width range. | "" | "RPM_GENERAL_HSV_CONTRAST" |         
+
+
+- **Remark**     
+  - The width range need to be defined as [`MinWidth`, `MaxWidth`]. There will be no limitation without manual setting.
+  - Value range of `MinWidth`, `MaxWidth`: [1,0x7fffffff]
 
 
 ### Setting Methods
