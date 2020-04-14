@@ -64,6 +64,8 @@ editIcon: /other-material/icon/editIcon.png
 dynamsoft_logo: /other-material/logo/dynamsoft_logo.png
 dbr_logo: /other-material/logo/dbr_logo.png
 
+developing: /
+
 
 kramdown:                                         
   syntax_highlighter: rouge  
