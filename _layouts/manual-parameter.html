@@ -182,12 +182,13 @@
 				var nav3s = nav2s[i].getElementsByTagName("li");				
 				for (var j = 0, len2 = nav3s.length; j < len2; j++)
 				{
-					var hrefValue = nav3s[j].getElementsByTagName("a")[0].href;
+					var curliContent = nav3s[j].getElementsByTagName("a")[0];
+					var hrefValue = curliContent.href;
 					if (URL.search(hrefValue) != -1)
 					{
 						isfound=true;
 						nav2s[i].style.display = "block";
-						nav3s[j].style.setProperty(`font-weight`, `bold`);
+						curliContent.style.setProperty(`font-weight`, `bold`);
 					}
 				}
 				if (!isfound)
