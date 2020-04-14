@@ -1,5 +1,5 @@
 ---
-layout: evaluation-tools
+layout: developing
 id: evaluation_tools_testSetImages
 sourceCodeUrl: /dbr-basic-info/evaluation-tools/test-set-images/index.md
 ---
