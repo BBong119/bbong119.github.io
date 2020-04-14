@@ -90,7 +90,13 @@ Sets the sensitivity used for region predetection algorithm.
 
 
 - **Remark**     
-  Each region need to be defined as "[`Left`, `Top`, `Right`, `Bottom`, `Index`]".   
+  - Each region need to be defined as "[`Left`, `Top`, `Right`, `Bottom`, `Index`]". If you want to define multiple regions, you can use a "";"" to separate them. If there is no region defined, the library will consider the predetected regions as barcode regions.    
+  - `Left`, `Top`, `Right`, `Bottom` are four percentage values relative to top-left corner of the predetected region. 
+  - `Index` means the index of a specific colour set in [`ForeAndBackgroundColours`](#foreandbackgroundcolours) which the current region is applied to. If the value of `index` is set to -1, the current region will be applied to all colour sets in [`ForeAndBackgroundColours`](#foreandbackgroundcolours).
+  - Value range of `Left`, `Top`, `Right`, `Bottom`: [-10000,10000]
+  - Value range of `index`: [-1, 0x7fffffff]
+  
+  
   
   
  
