@@ -1,5 +1,5 @@
 ---
-layout: evaluation-tools
+layout: developing
 id: evaluation_tools_main
 sourceCodeUrl: /dbr-basic-info/evaluation-tools/index.md
 ---
