@@ -1,5 +1,6 @@
 ---
-layout: user-guide
+layout: general_layout
+sideHeader: Developer Guide for C++
 id: user_guide_cpp
 sourceCodeUrl: /dbr-basic-info/user-guide/windows/cpp.md
 ---
