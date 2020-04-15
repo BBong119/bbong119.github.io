@@ -1,5 +1,6 @@
 ---
-layout: dbr-basic
+layout: general_layout
+sideHeader: Overview
 id: dbr_overview
 sourceCodeUrl: /dbr-basic-info/overview/index.md
 ---
