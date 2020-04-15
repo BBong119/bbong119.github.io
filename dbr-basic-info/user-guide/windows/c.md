@@ -1,5 +1,6 @@
 ---
-layout: user-guide
+layout: general_layout
+sideHeader: Developer Guide for C
 id: user_guide_c
 sourceCodeUrl: /dbr-basic-info/user-guide/windows/c.md
 ---
