@@ -124,6 +124,7 @@ font-face {
 }
 
 .sideName { 
+	font-famil: "OpenSans-Light";
 	font-size: 18px; 
 	font-weight: bold;
 	color: #3C3C3C; 
