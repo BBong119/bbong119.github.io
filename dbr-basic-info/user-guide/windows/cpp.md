@@ -1,27 +1,12 @@
 ---
 layout: general_layout
-sideHeader: Developer Guide for C++
+sideHeader: User Guide for C++
 id: user_guide_cpp
 sourceCodeUrl: /dbr-basic-info/user-guide/windows/cpp.md
 ---
 
-# Developer guide for Windows Edition - C++
+# User Guide for Windows Edition - C++ 
 
-## Table of Contents
-- [System Requirements](#system-requirements)
-- [Installation](#installation)
-- [Getting Started: HelloWorld](#getting-started-helloworld)
-- [Decoding Methods](#decoding-methods)
-- [Barcode Reading Settings](#barcode-reading-settings)
-- [Licensing and Distributing](#licensing-and-distributing)
-- [How-to Guides](#how-to-guides)
-- [FAQ](#faq)
-- [Contact Us](#contact-us)
- 
-
-&nbsp; 
-
- 
 ## System Requirements
 
 - Operating systems:
