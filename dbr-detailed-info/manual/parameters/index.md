@@ -143,7 +143,7 @@ objectName: mainPage
  | [`FormatSpecification.MinQuietZoneWidth`](formatSpecification/format-control.md#minquietzonewidth) | The minimum width of the barcode quiet zone. | 
  | [`FormatSpecification.ModuleSizeRangeArray`](formatSpecification/format-control.md#modulesizerangearray) | Sets the range of module size (in pixels) for barcodes search. (Hint). | 
  | [`FormatSpecification.BarcodeFormatIds`](formatSpecification/format-control.md#barcodeformatids) | Sets which barcode format the current FormatSpecification configuration is applied to. | 
- | [`FormatSpecification.BarcodeFormatIds_2`]((formatSpecification/format-control.md#barcodeformatids_2) | Sets which barcode format in BarcodeFormat group 2 the current FormatSpecification configuration is applied to. |
+ | [`FormatSpecification.BarcodeFormatIds_2`](formatSpecification/format-control.md#barcodeformatids_2) | Sets which barcode format in BarcodeFormat group 2 the current FormatSpecification configuration is applied to. |
  | [`FormatSpecification.MirrorMode`](formatSpecification/format-control.md#mirrormode) | Sets whether to decode mirrored barcodes. | 
  | [`FormatSpecification.RequireStartStopChars`](formatSpecification/format-control.md#requirestartstopchars) |	Sets whether the start and stop characters are required when searching for Code 39 barcodes. | 
  | [`FormatSpecification.FindUnevenModuleBarcode`](formatSpecification/format-control.md#findunevenmodulebarcode) | Specifies whether to find barcodes with uneven barcode modules. Not support yet. | 
