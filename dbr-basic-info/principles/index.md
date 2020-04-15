@@ -1,6 +1,6 @@
 ---
-layout: dbr-basic
-id: dbr_principles
+layout: general_layout
+sideHeader: Principles
 sourceCodeUrl: /dbr-basic-info/principles/index.md
 ---
 
