@@ -138,10 +138,10 @@ Table 6 – Parameters to Organize the Results
 
 | **Parameter Name** | **Intent and Functionalities** | **Status** |
 |--------------------|--------------------------------|------------|
-| `ExpectedBarcodeCount` | To quit the flow as soon as possible, given the count of decoded barcodes meets expectation. | Work |
-| `Timeout` | To quit the flow as soon as possible, given the time cost exceeds the limitation. | Work |
-| `WaitingFramesCount` | To quit the flow as soon as possible, given the frame count in the waiting list exceeds the limitation. | Work |
-| `AlgorithmTerminateStage` | To quit the flow when DBR finishes a certain stage. | Work |
+| `ExpectedBarcodeCount` | To quit the flow as soon as possible, given the count of decoded barcodes meets expectation. | Available |
+| `Timeout` | To quit the flow as soon as possible, given the time cost exceeds the limitation. | Available |
+| `WaitingFramesCount` | To quit the flow as soon as possible, given the frame count in the waiting list exceeds the limitation. | Available |
+| `AlgorithmTerminateStage` | To quit the flow when DBR finishes a certain stage. | Available |
 
 `ExpectedBarcodeCount` represents how many barcodes are expected to be read or decoded successfully. The default value, 0, means DBR will check whether there are any barcodes at the end of each localization mode. The default value fits both single barcode images and high-quality images, as DBR will try localization modes in turns to find at least one barcode and return all barcodes in the last tried localization mode. If `ExpectedBarcodeCount` is assigned a value greater than 0, DBR will check whenever a barcode is decoded successfully. For example, value 1 means DBR will end the flow once it finds one barcode, which is more efficient than value 0. When its value is greater than the possible barcode count, DBR will apply all localization modes to find as many barcodes as possible.   
 
@@ -159,19 +159,19 @@ Table 7 – Intermediate Result Types
 
 | **Name** | **Notes** | **Stage** | **Status** |
 |----------|-----------|-----------|------------|
-| `IRT_ORIGINAL_IMAGE` | The buffer to read barcodes directly. | 1 | Work |
+| `IRT_ORIGINAL_IMAGE` | The buffer to read barcodes directly. | 1 | Available |
 | `IRT_COLOUR_CLUSTERED_IMAGE` | The buffer after colour clustered, if applicable. | 1 | Work in Progress |
-| `IRT_COLOUR_CONVERTED_GRAYSCALE_IMAGE` | The buffer after colour conversion, if applicable. | 1 | Work |
-| `IRT_TRANSFORMED_GRAYSCALE_IMAGE` | The buffer after further transformation of the above buffer, before region detection, if applicable. | 1 | Work |
-| `IRT_PREDETECTED_QUADRILATERAL` | The quadrilateral returned by some modes of region detection, which is an accurate reference to barcode locations. | 1 | Work |
-| `IRT_PREDETECTED_REGION` | The rectangle returned by some modes of region detection, which is a rough area that may have barcodes. | 1 | Work |
-| `IRT_PREPROCESSED_IMAGE` | The image buffer of a region after a mode of preprocessing, based on the grayscale image in stage 1 and region detection results. | 2 | Work |
-| `IRT_BINARIZED_IMAGE` | The buffer after binarization of the above preprocessed image. | 2 | Work |
-| `IRT_CONTOUR` | Contours produced by some modes of localization. | 2 | Work |
-| `IRT_LINE_SEGMENT` | Line segments produced by `LM_LINES`. | 2 | Work |
-| `IRT_TEXT_ZONE` | Text zones detected by an optional step corresponding to the parameter `TextFilterModes`. | 2 | Work |
+| `IRT_COLOUR_CONVERTED_GRAYSCALE_IMAGE` | The buffer after colour conversion, if applicable. | 1 | Available |
+| `IRT_TRANSFORMED_GRAYSCALE_IMAGE` | The buffer after further transformation of the above buffer, before region detection, if applicable. | 1 | Available |
+| `IRT_PREDETECTED_QUADRILATERAL` | The quadrilateral returned by some modes of region detection, which is an accurate reference to barcode locations. | 1 | Available |
+| `IRT_PREDETECTED_REGION` | The rectangle returned by some modes of region detection, which is a rough area that may have barcodes. | 1 | Available |
+| `IRT_PREPROCESSED_IMAGE` | The image buffer of a region after a mode of preprocessing, based on the grayscale image in stage 1 and region detection results. | 2 | Available |
+| `IRT_BINARIZED_IMAGE` | The buffer after binarization of the above preprocessed image. | 2 | Available |
+| `IRT_CONTOUR` | Contours produced by some modes of localization. | 2 | Available |
+| `IRT_LINE_SEGMENT` | Line segments produced by `LM_LINES`. | 2 | Available |
+| `IRT_TEXT_ZONE` | Text zones detected by an optional step corresponding to the parameter `TextFilterModes`. | 2 | Available |
 | `IRT_FORM` | Forms detected based on contours, line segments, and color contrast. | 2 | Work in Progress |
 | `IRT_SEGMENTATION_BLOCK` | Segmented areas based on contours, line segments, and color contrast. | 2 | Work in Progress |
-| `IRT_TYPED_BARCODE_ZONE` | Areas identified as barcode zones, regardless of successful decoding. | 3 | Work |
+| `IRT_TYPED_BARCODE_ZONE` | Areas identified as barcode zones, regardless of successful decoding. | 3 | Available |
 
 All results output with coordinates to show where it is produced in the algorithm flow. The coordinates consist of the modes (specific values) of a series of parameters.
