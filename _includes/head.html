@@ -54,6 +54,23 @@
 		ul { margin-left: 20px; }
 		ul.mainPage { list-style-type: disc; padding-left: 30px; line-height: 28px;  margin-top: 69px; }
 
+		.headCounter h2:before
+		{
+  			content: counter(h2counter) " ";
+		}
+		.headCounter h2
+		{
+ 			counter-reset: h3counter;
+  			counter-increment: h2counter;
+		}
+		.headCounter h3:before
+		{
+  			content: counter(h2counter) "." counter(h3counter) " ";
+		}
+		.headCounter h3
+		{
+  			counter-increment: h3counter;
+		}
 		
 		@media (max-width: 1200px) {
 			.wrapper .sideBar { display:  none; }
