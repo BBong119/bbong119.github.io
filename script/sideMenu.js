@@ -1,4 +1,4 @@
-(function(){
+function ListExpandCollapse(){
   	var navWrap = document.getElementById("menuLsitContainer");
   	var nav1s = navWrap.getElementsByTagName("span");
 	var nav2s = document.getElementsByName("listLevel2");
@@ -40,7 +40,7 @@
     			}
    		})(i)
   	}			     
-})()
+}
 		
 function GenerateContentByHead()
 {
@@ -78,4 +78,5 @@ function GenerateContentByHead()
        		}
      	 }
 }
-GenerateContentByHead();
+
+
