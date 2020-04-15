@@ -52,7 +52,7 @@ function GenerateContentByHead()
        		{
        		  	var curH2Text = $(h2_list[i]).text();
        		  	var curH2Href = curH2Text.replace(/\s+/g, '-');
-       		  	curH2Href = curH2Href.replace(/[/#:\\\[\]@$^();,`"'|.]/g,"");
+       		  	curH2Href = curH2Href.replace(/[/#:\\\[\]@$^();,`"'|.&]/g,"");
        		  	curH2Href = curH2Href.toLowerCase();
        		  	var curliContent = '<li><a href="#'+ curH2Href + '" class="otherLinkColour">' + curH2Text + '</a>';
        		  	var h3_list =  $(h2_list[i]).nextUntil(h2_list[i+1], "h3");
@@ -63,7 +63,7 @@ function GenerateContentByHead()
        		  	  	{
        		  	  	  	var curH3Text = $(h3_list[j]).text();
        		  	  	  	var curH3Href = curH3Text.replace(/\s+/g, '-');
-       		  	  	  	curH3Href = curH3Href.replace(/[/#:\\\[\]@$^();,`"'|.]/g,"");
+       		  	  	  	curH3Href = curH3Href.replace(/[/#:\\\[\]@$^();,`"'|.&]/g,"");
        		  	  	  	curH3Href = curH3Href.toLowerCase();
        		  	  	  	curliContent += '<li><a href="#'+ curH3Href + '" class="otherLinkColour">' + curH3Text + '</a></li>';
        		  	  	}
