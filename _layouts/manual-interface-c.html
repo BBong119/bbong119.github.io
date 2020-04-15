@@ -12,17 +12,17 @@
 				<p><a href="{{ site.homePage }}" class="sideHomePage">< Documentation Home Page</a></p>
 				<p><a href="{{ site.manual_interface_c }}" class="sideName">C API</a></p>
 			</div>	
-			<ul class="disc">
+			<ul class="disc" id= "menuLsitContainer" name="listLevel1">
 				<li>
-					<a href="{{ site.manual_interface_c }}methods/initialize-and-destroy.html" class="otherLinkColour">Initialize and Destroy Methods</a> 
-					<ul>
+					<span><a href="{{ site.manual_interface_c }}methods/initialize-and-destroy.html" class="otherLinkColour">Initialize and Destroy Methods</a></span>
+					<ul name="listLevel2">
 						<li><a href="{{ site.manual_interface_c }}methods/initialize-and-destroy.html#dbr_createinstance" class="otherLinkColour">DBR_CreateInstance</a></li>
 						<li><a href="{{ site.manual_interface_c }}methods/initialize-and-destroy.html#dbr_destroyinstance" class="otherLinkColour">DBR_DestroyInstance</a></li>
 					</ul> 
 				</li>
 				<li>
-					<a href="{{ site.manual_interface_c }}methods/decode.html" class="otherLinkColour">Decode Methods</a>
-					<ul>
+					<span><a href="{{ site.manual_interface_c }}methods/decode.html" class="otherLinkColour">Decode Methods</a></span>
+					<ul name="listLevel2">
 						 <li><a href="{{ site.manual_interface_c }}methods/decode.html#dbr_decodefile" class="otherLinkColour">DBR_DecodeFile</a></li>
 						 <li><a href="{{ site.manual_interface_c }}methods/decode.html#dbr_decodefileinmemory" class="otherLinkColour">DBR_DecodeFileInMemory</a></li>
 						 <li><a href="{{ site.manual_interface_c }}methods/decode.html#dbr_decodebuffer" class="otherLinkColour">DBR_DecodeBuffer</a></li>
@@ -31,8 +31,8 @@
 					</ul>  
 				</li>
 				<li>
-				 	Parameter and Runtime Settings Methods
-					<ul>
+				 	<span>Parameter and Runtime Settings Methods</span>
+					<ul name="listLevel2">
 					<li>
 						<a href="{{ site.manual_interface_c }}methods/parameter-and-runtime-settings-basic.html" class="otherLinkColour">Basic</a>
 						<ul>
@@ -61,8 +61,8 @@
 					</ul>
 				</li>
 				<li>
-					<a href="{{ site.manual_interface_c }}methods/license.html" class="otherLinkColour">License Methods</a>
-					<ul>
+					<span><a href="{{ site.manual_interface_c }}methods/license.html" class="otherLinkColour">License Methods</a></span>
+					<ul name="listLevel2">
 						<li><a href="{{ site.manual_interface_c }}methods/license.html#dbr_initlicense" class="otherLinkColour">DBR_InitLicense</a></li>
 						<li><a href="{{ site.manual_interface_c }}methods/license.html#dbr_initlicensefromserver" class="otherLinkColour">DBR_InitLicenseFromServer</a></li>
 						<li><a href="{{ site.manual_interface_c }}methods/license.html#dbr_initlicensefromlicensecontent" class="otherLinkColour">DBR_InitLicenseFromLicenseContent</a></li>
@@ -72,8 +72,8 @@
 					</ul>  
 				</li>
 				<li>
-					<a href="{{ site.manual_interface_c }}methods/result.html" class="otherLinkColour">Result Methods</a>  
-					<ul>
+					<span><a href="{{ site.manual_interface_c }}methods/result.html" class="otherLinkColour">Result Methods</a></span>
+					<ul name="listLevel2">
 						<li><a href="{{ site.manual_interface_c }}methods/result.html#dbr_getalltextresults" class="otherLinkColour">DBR_GetAllTextResults</a></li>
 						<li><a href="{{ site.manual_interface_c }}methods/result.html#dbr_freetextresults" class="otherLinkColour">DBR_FreeTextResults</a></li>
 						<li><a href="{{ site.manual_interface_c }}methods/result.html#dbr_getintermediateresults" class="otherLinkColour">DBR_GetIntermediateResults</a></li>
@@ -81,15 +81,15 @@
 					</ul> 
 				</li>
 				<li>
-					<a href="{{ site.manual_interface_c }}methods/status-retrieval.html" class="otherLinkColour">Status Retrieval Methods</a>  
-					<ul>
+					<span><a href="{{ site.manual_interface_c }}methods/status-retrieval.html" class="otherLinkColour">Status Retrieval Methods</a></span> 
+					<ul name="listLevel2">
 						<li><a href="{{ site.manual_interface_c }}methods/status-retrieval.html#dbr_geterrorstring" class="otherLinkColour">DBR_GetErrorString</a></li>
 						<li><a href="{{ site.manual_interface_c }}methods/status-retrieval.html#dbr_getversion" class="otherLinkColour">DBR_GetVersion</a></li>
 					</ul> 
 				</li>
 				<li>
-					<a href="{{ site.manual_interface_c }}methods/video.html" class="otherLinkColour">Video Methods</a>  
-					<ul>
+					<span><a href="{{ site.manual_interface_c }}methods/video.html" class="otherLinkColour">Video Methods</a></span>
+					<ul name="listLevel2">
 						<li>
 							Decode
 							<ul>
@@ -133,8 +133,11 @@
 			</div>
 		</div>
     	</div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js" integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"></script>
-    <script>anchors.add();</script>
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js" integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"></script>
+    	<script>anchors.add();</script>
+	<script>
+		ListExpandCollapse();
+	</script>
     
   </body>
 </html>
