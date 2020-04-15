@@ -181,7 +181,7 @@ Describes the colour conversion mode.
    
 | Member | Value | Description |
 | ------ | ----- | ----------- |
-| CICM_SKIP  | 0x00 |  |
+| CICM_SKIP  | 0x00 | Skip the colour conversion. |
 | CICM_GENERAL  | 0x01 | Converts a colour image to a grayscale image using the general algorithm. Check arguments of [`ColourConversionModes`]({{ site.manual_parameter }}imageParameter/ColourConversionModes.html#mode-arguments) for available argument settings. |
 
 
