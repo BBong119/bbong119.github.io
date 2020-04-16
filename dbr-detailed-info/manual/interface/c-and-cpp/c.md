@@ -148,9 +148,9 @@ sourceCodeUrl: /dbr-detailed-info/manual/interface/c-and-cpp/c.md
 
   | Function | Description |
   |----------|-------------|
-  | [`CB_Error`](c/function-pointer/index.md#cb_error) | Represents the method that will handle the error code returned by the SDK. |
-  | [`CB_IntermediateResult`](c/function-pointer/index.md#cb_intermediateresult) | Represents the method that will handle the intermediate result array returned by the SDK. |
-  | [`CB_TextResult`](c/function-pointer/index.md#cb_textresult) | Represents the method that will handle the text result array returned by the SDK. | 
+  | [`CB_Error`](c/function-pointer.md#cb_error) | Represents the method that will handle the error code returned by the SDK. |
+  | [`CB_IntermediateResult`](c/function-pointer.md#cb_intermediateresult) | Represents the method that will handle the intermediate result array returned by the SDK. |
+  | [`CB_TextResult`](c/function-pointer.md#cb_textresult) | Represents the method that will handle the text result array returned by the SDK. | 
 
 &nbsp;
 
