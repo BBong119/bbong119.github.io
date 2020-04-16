@@ -1,7 +1,7 @@
 ---
 layout: manual-interface
 id: interface_main
-sourceCodeUrl: /dbr-detailed-info/manual/interface/index.md
+sourceCodeUrl: /dbr-detailed-info/manual/interface.md
 ---
 
 dbr interface.   
