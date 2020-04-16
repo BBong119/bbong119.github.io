@@ -1,7 +1,7 @@
 ---
 layout: manual-interface-enum
 id: interface_errorCode
-sourceCodeUrl: /dbr-detailed-info/manual/interface/enumeration/error-code/index.md
+sourceCodeUrl: /dbr-detailed-info/manual/interface/enumeration/error-code.md
 ---
 
 ## Dynamsoft Barcode Reader - Error Code  
