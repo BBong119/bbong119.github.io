@@ -83,6 +83,8 @@ font-face {
 	height: 200px; 
 	position: fixed; 
 	padding-right: 80px; 
+	background: #fff; 
+	overflow: auto;
 
 }
 
