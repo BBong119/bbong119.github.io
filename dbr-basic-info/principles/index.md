@@ -33,7 +33,7 @@ Table 1 – Parameters of DBR Algorithm Stage 1
 | `ColourImageConvertModes` | To set the conversion from colour to grayscale, which keep or enhance the features of the region of interest. | Work in progress |
 | `GrayscaleTransformationModes` | To emphasize the features of regions of interest with processing of the grayscale image. | Available, Extensible |
 | `RegionPredetectionModes` | To limit the subsequent stages in special areas to speed up by detecting the regions of interest automatically. Pre-detection is based on the colour/grayscale distribution of each area. | Available, Extensible |
-| `RegionDefinition` | Available, Extensible | Available |
+| `RegionDefinition` | To specify one or more regions of interest manually, speed up by excluding the other area. | Available |
 
 As mentioned above, the focus of this stage is to reduce the time cost by scaling down or finding out ROIs. It is not essential for most scenarios but helpful for some extreme cases.
 
