@@ -1,34 +1,12 @@
+---
+layout: default
+---
 
-<!DOCTYPE html>
-<html lang="en-US">
-	
-{%- include head.html -%}
-     
-<body>
-	<div class="wrapper">
-		<div class="sideBar">	 
-			{%- include sideBarProductPage.html -%}
-			<div class="sideBarHeader">
-				<p><a href="{{ site.homePage }}" class="sideHomePage">< Documentation Home Page</a></p>
-				<p><a href="{{ site.manual_interface }}" class="sideName">Interface</a></p>
-			</div>	
-			<ul class="disc">
-      <li> <a href={{ site.manual_interface_c }} class="otherLinkColour">C API</a></li>
-      <li><a href={{ site.manual_interface_cpp }} class="otherLinkColour">C++ API</a></li>
-			</ul>
-		</div>
-		<div class="container">
-			<div class="main">
-				<div class = "content markdown-body">
-					<p align="left"><img src="{{ site.dynamsoft_logo }}"  alt="Dynamsoft Logo"/></p>
-					<p align="right"><a href="{{ site.repositoryUrl }}{{ page.sourceCodeUrl }}" class="otherLinkColour">Edit<img src="{{ site.editIcon }}" width="20px" height="15px" /></a></p>
-					{{ content }}
-				<div>
-			</div>
-		</div>
-    	</div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js" integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"></script>
-    <script>anchors.add();</script>
-    
-  </body>
-</html>
+<div class="sideBarHeader">
+	<p><a href="{{ site.homePage }}" class="sideHomePage">< Documentation Home Page</a></p>
+	<p><a href="{{ site.manual_interface }}" class="sideName">Interface</a></p>
+</div>	
+<ul class="disc">
+	<li> <a href={{ site.manual_interface_c }} class="otherLinkColour">C API</a></li>
+	 <li><a href={{ site.manual_interface_cpp }} class="otherLinkColour">C++ API</a></li>
+</ul>
