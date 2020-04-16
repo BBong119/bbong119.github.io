@@ -1,7 +1,7 @@
 ---
 layout: manual-interface
 id: interface_c
-sourceCodeUrl: /dbr-detailed-info/manual/interface/c-and-cpp/c/index.md
+sourceCodeUrl: /dbr-detailed-info/manual/interface/c-and-cpp/c.md
 ---
 
 # Dynamsoft Barcode Reader SDK - C API Reference
