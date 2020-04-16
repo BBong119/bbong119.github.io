@@ -1,34 +1,10 @@
-<!DOCTYPE html>
-<html lang="en-US">
-	
-{%- include head.html -%}
-     
-	<body>
-		<div class="wrapper">
-			<div class="sideBar">
-				{%- include sideBarProductPage.html -%}
-				<div class="sideBarHeader">
-					<p><a href="{{ site.homePage }}" class="sideHomePage">< Documentation Home Page</a></p>
-					<p class="sideName">{{ page.sideHeader }}</p>
-				</div>			
-				<ul class="disc" id= "menuLsitContainer" name="listLevel1">
-				</ul>
-			</div>
-			<div class="container">
-				<div class="main">
-					<div class = "content markdown-body headCounter">
-						<p align="left"><img src="{{ site.dynamsoft_logo }}"  alt="Dynamsoft Logo"/></p>
-						<p align="right"><a href="{{ site.repositoryUrl }}{{ page.sourceCodeUrl }}" class="otherLinkColour">Edit<img src="{{ site.editIcon }}" width="20px" height="15px" /></a></p>
-						{{ content }}
-					<div>
-				</div>
-			</div>
-    		</div>
-    		<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js" integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"></script>
-    		<script>anchors.add();</script>
-		<script>
-			GenerateContentByHead();
-		</script>
-  	</body>
-</html>
+---
+layout: default_AutoGenerateList
+---
 
+<div class="sideBarHeader">
+	<p><a href="{{ site.homePage }}" class="sideHomePage">< Documentation Home Page</a></p>
+	<p class="sideName">{{ page.sideHeader }}</p>
+</div>			
+<ul class="disc" id= "menuLsitContainer" name="listLevel1">
+</ul>
