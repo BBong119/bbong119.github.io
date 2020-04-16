@@ -1,7 +1,8 @@
 ---
 layout: user-guide
 id: user_guide_wasm
-sourceCodeUrl: /dbr-basic-info/user-guide/wasm/index.md
+permalink: /dbr-basic-info/user-guide/wasm/
+sourceCodeUrl: /dbr-basic-info/user-guide/wasm.md
 ---
 
 
