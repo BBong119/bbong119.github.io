@@ -11,7 +11,7 @@ function ListExpandCollapse(){
 			nav2s[i].style.display = "none";
 			continue;
 		}
-		if (URL.search(nav1s[i].getElementsByTagName("a")[0].href) != -1)
+		if ((URL.search(nav1s[i].getElementsByTagName("a")[0].href)) != -1)
 		{
 			isfound=true;
 			nav2s[i].style.display = "block";
