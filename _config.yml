@@ -11,6 +11,7 @@ evaluationTools: /dbr-basic-info/evaluation-tools/
 
 detailedInfo: /dbr-detailed-info/
 
+manual: /dbr-detailed-info/manual/
 manual_interface: /dbr-detailed-info/manual/interface/
 manual_interface_enum: /dbr-detailed-info/manual/interface/enumeration/
 manual_interface_errorCode: /dbr-detailed-info/manual/interface/enumeration/error-code/
