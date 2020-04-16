@@ -1,49 +1,26 @@
----
-layout: default
----
-
-<ul class="mainPage" id= "menuLsitContainer" name="listLevel1">
-	<li><span>DBR Basic Information</span>
-		<ul name="listLevel2">
-			<li><a href="{{ site.dbrOverview }}" class="otherLinkColour">Overview</a></li>
-			<li><a href="{{ site.dbrPrinciples }}" class="otherLinkColour">Principles</a></li>
-			<li><a href="{{ site.userGuide }}" class="otherLinkColour">User Guides</a></li>
-			<li><a href="{{ site.evaluationTools }}" class="otherLinkColour">Evaluation Tools</a></li>
-			<li><a href="{{ site.securityIssues }}" class="otherLinkColour">Security Issues</a></li>
-		</ul>
-	</li>
-
-	<li><span>DBR Detailed Information</span>
-		<ul name="listLevel2">
-			<li><a href="{{ site.manual }}" class="otherLinkColour">Manual</a>
-			<ul name="listLevel3">
-				<li><a href="{{ site.manual_interface }}" class="otherLinkColour">interface</a></li>
-				<li><a href="{{ site.manual_parameter }}" class="otherLinkColour">parameters</a></li>
-			</ul>
-			</li>
-			<li><a href="{{ site.demosSamples }}" class="otherLinkColour">Demos and Samples</a></li>
-		</ul>
-	</li>
-
-	<li><span>DBR Enhancements</span>
-		<ul name="listLevel2">
-			<li><a href="{{ site.intermediateResults }}" class="otherLinkColour">Intermediate Results</a></li>
-			<li><a href="{{ site.dpm }}" class="otherLinkColour">Direct Part Marking (DPM)</a></li>
-			<li><a href="{{ site.panoramaOverlap }}" class="otherLinkColour">Panorama / Overlap</a></li>
-			<li><a href="{{ site.3dReconstruction }}" class="otherLinkColour">3D Reconstruction</a></li>
-			<li><a href="{{ site.pdfVectors }}" class="otherLinkColour">PDF Vectors</a></li>
-		</ul>
-	</li>
-
-	<li><span>DBR Extended Information</span>
-		<ul name="listLevel2">
-			<li><a href="{{ site.industrialSolutions }}" class="otherLinkColour">Industrial solutions</a></li>
-			<li><a href="{{ site.parameterUsage }}" class="otherLinkColour">How to use parameters</a></li>
-			<li><a href="{{ site.complicateImageHandling }}" class="otherLinkColour">How to handle complicate images</a></li>
-			<li><a href="{{ site.licenseUsageTracking }}" class="otherLinkColour">License &amp; Usage Tracking</a></li>
-			<li><a href="{{ site.barcodeBasisKnowledge }}" class="otherLinkColour">Barcode basis knowledge</a></li>
-			<li><a href="{{ site.imageProcessingKnowledge }}" class="otherLinkColour">Image processing knowledge</a></li>
-		</ul>
-	</li>
-</ul>
+<!DOCTYPE html>
+<html lang="en-US">
+	
+{%- include head.html -%}
+     
+	<body>
+		<div class="wrapper">
+			<div class="sideBar">
+				{%- include sideBarProductPage.html -%}			
+				{%- include topLevelList.html -%}
+			</div>
+			<div class="container">
+				<div class="main">
+					<div class = "content markdown-body headCounter">
+						<p align="left"><img src="{{ site.dynamsoft_logo }}"  alt="Dynamsoft Logo"/></p>
+						<p align="right"><a href="{{ site.repositoryUrl }}{{ page.sourceCodeUrl }}" class="otherLinkColour">Edit<img src="{{ site.editIcon }}" width="20px" height="15px" /></a></p>
+						{{ content }}
+					<div>
+				</div>
+			</div>
+    		</div>
+    		<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js" integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"></script>
+    		<script>anchors.add();</script>
+  	</body>
+</html>
 
