@@ -2,7 +2,7 @@
 layout: general_layout
 sideHeader: Overview
 id: dbr_overview
-sourceCodeUrl: /dbr-basic-info/overview/index.md
+sourceCodeUrl: /dbr-basic-info/overview.md
 ---
 
 
