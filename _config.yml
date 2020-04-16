@@ -2,24 +2,15 @@ repositoryUrl: https://github.com/BBong119/bbong119.github.io/blob/master
 
 homePage: /
 
-dbrOverview: /dbr-basic-info/overview/
-dbrPrinciples: /dbr-basic-info/principles/
+basicInfo: /dbr-basic-info/
 
 userGuide: /dbr-basic-info/user-guide/
 userGuide_windows: /dbr-basic-info/user-guide/windows/
-userGuide_linux: /dbr-basic-info/user-guide/linux/
-userGuide_iOS: /dbr-basic-info/user-guide/ios/
-userGuide_android: /dbr-basic-info/user-guide/android/
-userGuide_wasm: /dbr-basic-info/user-guide/wasm/
 
 evaluationTools: /dbr-basic-info/evaluation-tools/
-evaluationTools_batchTestSuite: /dbr-basic-info/evaluation-tools/batch-test-suite/
-evaluationTools_interactiveTest: /dbr-basic-info/evaluation-tools/interactive-test/
-evaluationTools_testSetImages: /dbr-basic-info/evaluation-tools/test-set-images/
 
-securityIssues: /dbr-basic-info/security-issues/  
+detailedInfo: /dbr-detailed-info/
 
-manual: /dbr-detailed-info/manual/
 manual_interface: /dbr-detailed-info/manual/interface/
 manual_interface_enum: /dbr-detailed-info/manual/interface/enumeration/
 manual_interface_errorCode: /dbr-detailed-info/manual/interface/enumeration/error-code/
@@ -32,33 +23,10 @@ manual_parameter: /dbr-detailed-info/manual/parameters/
 
 demosSamples: /dbr-detailed-info/samples-and-demos/
 demosSamples_appDemo: /dbr-detailed-info/samples-and-demos/
-demosSamples_appDemo_ios: /dbr-detailed-info/samples-and-demos/ios/
-demosSamples_appDemo_android: /dbr-detailed-info/samples-and-demos/android/
-demosSamples_onlineDemo: /dbr-detailed-info/samples-and-demos/onlineDemo/
-demosSamples_samples: /dbr-detailed-info/samples-and-demos/samples/
 
-intermediateResults: /dbr-enhancements/intermediate-results/
+enhancements: /dbr-enhancements/
 
-dpm: /dbr-enhancements/dpm/
-
-panoramaOverlap: /dbr-enhancements/panorama-and-overlap/
-
-3dReconstruction: /dbr-enhancements/3d-reconstruction/
-
-pdfVectors: /dbr-enhancements/pdf-vectors/  
-
-industrialSolutions: /dbr-extended-info/industrial-solutions/
-
-parameterUsage: /dbr-extended-info/how-to-use-parameters/
-
-complicateImageHandling: /dbr-extended-info/how-to-handle-complicate-images/
-
-licenseUsageTracking: /dbr-extended-info/license-and-usage-tracking/
-
-barcodeBasisKnowledge: /dbr-extended-info/barcode-basis-knowledge/
-
-imageProcessingKnowledge: /dbr-extended-info/image-processing-knowledge/ 
-
+extendedInfo: /dbr-extended-info/
 
 editIcon: /other-material/icon/editIcon.png
 dynamsoft_logo: /other-material/logo/dynamsoft_logo.png
