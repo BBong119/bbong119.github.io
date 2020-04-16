@@ -1,7 +1,6 @@
 ---
 layout: user-guide
 id: user_guide_windows
-permalink: /dbr-basic-info/user-guide/windows/
 sourceCodeUrl: /dbr-basic-info/user-guide/windows.md
 ---
 
