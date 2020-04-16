@@ -1,6 +1,7 @@
 ---
 layout: developing
 id: evaluation_tools_main
+permalink: /dbr-basic-info/evaluation-tools/
 sourceCodeUrl: /dbr-basic-info/evaluation-tools.md
 ---
 
