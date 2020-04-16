@@ -7,7 +7,7 @@ sourceCodeUrl: /dbr-detailed-info/manual/interface/c-and-cpp/c/index.md
 # Dynamsoft Barcode Reader SDK - C API Reference
 
 - [Methods](#methods)
-- [Functon Pointer](#function-pointer)
+- [Function Pointer](#function-pointer)
 - [Error Code](#error-code)
 - [Structs](#structs)
 - [Enumerations](#enumerations)  
