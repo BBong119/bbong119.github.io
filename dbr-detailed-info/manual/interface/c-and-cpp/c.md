@@ -159,7 +159,7 @@ sourceCodeUrl: /dbr-detailed-info/manual/interface/c-and-cpp/c.md
 
 &nbsp;
 
-## [Structs]({{ site.manual_interface_struct}})
+## [Structs](struct.md)
 - [`AztecDetails`]({{ site.manual_interface_struct}}AztecDetails.html)	
 - [`Contour`]({{ site.manual_interface_struct}}Contour.html)	
 - [`DBRPoint`]({{ site.manual_interface_struct}}DBRPoint.html)	
