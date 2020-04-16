@@ -74,6 +74,18 @@ font-face {
 	padding: 20px; 
 }
 
+
+.wrapper .container .main .topHead {
+	padding-top:10px; 
+	padding-bottom: 10px; 
+	padding-right: 15px; 
+	padding-left: 15px; 
+	height: 200px; 
+	position: fixed; 
+	padding-right: 80px; 
+
+}
+
 .wrapper .container .main .content { 
 	padding-right: 80px; 
 }
