@@ -16,7 +16,7 @@ The algorithm of DBR includes a flow of 5 stages at the top level, as illustrate
    
    
 <div align="center">
-   <p><img src="TopLevelFlowOfDBRAlgorithm.png" alt="Top Level Flow of DBR Algorithm" width="30%" /></p>
+   <p><img src="principles/TopLevelFlowOfDBRAlgorithm.png" alt="Top Level Flow of DBR Algorithm" width="30%" /></p>
    <p>Figure 1 – Top Level Flow of DBR Algorithm</p>
 </div>   
    
