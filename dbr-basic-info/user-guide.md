@@ -1,7 +1,7 @@
 ---
 layout: user-guide
 id: user_guide_main
-sourceCodeUrl: /dbr-basic-info/user-guide/index.md
+sourceCodeUrl: /dbr-basic-info/user-guide.md
 ---
 
 
