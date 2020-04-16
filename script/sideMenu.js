@@ -15,7 +15,7 @@ function ListExpandCollapse(){
 		if (curLiHrefValue.length > 0)
 		{
 			curLiHrefValue = curLiHrefValue[0].href;
-			if ((URL.search(curLiHrefValue) != -1)
+			if (URL.search(curLiHrefValue) != -1)
 			{
 				isfound=true;
 				nav2s[i].style.display = "block";
