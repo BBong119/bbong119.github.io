@@ -11,12 +11,18 @@ function ListExpandCollapse(){
 			nav2s[i].style.display = "none";
 			continue;
 		}
-		if ((URL.search(nav1s[i].getElementsByTagName("a")[0].href)) != -1)
+		var curLiHrefValue = nav1s[i].getElementsByTagName("a");
+		if (curLiHrefValue.length > 0)
 		{
-			isfound=true;
-			nav2s[i].style.display = "block";
-			continue;
+			curLiHrefValue = curLiHrefValue[0].href;
+			if ((URL.search(curLiHrefValue) != -1)
+			{
+				isfound=true;
+				nav2s[i].style.display = "block";
+				continue;
+			}
 		}
+
 		var nav3s = nav2s[i].getElementsByTagName("li");				
 		for (var j = 0, len2 = nav3s.length; j < len2; j++)
 		{
