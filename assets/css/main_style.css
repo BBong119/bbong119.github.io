@@ -75,16 +75,9 @@ font-face {
 
 
 .wrapper .container .main .topHead {
-	width: calc(100% - 330x); 
-	padding-top:10px; 
-	padding-bottom: 10px; 
-	padding-right: 15px; 
-	padding-left: 15px; 
 	height: 150x; 
 	position: fixed; 
-	padding-right: 80px; 
 	background: #fff; 
-	overflow: auto;
 
 }
 
