@@ -87,6 +87,7 @@ font-face {
 }
 
 .wrapper .container .main .content { 
+	margin-top: 200px; 
 	padding-right: 80px; 
 }
 
