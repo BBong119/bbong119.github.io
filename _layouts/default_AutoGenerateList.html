@@ -7,11 +7,7 @@
 		<div class="wrapper">
 			<div class="sideBar">
 				{%- include sideBarProductPage.html -%}
-				<div class="sideBarHeader">
-					<p><a href="{{ site.homePage }}" class="sideHomePage">< Documentation Home Page</a></p>
-					<p class="sideName">{{ page.sideHeader }}</p>
-				</div>			
-				{{- content -}}
+				{%- include {{ page.sideList }} -%}
 			</div>
 			<div class="container">
 				<div class="main">
