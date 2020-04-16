@@ -1,7 +1,6 @@
 ---
 layout: general_layout
 sideHeader: Principles
-permalink: /dbr-basic-info/principles/
 sourceCodeUrl: /dbr-basic-info/principles.md
 ---
 
