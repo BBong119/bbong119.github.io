@@ -69,18 +69,18 @@ font-face {
 	padding: 0 20px; 
 }
 
-.wrapper .container .main { 
-	margin-top: 20px; 
+.wrapper .container .main {  
 	padding: 20px; 
 }
 
 
 .wrapper .container .main .topHead {
+	width: calc(100% - 330x); 
 	padding-top:10px; 
 	padding-bottom: 10px; 
 	padding-right: 15px; 
 	padding-left: 15px; 
-	height: 200px; 
+	height: 150x; 
 	position: fixed; 
 	padding-right: 80px; 
 	background: #fff; 
