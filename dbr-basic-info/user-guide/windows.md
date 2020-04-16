@@ -6,5 +6,5 @@ sourceCodeUrl: /dbr-basic-info/user-guide/windows.md
 
 windows user guide:
 
-- [C](c.html)
-- [C++](cpp.html)
+- [C](windows/c.md)
+- [C++](windows/cpp.md)
