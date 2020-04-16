@@ -1,7 +1,7 @@
 ---
 layout: general_layout
 sideHeader: Principles
-sourceCodeUrl: /dbr-basic-info/principles/index.md
+sourceCodeUrl: /dbr-basic-info/principles.md
 ---
 
 # Principles of Dynamsoft Barcode Reader Algorithm
