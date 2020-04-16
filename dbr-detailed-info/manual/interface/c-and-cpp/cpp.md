@@ -163,9 +163,9 @@ sourceCodeUrl: /dbr-detailed-info/manual/interface/c-and-cpp/cpp/index.md
 
   | Function | Description |
   |----------|-------------|
-  | [`CB_Error`](cpp/function-pointer/index.md#cb_error) | Represents the method that will handle the error code returned by the SDK. |
-  | [`CB_IntermediateResult`](cpp/function-pointer/index.md#cb_intermediateresult) | Represents the method that will handle the intermediate result array returned by the SDK. |
-  | [`CB_TextResult`](cpp/function-pointer/index.md#cb_textresult) | Represents the method that will handle the text result array returned by the SDK. | 
+  | [`CB_Error`](cpp/function-pointer.md#cb_error) | Represents the method that will handle the error code returned by the SDK. |
+  | [`CB_IntermediateResult`](cpp/function-pointer.md#cb_intermediateresult) | Represents the method that will handle the intermediate result array returned by the SDK. |
+  | [`CB_TextResult`](cpp/function-pointer.md#cb_textresult) | Represents the method that will handle the text result array returned by the SDK. | 
 
 &nbsp;
 
