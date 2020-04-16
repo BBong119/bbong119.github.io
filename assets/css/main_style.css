@@ -69,20 +69,12 @@ font-face {
 	padding: 0 20px; 
 }
 
-.wrapper .container .main {  
-	padding: 20px; 
-}
-
-
-.wrapper .container .main .topHead {
-	height: 150x; 
-	position: fixed; 
-	background: #fff; 
-
+.wrapper .container .main { 	  
+	margin-top: 20px; 	
+	padding: 20px; 	
 }
 
 .wrapper .container .main .content { 
-	margin-top: 200px; 
 	padding-right: 80px; 
 }
 
