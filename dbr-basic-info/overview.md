@@ -5,8 +5,6 @@ id: dbr_overview
 sourceCodeUrl: /dbr-basic-info/overview.md
 ---
 
-Test pull Request.
-
 # Overview of Dynamsoft Barcode Reader  
 
 Dynamsoft Barcode Reader (DBR) is a software development kit (SDK) with highly competitive performance and service. DBR enables you to efficiently embed barcode reading functionality in your web, mobile, desktop and server application using just a few lines of code. With our SDK, you can create reliable barcode scanner software with enterprise-grade performance to meet your business needs. The following gives you a brief overview of available DBR features.
