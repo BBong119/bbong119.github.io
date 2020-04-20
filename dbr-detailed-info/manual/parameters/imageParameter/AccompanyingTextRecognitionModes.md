@@ -2,7 +2,7 @@
 layout: manual-parameter
 id: parameter_image_AccompanyingTextRecognitionModes
 sourceCodeUrl: /dbr-detailed-info/manual/parameters/imageParameter/AccompanyingTextRecognitionModes.md
-objectName: imageParameter
+listFile: parametersList
 ---
 
 
