@@ -2,7 +2,7 @@
 layout: manual-parameter
 id: parameter_image_BinarizationModes
 sourceCodeUrl: /dbr-detailed-info/manual/parameters/imageParameter/BinarizationModes.md
-objectName: imageParameter
+listFile: parametersList
 ---
 
 # ImageParameter Object - Image Process Control
