@@ -2,7 +2,7 @@
 layout: manual-parameter
 id: parameter_image_ColourClusteringModes
 sourceCodeUrl: /dbr-detailed-info/manual/parameters/imageParameter/ColourClusteringModes.md
-objectName: imageParameter
+listFile: parametersList
 ---
 
 # ImageParameter Object - Image Process Control

@@ -2,7 +2,7 @@
 layout: manual-parameter
 id: parameter_region_image_process
 sourceCodeUrl: /dbr-detailed-info/manual/parameters/regionDefinition/image-process-control.md
-objectName: regionDefinition
+listFile: parametersList
 ---
 
 

@@ -2,7 +2,7 @@
 layout: manual-parameter
 id: parameter_image_BarcodeComplementModes
 sourceCodeUrl: /dbr-detailed-info/manual/parameters/imageParameter/BarcodeComplementModes.md
-objectName: imageParameter
+listFile: parametersList
 ---
 
 # ImageParameter Object - Image Process Control

@@ -2,7 +2,7 @@
 layout: manual-parameter
 id: parameter_region_format
 sourceCodeUrl: /dbr-detailed-info/manual/parameters/regionDefinition/format-control.md
-objectName: regionDefinition
+listFile: parametersList
 ---
 
 
