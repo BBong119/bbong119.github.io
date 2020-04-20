@@ -6,6 +6,7 @@ objectName: imageParameter
 ---
 
 # ImageParameter Object - Image Process Control
+
  | Parameter Name | Description |
  | -------------- | ----------- | 
  | [`ImageParameter.AccompanyingTextRecognitionModes`](AccompanyingTextRecognitionModes.md#accompanyingtextrecognitionmodes) | Sets the mode and priority to recognize accompanying text. |

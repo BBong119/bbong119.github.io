@@ -7,7 +7,7 @@ objectName: imageParameter
 
 # ImageParameter Object - Image Process Control
 
-  | Parameter Name | Description |
+ | Parameter Name | Description |
  | -------------- | ----------- | 
  | [`ImageParameter.AccompanyingTextRecognitionModes`](AccompanyingTextRecognitionModes.md#accompanyingtextrecognitionmodes) | Sets the mode and priority to recognize accompanying text. |
  | [`ImageParameter.BarcodeColourModes`](BarcodeColourModes.md#barcodecolourmodes) | Sets the mode and priority for the barcode colour mode used to process the barcode zone. |
