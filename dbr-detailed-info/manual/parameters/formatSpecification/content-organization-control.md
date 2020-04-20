@@ -2,7 +2,6 @@
 layout: manual-parameter
 id: parameter_format_content
 sourceCodeUrl: /dbr-detailed-info/manual/parameters/formatSpecification/content-organization-control.md
-objectName: formatSpecification
 listFile: parametersList
 ---
 
