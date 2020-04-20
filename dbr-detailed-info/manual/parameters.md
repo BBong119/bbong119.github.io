@@ -48,27 +48,28 @@ objectName: mainPage
 
  | Parameter Name | Description |
  | -------------- | ----------- | 
- | [`ImageParameter.Pages`](parameters/imageParameter/image-process-control.md#pages) | Sets the specific pages or the range of pages of a file (.tiff or .pdf) for barcode searching. |
- | [`ImageParameter.PDFRasterDPI`](parameters/imageParameter/image-process-control.md#pdfrasterdpi) | Sets the output image resolution. |
- | [`ImageParameter.ScaleDownThreshold`](parameters/imageParameter/image-process-control.md#scaledownthreshold) | Sets the threshold for the image shrinking. |
+ | [`ImageParameter.AccompanyingTextRecognitionModes`](parameters/imageParameter/AccompanyingTextRecognitionModes.md#accompanyingtextrecognitionmodes) | Sets the mode and priority to recognize accompanying text. |
+ | [`ImageParameter.BarcodeColourModes`](parameters/imageParameter/BarcodeColourModes.md#barcodecolourmodes) | Sets the mode and priority for the barcode colour mode used to process the barcode zone. |
+ | [`ImageParameter.BarcodeComplementModes`](parameters/imageParameter/BarcodeComplementModes.md#barcodecomplementmodes) | Sets the mode and priority to complement the missing parts in the barcode. |
+ | [`ImageParameter.BinarizationModes`](parameters/imageParameter/BinarizationModes.md#binarizationmodes) | 	Sets the mode and priority for binarization. |
  | [`ImageParameter.ColourClusteringModes`](parameters/imageParameter/ColourClusteringModes.md#colourclusteringmodes) | Sets the mode and priority for colour categorization. Not supported yet. |
  | [`ImageParameter.ColourConversionModes`](parameters/imageParameter/ColourConversionModes.md#colourconversionmodes) | Sets the mode and priority for converting a colour image to a grayscale image. |
- | [`ImageParameter.GrayscaleTransformationModes`](parameters/imageParameter/GrayscaleTransformationModes.md#grayscaletransformationmodes) | Sets the mode and priority for the grayscale image conversion. |
- | [`ImageParameter.RegionPredetectionModes`](parameters/imageParameter/RegionPredetectionModes.md#regionpredetectionmodes) | Sets the region pre-detection mode for barcodes search. |
- | [`ImageParameter.ImagePreprocessingModes`](parameters/imageParameter/ImagePreprocessingModes.md#imagepreprocessingmodes) | Sets the mode and priority for image preprocessing algorithms. |
- | [`ImageParameter.BinarizationModes`](parameters/imageParameter/BinarizationModes.md#binarizationmodes) | 	Sets the mode and priority for binarization. |
- | [`ImageParameter.TextureDetectionModes`](parameters/imageParameter/TextureDetectionModes.md#texturedetectionmodes) | 	Sets the mode and priority for texture detection. |
- | [`ImageParameter.LocalizationModes`](parameters/imageParameter/LocalizationModes.md#localizationmodes) | 	Sets the mode and priority for localization algorithms. |
- | [`ImageParameter.TextFilterModes`](parameters/imageParameter/TextFilterModes.md#textfiltermodes) | 	Sets the mode and priority for text filter. |
- | [`ImageParameter.TextAssistedCorrectionMode`](parameters/imageParameter/TextAssistedCorrectionMode.md#textassistedcorrectionmode) | Sets the mode of text assisted correction for barcode decoding. Not support yet. |
- | [`ImageParameter.DPMCodeReadingModes`](parameters/imageParameter/DPMCodeReadingModes.md#dpmcodereadingmodes) | Sets the mode and priority for DPM code reading. Not support yet. |
- | [`ImageParameter.DeformationResistingModes`](parameters/imageParameter/DeformationResistingModes.md#deformationresistingmodes) | Sets the mode and priority for deformation resisting. |
- | [`ImageParameter.BarcodeComplementModes`](parameters/imageParameter/BarcodeComplementModes.md#barcodecomplementmodes) | Sets the mode and priority to complement the missing parts in the barcode. |
- | [`ImageParameter.BarcodeColourModes`](parameters/imageParameter/BarcodeColourModes.md#barcodecolourmodes) | Sets the mode and priority for the barcode colour mode used to process the barcode zone. |
  | [`ImageParameter.DeblurLevel`](parameters/imageParameter/image-process-control.md#deblurlevel) | Sets the degree of blurriness of the barcode. |
- | [`ImageParameter.AccompanyingTextRecognitionModes`](parameters/imageParameter/AccompanyingTextRecognitionModes.md#accompanyingtextrecognitionmodes) | Sets the mode and priority to recognize accompanying text. |
- | [`ImageParameter.ScaleUpModes`](parameters/imageParameter/ScaleUpModes.md#scaleupmodes) | Sets the mode and priority to control the sampling methods of scale-up for linear barcodes with small module sizes. | 
+ | [`ImageParameter.DeformationResistingModes`](parameters/imageParameter/DeformationResistingModes.md#deformationresistingmodes) | Sets the mode and priority for deformation resisting. |
+ | [`ImageParameter.DPMCodeReadingModes`](parameters/imageParameter/DPMCodeReadingModes.md#dpmcodereadingmodes) | Sets the mode and priority for DPM code reading. Not support yet. |
+ | [`ImageParameter.GrayscaleTransformationModes`](parameters/imageParameter/GrayscaleTransformationModes.md#grayscaletransformationmodes) | Sets the mode and priority for the grayscale image conversion. |
+ | [`ImageParameter.ImagePreprocessingModes`](parameters/imageParameter/ImagePreprocessingModes.md#imagepreprocessingmodes) | Sets the mode and priority for image preprocessing algorithms. |
+ | [`ImageParameter.LocalizationModes`](parameters/imageParameter/LocalizationModes.md#localizationmodes) | 	Sets the mode and priority for localization algorithms. |
+ | [`ImageParameter.Pages`](parameters/imageParameter/image-process-control.md#pages) | Sets the specific pages or the range of pages of a file (.tiff or .pdf) for barcode searching. |
+ | [`ImageParameter.PDFRasterDPI`](parameters/imageParameter/image-process-control.md#pdfrasterdpi) | Sets the output image resolution. |
  | [`ImageParameter.PDFReadingMode`](parameters/imageParameter/image-process-control.md#pdfreadingmode) | Sets the way to detect barcodes from a PDF file when using the DecodeFile method. |
+ | [`ImageParameter.RegionPredetectionModes`](parameters/imageParameter/RegionPredetectionModes.md#regionpredetectionmodes) | Sets the region pre-detection mode for barcodes search. |
+ | [`ImageParameter.ScaleDownThreshold`](parameters/imageParameter/image-process-control.md#scaledownthreshold) | Sets the threshold for the image shrinking. |
+ | [`ImageParameter.ScaleUpModes`](parameters/imageParameter/ScaleUpModes.md#scaleupmodes) | Sets the mode and priority to control the sampling methods of scale-up for linear barcodes with small module sizes. | 
+ | [`ImageParameter.TextAssistedCorrectionMode`](parameters/imageParameter/TextAssistedCorrectionMode.md#textassistedcorrectionmode) | Sets the mode of text assisted correction for barcode decoding. Not support yet. |
+ | [`ImageParameter.TextFilterModes`](parameters/imageParameter/TextFilterModes.md#textfiltermodes) | 	Sets the mode and priority for text filter. |
+ | [`ImageParameter.TextureDetectionModes`](parameters/imageParameter/TextureDetectionModes.md#texturedetectionmodes) | 	Sets the mode and priority for texture detection. |
+
 
 
 ### Result Control
@@ -133,26 +134,27 @@ objectName: mainPage
 
  | Parameter Name | Description |
  | -------------- | ----------- | 
+ | [`FormatSpecification.AllModuleDeviation`](parameters/formatSpecification/format-control.md#allmoduledeviation) | Set the module size deviation from the standard barcode module size. |
+ | [`FormatSpecification.AustralianPostEncodingTable`](parameters/formatSpecification/format-control.md#australianpostencodingtable) | Set the encoding table used to code the Customer Information Field of Australian Post Customer Barcode. | 
  | [`FormatSpecification.BarcodeAngleRangeArray`](parameters/formatSpecification/format-control.md#barcodeanglerangearray) | Sets the range of angles (in degrees) for barcodes search. | 
  | [`FormatSpecification.BarcodeBytesLengthRangeArray`](parameters/formatSpecification/format-control.md#barcodebyteslengthrangearray) | Sets the range of barcode bytes length for barcodes search. | 
  | [`FormatSpecification.BarcodeBytesRegExPattern`](parameters/formatSpecification/format-control.md#barcodebytesregexpattern) | Specifies the regular express pattern of barcode byte characters. | 
+ | [`FormatSpecification.BarcodeFormatIds`](parameters/formatSpecification/format-control.md#barcodeformatids) | Sets which barcode format the current FormatSpecification configuration is applied to. | 
+ | [`FormatSpecification.BarcodeFormatIds_2`](parameters/formatSpecification/format-control.md#barcodeformatids_2) | Sets which barcode format in BarcodeFormat group 2 the current FormatSpecification configuration is applied to. |
  | [`FormatSpecification.BarcodeHeightRangeArray`](parameters/formatSpecification/format-control.md#barcodeheightrangearray) | Sets the range of barcode heights (in pixels) to for barcodes search. | 
  | [`FormatSpecification.BarcodeTextLengthRangeArray`](parameters/formatSpecification/format-control.md#barcodetextlengthrangearray) |	Sets the range of barcode text length for barcodes search. | 
  | [`FormatSpecification.BarcodeTextRegExPattern`](parameters/formatSpecification/format-control.md#barcodetextregexpattern) | Specifies the regular express pattern of barcode characters. | 
  | [`FormatSpecification.BarcodeWidthRangeArray`](parameters/formatSpecification/format-control.md#barcodewidthrangearray) | Sets the range of barcode widths (in pixels) for barcodes search.(Hint). | 
- | [`FormatSpecification.MinQuietZoneWidth`](parameters/formatSpecification/format-control.md#minquietzonewidth) | The minimum width of the barcode quiet zone. | 
- | [`FormatSpecification.ModuleSizeRangeArray`](parameters/formatSpecification/format-control.md#modulesizerangearray) | Sets the range of module size (in pixels) for barcodes search. (Hint). | 
- | [`FormatSpecification.BarcodeFormatIds`](parameters/formatSpecification/format-control.md#barcodeformatids) | Sets which barcode format the current FormatSpecification configuration is applied to. | 
- | [`FormatSpecification.BarcodeFormatIds_2`](parameters/formatSpecification/format-control.md#barcodeformatids_2) | Sets which barcode format in BarcodeFormat group 2 the current FormatSpecification configuration is applied to. |
- | [`FormatSpecification.MirrorMode`](parameters/formatSpecification/format-control.md#mirrormode) | Sets whether to decode mirrored barcodes. | 
- | [`FormatSpecification.RequireStartStopChars`](parameters/formatSpecification/format-control.md#requirestartstopchars) |	Sets whether the start and stop characters are required when searching for Code 39 barcodes. | 
- | [`FormatSpecification.FindUnevenModuleBarcode`](parameters/formatSpecification/format-control.md#findunevenmodulebarcode) | Specifies whether to find barcodes with uneven barcode modules. Not support yet. | 
- | [`FormatSpecification.AllModuleDeviation`](parameters/formatSpecification/format-control.md#allmoduledeviation) | Set the module size deviation from the standard barcode module size. | 
- | [`FormatSpecification.HeadModuleRatio`](parameters/formatSpecification/format-control.md#headmoduleratio) | Set the module count and module size ratio of the barcode head part. | 
- | [`FormatSpecification.TailModuleRatio`](parameters/formatSpecification/format-control.md#tailmoduleratio) |	Set the module count and module size ratio of the barcode tail part. | 
- | [`FormatSpecification.StanardFormat`](parameters/formatSpecification/format-control.md#stanardformat) | Set the standard barcode format. | 
  | [`FormatSpecification.Code128Subset`](parameters/formatSpecification/format-control.md#code128subset) | Set the code 128 subset. | 
- | [`FormatSpecification.AustralianPostEncodingTable`](parameters/formatSpecification/format-control.md#australianpostencodingtable) | Set the encoding table used to code the Customer Information Field of Australian Post Customer Barcode. | 
+ | [`FormatSpecification.FindUnevenModuleBarcode`](parameters/formatSpecification/format-control.md#findunevenmodulebarcode) | Specifies whether to find barcodes with uneven barcode modules. Not support yet. | 
+ | [`FormatSpecification.HeadModuleRatio`](parameters/formatSpecification/format-control.md#headmoduleratio) | Set the module count and module size ratio of the barcode head part. | 
+ | [`FormatSpecification.MinQuietZoneWidth`](parameters/formatSpecification/format-control.md#minquietzonewidth) | The minimum width of the barcode quiet zone. | 
+ | [`FormatSpecification.MirrorMode`](parameters/formatSpecification/format-control.md#mirrormode) | Sets whether to decode mirrored barcodes. | 
+ | [`FormatSpecification.ModuleSizeRangeArray`](parameters/formatSpecification/format-control.md#modulesizerangearray) | Sets the range of module size (in pixels) for barcodes search. (Hint). |
+ | [`FormatSpecification.RequireStartStopChars`](parameters/formatSpecification/format-control.md#requirestartstopchars) |	Sets whether the start and stop characters are required when searching for Code 39 barcodes. |
+ | [`FormatSpecification.StanardFormat`](parameters/formatSpecification/format-control.md#stanardformat) | Set the standard barcode format. | 
+ | [`FormatSpecification.TailModuleRatio`](parameters/formatSpecification/format-control.md#tailmoduleratio) |	Set the module count and module size ratio of the barcode tail part. | 
+
 
  
  
