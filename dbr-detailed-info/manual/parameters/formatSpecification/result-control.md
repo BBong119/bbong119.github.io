@@ -2,7 +2,7 @@
 layout: manual-parameter
 id: parameter_format_result
 sourceCodeUrl: /dbr-detailed-info/manual/parameters/formatSpecification/result-control.md
-objectName: formatSpecification
+listFile: parametersList
 ---
 
 # FormatSpecification Object - Result Control

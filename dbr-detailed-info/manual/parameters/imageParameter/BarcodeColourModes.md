@@ -2,7 +2,7 @@
 layout: manual-parameter
 id: parameter_image_BarcodeColourModes
 sourceCodeUrl: /dbr-detailed-info/manual/parameters/imageParameter/BarcodeColourModes.md
-objectName: imageParameter
+listFile: parametersList
 ---
 
 
