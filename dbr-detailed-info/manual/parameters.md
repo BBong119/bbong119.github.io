@@ -3,6 +3,7 @@ layout: manual-parameter
 id: parameter_main
 sourceCodeUrl: /dbr-detailed-info/manual/parameters.md
 objectName: mainPage
+listFile: parametersList
 ---
 
 
