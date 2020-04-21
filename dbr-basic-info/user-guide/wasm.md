@@ -2,6 +2,7 @@
 layout: user-guide
 id: user_guide_wasm
 sourceCodeUrl: /dbr-basic-info/user-guide/wasm.md
+listFile: userGuideList
 ---
 
 
