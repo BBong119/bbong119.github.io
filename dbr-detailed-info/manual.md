@@ -1,1 +1,0 @@
-dbr detailed info - manual
