@@ -10,18 +10,5 @@
 {%- endif -%}
 {%- assign validCount = 0 -%}
 {%- for cur_level in level_ary limit:limitCount -%}
-    {%- assign breadcrumbUrl = page.url | split: cur_level | first | strip -%}
-    {%- for my_page in site.pages -%}
-        {%- if breadcrumbUrl == my_page.url | strip -%}            
-            {%- if validCount > 0 -%}
-                <ul>
-            {%- else -%}
-                <ul>
-            {%- endif -%}
-                {%- assign listUrl =  "/barcode-sdk-docs-dev" | append：breadcrumbUrl -%}
-                <li><a href = "{{ listUrl }}">{{ my_page.breadcrumbText }}</a></li>
-            {%- assign validCount = validCount | plus:1 -%}
-            {%- break -%}
-        {%- endif -%}
-    {%- endfor -%}
+  
 {%- endfor -%}
