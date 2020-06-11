@@ -5,7 +5,7 @@
     {%- assign breadcrumbUrl = page.url | split: cur_level | first | strip -%}
     {%- for my_page in site.pages -%}
         {%- if breadcrumbUrl == my_page.url | strip -%}
-        {%- assign listUrl2 = "/barcode-sdk-docs-dev" | append: my_page.url -%}
+        {%- assign listUrl2 = "/barcode-sdk-docs-dev" | append: breadcrumbUrl -%}
             <li><a href = "{{ listUrl2 }}">{{ my_page.breadcrumbText }}</a></li>>
             {%- break -%}
         {%- endif -%}
