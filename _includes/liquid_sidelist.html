@@ -20,6 +20,8 @@
             {%- endif -%}
 
             {%- assign validCount = validCount | plus:1 -%}
+            {%- assign listUrl =  "/barcode-sdk-docs-dev" | append：breadcrumbUrl -%}
+            <li><a href = "{{ listUrl }}">{{ my_page.breadcrumbText }}</a></li>
             {%- break -%}
         {%- endif -%}
     {%- endfor -%}
