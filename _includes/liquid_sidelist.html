@@ -18,8 +18,7 @@
             {%- else -%}
                 <ul>
             {%- endif -%}
-            {%- assign listUrl =  "/barcode-sdk-docs-dev" | append：breadcrumbUrl -%}
-            <li><a href = "{{ listUrl }}">{{ my_page.breadcrumbText }}</a></li>
+
             {%- assign validCount = validCount | plus:1 -%}
             {%- break -%}
         {%- endif -%}
