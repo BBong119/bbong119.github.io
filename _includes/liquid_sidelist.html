@@ -1,13 +1,48 @@
 {%- assign level_ary = page.url | strip | split: '/' -%}
-
+{%- assign limitCount = level_ary | size | plus:0 -%}
+{%- if page.sidebarListFile -%}
+    {%- unless page.url contains '.html' -%}
+        {%- assign lastStrSize = level_ary | last | strip | size | plus:0 -%}
+        {%- unless lastStrSize > 0  -%}
+            {%- assign limitCount = limitCount | minus:1 -%}
+        {%- endunless -%}
+    {%- endunless -%}
+{%- endif -%}
 {%- assign validCount = 0 -%}
-{%- for cur_level in level_ary -%}
+{%- for cur_level in level_ary limit:limitCount -%}
+    {%- if forloop.index0 == 0 -%}
+        {%- continue -%}
+    {%- endif -%}
     {%- assign breadcrumbUrl = page.url | split: cur_level | first | strip -%}
     {%- for my_page in site.pages -%}
-        {%- if breadcrumbUrl == my_page.url | strip -%}
-        {%- assign listUrl2 = "/barcode-sdk-docs-dev" | append: breadcrumbUrl -%}
-            <li><a href = "{{ listUrl2 }}">{{ my_page.breadcrumbText }}</a></li>>
+        {%- if breadcrumbUrl == my_page.url | strip -%}            
+            {%- if validCount > 0 -%}
+                <ul>
+            {%- else -%}
+                <ul>
+            {%- endif -%}
+                {%- assign listUrl = "/barcode-sdk-docs-dev" | append: breadcrumbUrl -%}
+                <li><a href = "{{ listUrl }}">{{ my_page.breadcrumbText }}</a></li>
+            {%- assign validCount = validCount | plus:1 -%}
             {%- break -%}
         {%- endif -%}
     {%- endfor -%}
 {%- endfor -%}
+
+
+{%- if validCount > 0 -%}
+    <ul>
+    {%- if page.sidebarListFile -%}
+        {%- include {{ page.sidebarListFile }}.html -%}
+    {%- endif -%}
+    </ul>
+    {%- for i in (1..validCount) -%}
+        </li></ul>
+    {%- endfor -%}
+{%- else -%}
+    <ul>
+    {%- if page.sidebarListFile -%}
+        {%- include {{ page.sidebarListFile }}.html -%}
+    {%- endif -%}
+    </ul>
+{%- endif -%}
