@@ -12,6 +12,9 @@
 {%- for cur_level in level_ary limit:limitCount -%}
     {%- assign breadcrumbUrl = page.url | split: cur_level | first | strip -%}
     {%- for my_page in site.pages -%}
+        {%- if breadcrumbUrl == my_page.url | strip -%}            
 
+            {%- break -%}
+        {%- endif -%}
     {%- endfor -%}
 {%- endfor -%}
