@@ -10,5 +10,8 @@
 {%- endif -%}
 {%- assign validCount = 0 -%}
 {%- for cur_level in level_ary limit:limitCount -%}
-  
+    {%- assign breadcrumbUrl = page.url | split: cur_level | first | strip -%}
+    {%- for my_page in site.pages -%}
+
+    {%- endfor -%}
 {%- endfor -%}
