@@ -12,7 +12,7 @@
 {%- for cur_level in level_ary -%}
     {%- assign breadcrumbUrl = page.url | split: cur_level | first | strip -%}
     {%- for my_page in site.pages -%}
-        {%- if breadcrumbUrl == my_page.url | strip -%}   
+        {%- if breadcrumbUrl == my_page.url | strip -%}
             {%- assign listUrl =  "/barcode-sdk-docs-dev" | append：breadcrumbUrl -%}
             <li><a href = "{{ listUrl }}">{{ my_page.breadcrumbText }}</a></li>
             {%- break -%}
