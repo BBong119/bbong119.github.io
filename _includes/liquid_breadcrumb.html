@@ -1,0 +1,31 @@
+{%- assign level_ary = page.url | split: '/' -%}
+{%- for cur_level in level_ary -%}
+    {%- assign breadcrumbUrl = page.url | split: cur_level | first | strip -%}
+    {%- for my_page in site.pages -%}
+        {%- if breadcrumbUrl == my_page.url | strip -%}
+            {%- assign listUrl =  "/barcode-sdk-docs-dev" | append：breadcrumbUrl -%}
+            <li><a href = "{{ listUrl }}">{{ my_page.breadcrumbText }}</a></li>
+            {%- break -%}
+        {%- endif -%}
+    {%- endfor -%}
+{%- endfor -%}
+{%- if page.url contains '.html' -%}
+    {%- assign file_name =  level_ary | last |  split: '.' | first |  strip -%}
+    {%- if file_name contains '-' -%}
+        {%- assign file_name_str = file_name | split:'-' -%}
+        {%- capture output_val -%}
+            {%- for cur_str in file_name_str -%}
+                {{ cur_str | capitalize | append: ' ' }}
+            {%- endfor -%}
+        {%- endcapture -%}
+        <li>{{ output_val | strip }}</li>
+    {%- else -%}
+            <li>{{ file_name }}</li>
+    {%- endif -%}
+{%- else -%}
+    {%- if page.breadcrumbText -%}
+        {%- assign pageUrlWihtoutSpace = page.url | strip -%}
+        {%- assign listUrl =  "/barcode-sdk-docs-dev" | append: pageUrlWihtoutSpace -%}
+        <li><a href = "{{ listUrl }}">{{ page.breadcrumbText }}</a></li>
+    {%- endif -%}
+{%- endif -%}
