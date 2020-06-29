@@ -7,7 +7,7 @@ function TestLiquid()
         var liAry = navWrap.getElementsByTagName("li");
     
         for (var i = 0, len = liAry.length; i < len; i++) {
-            liAry[i].style.listStyleImage = "url('expand-list.png')";
+            liAry[i].style.listStyleImage = "url('/assets/expand-list.png')";
         }
     }
 }
