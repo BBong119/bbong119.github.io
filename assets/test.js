@@ -1,9 +1,13 @@
 function TestLiquid()
 {
-    var navWrap = document.getElementById("menuLsitContainer");
-    var liAry = navWrap.getElementsByTagName("li");
+    var navWrap = document.getElementById("uniqueID");
+
+    if(navWrap != null)
+    {
+        var liAry = navWrap.getElementsByTagName("li");
     
-    for (var i = 0, len = liAry.length; i < len; i++) {
-        liAry[i].style.listStyleImage = "url({{ site.assets_path }}expand-list.png)";
+        for (var i = 0, len = liAry.length; i < len; i++) {
+            liAry[i].style.listStyleImage = "url({{ site.assets_path }}expand-list.png)";
+        }
     }
 }
