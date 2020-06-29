@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+        <meta name="description" content="{{ page.description }}" />
+        <meta name="title" content="{{ page.title }}" />
+        <script type="application/ld+json">
+        {"@type":"WebPage","description":"user guide layout.","@context":"https://schema.org"}</script>
+    
+        <link rel="stylesheet" href="{{ site.assets }}css/style.css?v=b8601a47f85e9c71565aa6c079c8988cd98cc1e7">
+
+    
+        <script type="text/javascript" src="{{ site.assets_path }}jquery-3.5.0.min.js"></script>
+        <script type="text/javascript" src="{{ site.assets_path }}test.js"></script>
+    </head>
+
+<body>
+
+    <div class="markdown-body">
+        {{ content }}
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js"
+        integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"></script>
+    <script>anchors.add();</script>
+
+    <script>
+        TestLiquid();
+    </script>
+</body>
+
+</html>
