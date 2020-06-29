@@ -1,4 +1,4 @@
-TestLiquid()
+function TestLiquid()
 {
     var navWrap = document.getElementById("menuLsitContainer");
     var liAry = navWrap.getElementsByTagName("li");
