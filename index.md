@@ -3,4 +3,4 @@ breadcrumbText: Test
 ---
 
 
-{%- include liquid_breadcrumb.html -%}
+{%- include introduction/sidelist-text.html -%}
