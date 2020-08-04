@@ -11,3 +11,6 @@ Test js.
     <li>list2</li>
     <li>list3</li>
 </ul>
+
+
+111 test auto update.
