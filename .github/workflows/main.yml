@@ -16,7 +16,7 @@ jobs:
     name: Test-Sync-GitHub-Repo
     runs-on: ubuntu-latest
     steps:
-    - name: Hub Mirror Action.
+      - name: Hub Mirror Action.
         uses: Yikun/hub-mirror-action@v0.08
         with:
           src: github/BBong119
