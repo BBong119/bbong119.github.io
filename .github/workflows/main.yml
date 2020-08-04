@@ -24,4 +24,3 @@ jobs:
           dst_key: ${{ secrets.GITEE_PRIVATE_KEY }}
           dst_token: ${{ secrets.GITEE_TOKEN }}
           white_list: "bbong119.github.io"
-          force_update: true
