@@ -17,7 +17,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Mirror Repo
-        uses: Yikun/hub-mirror-action@master
+        uses: BBong119/bbong119.github.io@master
         with:
           src: github/BBong119
           dst: github/bbongTest1
