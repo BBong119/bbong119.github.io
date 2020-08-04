@@ -13,3 +13,5 @@ test auto mirror.
 dfs
 
 try update.
+
+update two file.
