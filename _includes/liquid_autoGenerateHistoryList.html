@@ -37,7 +37,12 @@
 
 
 {%- capture curPageVersion -%}
-	lastest version
+	{%- if page.url contians '-v' -%}
+		{%- assign tmpVer = page.url |  split: '-v' | last | split: '/' | first | replace: '.html', '' | rstrip -%}
+		{{ tmpVer }}
+	{%- else -%}
+		lastest version
+	{%- endif -%}
 {%- endcapture -%}
 
 {{ curPageVersion }}
