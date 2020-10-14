@@ -63,6 +63,7 @@
 	{%- endif -%}
 
 	{{ tmpPageVersion }}
+	{{ historyRecode }}
 	{%- assign newVer = true -%}
 	{%- assign historyVer = historyRecode | split: '/' -%}
 	{%- for ver in historyVer -%}
@@ -73,7 +74,6 @@
 		{%- endif -%}
 	{%- endfor -%}
 
-	{{ newVer }}
 	{%- unless newVer -%}
 		{%- continue -%}
 	{%- endunless -%}
