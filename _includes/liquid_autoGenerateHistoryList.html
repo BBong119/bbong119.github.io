@@ -40,14 +40,35 @@
 	{%- if page.url contains '-v' -%}
 		{{ page.url |  split: '-v' | last | split: '/' | first | replace: '.html', '' | rstrip }}
 	{%- else -%}
-		lastest version
+		latest version
 	{%- endif -%}
 {%- endcapture -%}
 
-{{ curPageVersion }}
-
 {%- assign needRemoveStr = "-v" | append: curPageVersion -%}
-{{ needRemoveStr }}
-
 {%- assign curUsedToMatchUrl = page.url | remove: needRemoveStr -%}
-{{ curUsedToMatchUrl }}
+
+{%- for my_page in site.pages -%}
+	{%- capture tmpPageVersion -%}
+		{%- if my_page.url contains '-v' -%}
+			{{ my_page.url |  split: '-v' | last | split: '/' | first | replace: '.html', '' | rstrip }}
+		{%- else -%}
+			latest version
+		{%- endif -%}
+	{%- endcapture -%}
+
+	{%- if tmpPageVersion == curPageVersion -%}
+		{% continue %}
+	{%- endif -%}
+
+
+	{%- assign needRemoveStr = "-v" | append: tmpPageVersion -%}
+	{%- assign tmpUsedToMatchUrl = page.url | remove: needRemoveStr -%}
+
+	{%- if tmpUsedToMatchUrl == curUsedToMatchUrl -%}
+		{%- if tmpPageVersion == "latest version" -%}
+			<li><a href = "{{ site.docHomePage }}{{ my_page.url }}" class="otherLinkColour">latest version</a></li>		
+		{%- else -%}
+			<li><a href = "{{ site.docHomePage }}{{ my_page.url }}" class="otherLinkColour">{{ "version " | append: tmpPageVersion }}</a></li>	
+		{%- endif -%}
+	{%- endif -%}
+{%- endfor -%}
