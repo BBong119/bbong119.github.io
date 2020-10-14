@@ -71,9 +71,9 @@
 		{%- endif -%}
 	{%- endfor -%}
 
-	{%- unless newVer -%}
+	<!-- {%- unless newVer -%}
 		{%- continue -%}
-	{%- endunless -%}
+	{%- endunless -%} -->
 
 	{%- assign needRemoveStr = "-v" | append: tmpPageVersion -%}
 	{%- assign tmpUsedToMatchUrl = my_page.url | remove: needRemoveStr -%}
