@@ -36,7 +36,7 @@
 
 {%- capture curPageVersion -%}
 	{%- if page.url contians '-v' -%}
-		{{ page.url |  split: '-v' | last | split: '/' | first | replace: '.html', '' | rstrip }}
+		<!-- {{ page.url |  split: '-v' | last | split: '/' | first | replace: '.html', '' | rstrip }} -->
 	{%- else -%}
 		lastest version
 	{%- endif -%}
