@@ -37,21 +37,17 @@
 
 
 {%- capture curPageVersion -%}
-	{%- if page.url contians '-v' -%}
-		latest version 
+	{%- if page.url contains '-v' -%}
+		{{ page.url |  split: '-v' | last | split: '/' | first | replace: '.html', '' | rstrip }}
 	{%- else -%}
-		latest version
+		lastest version
 	{%- endif -%}
 {%- endcapture -%}
 
 {{ curPageVersion }}
 
-{%- comment -%}
 {%- assign needRemoveStr = "-v" | append: curPageVersion -%}
 {{ needRemoveStr }}
-{%- endcomment -%}
 
-{%- comment -%}
 {%- assign curUsedToMatchUrl = page.url | remove: needRemoveStr -%}
 {{ curUsedToMatchUrl }}
-{%- endcomment -%}
