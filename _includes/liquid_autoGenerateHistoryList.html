@@ -6,6 +6,8 @@
 	{%- endif -%}
 {%- endcapture -%}
 
+<li><class="otherLinkColour" style="font-weight: bold;">{{ "version " | append: curPageVersion }}</a></li>
+
 {%- assign needRemoveStr = "-v" | append: curPageVersion -%}
 {%- assign curUsedToMatchUrl = page.url | remove: needRemoveStr -%}
 
