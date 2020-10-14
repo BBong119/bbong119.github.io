@@ -47,6 +47,8 @@
 {%- assign needRemoveStr = "-v" | append: curPageVersion -%}
 {%- assign curUsedToMatchUrl = page.url | remove: needRemoveStr -%}
 
+{%- assign historyRecode = "" -%}
+
 {%- for my_page in site.pages -%}
 	{%- capture tmpPageVersion -%}
 		{%- if my_page.url contains '-v' -%}
@@ -57,14 +59,27 @@
 	{%- endcapture -%}
 
 	{%- if tmpPageVersion == curPageVersion -%}
-		{% continue %}
+		{%- continue -%}
 	{%- endif -%}
 
+	{%- assign newVer = true -%}
+	{%- assgin historyVer = historyRecode | split: '/' -%}
+	{%- for ver in historyVer -%}
+		{%- if ver == tmpPageVersion -%}
+			{%- assign newVer = false -%}
+			{%- break -%}
+		{%- endif -%}
+	{%- endfor -%}
+
+	{%- unless newVer -%}
+		{%- continue -%}
+	{%- endunless -%}
 
 	{%- assign needRemoveStr = "-v" | append: tmpPageVersion -%}
 	{%- assign tmpUsedToMatchUrl = my_page.url | remove: needRemoveStr -%}
 
 	{%- if tmpUsedToMatchUrl == curUsedToMatchUrl -%}
+		{%- assign historyRecode = historyRecode | append: '/' | append: "tmpPageVersion" -%}
 		{%- if tmpPageVersion == "latest version" -%}
 			<li><a href = "{{ site.docHomePage }}{{ my_page.url }}" class="otherLinkColour">latest version</a></li>		
 		{%- else -%}
