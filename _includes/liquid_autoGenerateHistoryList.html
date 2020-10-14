@@ -38,10 +38,9 @@
 
 {%- capture curPageVersion -%}
 	{%- if page.url contians '-v' -%}
-		{%- assign tmpVer = page.url |  split: '-v' | last -%}
-		{{ tmpVer }}
+		latest version 
 	{%- else -%}
-		lastest version
+		latest version
 	{%- endif -%}
 {%- endcapture -%}
 
