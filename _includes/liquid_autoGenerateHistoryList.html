@@ -61,14 +61,11 @@
 	{%- if tmpPageVersion == curPageVersion -%}
 		{%- continue -%}
 	{%- endif -%}
-
-	{{ tmpPageVersion }}
-	{{ historyRecode }}
+	
 	{%- assign newVer = true -%}
 	{%- assign historyVer = historyRecode | split: '/' -%}
 	{%- for ver in historyVer -%}
 		{%- if ver == tmpPageVersion -%}
-			{{ ver }}
 			{%- assign newVer = false -%}
 			{%- break -%}
 		{%- endif -%}
