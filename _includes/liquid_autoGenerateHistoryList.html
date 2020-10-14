@@ -63,7 +63,7 @@
 	{%- endif -%}
 
 	{%- assign newVer = true -%}
-	{%- assgin historyVer = historyRecode | split: '/' -%}
+	{%- assign historyVer = historyRecode | split: '/' -%}
 	{%- for ver in historyVer -%}
 		{%- if ver == tmpPageVersion -%}
 			{%- assign newVer = false -%}
@@ -71,9 +71,9 @@
 		{%- endif -%}
 	{%- endfor -%}
 
-	<!-- {%- unless newVer -%}
+	{%- unless newVer -%}
 		{%- continue -%}
-	{%- endunless -%} -->
+	{%- endunless -%}
 
 	{%- assign needRemoveStr = "-v" | append: tmpPageVersion -%}
 	{%- assign tmpUsedToMatchUrl = my_page.url | remove: needRemoveStr -%}
