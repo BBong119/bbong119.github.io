@@ -1,4 +1,4 @@
-{%- assign curPageFileName = page.url | split: '/' | last | replace: '.html', '' -%}
+<!-- {%- assign curPageFileName = page.url | split: '/' | last | replace: '.html', '' -%}
 {%- assign curPathName = page.url | split: curPageFileName | first -%}
 {%- capture curPageFileNameWithoutVer -%}	
 {%- if curPageFileName contains '-v' -%}	
@@ -31,4 +31,21 @@
 			{%- endif -%}
 		{%- endif -%}
 	{%- endif -%}	
-{%- endfor -%}
+{%- endfor -%} -->
+
+
+{%- capture curPageVersion -%}
+	{%- if page.url contians '-v' -%}
+		{{ page.url |  split: '-v' | last | split: '/' | first | replace: '.html', '' | rstrip }}
+	{%- else -%}
+		lastest version
+	{%- endif -%}
+{%- endcapture -%}
+
+{{ curPageVersion }}
+
+{%- assign needRemoveStr = "-v" | append: curPageVersion -%}
+{{ needRemoveStr }}
+
+{%- assign curUsedToMatchUrl = page.url | remove: needRemoveStr -%}
+{{ curUsedToMatchUrl }}
