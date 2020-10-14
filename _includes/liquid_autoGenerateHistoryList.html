@@ -49,5 +49,7 @@
 {%- assign needRemoveStr = "-v" | append: curPageVersion -%}
 {{ needRemoveStr }}
 
+{%- comment -%}
 {%- assign curUsedToMatchUrl = page.url | remove: needRemoveStr -%}
 {{ curUsedToMatchUrl }}
+{%- endcomment -%}
