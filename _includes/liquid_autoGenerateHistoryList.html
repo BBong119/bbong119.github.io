@@ -52,7 +52,7 @@
 	{%- assign needRemoveStr = "-v" | append: tmpPageVersion -%}
 	{%- assign tmpUsedToMatchUrl = my_page.url | remove: needRemoveStr -%}
 
-	{%- if curUsedToMatchUrl contains 'index.html' -%}
+	{%- if tmpUsedToMatchUrl contains 'index.html' -%}
 		{%- assign tmpUsedToMatchUrl = tmpUsedToMatchUrl | remove: 'index.html' -%}
 	{%- endif -%}
 
