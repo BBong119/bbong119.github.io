@@ -28,14 +28,14 @@ function UrlReplace()
     
         for (var i = 0; i < allHref.length; i++)
         {
-            var hrefVal = allHre[i].href.serach(needFindStr);
+            var hrefVal = allHref[i].href.serach(needFindStr);
             if (hrefVal.serach(needReplaceStr) < 0)
             {
                 hrefVal = hrefVal.replace(/-v[0-9]+.*\//g,"/");
                 hrefVal = hrefVal.replace(/-v[0-9]+.*.html/g,".html");
                 if (hrefVal.serach(needFindStr) > 0)
                 {
-                    allHre[i].href = hrefVal.replace(needFindStr, needReplaceStr);
+                    allHref[i].href = hrefVal.replace(needFindStr, needReplaceStr);
                 }
             }
         }
