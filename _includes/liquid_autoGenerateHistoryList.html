@@ -63,7 +63,6 @@
 	{%- for history in historyAry -%}
 		{%- assign historyMd5 = history | split: 'md5HashVal:' | last -%}
 		{%- assign historyVer = history | split: 'md5HashVal:' | first | split: 'versionText:' | last -%}
-		{%- assign historyUrl = history | split: 'md5HashVal:' | first | split: 'versionText:' | first | split: 'FullUrl:' | last -%}
 		{%- assign tmpSize = historyMd5 | size -%}
 		{%- if tmpSize > 0 and my_page.md5HashVal and my_page.md5HashVal == tmpSize -%}
 			{%- if historyVer != "latest version" and historyVer != tmpPageVersion and tmpPageVersion > historyVer -%}
@@ -73,7 +72,7 @@
 			{%- assign newVer = false -%}
 			{%- break -%}
 		{%- endif -%}
-		{%- if historyVer[i] == tmpPageVersion -%}
+		{%- if historyVer == tmpPageVersion -%}
 			{%- assign newVer = false -%}
 			{%- break -%}
 		{%- endif -%}
@@ -87,9 +86,9 @@
 	{%- assign historyRecode = historyRecode | append: '\nextUrlRecode\' | append: appendText -%}
 {%- endfor -%}
 
-{%- if recodeCount > 0 -%}
-<ul class="otherVersions">
 
+<ul class="otherVersions">
+{%- assign historyAry = historyRecode | split: '\nextUrlRecode\' -%}
 {%- for history in historyAry -%}
 	{%- assign historyVer = history | split: 'md5HashVal:' | first | split: 'versionText:' | last -%}
 	{%- assign historyUrl = history | split: 'md5HashVal:' | first | split: 'versionText:' | first | split: 'FullUrl:' | last -%}
@@ -100,5 +99,7 @@
 	{%- endif -%}
 {%- endfor -%}
 </ul>
+
+{%- if historyRecode != '' -%}
 	<a class="changeBtn fontOswald" href="javascript:;">Change +</a>
 {%- endif -%}
