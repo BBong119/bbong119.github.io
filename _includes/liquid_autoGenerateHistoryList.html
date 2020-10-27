@@ -37,7 +37,7 @@
 		{%- endif -%}
 	{%- endcapture -%}
 
-	{%- if my_page.md5HashVal == page.md5HashVal -%}
+	{%- if my_page.md5HashVal and  page.md5HashVal and my_page.md5HashVal == page.md5HashVal -%}
 		{%- if curPageVersion != "latest version" and curPageVersion != tmpPageVersion and  tmpPageVersion > curPageVersion -%}
 			{%- assign curPageVersion = tmpPageVersion -%}
 		{%- endif -%}
@@ -59,7 +59,7 @@
 	{%- assign historyVer = historyRecode | split: '/' -%}
 	{%- assign hsitoryMd5 = historyMd5HashVar | split: '/' -%}
 	{%- for i in (0..recodeCount-1) -%}
-		{%- if my_page.md5HashVal == hsitoryMd5[i] -%}
+		{%- if my_page.md5HashVal and my_page.md5HashVal == hsitoryMd5[i] -%}
 			{%- if historyVer[i] != "latest version" and historyVer[i] != tmpPageVersion and tmpPageVersion > historyVer[i] -%}
 				{%- assign historyUrl = urlRecode | split: '\nextUrlRecode\' -%}
 				{%- assign tmpVerRecode = "" -%}
@@ -85,6 +85,10 @@
 			{%- assign newVer = false -%}
 			{%- break -%}
 		{%- endif -%}
+		{%- if historyVer[i] == tmpPageVersion -%}
+			{%- assign newVer = false -%}
+			{%- break -%}
+		{%- endif -%}
 	{%- endfor -%}
 
 	{%- unless newVer -%}
@@ -92,7 +96,10 @@
 	{%- endunless -%}
 
 	{%- assign historyRecode = historyRecode | append: '/' | append: tmpPageVersion -%}
-	{%- assign historyMd5HashVar = historyMd5HashVar | append: '/' | append: my_page.md5HashVal -%}
+
+	{%- if my_page.md5HashVal -%}
+		{%- assign historyMd5HashVar = historyMd5HashVar | append: '/' | append: my_page.md5HashVal -%}
+	{%- endif -%}
 	{%- assign urlRecode = urlRecode | append: '\nextUrlRecode\' | append: my_page.url -%}
 	{%- assign recodeCount = recodeCount | plus: 1 -%}
 
