@@ -82,7 +82,7 @@
 		{%- continue -%}
 	{%- endunless -%}
 
-	{%- assign appendText = "FullUrl:" | append: my_page.url | append: "versionText:" | append: tmpPageVersion | append: "md5HashVal" | append: my_page.md5HashVal -%}
+	{%- assign appendText = "FullUrl:" | append: my_page.url | append: "versionText:" | append: tmpPageVersion | append: "md5HashVal:" | append: my_page.md5HashVal -%}
 	{%- assign historyRecode = historyRecode | append: '\nextUrlRecode\' | append: appendText -%}
 {%- endfor -%}
 
