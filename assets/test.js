@@ -18,7 +18,7 @@ function UrlReplace()
 
 
     var tmpExp = new RegExp(/-v[0-9]+.*\//g)
-    var searchAry = tmpExp.exex(curRelativeUrl);
+    var searchAry = tmpExp.exec(curRelativeUrl);
     if (searchAry != null)
     {
         var needFindStr = curRelativeUrl.split(searchAry[0])[0] + "/";
