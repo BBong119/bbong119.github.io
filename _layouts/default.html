@@ -23,6 +23,20 @@
     <div class="content markdown-body">
         {%- include liquid_autoGenerateHistoryList.html -%}
 
+        {%- assign test1 = "7.5.1" -%}
+        {%- assign test2 = "7.6" -%}
+        {%- assign test3 = "7.5" -%}
+
+        {%- if test1 < test2 -%}
+        {{ "True" }}
+        {%- endif -%}
+        {%- if test2 > test3 -%}
+        {{ "True" }}
+        {%- endif -%}
+        {%- if test3 < test1 -%}
+        {{ "True" }}
+        {%- endif -%}
+        
         {{ content }}
     </div>
 
