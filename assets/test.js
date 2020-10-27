@@ -29,11 +29,11 @@ function UrlReplace()
         for (var i = 0; i < allHref.length; i++)
         {
             var hrefVal = allHref[i].href;
-            if (hrefVal.serach(needReplaceStr) < 0)
+            if (hrefVal.search(needReplaceStr) < 0)
             {
                 hrefVal = hrefVal.replace(/-v[0-9]+.*\//g,"/");
                 hrefVal = hrefVal.replace(/-v[0-9]+.*.html/g,".html");
-                if (hrefVal.serach(needFindStr) > 0)
+                if (hrefVal.search(needFindStr) > 0)
                 {
                     allHref[i].href = hrefVal.replace(needFindStr, needReplaceStr);
                 }
