@@ -28,7 +28,7 @@ function UrlReplace()
     
         for (var i = 0; i < allHref.length; i++)
         {
-            var hrefVal = allHref[i].href.serach(needFindStr);
+            var hrefVal = allHref[i].href;
             if (hrefVal.serach(needReplaceStr) < 0)
             {
                 hrefVal = hrefVal.replace(/-v[0-9]+.*\//g,"/");
