@@ -6,13 +6,6 @@
 	{%- endif -%}
 {%- endcapture -%}
 
-{%- if curPageVersion == "latest version" -%}
-	<li class="otherLinkColour" style="font-weight: bold;">latest version</li>		
-{%- else -%}
-	<li class="otherLinkColour" style="font-weight: bold;">{{ "version " | append: curPageVersion }}</li>
-{%- endif -%}
-
-
 
 {%- assign needRemoveStr = "-v" | append: curPageVersion -%}
 {%- assign curUsedToMatchUrl = page.url | remove: needRemoveStr -%}
@@ -87,6 +80,12 @@
 {%- endfor -%}
 
 
+{%- if curPageVersion == "latest version" -%}
+	<li class="otherLinkColour" style="font-weight: bold;">latest version</li>		
+{%- else -%}
+	<li class="otherLinkColour" style="font-weight: bold;">{{ "version " | append: curPageVersion }}</li>
+{%- endif -%}
+
 <ul class="otherVersions">
 {%- assign historyAry = historyRecode | split: '\nextUrlRecode\' -%}
 {%- for history in historyAry -%}
@@ -102,7 +101,3 @@
 	{%- endif -%}
 {%- endfor -%}
 </ul>
-
-{%- if historyRecode != '' -%}
-	<a class="changeBtn fontOswald" href="javascript:;">Change +</a>
-{%- endif -%}
