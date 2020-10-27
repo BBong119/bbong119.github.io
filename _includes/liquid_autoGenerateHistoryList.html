@@ -22,11 +22,6 @@
 {%- endif -%}
 
 {%- assign historyRecode = "" -%}
-{%- assign historyMd5HashVar = "" -%}
-{%- assign urlRecode = "" -%}
-{%- assign recodeCount = 0 -%}
-
-
 
 {%- for my_page in site.pages -%}
 	{%- capture tmpPageVersion -%}
@@ -64,32 +59,16 @@
 	{%- endif -%}
 
 	{%- assign newVer = true -%}
-	{%- assign historyVer = historyRecode | split: '/' -%}
-	{%- assign hsitoryMd5 = historyMd5HashVar | split: '/' -%}
-	{%- for i in (0..recodeCount-1) -%}
-		{{ historyVer[i] }}
-		{%- if my_page.md5HashVal and my_page.md5HashVal == hsitoryMd5[i] -%}
-			{%- if historyVer[i] != "latest version" and historyVer[i] != tmpPageVersion and tmpPageVersion > historyVer[i] -%}
-				{%- assign historyUrl = urlRecode | split: '\nextUrlRecode\' -%}
-				{%- assign tmpVerRecode = "" -%}
-				{%- assign tmpMd5HashVar = "" -%}
-				{%- assign tmpUrlRecode = "" -%}
-
-				{%- for j in (0..recodeCount-1) -%}
-					{%- if j != i -%}
-						{%- assign tmpVerRecode = tmpVerRecode | append: '/' | append: historyVer[j] -%}
-						{%- assign tmpMd5HashVar = tmpMd5HashVar | append: '/' | append: hsitoryMd5[j] -%}
-						{%- assign tmpUrlRecode = tmpUrlRecode | append: '\nextUrlRecode\' | append: historyUrl[j] -%}
-					{%- else -%}
-						{%- assign tmpVerRecode = tmpVerRecode | append: '/' | append: tmpPageVersion -%}
-						{%- assign tmpMd5HashVar = tmpMd5HashVar | append: '/' | append: my_page.md5HashVal -%}
-						{%- assign tmpUrlRecode = tmpUrlRecode | append: '\nextUrlRecode\' | append: my_page.url -%}
-					{%- endif -%}
-				{%- endfor -%}
-
-				{%- assign historyRecode = tmpVerRecode -%}
-				{%- assign historyMd5HashVar = tmpMd5HashVar -%}
-				{%- assign urlRecode = tmpUrlRecode -%}
+	{%- assign historyAry = historyRecode | split: '\nextUrlRecode\' -%}
+	{%- for history in historyAry -%}
+		{%- assign historyMd5 = history | split: 'md5HashVal:' | last -%}
+		{%- assign historyVer = history | split: 'md5HashVal:' | first | split: 'versionText:' | last -%}
+		{%- assign historyUrl = history | split: 'md5HashVal:' | first | split: 'versionText:' | first | split: 'FullUrl:' | last -%}
+		{%- assign tmpSize = historyMd5 | size -%}
+		{%- if tmpSize > 0 and my_page.md5HashVal and my_page.md5HashVal == tmpSize -%}
+			{%- if historyVer != "latest version" and historyVer != tmpPageVersion and tmpPageVersion > historyVer -%}
+				{%- assign replaceText = "FullUrl:" | append: my_page.url | append: "versionText:" | append: tmpPageVersion | append: "md5HashVal" | append: my_page.md5HashVal -%}
+				{%- assign historyRecode = historyRecode | replace: history, replaceText -%}
 			{%- endif -%}
 			{%- assign newVer = false -%}
 			{%- break -%}
@@ -104,25 +83,21 @@
 		{%- continue -%}
 	{%- endunless -%}
 
-	{%- assign historyRecode = historyRecode | append: '/' | append: tmpPageVersion -%}
-	{%- if my_page.md5HashVal -%}
-		{%- assign historyMd5HashVar = historyMd5HashVar | append: '/' | append: my_page.md5HashVal -%}
-	{%- endif -%}
-	{%- assign urlRecode = urlRecode | append: '\nextUrlRecode\' | append: my_page.url -%}
-	{%- assign recodeCount = recodeCount | plus: 1 -%}
-
+	{%- assign appendText = "FullUrl:" | append: my_page.url | append: "versionText:" | append: tmpPageVersion | append: "md5HashVal" | append: my_page.md5HashVal -%}
+	{%- assign historyRecode = historyRecode | append: '\nextUrlRecode\' | append: appendText -%}
 {%- endfor -%}
 
 {%- if recodeCount > 0 -%}
 <ul class="otherVersions">
-{%- assign historyVer = historyRecode | split: '/' -%}
-{%- assign historyUrl = urlRecode | split: '\nextUrlRecode\' -%}
-{%- for i in (0..recodeCount-1) -%}
-	{%- if historyVer[i] == "latest version" -%}
-			<li><a href = "{{ site.docHomePage }}{{ historyUrl[i] }}" class="otherLinkColour">latest version</a></li>		
+
+{%- for history in historyAry -%}
+	{%- assign historyVer = history | split: 'md5HashVal:' | first | split: 'versionText:' | last -%}
+	{%- assign historyUrl = history | split: 'md5HashVal:' | first | split: 'versionText:' | first | split: 'FullUrl:' | last -%}
+	{%- if historyVer == "latest version" -%}
+			<li><a href = "{{ site.docHomePage }}{{ historyUrl }}" class="otherLinkColour">latest version</a></li>		
 		{%- else -%}
-			<li><a href = "{{ site.docHomePage }}{{ historyUrl[i] }}" class="otherLinkColour">{{ "version" | append: historyVer[i] }}</a></li>
-{%- endif -%}
+			<li><a href = "{{ site.docHomePage }}{{ historyUrl }}" class="otherLinkColour">{{ "version" | append: historyVer }}</a></li>
+	{%- endif -%}
 {%- endfor -%}
 </ul>
 	<a class="changeBtn fontOswald" href="javascript:;">Change +</a>
