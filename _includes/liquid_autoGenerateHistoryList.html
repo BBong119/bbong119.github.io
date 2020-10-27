@@ -67,7 +67,7 @@
 	{%- assign historyVer = historyRecode | split: '/' -%}
 	{%- assign hsitoryMd5 = historyMd5HashVar | split: '/' -%}
 	{%- for i in (0..recodeCount-1) -%}
-		{{ history[i] }}
+		{{ historyVer[i] }}
 		{%- if my_page.md5HashVal and my_page.md5HashVal == hsitoryMd5[i] -%}
 			{%- if historyVer[i] != "latest version" and historyVer[i] != tmpPageVersion and tmpPageVersion > historyVer[i] -%}
 				{%- assign historyUrl = urlRecode | split: '\nextUrlRecode\' -%}
