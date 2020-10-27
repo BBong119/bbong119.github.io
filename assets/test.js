@@ -22,7 +22,7 @@ function UrlReplace()
     if (searchAry != null)
     {
         var needFindStr = curRelativeUrl.split(searchAry[0])[0] + "/";
-        var needReplaceStr = curRelativeUrl.split(searchAry[0])[0];
+        var needReplaceStr = curRelativeUrl.split(searchAry[0])[0] + searchAry[0];
 
         var allHref = $(".content")[0].find("a");
     
