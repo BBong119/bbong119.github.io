@@ -9,13 +9,5 @@ breadcrumbText: Test
 5ttttt
 test auto mirror.
 
-`11111111
-dfs
-
-try update.
-
-update two file.
-
-
-Test Conflict..
+Test Pull
 
