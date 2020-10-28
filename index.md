@@ -11,3 +11,5 @@ test auto mirror.
 
 Test Pull
 
+Test Reset pull
+
