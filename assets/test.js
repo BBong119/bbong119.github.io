@@ -14,6 +14,22 @@ function TestLiquid()
 
 function UrlReplace()
 {
+    var searchUrl = document.URL;
+    var oriUrl = searchUrl;
+    //history version doc url
+    searchUrl = searchUrl.replace(/\/index-v[0-9]+[^\/]*.html/g,"/");
+    searchUrl = searchUrl.replace(/-v[0-9]+[^\/]*\//g,"/");
+    searchUrl = searchUrl.replace(/-v[0-9]+[^\/]*.html/g,".html");
+
+    if (searchUrl != oriUrl){
+        oriUrl = searchUrl;
+        if (oriUrl.indexOf("#") != -1) {
+            oriUrl = oriUrl.substring(0, oriUrl.indexOf("#") + 1 );
+        }
+        var tmpstring = '<link href=\"' + oriUrl + '\" rel=\"canonical\">';
+        $("head").preappend(tmpstring);
+    }
+
     var curRelativeUrl = (document.URL.split(document.domain)).pop();
 
 
