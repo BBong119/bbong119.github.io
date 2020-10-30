@@ -21,13 +21,17 @@ function UrlReplace()
     searchUrl = searchUrl.replace(/-v[0-9]+[^\/]*\//g,"/");
     searchUrl = searchUrl.replace(/-v[0-9]+[^\/]*.html/g,".html");
 
+    var dochead = document.head || document.getElementsByTagName('head')[0];
+
     if (searchUrl != oriUrl){
         oriUrl = searchUrl;
         if (oriUrl.indexOf("#") != -1) {
             oriUrl = oriUrl.substring(0, oriUrl.indexOf("#") + 1 );
         }
-        var tmpstring = '<link href=\"' + oriUrl + '\" rel=\"canonical\">';
-        $("head").append(tmpstring);
+        var linkTag = document.createElement('link');
+        linkTag.href = oriUrl;
+        linkTag.rel = 'canonical';
+        dochead.appendChild(linkTag);
     }
 
     var curRelativeUrl = (document.URL.split(document.domain)).pop();
