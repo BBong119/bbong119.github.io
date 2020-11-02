@@ -160,7 +160,7 @@ function RedirToGivenVersionPage(inputVer)
 
 function GetVersionDiff(inputVer, compareVer)
 {
-    if (compareVer = "latest"){
+    if (compareVer == "latest"){
         return 100;
     }
 
