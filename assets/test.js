@@ -26,7 +26,7 @@ function UrlReplace()
         var tmpExp = new RegExp(/-v[0-9]+[^\/]*[\/(.html)]/g);
         var searchAry = tmpExp.exec(docUrl);
         if (searchAry != null){
-            ver = searchAry.replace('-v','');
+            ver = searchAry[0].replace('-v','');
             ver = ver.replace('.html','');
             ver = ver.replace('/', '');
         }

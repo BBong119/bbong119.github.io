@@ -20,28 +20,6 @@
 
 <body>
     <div class="container content markdown-body">
-        {%- assign test1 = "7.5.1" -%}
-        {%- assign test2 = "7.6" -%}
-        {%- assign test3 = "7.5" -%}
-
-        {%- if test1 < test2 -%}
-        {{ "True" }}
-        {%- endif -%}
-        {%- if test2 > test3 -%}
-        {{ "True" }}
-        {%- endif -%}
-        {%- if test3 < test1 -%}
-        {{ "True" }}
-        {%- endif -%}
-        {%- if test1 > test2 -%}
-        {{ "False" }}
-        {%- endif -%}
-        {%- if test2 < test3 -%}
-        {{ "False" }}
-        {%- endif -%}
-        {%- if test3 > test1 -%}
-        {{ "False" }}
-        {%- endif -%}
         {{ content }}
     </div>
     <div class="HistoryList">
