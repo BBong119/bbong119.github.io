@@ -119,7 +119,7 @@ function RedirToGivenVersionPage(inputVer)
             else{
                 tmpVer = tmpVerText.replace('version ','');
             }
-            if (curVer == inputVer){
+            if (tmpVer == inputVer){
                 var aTag = $(listAry[i]).children("a");
                 if (aTag.length > 0) {
                     var exp = new RegExp(/[?]+([^=]+)=/gi)
@@ -135,7 +135,7 @@ function RedirToGivenVersionPage(inputVer)
                 var tmpDiff = GetVersionDiff(inputVer, tmpVer);
                 if (tmpDiff >= 0 && tmpDiff < verDiff){
                     bestVerIndex = i;
-                    verDiff = GetVersionDiff(inputVer, curVer);
+                    verDiff = tmpDiff;
                 }
             }
         }
