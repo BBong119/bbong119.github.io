@@ -125,9 +125,11 @@ function RedirToGivenVersionPage(inputVer)
                     var exp = new RegExp(/[?]+([^=]+)=/gi)
                     if (exp.exec(aTag[0].href) != null){
                         window.location.replace(aTag[0].href + "&&ver=" +inputVer+"&&matchVer=true");
+                        return;
                     }
                     else{
                         window.location.replace(aTag[0].href + "?ver=" +inputVer+"&&matchVer=true");
+                        return;
                     }
                 }
             }
@@ -148,9 +150,11 @@ function RedirToGivenVersionPage(inputVer)
             var exp = new RegExp(/[?]+([^=]+)=/gi)
             if (exp.exec(aTag[0].href) != null){
                 window.location.replace(aTag[0].href + "&&ver=" +inputVer+"&&matchVer=true");
+                return;
             }
             else{
                 window.location.replace(aTag[0].href + "?ver=" +inputVer+"&&matchVer=true");
+                return;
             }
         }
     }
