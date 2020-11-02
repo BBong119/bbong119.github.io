@@ -106,37 +106,41 @@ function RedirToGivenVersionPage(inputVer)
     }
     
     var historyList = $(".otherVersions");
-    var listAry = historyList.getElementsByTagName("li");
+    if (historyList != null)
+    {
+        var listAry = historyList[0].getElementsByTagName("li");
 
-    for (var i = 0; i < listAry.length; i++) {
-        var tmpVerTest = listAry[i].innerText;
-        var tmpVer = null;
-        if (tmpVerTest == "latest version"){
-            tmpVer = "latest"
-        }
-        else{
-            tmpVer = verText.replace('version ','');
-        }
-        if (curVer == inputVer){
-            var aTag = $(listAry[i]).children("a");
-            if (aTag.length > 0) {
-                var exp = new RegExp(/[?]+([^=]+)=/gi)
-                if (exp.exec(aTag.href) != null){
-                    window.location.replace(aTag.href + "&&ver=" +inputVer+"&&matchVer=true");
-                }
-                else{
-                    window.location.replace(aTag.href + "?ver=" +inputVer+"&&matchVer=true");
+        for (var i = 0; i < listAry.length; i++) {
+            var tmpVerTest = listAry[i].innerText;
+            var tmpVer = null;
+            if (tmpVerTest == "latest version"){
+                tmpVer = "latest"
+            }
+            else{
+                tmpVer = verText.replace('version ','');
+            }
+            if (curVer == inputVer){
+                var aTag = $(listAry[i]).children("a");
+                if (aTag.length > 0) {
+                    var exp = new RegExp(/[?]+([^=]+)=/gi)
+                    if (exp.exec(aTag.href) != null){
+                        window.location.replace(aTag.href + "&&ver=" +inputVer+"&&matchVer=true");
+                    }
+                    else{
+                        window.location.replace(aTag.href + "?ver=" +inputVer+"&&matchVer=true");
+                    }
                 }
             }
-        }
-        else {
-            var tmpDiff = GetVersionDiff(inputVer, tmpVer);
-            if (tmpDiff >= 0 && tmpDiff < verDiff){
-                bestVerIndex = i;
-                verDiff = GetVersionDiff(inputVer, curVer);
+            else {
+                var tmpDiff = GetVersionDiff(inputVer, tmpVer);
+                if (tmpDiff >= 0 && tmpDiff < verDiff){
+                    bestVerIndex = i;
+                    verDiff = GetVersionDiff(inputVer, curVer);
+                }
             }
         }
     }
+ 
     
     if (bestVerIndex >= 0){
         var aTag = $(listAry[bestVerIndex]).children("a");
