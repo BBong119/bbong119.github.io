@@ -88,7 +88,7 @@ function UrlReplace()
             var hrefVal = allHerf1[i].href;
 
             var exp = new RegExp(/[?]+([^=]+)=/gi)
-            if (hrefVal.exec(exp) != null){
+            if (exp.exec(hrefVal) != null){
                 allHerf1[i].href = hrefVal + '&&ver='+testVer;
             }
             else{
