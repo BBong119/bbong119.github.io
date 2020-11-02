@@ -174,14 +174,16 @@ function GetVersionDiff(inputVer, compareVer)
 
     var maxLength = Math.max(inputChar.length, compareChar.length);
 
-    var curWeight = 0.1;
+    var curWeight = 1;
     for (var i = 0; i < maxLength; i++){
         var tmpInput = i < inputChar.length ? inputChar[i] : 0;
         if (isNaN(tmpInput)){
+            diff = diff + curWeight;
             break;
         }
         var tmpCompare = i < compareChar.length ? compareChar[i] : 0;
         if (isNaN(tmpCompare)){
+            diff = diff + curWeight;
             break;
         }
         var tmpDiff = tmpCompare - tmpInput;
