@@ -38,7 +38,7 @@ function UrlReplace()
 
 
     var test = getUrlVars(document.URL)["ver"];
-    
+
     var tmpExp = new RegExp(/-v[0-9]+.*\//g);
     var searchAry = tmpExp.exec(curRelativeUrl);
     if (searchAry != null)
@@ -80,7 +80,7 @@ function UrlReplace()
         }
     }
     else{
-        var testVer = latest;
+        var testVer = "latest";
 
         var allHerf1 = $(".container").find("a");
         for (var i = 0; i < allHerf1.length; i++)
