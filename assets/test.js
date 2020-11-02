@@ -37,10 +37,29 @@ function UrlReplace()
     var curRelativeUrl = (document.URL.split(document.domain)).pop();
 
 
-    var tmpExp = new RegExp(/-v[0-9]+.*\//g)
+    var test = getUrlVars(document.URL)["ver"];
+    
+    var tmpExp = new RegExp(/-v[0-9]+.*\//g);
     var searchAry = tmpExp.exec(curRelativeUrl);
     if (searchAry != null)
     {
+        var testVer = searchAry[0].replace('-v','');
+        testVer = testVer.replace('/', '');
+
+        var allHerf1 = $(".container").find("a");
+        for (var i = 0; i < allHerf1.length; i++)
+        {
+            var hrefVal = allHerf1[i].href;
+
+            var exp = new RegExp(/[?]+([^=]+)=/gi)
+            if (hrefVal.exec(exp) != null){
+                allHerf1[i].href = hrefVal + '&&ver='+testVer;
+            }
+            else{
+                allHerf1[i].href = hrefVal + '?ver='+testVer;
+            }   
+        }
+
         var needFindStr = curRelativeUrl.split(searchAry[0])[0] + "/";
         var needReplaceStr = curRelativeUrl.split(searchAry[0])[0] + searchAry[0];
 
@@ -60,4 +79,31 @@ function UrlReplace()
             }
         }
     }
+    else{
+        var testVer = latest;
+
+        var allHerf1 = $(".container").find("a");
+        for (var i = 0; i < allHerf1.length; i++)
+        {
+            var hrefVal = allHerf1[i].href;
+
+            var exp = new RegExp(/[?]+([^=]+)=/gi)
+            if (hrefVal.exec(exp) != null){
+                allHerf1[i].href = hrefVal + '&&ver='+testVer;
+            }
+            else{
+                allHerf1[i].href = hrefVal + '?ver='+testVer;
+            }   
+        }
+    }
+    
+}
+
+
+function getUrlVars(inputUrl) {
+    var vars = {};
+    var parts = inputUrl.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+        vars[key] = value;
+    });
+    return vars;
 }
