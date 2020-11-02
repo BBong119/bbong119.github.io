@@ -81,9 +81,9 @@
 
 
 {%- if curPageVersion == "latest version" -%}
-	<li class="otherLinkColour" style="font-weight: bold;">latest version</li>		
+	<li class="curVer otherLinkColour" style="font-weight: bold;">latest version</li>		
 {%- else -%}
-	<li class="otherLinkColour" style="font-weight: bold;">{{ "version " | append: curPageVersion }}</li>
+	<li class="curVer otherLinkColour" style="font-weight: bold;">{{ "version " | append: curPageVersion }}</li>
 {%- endif -%}
 
 <ul class="otherVersions">
