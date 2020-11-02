@@ -36,8 +36,8 @@ function UrlReplace()
 
     var curRelativeUrl = (document.URL.split(document.domain)).pop();
 
-
-    var test = getUrlVars(document.URL)["ver"];
+    var url = document.URL + "&&src=cpp";
+    var test = getUrlVars(url)["ver"];
 
     var tmpExp = new RegExp(/-v[0-9]+.*\//g);
     var searchAry = tmpExp.exec(curRelativeUrl);
