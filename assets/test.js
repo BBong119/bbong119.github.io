@@ -61,10 +61,10 @@ function UrlReplace()
     if (searchUrl != oriUrl){
         oriUrl = searchUrl;
         if (oriUrl.indexOf("#") != -1) {
-            oriUrl = oriUrl.substring(0, oriUrl.indexOf("#") + 1 );
+            oriUrl = oriUrl.substring(0, oriUrl.indexOf("#"));
         }
         if (oriUrl.indexOf("?") != -1){
-            oriUrl = oriUrl.substring(0, oriUrl.indexOf("?") + 1 );
+            oriUrl = oriUrl.substring(0, oriUrl.indexOf("?"));
         }
         var linkTag = document.createElement('link');
         linkTag.href = oriUrl;
