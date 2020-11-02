@@ -111,13 +111,13 @@ function RedirToGivenVersionPage(inputVer)
         var listAry = historyList[0].getElementsByTagName("li");
 
         for (var i = 0; i < listAry.length; i++) {
-            var tmpVerTest = listAry[i].innerText;
+            var tmpVerText = listAry[i].innerText;
             var tmpVer = null;
-            if (tmpVerTest == "latest version"){
+            if (tmpVerText == "latest version"){
                 tmpVer = "latest"
             }
             else{
-                tmpVer = verText.replace('version ','');
+                tmpVer = tmpVerText.replace('version ','');
             }
             if (curVer == inputVer){
                 var aTag = $(listAry[i]).children("a");
