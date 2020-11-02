@@ -146,11 +146,11 @@ function RedirToGivenVersionPage(inputVer)
         var aTag = $(listAry[bestVerIndex]).children("a");
         if (aTag.length > 0) {
             var exp = new RegExp(/[?]+([^=]+)=/gi)
-            if (exp.exec(aTag.href) != null){
-                window.location.replace(aTag.href + "&&ver=" +inputVer+"&&matchVer=true");
+            if (exp.exec(aTag[0].href) != null){
+                window.location.replace(aTag[0].href + "&&ver=" +inputVer+"&&matchVer=true");
             }
             else{
-                window.location.replace(aTag.href + "?ver=" +inputVer+"&&matchVer=true");
+                window.location.replace(aTag[0].href + "?ver=" +inputVer+"&&matchVer=true");
             }
         }
     }
