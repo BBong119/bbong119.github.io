@@ -14,6 +14,41 @@ function TestLiquid()
 
 function UrlReplace()
 {
+    var docUrl = document.URL;    
+    var ver = getUrlVars(docUrl)["ver"];
+    var matchVer = getUrlVars(docUrl)["matchVer"];
+    if (matchVer != "true" && ver != undefined) {
+        RedirToGivenVersionPage(ver);
+    }
+
+    if (ver == undefined)
+    {
+        var tmpExp = new RegExp(/-v[0-9]+[^\/]*[\/(.html)]/g);
+        var searchAry = tmpExp.exec(docUrl);
+        if (searchAry != null){
+            ver = searchAry.replace('-v','');
+            ver = ver.replace('.html','');
+            ver = ver.replace('/', '');
+        }
+        else{
+            ver = "latest"
+        }
+    }
+
+    var allHerf1 = $(".container").find("a");
+    for (var i = 0; i < allHerf1.length; i++)
+    {
+        var hrefVal = allHerf1[i].href;
+
+        var exp = new RegExp(/[?]+([^=]+)=/gi)
+        if (exp.exec(hrefVal) != null){
+            allHerf1[i].href = hrefVal + '&&ver='+ver;
+        }
+        else{
+            allHerf1[i].href = hrefVal + '?ver='+ver;
+        }   
+    }
+
     var searchUrl = document.URL;
     var oriUrl = searchUrl;
     //history version doc url
@@ -28,76 +63,14 @@ function UrlReplace()
         if (oriUrl.indexOf("#") != -1) {
             oriUrl = oriUrl.substring(0, oriUrl.indexOf("#") + 1 );
         }
+        if (oriUrl.indexOf("?") != -1){
+            oriUrl = oriUrl.substring(0, oriUrl.indexOf("?") + 1 );
+        }
         var linkTag = document.createElement('link');
         linkTag.href = oriUrl;
         linkTag.rel = 'canonical';
         dochead.appendChild(linkTag);
-    }
-
-    var curRelativeUrl = (document.URL.split(document.domain)).pop();
-
-    var url = document.URL + "&&src=cpp";
-    var test = getUrlVars(url)["ver"];
-    test = getUrlVars(url)["src"];
-
-    var tmpExp = new RegExp(/-v[0-9]+.*\//g);
-    var searchAry = tmpExp.exec(curRelativeUrl);
-    if (searchAry != null)
-    {
-        var testVer = searchAry[0].replace('-v','');
-        testVer = testVer.replace('/', '');
-
-        var allHerf1 = $(".container").find("a");
-        for (var i = 0; i < allHerf1.length; i++)
-        {
-            var hrefVal = allHerf1[i].href;
-
-            var exp = new RegExp(/[?]+([^=]+)=/gi)
-            if (exp.exec(hrefVal) != null){
-                allHerf1[i].href = hrefVal + '&&ver='+testVer;
-            }
-            else{
-                allHerf1[i].href = hrefVal + '?ver='+testVer;
-            }   
-        }
-
-        var needFindStr = curRelativeUrl.split(searchAry[0])[0] + "/";
-        var needReplaceStr = curRelativeUrl.split(searchAry[0])[0] + searchAry[0];
-
-        var allHref = $(".content").find("a");
-    
-        for (var i = 0; i < allHref.length; i++)
-        {
-            var hrefVal = allHref[i].href;
-            if (hrefVal.search(needReplaceStr) < 0)
-            {
-                hrefVal = hrefVal.replace(/-v[0-9]+.*\//g,"/");
-                hrefVal = hrefVal.replace(/-v[0-9]+.*.html/g,".html");
-                if (hrefVal.search(needFindStr) > 0)
-                {
-                    allHref[i].href = hrefVal.replace(needFindStr, needReplaceStr);
-                }
-            }
-        }
-    }
-    else{
-        var testVer = "latest";
-
-        var allHerf1 = $(".container").find("a");
-        for (var i = 0; i < allHerf1.length; i++)
-        {
-            var hrefVal = allHerf1[i].href;
-
-            var exp = new RegExp(/[?]+([^=]+)=/gi)
-            if (exp.exec(hrefVal) != null){
-                allHerf1[i].href = hrefVal + '&&ver='+testVer;
-            }
-            else{
-                allHerf1[i].href = hrefVal + '?ver='+testVer;
-            }   
-        }
-    }
-    
+    } 
 }
 
 
@@ -107,4 +80,117 @@ function getUrlVars(inputUrl) {
         vars[key] = value;
     });
     return vars;
+}
+
+function RedirToGivenVersionPage(inputVer)
+{
+    var curVerTag = $(".currentVersion ");
+    var bestVerIndex = -1;
+    var verDiff = -1;
+    var curVer = null;
+    if (curVerTag != null) {
+        var verText = curVerTag[0].innerText;
+        if (verText == "latest version"){
+            curVer = "latest"
+        }
+        else{
+            curVer = verText.replace('version ','');
+        }
+        if (curVer == inputVer){
+            return;
+        }
+        else {
+            bestVerIndex = -1;
+            verDiff = GetVersionDiff(inputVer, curVer);
+        }
+    }
+    
+    var historyList = $(".otherVersions");
+    var listAry = historyList.getElementsByTagName("li");
+
+    for (var i = 0; i < listAry.length; i++) {
+        var tmpVerTest = listAry[i].innerText;
+        var tmpVer = null;
+        if (tmpVerTest == "latest version"){
+            tmpVer = "latest"
+        }
+        else{
+            tmpVer = verText.replace('version ','');
+        }
+        if (curVer == inputVer){
+            var aTag = $(listAry[i]).children("a");
+            if (aTag.length > 0) {
+                var exp = new RegExp(/[?]+([^=]+)=/gi)
+                if (exp.exec(aTag.href) != null){
+                    window.location.replace(aTag.href + "&&ver=" +inputVer+"&&matchVer=true");
+                }
+                else{
+                    window.location.replace(aTag.href + "?ver=" +inputVer+"&&matchVer=true");
+                }
+            }
+        }
+        else {
+            var tmpDiff = GetVersionDiff(inputVer, tmpVer);
+            if (tmpDiff >= 0 && tmpDiff < verDiff){
+                bestVerIndex = i;
+                verDiff = GetVersionDiff(inputVer, curVer);
+            }
+        }
+    }
+    
+    if (bestVerIndex >= 0){
+        var aTag = $(listAry[bestVerIndex]).children("a");
+        if (aTag.length > 0) {
+            var exp = new RegExp(/[?]+([^=]+)=/gi)
+            if (exp.exec(aTag.href) != null){
+                window.location.replace(aTag.href + "&&ver=" +inputVer+"&&matchVer=true");
+            }
+            else{
+                window.location.replace(aTag.href + "?ver=" +inputVer+"&&matchVer=true");
+            }
+        }
+    }
+
+    return;
+}
+
+function GetVersionDiff(inputVer, compareVer)
+{
+    if (compareVer = "latest"){
+        return 100;
+    }
+
+    if (compareVer < inputVer){
+        return -1;
+    }
+
+    var inputChar = inputVer.split('.');
+    var compareChar = compareVer.split('.');
+    var diff = 0;
+
+    var maxLength = Math.max(inputChar.length, compareChar.length);
+
+    var curWeight = 0.1;
+    for (var i = 0; i < maxLength; i++){
+        var tmpInput = i < inputChar.length ? inputChar[i] : 0;
+        if (isNaN(tmpInput)){
+            break;
+        }
+        var tmpCompare = i < compareChar.length ? compareChar[i] : 0;
+        if (isNaN(tmpCompare)){
+            break;
+        }
+        var tmpDiff = tmpCompare - tmpInput;
+        if (tmpDiff >= 0){
+            curWeight = curWeight / 10;
+            diff = diff + curWeight * tmpDiff;
+        }
+        else{
+            diff = diff - curWeight;
+            curWeight = curWeight / 10;
+            diff = diff + curWeight * (tmpDiff + 10);
+        }
+    }
+    
+    return diff;
 }

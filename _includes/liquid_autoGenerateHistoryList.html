@@ -81,9 +81,9 @@
 
 
 {%- if curPageVersion == "latest version" -%}
-	<li class="curVer otherLinkColour" style="font-weight: bold;">latest version</li>		
+	<li class="currentVersion otherLinkColour" style="font-weight: bold;">latest version</li>		
 {%- else -%}
-	<li class="curVer otherLinkColour" style="font-weight: bold;">{{ "version " | append: curPageVersion }}</li>
+	<li class="currentVersion otherLinkColour" style="font-weight: bold;">{{ "version " | append: curPageVersion }}</li>
 {%- endif -%}
 
 <ul class="otherVersions">
@@ -96,7 +96,7 @@
 		{%- if historyVer == "latest version" -%}
 				<li><a href = "{{ site.docHomePage }}{{ historyUrl }}" class="otherLinkColour">latest version</a></li>		
 			{%- else -%}
-				<li><a href = "{{ site.docHomePage }}{{ historyUrl }}" class="otherLinkColour">{{ "version" | append: historyVer }}</a></li>
+				<li><a href = "{{ site.docHomePage }}{{ historyUrl }}" class="otherLinkColour">{{ "version " | append: historyVer }}</a></li>
 		{%- endif -%}
 	{%- endif -%}
 {%- endfor -%}
