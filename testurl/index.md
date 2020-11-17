@@ -1,6 +1,7 @@
 ---
 layout: default
 ---
+![imga](assets.lnk/collapse-list.png)
 
 {%- include liquid_sidelist.html -%}
 
