@@ -8,3 +8,5 @@ page 1 - latest ver.
 test update.
 
 111 Ups
+
+[`ScaleDownThreshold`]({{ site.parameters_reference }}image-parameter/image-process-control.html#scaledownthreshold)

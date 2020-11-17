@@ -1,7 +1,9 @@
 ---
 layout: default
 ---
-![imga](assets.lnk/collapse-list.png)
+
+![imga](../assets/collapse-list.png)
+
 
 {%- include liquid_sidelist.html -%}
 
@@ -14,4 +16,5 @@ Test js.
 </ul>
 
 
+sss
 111 test auto update.
