@@ -1,20 +1,25 @@
----
-layout: default
----
+{%- assign testurl = "/imagecore-viewer-module/thumbnail-viewer.html" -%}
 
-![imga](../assets/collapse-list.png)
-
-
-{%- include liquid_sidelist.html -%}
-
-Test js.
-
-<ul id="uniqueID">
-    <li>list1</li>
-    <li>list2</li>
-    <li>list3</li>
-</ul>
+{%- capture curPageVersion -%}
+	{%- if testurl contains '-v' -%}
+		{{ page.url |  split: '-v' | last | split: '/' | first | replace: '.html', '' | rstrip }}
+	{%- else -%}
+		latest version
+	{%- endif -%}
+{%- endcapture -%}
 
 
-sss
-111 test auto update.
+{{ curPageVersion }}
+{{ "  slash  "}}
+
+{%- if curPageVersion != "latest version"}
+	{%- assign firstChar = curPageVersion | truncate: 1 -%}
+    {{ firstChar }}
+	{%- if firstChar < 0 or fisrtChar > 9 -%}
+        {{ true }}
+		{%- assign curPageVersion = "latest version" -%}
+    {%- else -%}
+        {{ false }}
+	{%- endif -%}
+{%- endif -%}
+
