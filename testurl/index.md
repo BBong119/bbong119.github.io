@@ -10,7 +10,6 @@
 
 
 {{ curPageVersion }}
-{{ "iewer" | truncate: 1 }}
-{{ curPageVersion | rstrip | truncate: 1 }}
+{{ curPageVersion | rstrip | truncate: 2 | replace:"…", "" }}
 {{ "  slash  "}}
 
