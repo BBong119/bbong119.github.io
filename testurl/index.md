@@ -2,7 +2,7 @@
 
 {%- capture curPageVersion -%}
 	{%- if testurl contains '-v' -%}
-		{{ testurl |  split: '-v' | last | split: '/' | first | replace: '.html', '' | rstrip }}
+		{{ page.url |  split: '-v' | last | split: '/' | first | replace: '.html', '' | rstrip }}
 	{%- else -%}
 		latest version
 	{%- endif -%}
@@ -12,15 +12,14 @@
 {{ curPageVersion }}
 {{ "  slash  "}}
 
-
-<!-- {%- if curPageVersion != "latest version" -%}
-	{%- assign firstChar = "i" -%}
-	{{ firstChar }}
+{%- if curPageVersion != "latest version"}
+	{%- assign firstChar = curPageVersion | truncate: 1 -%}
+    {{ firstChar }}
 	{%- if firstChar < 0 or fisrtChar > 9 -%}
         {{ true }}
 		{%- assign curPageVersion = "latest version" -%}
     {%- else -%}
         {{ false }}
 	{%- endif -%}
-{%- endif -%} -->
+{%- endif -%}
 
