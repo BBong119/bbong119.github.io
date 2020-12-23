@@ -16,5 +16,10 @@
 	{%- capture firstChar -%}
 		{{ curPageVersion | truncate: 4 | replace:"...", "" }}
 	{%- endcapture -%}
+
+	{%- if firstChar < 0 or firstChar > 9 -%}
+		{%- assign curPageVersion = "last version" -%}
+		{{ true }}
+	{%- endif -%}
 	{{ firstChar }}
 {%- endif-%}
