@@ -10,6 +10,11 @@
 
 
 {{ curPageVersion }}
-{{ curPageVersion | truncate: 4 | replace:"...", "" }}
 {{ "  slash  "}}
 
+{%- if curPageVersion != "last version" -%}
+	{%- capture firstChar -%}
+		{{ curPageVersion | truncate: 4 | replace:"...", "" }}
+	{%- endcapture -%}
+	{{ firstChar }}
+{%- endif-%}
