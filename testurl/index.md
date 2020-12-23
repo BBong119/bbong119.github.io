@@ -10,6 +10,6 @@
 
 
 {{ curPageVersion }}
-{{ curPageVersion | rstrip | truncate: 2 | replace:"…", "" }}
+{{ curPageVersion | truncate: 4 | replace:"...", "" }}
 {{ "  slash  "}}
 
