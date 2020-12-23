@@ -10,10 +10,14 @@
 
 
 {{ curPageVersion }}
+{{ curPageVersion[0] }}
 {{ "  slash  "}}
 
+
 {%- if curPageVersion != "latest version" -%}
-	{%- assign firstChar = curPageVersion[0] -%}
+	{%- capture firstChar -%}
+		{{ curPageVersion | truncate: 1 }}
+	{%- endcapture -%}
 	{{ firstChar }}
 	{%- if firstChar < 0 or fisrtChar > 9 -%}
         {{ true }}
