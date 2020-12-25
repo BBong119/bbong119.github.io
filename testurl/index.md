@@ -1,53 +1,25 @@
-{%- assign testurl = "/imagecore-viewer-module/thumbnail-viewer.html" -%}
+{%- assign testurl = "/imagecore-viewer-module/thumbnail-viewer-v7.1.html" -%}
 
-{%- capture curPageVersion -%}
-	{%- if testurl contains '-v' -%}
-		{{ testurl |  split: '-v' | last | split: '/' | first | replace: '.html', '' | rstrip }}
-	{%- else -%}
-		latest version
-	{%- endif -%}
-{%- endcapture -%}
+{%- assign curPageVersion = "latest Version" -%}
 
-
-{{ curPageVersion }}
-{{ "  slash  "}}
-
-{%- if curPageVersion != "last version" -%}
-	{%- capture firstChar -%}
-		{{ curPageVersion | truncate: 4 | replace:"...", "" }}
-	{%- endcapture -%}
-
-	{%- if firstChar < "0" or firstChar > "9" -%}
-		{%- assign curPageVersion = "last version" -%}
-		{{ true }}
-	{%- endif -%}
-	{{ curPageVersion }}
-	{{ firstChar }}
-{%- endif-%}
+{%- if testurl contains '-v' -%}
+	{%- assign candidateVersionStr = testurl |  split: '-v' -%}
+	{%- for tmpStr in candidateVersionStr offset:1 -%}
+		{%- assign tmpStr = candidateVersionStr | last | split: '/' | first | replace: '.html', '' | rstrip -%}
+		{%- capture firstChar -%}
+			{{ tmpStr | truncate: 4 | replace:"...", "" }}
+		{%- endcapture -%}
+		{{ tmpStr }} 
+		{{ "   " }}
+		{{ firstChar }}
+		{{ "   /   "}}
+		{%- if firstChar => "0" and firstChar <= "9" -%}
+			{%- assign curPageVersion = tmpStr -%}
+			{%- break -%}
+		{%- endif -%}
+	{%- endfor -%}
+{%- endif -%}
 
 
-{%- assign testurl = "/imagecore-viewer-module/thumbnail-v7.0.html" -%}
-
-{%- capture curPageVersion -%}
-	{%- if testurl contains '-v' -%}
-		{{ testurl |  split: '-v' | last | split: '/' | first | replace: '.html', '' | rstrip }}
-	{%- else -%}
-		latest version
-	{%- endif -%}
-{%- endcapture -%}
 
 {{ curPageVersion }}
-{{ "  slash  "}}
-
-{%- if curPageVersion != "last version" -%}
-	{%- capture firstChar -%}
-		{{ curPageVersion | truncate: 4 | replace:"...", "" }}
-	{%- endcapture -%}
-
-	{%- if firstChar < "0" or firstChar > "9" -%}
-		{%- assign curPageVersion = "last version" -%}
-		{{ true }}
-	{%- endif -%}
-	{{ curPageVersion }}
-	{{ firstChar }}
-{%- endif-%}
