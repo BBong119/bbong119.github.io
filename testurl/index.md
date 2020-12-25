@@ -9,12 +9,11 @@
 		{%- capture firstChar -%}
 			{{ tmpVer | truncate: 4 | replace:"...", "" }}
 		{%- endcapture -%}
-		{{ tmpVer }} 
-		{{ "   " }}
+		{{ tmpVer }}
 		{{ firstChar }}
 		{{ "   /   "}}
 		{%- if firstChar >= "0" and firstChar <= "9" -%}
-			{%- assign curPageVersion = tmpStr -%}
+			{%- assign curPageVersion = tmpVer -%}
 			{%- break -%}
 		{%- endif -%}
 	{%- endfor -%}
