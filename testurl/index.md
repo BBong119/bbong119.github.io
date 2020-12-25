@@ -5,11 +5,11 @@
 {%- if testurl contains '-v' -%}
 	{%- assign candidateVersionStr = testurl |  split: '-v' -%}
 	{%- for tmpStr in candidateVersionStr offset:1 -%}
-		{%- assign tmpStr = tmpStr | split: '/' | first | replace: '.html', '' | rstrip -%}
+		{%- assign tmpVer = tmpStr | split: '/' | first | replace: '.html', '' | rstrip -%}
 		{%- capture firstChar -%}
-			{{ tmpStr | truncate: 4 | replace:"...", "" }}
+			{{ tmpVer | truncate: 4 | replace:"...", "" }}
 		{%- endcapture -%}
-		{{ tmpStr }} 
+		{{ tmpVer }} 
 		{{ "   " }}
 		{{ firstChar }}
 		{{ "   /   "}}
