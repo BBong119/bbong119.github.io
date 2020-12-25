@@ -5,7 +5,7 @@
 {%- if testurl contains '-v' -%}
 	{%- assign candidateVersionStr = testurl |  split: '-v' -%}
 	{%- for tmpStr in candidateVersionStr offset:1 -%}
-		{%- assign tmpStr = candidateVersionStr | last | split: '/' | first | replace: '.html', '' | rstrip -%}
+		{%- assign tmpStr = tmpStr | split: '/' | first | replace: '.html', '' | rstrip -%}
 		{%- capture firstChar -%}
 			{{ tmpStr | truncate: 4 | replace:"...", "" }}
 		{%- endcapture -%}
@@ -13,7 +13,7 @@
 		{{ "   " }}
 		{{ firstChar }}
 		{{ "   /   "}}
-		{%- if firstChar => "0" and firstChar <= "9" -%}
+		{%- if firstChar >= "0" and firstChar <= "9" -%}
 			{%- assign curPageVersion = tmpStr -%}
 			{%- break -%}
 		{%- endif -%}
