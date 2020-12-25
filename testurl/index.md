@@ -1,4 +1,4 @@
-{%- assign testurl = "/imagecore-viewer-module/thumbnail-viewer-v7.1.html" -%}
+{%- assign testurl = "/imagecore-viewer-module/test-v7.1/thumbnail-viewer.html" -%}
 
 {%- assign curPageVersion = "latest Version" -%}
 
