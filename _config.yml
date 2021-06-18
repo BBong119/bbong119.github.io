@@ -9,5 +9,5 @@ defaults:
   - scope:
       path: "testurl/"
     values:
-      layout: "default"
+      layout: "test"
       category: "test"
