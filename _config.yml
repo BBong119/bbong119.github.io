@@ -1,2 +1,13 @@
 assets_path: /assets/
 theme: jekyll-theme-slateds
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      repo: "original-repo"
+  - scope:
+      path: "testurl/"
+    values:
+      repo: "js-repo"
