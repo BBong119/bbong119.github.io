@@ -6,8 +6,10 @@ defaults:
       path: ""
       type: "posts"
     values:
+      layout: "default"
       repo: "original-repo"
   - scope:
       path: "testurl/"
     values:
+      layout: "default"
       repo: "js-repo"
