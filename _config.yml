@@ -7,7 +7,7 @@ defaults:
     values:
       layout: "default"
   - scope:
-      path: "testurl/"
+      path: "testurl"
     values:
       layout: "test"
       category: "test"
