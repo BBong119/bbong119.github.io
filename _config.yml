@@ -6,6 +6,7 @@ defaults:
       path: ""
     values:
       layout: "default"
+      category: "original"
   - scope:
       path: "testurl"
     values:
