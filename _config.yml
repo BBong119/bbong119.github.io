@@ -16,5 +16,6 @@ defaults:
       category: "test"
 
 collections:
-  test:
+  sidelist:
     output: true
+    des: treefiles
