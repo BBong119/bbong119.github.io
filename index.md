@@ -1,7 +1,9 @@
 ---
 breadcrumbText: Test
 ---
-{%- for tP in site.html_pages -%}
+
+{%- assign validTreeFiles = site.html_pages | where: "des", "treefile" -%}
+{%- for tP in validTreeFiles -%}
     {{ tp.url }}
 {%- endfor -%}
 
