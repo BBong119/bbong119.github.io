@@ -1,4 +1,5 @@
+{% liquid
+        assign targetPath = include.curPath | append: include.targetRelativePath -
+%}
 
-{{ include.ver }}
-{%- assign targetPath = include.curPath | append: include.targetRelativePath -%}
 {{ targetPath }}
