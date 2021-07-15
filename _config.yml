@@ -18,6 +18,7 @@ defaults:
 collections:
   sidelist:
     output: true
+    future: true
 
 collections:
   test:
