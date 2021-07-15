@@ -11,6 +11,7 @@
 {%- assign nearestVer = "10000" -%}
 
 {%- for treeFile in validTreeFiles -%}
+        {{ treeFile }}
         {%- assign curTreeFileVer = "10000" -%}
         {%- assign matchUrl = treeFile.url -%}
         {%- if treeFile.url contains '-v' -%}
