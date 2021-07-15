@@ -35,6 +35,8 @@
                                 {%- assign minSize = curTreeFileVerArray.size -%}
                         {%- endif -%}
                         {%- for i in (0..minSize-1) -%}
+                                {{ curTreeFileVerArray[i] }}
+                                {{ targetVerArray[i] }}
                                 {%- if curTreeFileVerArray[i] > targetVerArray[i] -%}
                                         {%- assign verDiff = 1 / (10*i) * (curTreeFileVerArray[i] - targetVerArray[i]) -%}
                                         {%- assign validVer = true -%}    
