@@ -2,8 +2,8 @@
 breadcrumbText: Test
 ---
 
-{{ site.include_array }}
 {%- for tmpVal in site.include_array -%}
+    {{ "23" }}
     {{ tmpVal}}
 {%- endfor -%}
 
