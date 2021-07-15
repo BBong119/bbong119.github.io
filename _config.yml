@@ -1,9 +1,7 @@
 assets_path: /assets/
 theme: jekyll-theme-slateds
 
-collections:
-  sideListFiles:
-    output: true
+
 
 defaults:
   - scope:
@@ -16,3 +14,7 @@ defaults:
     values:
       layout: "test"
       category: "test"
+
+collections:
+  sidelist:
+    output: true
