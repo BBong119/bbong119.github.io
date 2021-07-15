@@ -19,7 +19,6 @@
                 {%- assign matchUrl = treeFile | remove: '-v' | remove: curTreeFileVer | rstrip -%}
         {%- endif -%}
         {%- if matchUrl == targetPath -%}
-                {{ matchUrl }}
                 {%- if targetVer == curTreeFileVer -%}
                         {%- assign nearestFile = treeFile -%}
                         {%- assign findTargetFile = true -%}
@@ -57,7 +56,6 @@
                                         {%- assign verDiff = curVal | divided_by: 10 | divided_by: minSize  -%}   
                                 {%- endif -%}
                         {% endunless %}
-                        
                         {%- if validVer -%}
                                 {%- if findTargetFile -%}
                                         {%- if verDiff < nearestVerDiff -%}
