@@ -27,7 +27,8 @@
                 {{ "0000000" }}
         {%- endif -%} -->
         
-        {%- for tmpFile in site.sidelist -%}
+        {%- assign sideListFiles = site.sidelist -%}
+        {%- for tmpFile in sideListFiles -%}
             {{ "111" }}
         {%- endfor -%}
 
