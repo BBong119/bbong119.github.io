@@ -6,14 +6,11 @@
         {%- assign ver = "10000" -%}
 {%- endif -%}
 
-{{- targetPath =}}
-{{- targetVer -}}
 {%- assign nearestFile = "" -%}
 {%- assign findTargetFile = false -%}
 {%- assign nearestVer = "10000" -%}
 
 {%- for treeFile in validTreeFiles -%}
-        {{- treeFile.url -}}
         {%- assign curTreeFileVer = "10000" -%}
         {%- assign matchUrl = treeFile.url -%}
         {%- if treeFile.url contains '-v' -%}
@@ -42,5 +39,6 @@
 
 {%- if findTargetFile -%}
         {%- assign relativePath = nearestFile.url | remove: include.curPath -%}
+        {{ relativePath }}
         {%- include_relative {{ relativePath }} ver=include.ver -%}
 {%- endif -%}
