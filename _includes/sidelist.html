@@ -1,11 +1,9 @@
 {%- assign needRemoveStr = page.url |  split: '/' | last | rstrip -%}
 {%- assign currentPath = page.url | remove: needRemoveStr -%}
 
-{{ page.ver }}
+{{ "111" }}
 <ul>
     {%- include searchChildList.html ver=include.ver curPath=currentPath targetRelativePath="1.html" -%}
     <!-- {%- include searchChildList.html path="2.html" ver="8.6" -%}
     {%- include searchChildList.html path="3.html" ver="8.6" -%} -->
 </ul>
-
-{{ page.ver }}
