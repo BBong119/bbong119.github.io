@@ -11,12 +11,11 @@
 {%- assign nearestVer = "10000" -%}
 
 {%- for treeFile in validTreeFiles -%}
-        {{ treeFile }}
         {%- assign curTreeFileVer = "10000" -%}
-        {%- assign matchUrl = treeFile.url -%}
-        {%- if treeFile.url contains '-v' -%}
-                {%- assign curTreeFileVer = treeFile.url |  split: '-v' | last | split: '/' | first | replace: '.html', '' | rstrip -%}
-                {%- assign matchUrl = treeFile.url | remove: '-v' | remove: curTreeFileVer | rstrip -%}
+        {%- assign matchUrl = treeFile -%}
+        {%- if treeFile contains '-v' -%}
+                {%- assign curTreeFileVer = treeFile |  split: '-v' | last | split: '/' | first | replace: '.html', '' | rstrip -%}
+                {%- assign matchUrl = treeFile | remove: '-v' | remove: curTreeFileVer | rstrip -%}
         {%- endif -%}
         {%- if matchUrl == targetPath -%}
                 {%- if targetVer == curTreeFileVer -%}
@@ -40,7 +39,7 @@
 
 {%- if findTargetFile -%}
         {{ "111Found" }}
-        {%- assign relativePath = nearestFile.url | remove: include.curPath -%}
+        {%- assign relativePath = nearestFile | remove: include.curPath -%}
         {{ relativePath }}
         {%- include {{ relativePath }} ver=include.ver -%}
 {%- endif -%}
