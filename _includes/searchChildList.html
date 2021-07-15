@@ -1,3 +1,4 @@
 
 {{ include.ver }}
-{{ include.targetPath }}
+{%- assign targetPath = include.curPath | append: include.targetRelativePath -%}
+{{ targetPath }}
