@@ -1,6 +1,10 @@
 assets_path: /assets/
 theme: jekyll-theme-slateds
 
+collections:
+  includes:
+    output: true
+
 defaults:
   - scope:
       path: ""
