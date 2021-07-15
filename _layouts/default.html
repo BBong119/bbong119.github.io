@@ -29,7 +29,7 @@
         
         {%- assign sideListFiles = site.sidelist -%}
         {%- for tmpFile in sideListFiles -%}
-            {{ "111" }}
+            {{ tmpFile.url }}
         {%- endfor -%}
 
         {{ page.repo }}
