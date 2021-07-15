@@ -16,5 +16,5 @@ defaults:
       category: "test"
 
 collections:
-  sidelist:
+  test:
     output: true
