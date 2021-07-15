@@ -4,7 +4,9 @@ breadcrumbText: Test
 
 
 {%- for tmpFile in site.sidelist -%}
-        {{ "111" }}
+        {%- if tmpFile.url = "/_sidelist/sidelist.html" -%}
+                {{ tmpFile.content }}
+        {%- endif -%}
 {%- endfor -%}
 
 {{ page.repo }}
