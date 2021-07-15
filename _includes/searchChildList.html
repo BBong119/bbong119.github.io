@@ -44,6 +44,5 @@
                 {%- assign needRemoveStr = nearestFile |  split: '/' | last | rstrip -%}
                 {%- assign currentPath = page.url | remove: needRemoveStr -%}
         {%- endif -%}
-        {{ relativePath }}
         {%- include {{ relativePath }} ver=include.ver curPath=curDirPath -%}
 {%- endif -%}
