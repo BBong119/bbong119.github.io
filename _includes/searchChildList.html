@@ -38,6 +38,6 @@
 {%- endfor -%}
 
 {%- if findTargetFile -%}
-        {%- assign relativePath = nearestFile.url | remove: 'include.curPath' -%}
-        {{ relativePath }}
+        {%- assign relativePath = nearestFile.url | remove: include.curPath -%}
+        {%- include_relative {{ relativepath }} ver=include.ver -%}
 {%- endif -%}
