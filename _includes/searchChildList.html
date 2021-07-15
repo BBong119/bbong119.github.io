@@ -16,9 +16,9 @@
         {%- assign curTreeFileVer = "10000" -%}
         {%- assign matchUrl = treeFile -%}
         {%- if treeFile contains '-v' -%}
+                {{ treeFile }}
                 {%- assign curTreeFileVer = treeFile |  split: '-v' | last | split: '/' | first | replace: '.html', '' | rstrip -%}
                 {%- assign matchUrl = treeFile | remove: '-v' | remove: curTreeFileVer | rstrip -%}
-                {{ matchUrl }}
         {%- endif -%}
         {%- if matchUrl == targetPath -%}
                 {%- if targetVer == curTreeFileVer -%}
