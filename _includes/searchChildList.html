@@ -20,7 +20,7 @@
         {%- if matchUrl == targetPath -%}
                 {%- if targetVer == curTreeFileVer -%}
                         {%- assign nearestFile = treeFile -%}
-                        {%- assgin findTargetFile = true -%}
+                        {%- assign findTargetFile = true -%}
                         {%- break -%}
                 {%- elsif targetVer < curTreeFileVer -%}
                         {%- if findTargetFile -%}
@@ -31,7 +31,7 @@
                         {%- else -%}
                                 {%- assign nearestFile = treeFile -%}
                                 {%- assign nearestVer = curTreeFileVer -%}
-                                {%- assgin findTargetFile = true -%}
+                                {%- assign findTargetFile = true -%}
                         {%- endif -%}
                 {%- endif -%}
         {%- endif -%}
