@@ -1,5 +1,5 @@
 {%- assign targetPath = include.curPath | append: include.targetRelativePath -%}
-{%- assign validTreeFiles = treefile_array | split: " " -%}
+{%- assign validTreeFiles = site.treefile_array | split: " " -%}
 
 {%- assign targetVer = include.ver -%}
 {%- if include.ver == "latest version" -%}
