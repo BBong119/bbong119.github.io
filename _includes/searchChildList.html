@@ -39,7 +39,7 @@
                                 {%- assign targetVal = targetVerArray[i] | plus: 0 -%}
                                 {%- if curVal > targetVal -%}
                                         {%- assign tmpDiff = curVal | minus: targetVal -%}
-                                        {%- assign verDiff = 1 | divided_by: 10 | divided_by: i | times: tmpDiff -%}
+                                        
                                         {%- assign validVer = true -%}    
                                         {%- break -%}
                                 {%- elsif curVal < targetVal -%}
@@ -47,10 +47,10 @@
                                 {%- endif -%}
                         {% endfor %}
                         {%- unless validVer -%}
-                                {%- if needCheckSize and curTreeFileVerArray.size > targetVerArray.size -%}
-                                        {%- assign validVer = true -%}
-                                        {%- assign curVal = curTreeFileVerArray[minSize] | plus: 0 -%}
-                                        {%- assign verDiff = 1 | divided_by: 10 | divided_by: minSize | times: curVal -%}   
+                                {%- if needchecksize and curtreefileverarray.size > targetverarray.size -%}
+                                        {%- assign validver = true -%}
+                                        {%- assign curval = curtreefileverarray[minsize] | plus: 0 -%}
+                                          
                                 {%- endif -%}
                         {% endunless %}
                         
