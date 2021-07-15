@@ -10,8 +10,6 @@
 {%- assign findTargetFile = false -%}
 {%- assign nearestVer = "10000" -%}
 
-{{ targetPath }}
-{{ targetVer }}
 {%- for treeFile in validTreeFiles -%}
         {%- assign curTreeFileVer = "10000" -%}
         {%- assign matchUrl = treeFile -%}
