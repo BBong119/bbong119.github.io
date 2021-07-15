@@ -2,5 +2,5 @@
 breadcrumbText: Test
 ---
 
-{%- include_relative _sideListFiles/2.html -%}
+{%- include_relative _sideListFiles/sidelist.html -%}
 {{ page.repo }}
