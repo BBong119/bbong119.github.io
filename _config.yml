@@ -2,7 +2,7 @@ assets_path: /assets/
 theme: jekyll-theme-slateds
 
 collections:
-  includes:
+  sideListFiles:
     output: true
 
 defaults:
