@@ -18,4 +18,3 @@ defaults:
 collections:
   sidelist:
     output: true
-    des: treefiles
