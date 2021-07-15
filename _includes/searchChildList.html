@@ -38,8 +38,5 @@
 {%- endfor -%}
 
 {%- if findTargetFile -%}
-        {{ nearestFile.ver }}
-        {%- assign nearestFile.ver = targetVer -%}
-        {{ nearestFile.ver }}
         {{ nearestFile.content }}
 {%- endif -%}

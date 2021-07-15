@@ -2,6 +2,6 @@
 breadcrumbText: Test
 ---
 
-{%- include searchChildList.html ver="10000" curPath="" targetRelativePath="/test/1.html" -%}
+{%- include searchChildList.html ver="10000" curPath="" targetRelativePath="sidelist/sidelist.html" -%}
 
 {{ page.repo }}
