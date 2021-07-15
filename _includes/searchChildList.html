@@ -53,6 +53,7 @@
                         {% endunless %}
                         
                         {%- if validVer -%}
+                                {{ treeFile }}
                                 {%- if findTargetFile -%}
                                         {%- if verDiff < nearestVerDiff -%}
                                                 {%- assign nearestFile = treeFile -%}
