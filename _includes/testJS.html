@@ -3,10 +3,10 @@
 </div>
 
 <script type="text/javascript">
-    var curPageUrl = '{{ page.url }}';
-    var output = '<span>' + curPageUrl + '</span>';
-    if ($('#TestOutput').length != 0) {
-        $('#TestOutput').append(curPageUrl);
+    var curPageUrl = '{{ site.pages }}';
+    for (var i = 0; i < curPageUrl.length; i++) {
+        var tmp = curPageUrl[i];
+        var test = 0;
     }
 </script>
 
