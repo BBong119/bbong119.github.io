@@ -35,21 +35,22 @@
                                 {%- assign minSize = curTreeFileVerArray.size -%}
                         {%- endif -%}
                         {%- for i in (0..minSize-1) -%}
-                                {{ curTreeFileVerArray[i] }}
-                                {{ targetVerArray[i] }}
-                                {%- if curTreeFileVerArray[i] > targetVerArray[i] -%}
-                                        {{ treeFile }}
-                                        {%- assign verDiff = 1 / (10*i) * (curTreeFileVerArray[i] - targetVerArray[i]) -%}
+                                {%- assign curVal = curTreeFileVerArray[i] | plus: 0 -%}
+                                {%- assign targetVal = targetVerArray[i] | plus: 0 -%}
+                                {%- if curVal > targetVal -%}
+                                        {%- assign tmpDiff = curVal | minus: targetVal -%}
+                                        {%- assign verDiff = 1 | divided_by: 10 | divided_by: i | times: tmpDiff -%}
                                         {%- assign validVer = true -%}    
                                         {%- break -%}
-                                {%- elsif curTreeFileVerArray[i] < targetVerArray[i] -%}
+                                {%- elsif curVal < targetVal -%}
                                         {%- assign needCheckSize = false -%}
                                 {%- endif -%}
                         {% endfor %}
                         {%- unless validVer -%}
                                 {%- if needCheckSize and curTreeFileVerArray.size > targetVerArray.size -%}
                                         {%- assign validVer = true -%}
-                                        {%- assign verDiff = 1 / (10*minSize) * curTreeFileVerArray[minSize] -%}   
+                                        {%- assign curVal = curTreeFileVerArray[minSize] | plus: 0 -%}
+                                        {%- assign verDiff = 1 | divided_by: 10 | divided_by: minSize | times: curVal -%}   
                                 {%- endif -%}
                         {% endunless %}
                         
