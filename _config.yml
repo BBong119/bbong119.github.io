@@ -18,3 +18,7 @@ defaults:
 collections:
   sidelist:
     output: true
+
+collections:
+  test:
+    output: true
