@@ -1,3 +1,44 @@
 {%- assign targetPath = include.curPath | append: include.targetRelativePath -%}
+{%- assign validTreeFiles = site.sidelist | where: "des", "treefile" -%}
+
+{%- assign targetVer = include.ver -%}
+{%- if include.ver != "latest version" -%}
+        {%- assign ver = "10000" -%}
+{%- endif -%}
+
+{%- assign nearestFile = "" -%}
+{%- assgin findTargetFile = false -%}
+{%- assign nearestVer = "10000" -%}
+
+{%- for treeFile in validTreeFiles -%}
+        {%- assign curTreeFileVer = "10000" -%}
+        {%- assign matchUrl = treeFile.url -%}
+        {%- if treeFile.url contains '-v' -%}
+                {%- assign curTreeFileVer = treeFile.url |  split: '-v' | last | split: '/' | first | replace: '.html', '' | rstrip -%}
+                {%- assign matchUrl = treeFile.url | remove: '-v' | remove: curTreeFileVer | rstrip -%}
+        {%- endif -%}
+        {%- if matchUrl == targetPath -%}
+                {%- if targetVer == curTreeFileVer -%}
+                        {%- assign nearestFile = treeFile -%}
+                        {%- assgin findTargetFile = true -%}
+                        {%- break -%}
+                {%- elsif targetVer < curTreeFileVer -%}
+                        {%- if findTargetFile -%}
+                                {%- if nearestVer - targetVer | abs > curTreeFileVer - targetVer | abs -%}
+                                        {%- assign nearestFile = treeFile -%}
+                                        {%- assign nearestVer = curTreeFileVer -%}
+                                {%- endif -%}
+                        {%- else -%}
+                                {%- assign nearestFile = treeFile -%}
+                                {%- assign nearestVer = curTreeFileVer -%}
+                                {%- assgin findTargetFile = true -%}
+                        {%- endif -%}
+                {%- endif -%}
+        {%- endif -%}
+{%- endfor -%}
+
+{%- if findTargetFile -%}
+        {{ nearestFile.content }}
+{%- endif -%}
 
 {{ targetPath }}

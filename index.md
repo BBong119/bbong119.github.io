@@ -2,12 +2,6 @@
 breadcrumbText: Test
 ---
 
-
-{%- for tmpFile in site.sidelist -%}
-        {%- if tmpFile.url == "/sidelist/sidelist.html" -%}
-                {{ tmpFile.content }}
-        {%- break -%}
-        {%- endif -%}
-{%- endfor -%}
+{%- include searchChildList.html ver="10000" curPath="" targetRelativePath="/sidelist/sidelist.html" -%}
 
 {{ page.repo }}
