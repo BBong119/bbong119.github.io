@@ -1,5 +1,5 @@
 {%- assign targetPath = include.curPath | append: include.targetRelativePath -%}
-{%- assign validTreeFiles = site.sidelist | where: "des", "treefile" -%}
+{%- assign validTreeFiles = site.html_pages | where: "des", "treefile" -%}
 
 {%- assign targetVer = include.ver -%}
 {%- if include.ver != "latest version" -%}
