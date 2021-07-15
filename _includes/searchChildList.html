@@ -9,6 +9,7 @@
 {%- assign nearestFile = "" -%}
 {%- assign findTargetFile = false -%}
 {%- assign nearestVer = "10000" -%}
+{%- assign nearestVerDiff = 10000 -%}
 
 {%- for treeFile in validTreeFiles -%}
         {%- assign curTreeFileVer = "10000" -%}
@@ -23,16 +24,45 @@
                         {%- assign nearestFile = treeFile -%}
                         {%- assign findTargetFile = true -%}
                         {%- break -%}
-                {%- elsif targetVer < curTreeFileVer -%}
-                        {%- if findTargetFile -%}
-                                {%- if nearestVer - targetVer | abs > curTreeFileVer - targetVer | abs -%}
+                {%- else -%}
+                        {%- assign verDiff = 10000 -%}
+                        {%- assign validVer = false -%}
+                        {%- assign needCheckSize = true -%}
+                        {%- assign targetVerArray = targetVer | split:'.' -%}
+                        {%- assign curTreeFileVerArray = curTreeFileVer | split:'.' -%}
+                        {%- assign minSize = targetVerArray.size -%}
+                        {%- if curTreeFileVerArray.size < minSize -%}
+                                {%- assign minSize = curTreeFileVerArray.size -%}
+                        {%- endif -%}
+                        {%- for i in (0..minSize-1) -%}
+                                {%- if curTreeFileVerArray[i] > targetVerArray[i] -%}
+                                        {%- assign verDiff = 1 / (10*i) * (curTreeFileVerArray[i] - targetVerArray[i]) -%}
+                                        {%- assign validVer = true -%}    
+                                        {%- break -%}
+                                {%- elsif curTreeFileVerArray[i] < targetVerArray[i] -%}
+                                        {%- assign needCheckSize = false -%}
+                                {%- endif -%}
+                        {% endfor %}
+                        {%- unless validVer -%}
+                                {%- if needCheckSize and curTreeFileVerArray.size > targetVerArray.size -%}
+                                        {%- assign validVer = true -%}
+                                        {%- assign verDiff = 1 / (10*minSize) * curTreeFileVerArray[minSize] -%}   
+                                {%- endif -%}
+                        {% endunless %}
+                        
+                        {%- if validVer -%}
+                                {%- if findTargetFile -%}
+                                        {%- if verDiff < nearestVerDiff -%}
+                                                {%- assign nearestFile = treeFile -%}
+                                                {%- assign nearestVer = curTreeFileVer -%}
+                                                {%- assign nearestVerDiff = verDiff -%}
+                                        {%- endif -%}
+                                {%- else -%}
                                         {%- assign nearestFile = treeFile -%}
                                         {%- assign nearestVer = curTreeFileVer -%}
+                                        {%- assign nearestVerDiff = verDiff -%}
+                                        {%- assign findTargetFile = true -%}
                                 {%- endif -%}
-                        {%- else -%}
-                                {%- assign nearestFile = treeFile -%}
-                                {%- assign nearestVer = curTreeFileVer -%}
-                                {%- assign findTargetFile = true -%}
                         {%- endif -%}
                 {%- endif -%}
         {%- endif -%}
