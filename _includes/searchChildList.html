@@ -10,17 +10,15 @@
 {%- assign findTargetFile = false -%}
 {%- assign nearestVer = "10000" -%}
 
-{{ targetVer }}
-{{ targetPath }}
 {%- for treeFile in validTreeFiles -%}
         {%- assign curTreeFileVer = "10000" -%}
         {%- assign matchUrl = treeFile -%}
         {%- if treeFile contains '-v' -%}
-                {{ treeFile }}
                 {%- assign curTreeFileVer = treeFile |  split: '-v' | last | split: '/' | first | replace: '.html', '' | rstrip -%}
                 {%- assign matchUrl = treeFile | remove: '-v' | remove: curTreeFileVer | rstrip -%}
         {%- endif -%}
         {%- if matchUrl == targetPath -%}
+                {{ matchUrl }}
                 {%- if targetVer == curTreeFileVer -%}
                         {%- assign nearestFile = treeFile -%}
                         {%- assign findTargetFile = true -%}
