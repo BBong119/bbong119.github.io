@@ -7,4 +7,7 @@ breadcrumbText: Test
     {{ treeFile.url }}
 {%- endfor -%}
 
+
+{%- include searchChildList.html ver="latest version" curPath="" targetRelativePath="/sidelist/sidelist.html" -%}
+
 {{ page.repo }}
