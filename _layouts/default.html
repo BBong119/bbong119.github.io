@@ -26,11 +26,6 @@
         {%- else -%}
                 {{ "0000000" }}
         {%- endif -%} -->
-        
-        {%- assign sideListFiles = site.sidelist -%}
-        {%- for tmpFile in sideListFiles -%}
-            {{ tmpFile.url }}
-        {%- endfor -%}
 
         {{ page.repo }}
         {{ content }}
