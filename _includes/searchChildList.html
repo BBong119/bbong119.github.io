@@ -38,6 +38,7 @@
                                 {{ curTreeFileVerArray[i] }}
                                 {{ targetVerArray[i] }}
                                 {%- if curTreeFileVerArray[i] > targetVerArray[i] -%}
+                                        {{ treeFile }}
                                         {%- assign verDiff = 1 / (10*i) * (curTreeFileVerArray[i] - targetVerArray[i]) -%}
                                         {%- assign validVer = true -%}    
                                         {%- break -%}
@@ -53,7 +54,6 @@
                         {% endunless %}
                         
                         {%- if validVer -%}
-                                {{ treeFile }}
                                 {%- if findTargetFile -%}
                                         {%- if verDiff < nearestVerDiff -%}
                                                 {%- assign nearestFile = treeFile -%}
