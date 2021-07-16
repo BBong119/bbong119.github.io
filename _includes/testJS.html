@@ -1,9 +1,0 @@
-{%- capture curPageVersion -%}
-	{%- if page.url contains '-v' -%}
-		{{ page.url |  split: '-v' | last | split: '/' | first | replace: '.html', '' | rstrip }}
-	{%- else -%}
-		latest version
-	{%- endif -%}
-{%- endcapture -%}
-
-{%- include findSideList.html verVer=curPageVersion -%}
