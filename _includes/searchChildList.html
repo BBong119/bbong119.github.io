@@ -1,8 +1,8 @@
-{%- assign targetPath = include.curPath | append: include.targetRelativePath -%}
+{%- assign targetPath = include.curPath | append: include.targetRelativePath | rstrip -%}
 {%- assign validTreeFiles = site.data.full_tree.tree_file_list -%}
 
-{%- assign targetVer = include.ver -%}
-{%- if include.ver == "latest version" -%}
+{%- assign targetVer = include.ver | rstrip -%}
+{%- if targetVer == "latest version" -%}
         {%- assign targetVer = "10000" -%}
 {%- endif -%}
 
