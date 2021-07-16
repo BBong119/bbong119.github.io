@@ -13,6 +13,7 @@
 
 {%- for treeFile in validTreeFiles -%}
         {%- assign curTreeFileVer = "10000" -%}
+        {%- assign treeFile = treeFile | rstrip -%}
         {%- assign matchUrl = treeFile -%}
         {%- if treeFile contains '-v' -%}
                 {%- assign curTreeFileVer = treeFile |  split: '-v' | last | split: '/' | first | replace: '.html', '' | rstrip -%}
